@@ -1,0 +1,94 @@
+{
+  "verified": true,
+  "total_cases": 5370,
+  "counts": {
+    "surface_matrix": 288,
+    "collision_thresholds": 120,
+    "left_shove_boundary": 1,
+    "jump_gate_and_initial_locals": 10,
+    "resource_exit_priority": 5,
+    "bounce_and_audio_clock": 28,
+    "wrap_boundaries": 4,
+    "finish_boundary": 3,
+    "synthetic_trajectory": 900,
+    "real_road_states": 1240,
+    "real_road_trajectory": 2771
+  },
+  "branch_hits": {
+    "surface_effect": 2546,
+    "exit_fall": 54,
+    "landing": 2026,
+    "crash_vertical": 526,
+    "exit_timer": 961,
+    "crash_timer": 688,
+    "edge_drift": 35,
+    "frontal_crash": 162,
+    "lateral_block": 183,
+    "airborne_surface": 2824,
+    "low_speed_bump": 20,
+    "shove_left": 1,
+    "bounce": 419,
+    "jump_start": 120,
+    "vertical_stop": 1869,
+    "fall_speed_floor": 36,
+    "oxygen_underflow": 4,
+    "fuel_underflow": 4,
+    "exit_fuel": 4,
+    "exit_oxygen": 4,
+    "bounce_sound": 173,
+    "height_underflow": 1,
+    "finish_boundary": 2,
+    "jump_assist": 152,
+    "shove_right": 1
+  },
+  "required_branches_missing": [],
+  "compared_events": {
+    "resolve": 5368,
+    "collision": 127137,
+    "sound": 391,
+    "sound_busy": 189,
+    "finish": 2,
+    "predict": 1173,
+    "flight": 11675,
+    "landing": 1169
+  },
+  "outcomes": {
+    "exit_3": 191,
+    "exit_0": 4355,
+    "exit_2": 193,
+    "exit_1": 299,
+    "exit_5": 179,
+    "exit_4": 153
+  },
+  "result_stream_sha256": "5b47e9fc93d828c436b00d1224b085a0ed62b4fd0b39746e30f401171a5aff94",
+  "seed": 23241993,
+  "instructions_including_stop_hooks": 47147338,
+  "max_instructions_per_tick": 89029,
+  "elapsed_seconds": 77.36,
+  "input_sha256": {
+    "exe": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+    "roads": "19551b52d5a9e87d62ebea5e98a559f3fe76a98947924f85d2787d00f8333d83"
+  },
+  "code_sha256": {
+    "skyroads_tick.py": "8158648c725c72a541c8810d3d1b8c64d72af8f79241eec52c3b33339ced5589",
+    "validate-skyroads-tick.py": "e9630b9efa01541caea3f947d251c11a3883f5466773b91bd5aa43cbfcf432ef",
+    "skyroads_movement.py": "c695171a5e103ebc579404db52838eb4cf4ccde43cdd846447540bd181872c0d",
+    "skyroads_collision.py": "4ccd28a735cb8b8b0d47c0c6b01f230e837f10fb95f0c080dfad868bdebb7625",
+    "validate-skyroads-movement.py": "1b8eef8fd8df41cce81dab86def78f0fed2cbeafdb6f156cde6523a1821fd508",
+    "validate-skyroads-collision.py": "41e6a77179fe533ab77e08ad44f048509658fa4e88caa7754967d01ad7b7c270"
+  },
+  "boundary": {
+    "start": "1000:2324",
+    "normal_stop": "1000:2afd",
+    "completion_stop": "1000:0f05 before execution",
+    "audio": "Original muted digital configuration451a=1,cb6=1. Sound calls/timestamp/busy checks execute.",
+    "inputs": "Post-poll controls and fixed timer are explicitly supplied; keyboard/device polling excluded.",
+    "locals": "Nine persistent BP-relative words supplied and compared; other stack scratch filleda5.",
+    "state": "Every modeled global/local plus all collision, resolve, prediction and sound traces compared."
+  },
+  "limitations": [
+    "No renderer, real timer interrupts, audio hardware or finish animation execution.",
+    "Not an exhaustive proof for all states; malformed resource indices and unbounded movement remain outside port domain.",
+    "Default TickState specifies a synthetic initial frame, not recovered historical stack garbage."
+  ]
+}

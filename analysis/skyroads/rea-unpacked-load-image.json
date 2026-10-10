@@ -1,0 +1,732 @@
+{
+  "evidence_id": "ev_654cce8c726d75a7e4b38b9ecb269831fe3b14ca4bcd929e8d45271eaaa7c832",
+  "subject": {
+    "name": "SKYROADS_UNPACKED.EXE",
+    "digest": {
+      "sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104"
+    },
+    "format": "dos-mz",
+    "architecture": "x86",
+    "local_path": "/Users/donnybystrom/code/SRE/analysis/skyroads/unpacked/SKYROADS_UNPACKED.EXE"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "dos-mz",
+      "architecture": "x86",
+      "available_architectures": [
+        "x86"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "process_launch": "inspected-jvm-launch-support-v1",
+      "load_image_evidence": "independent-mz-mapping-relocations-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "MzLoader",
+      "language_id": "x86:LE:16:Real Mode",
+      "compiler_spec_id": "default",
+      "load_segment": "0x1000",
+      "address_coordinates": "linear-byte-offset",
+      "analyzer_preset": "ghidra-default"
+    },
+    "digest": "894e458d232de9bdeb2a5d661cd2b4791ee9e10f88d297423fc0c7553a7a66d8"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_load_image",
+  "parameters": {},
+  "raw_result": {
+    "executable_format": "Old-style DOS Executable (MZ)",
+    "language_id": "x86:LE:16:Real Mode",
+    "compiler_spec_id": "default",
+    "image_base": "0x0",
+    "default_address_space": "ram",
+    "source_files": [
+      {
+        "name": "target-5b7c06dedb0b.EXE",
+        "size": 30588,
+        "original_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+        "modified_sha256": "b8f5874d97b8716c36b5a17a58315893c3ad077a638016e5ef261a775f9ad985"
+      }
+    ],
+    "mappings": [
+      {
+        "block": "CODE_0",
+        "start": "0x10000",
+        "end": "0x1675f",
+        "address_space": "ram",
+        "initialized": true,
+        "loaded": true,
+        "overlay": false,
+        "length": 26464,
+        "source_file_index": 0,
+        "file_offset": 512,
+        "sha256": "d070586546a6c130f9cfc2c049ccccc7817970d257f0c86f5f1cfeac58ae02bd"
+      },
+      {
+        "block": "CODE_1",
+        "start": "0x16760",
+        "end": "0x1757b",
+        "address_space": "ram",
+        "initialized": true,
+        "loaded": true,
+        "overlay": false,
+        "length": 3612,
+        "source_file_index": 0,
+        "file_offset": 26976,
+        "sha256": "aae0e7c44674f4413f4304f3f7ce5509d8d8f016b52b2381c80d413218a67055"
+      },
+      {
+        "block": "DATA",
+        "start": "0x1757c",
+        "end": "0x220ab",
+        "address_space": "ram",
+        "initialized": false,
+        "loaded": true,
+        "overlay": false,
+        "length": 43824,
+        "source_file_index": null,
+        "file_offset": null,
+        "sha256": null
+      },
+      {
+        "block": "HEADER",
+        "start": "HEADER:0x0",
+        "end": "HEADER:0x1ff",
+        "address_space": "HEADER",
+        "initialized": true,
+        "loaded": false,
+        "overlay": true,
+        "length": 512,
+        "source_file_index": 0,
+        "file_offset": 0,
+        "sha256": "ec92164b173389713dcf87f24cddbe7b392cd6d177c9e43cdedabe673dc0b466"
+      }
+    ],
+    "relocations": [
+      {
+        "address": "0x10b04",
+        "segment": 4096,
+        "offset": 2820,
+        "status": "APPLIED",
+        "type": 0,
+        "values": [
+          0,
+          2820,
+          5750
+        ],
+        "original_bytes_hex": "7606",
+        "memory_bytes_hex": "7616"
+      },
+      {
+        "address": "0x13aca",
+        "segment": 4096,
+        "offset": 15050,
+        "status": "APPLIED",
+        "type": 0,
+        "values": [
+          0,
+          15050,
+          5750
+        ],
+        "original_bytes_hex": "7606",
+        "memory_bytes_hex": "7616"
+      },
+      {
+        "address": "0x161f4",
+        "segment": 4096,
+        "offset": 25076,
+        "status": "APPLIED",
+        "type": 0,
+        "values": [
+          0,
+          25076,
+          5750
+        ],
+        "original_bytes_hex": "7606",
+        "memory_bytes_hex": "7616"
+      }
+    ],
+    "entry_points": [
+      "0x161f3"
+    ],
+    "entry_context": [
+      {
+        "address": "0x161f3",
+        "registers": [
+          {
+            "name": "CS",
+            "value_hex": "0x1000"
+          },
+          {
+            "name": "DS",
+            "value_hex": null
+          },
+          {
+            "name": "ES",
+            "value_hex": null
+          },
+          {
+            "name": "SS",
+            "value_hex": "0x218a"
+          }
+        ]
+      }
+    ]
+  },
+  "normalized_result": {
+    "status": "verified",
+    "format": "dos-mz",
+    "target_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+    "load_segment": 4096,
+    "header_bytes": 512,
+    "module_bytes": 30076,
+    "overlay_bytes": 0,
+    "entry": {
+      "relative_segment": 0,
+      "offset": 25075,
+      "linear_address": "0x161f3"
+    },
+    "observations": {
+      "executable_format": "Old-style DOS Executable (MZ)",
+      "language_id": "x86:LE:16:Real Mode",
+      "compiler_spec_id": "default",
+      "image_base": "0x0",
+      "default_address_space": "ram",
+      "source_files": [
+        {
+          "name": "target-5b7c06dedb0b.EXE",
+          "size": 30588,
+          "original_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+          "modified_sha256": "b8f5874d97b8716c36b5a17a58315893c3ad077a638016e5ef261a775f9ad985"
+        }
+      ],
+      "mappings": [
+        {
+          "block": "CODE_0",
+          "start": "0x10000",
+          "end": "0x1675f",
+          "address_space": "ram",
+          "initialized": true,
+          "loaded": true,
+          "overlay": false,
+          "length": 26464,
+          "source_file_index": 0,
+          "file_offset": 512,
+          "sha256": "d070586546a6c130f9cfc2c049ccccc7817970d257f0c86f5f1cfeac58ae02bd"
+        },
+        {
+          "block": "CODE_1",
+          "start": "0x16760",
+          "end": "0x1757b",
+          "address_space": "ram",
+          "initialized": true,
+          "loaded": true,
+          "overlay": false,
+          "length": 3612,
+          "source_file_index": 0,
+          "file_offset": 26976,
+          "sha256": "aae0e7c44674f4413f4304f3f7ce5509d8d8f016b52b2381c80d413218a67055"
+        },
+        {
+          "block": "DATA",
+          "start": "0x1757c",
+          "end": "0x220ab",
+          "address_space": "ram",
+          "initialized": false,
+          "loaded": true,
+          "overlay": false,
+          "length": 43824,
+          "source_file_index": null,
+          "file_offset": null,
+          "sha256": null
+        },
+        {
+          "block": "HEADER",
+          "start": "HEADER:0x0",
+          "end": "HEADER:0x1ff",
+          "address_space": "HEADER",
+          "initialized": true,
+          "loaded": false,
+          "overlay": true,
+          "length": 512,
+          "source_file_index": 0,
+          "file_offset": 0,
+          "sha256": "ec92164b173389713dcf87f24cddbe7b392cd6d177c9e43cdedabe673dc0b466"
+        }
+      ],
+      "relocations": [
+        {
+          "address": "0x10b04",
+          "segment": 4096,
+          "offset": 2820,
+          "status": "APPLIED",
+          "type": 0,
+          "values": [
+            0,
+            2820,
+            5750
+          ],
+          "original_bytes_hex": "7606",
+          "memory_bytes_hex": "7616"
+        },
+        {
+          "address": "0x13aca",
+          "segment": 4096,
+          "offset": 15050,
+          "status": "APPLIED",
+          "type": 0,
+          "values": [
+            0,
+            15050,
+            5750
+          ],
+          "original_bytes_hex": "7606",
+          "memory_bytes_hex": "7616"
+        },
+        {
+          "address": "0x161f4",
+          "segment": 4096,
+          "offset": 25076,
+          "status": "APPLIED",
+          "type": 0,
+          "values": [
+            0,
+            25076,
+            5750
+          ],
+          "original_bytes_hex": "7606",
+          "memory_bytes_hex": "7616"
+        }
+      ],
+      "entry_points": [
+        "0x161f3"
+      ],
+      "entry_context": [
+        {
+          "address": "0x161f3",
+          "registers": [
+            {
+              "name": "CS",
+              "value_hex": "0x1000"
+            },
+            {
+              "name": "DS",
+              "value_hex": null
+            },
+            {
+              "name": "ES",
+              "value_hex": null
+            },
+            {
+              "name": "SS",
+              "value_hex": "0x218a"
+            }
+          ]
+        }
+      ]
+    },
+    "checks": [
+      {
+        "name": "executable_format",
+        "matched": true,
+        "expected": "Old-style DOS Executable (MZ)",
+        "observed": "Old-style DOS Executable (MZ)",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "language_id",
+        "matched": true,
+        "expected": "x86:LE:16:Real Mode",
+        "observed": "x86:LE:16:Real Mode",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "compiler_spec_id",
+        "matched": true,
+        "expected": "default",
+        "observed": "default",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "image_base",
+        "matched": true,
+        "expected": "0x0",
+        "observed": "0x0",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "default_address_space",
+        "matched": true,
+        "expected": "ram",
+        "observed": "ram",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "source_file_count",
+        "matched": true,
+        "expected": 1,
+        "observed": 1,
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "source_file_size",
+        "matched": true,
+        "expected": 30588,
+        "observed": 30588,
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "original_file_sha256",
+        "matched": true,
+        "expected": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+        "observed": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "modified_file_sha256",
+        "matched": true,
+        "expected": "b8f5874d97b8716c36b5a17a58315893c3ad077a638016e5ef261a775f9ad985",
+        "observed": "b8f5874d97b8716c36b5a17a58315893c3ad077a638016e5ef261a775f9ad985",
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "entry_points",
+        "matched": true,
+        "expected": [
+          "0x161f3"
+        ],
+        "observed": [
+          "0x161f3"
+        ],
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "relocation_address_aliases",
+        "matched": true,
+        "expected": [],
+        "observed": [],
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "relocation_records",
+        "matched": true,
+        "expected": [
+          "{\"address\":\"0x10b04\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,2820,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}",
+          "{\"address\":\"0x13aca\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,15050,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}",
+          "{\"address\":\"0x161f4\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,25076,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}"
+        ],
+        "observed": [
+          "{\"address\":\"0x10b04\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,2820,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}",
+          "{\"address\":\"0x13aca\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,15050,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}",
+          "{\"address\":\"0x161f4\",\"status\":\"APPLIED\",\"type\":0,\"values\":[0,25076,5750],\"original_bytes_hex\":\"7606\",\"memory_bytes_hex\":\"7616\"}"
+        ],
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "mapping[0].source_file_index",
+        "matched": true,
+        "expected": 0,
+        "observed": 0,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].file_coverage_start",
+        "matched": true,
+        "expected": 0,
+        "observed": 0,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].partition",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].initialized",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].loaded",
+        "matched": true,
+        "expected": false,
+        "observed": false,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].overlay",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].address_space",
+        "matched": true,
+        "expected": "HEADER",
+        "observed": "HEADER",
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].start",
+        "matched": true,
+        "expected": "HEADER:0x0",
+        "observed": "HEADER:0x0",
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[0].end",
+        "matched": true,
+        "expected": "HEADER:0x1ff",
+        "observed": "HEADER:0x1ff",
+        "file_offset": 0,
+        "address": "HEADER:0x1ff"
+      },
+      {
+        "name": "mapping[0].memory_sha256",
+        "matched": true,
+        "expected": "ec92164b173389713dcf87f24cddbe7b392cd6d177c9e43cdedabe673dc0b466",
+        "observed": "ec92164b173389713dcf87f24cddbe7b392cd6d177c9e43cdedabe673dc0b466",
+        "file_offset": 0,
+        "address": "HEADER:0x0"
+      },
+      {
+        "name": "mapping[1].source_file_index",
+        "matched": true,
+        "expected": 0,
+        "observed": 0,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].file_coverage_start",
+        "matched": true,
+        "expected": 512,
+        "observed": 512,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].partition",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].initialized",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].loaded",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].overlay",
+        "matched": true,
+        "expected": false,
+        "observed": false,
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].address_space",
+        "matched": true,
+        "expected": "ram",
+        "observed": "ram",
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].start",
+        "matched": true,
+        "expected": "0x10000",
+        "observed": "0x10000",
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[1].end",
+        "matched": true,
+        "expected": "0x1675f",
+        "observed": "0x1675f",
+        "file_offset": 512,
+        "address": "0x1675f"
+      },
+      {
+        "name": "mapping[1].memory_sha256",
+        "matched": true,
+        "expected": "d070586546a6c130f9cfc2c049ccccc7817970d257f0c86f5f1cfeac58ae02bd",
+        "observed": "d070586546a6c130f9cfc2c049ccccc7817970d257f0c86f5f1cfeac58ae02bd",
+        "file_offset": 512,
+        "address": "0x10000"
+      },
+      {
+        "name": "mapping[2].source_file_index",
+        "matched": true,
+        "expected": 0,
+        "observed": 0,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].file_coverage_start",
+        "matched": true,
+        "expected": 26976,
+        "observed": 26976,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].partition",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].initialized",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].loaded",
+        "matched": true,
+        "expected": true,
+        "observed": true,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].overlay",
+        "matched": true,
+        "expected": false,
+        "observed": false,
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].address_space",
+        "matched": true,
+        "expected": "ram",
+        "observed": "ram",
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].start",
+        "matched": true,
+        "expected": "0x16760",
+        "observed": "0x16760",
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "mapping[2].end",
+        "matched": true,
+        "expected": "0x1757b",
+        "observed": "0x1757b",
+        "file_offset": 26976,
+        "address": "0x1757b"
+      },
+      {
+        "name": "mapping[2].memory_sha256",
+        "matched": true,
+        "expected": "aae0e7c44674f4413f4304f3f7ce5509d8d8f016b52b2381c80d413218a67055",
+        "observed": "aae0e7c44674f4413f4304f3f7ce5509d8d8f016b52b2381c80d413218a67055",
+        "file_offset": 26976,
+        "address": "0x16760"
+      },
+      {
+        "name": "initialized_file_coverage_end",
+        "matched": true,
+        "expected": 30588,
+        "observed": 30588,
+        "file_offset": null,
+        "address": null
+      },
+      {
+        "name": "initialized_unbacked_mappings",
+        "matched": true,
+        "expected": [],
+        "observed": [],
+        "file_offset": null,
+        "address": null
+      }
+    ],
+    "limitations": [
+      "Verification covers original/modified FileBytes, every initialized target-backed header/module mapping, relocation records and the external entry point. Mapping ends are inclusive.",
+      "Appended overlay bytes are identified by file extent and included in FileBytes identity; they must not be mapped as initialized header/module memory. Uninitialized allocations are reported but their contents and DOS runtime behavior are not verified.",
+      "The fixed load segment 0x1000 describes Ghidra's analysis image, not a running DOS process. Verified import does not establish original source ownership or recovered program behavior.",
+      "A mismatching memory digest identifies the reported source range; it does not locate the first differing byte inside that range."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Independent verification supports DOS MZ and explicitly selected COM, including measured COM entry context. Measured source mappings use inclusive end addresses and complete region digests; no target execution or project mutation occurs.",
+    "macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state.",
+    "DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.",
+    "Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

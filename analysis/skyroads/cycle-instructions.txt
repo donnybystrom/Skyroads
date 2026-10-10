@@ -1,0 +1,277 @@
+074c c8100000         enter   0x10, 0
+0750 56               push    si
+0751 57               push    di
+0752 a1f695           mov     ax, word ptr [0x95f6]
+0755 e97b03           jmp     0xad3
+0758 a0d80b           mov     al, byte ptr [0xbd8]
+075b 25ff00           and     ax, 0xff
+075e 258000           and     ax, 0x80
+0761 3d0000           cmp     ax, 0
+0764 7503             jne     0x769
+0766 e90600           jmp     0x76f
+0769 b80100           mov     ax, 1
+076c e90300           jmp     0x772
+076f b80000           mov     ax, 0
+0772 8946f8           mov     word ptr [bp - 8], ax
+0775 a0d60b           mov     al, byte ptr [0xbd6]
+0778 25ff00           and     ax, 0xff
+077b 258000           and     ax, 0x80
+077e 3d0000           cmp     ax, 0
+0781 7503             jne     0x786
+0783 e90600           jmp     0x78c
+0786 b80100           mov     ax, 1
+0789 e90300           jmp     0x78f
+078c b80000           mov     ax, 0
+078f 8946f6           mov     word ptr [bp - 0xa], ax
+0792 a0d40b           mov     al, byte ptr [0xbd4]
+0795 25ff00           and     ax, 0xff
+0798 258000           and     ax, 0x80
+079b 3d0000           cmp     ax, 0
+079e 7503             jne     0x7a3
+07a0 e90600           jmp     0x7a9
+07a3 b80100           mov     ax, 1
+07a6 e90300           jmp     0x7ac
+07a9 b80000           mov     ax, 0
+07ac 8b4ef6           mov     cx, word ptr [bp - 0xa]
+07af 0bc1             or      ax, cx
+07b1 8b4ef8           mov     cx, word ptr [bp - 8]
+07b4 0bc1             or      ax, cx
+07b6 8946f4           mov     word ptr [bp - 0xc], ax
+07b9 a0d90b           mov     al, byte ptr [0xbd9]
+07bc 25ff00           and     ax, 0xff
+07bf 258000           and     ax, 0x80
+07c2 3d0000           cmp     ax, 0
+07c5 7503             jne     0x7ca
+07c7 e90600           jmp     0x7d0
+07ca b80100           mov     ax, 1
+07cd e90300           jmp     0x7d3
+07d0 b80000           mov     ax, 0
+07d3 8946f2           mov     word ptr [bp - 0xe], ax
+07d6 a0d70b           mov     al, byte ptr [0xbd7]
+07d9 25ff00           and     ax, 0xff
+07dc 258000           and     ax, 0x80
+07df 3d0000           cmp     ax, 0
+07e2 7503             jne     0x7e7
+07e4 e90600           jmp     0x7ed
+07e7 b80100           mov     ax, 1
+07ea e90300           jmp     0x7f0
+07ed b80000           mov     ax, 0
+07f0 8946f0           mov     word ptr [bp - 0x10], ax
+07f3 a0d50b           mov     al, byte ptr [0xbd5]
+07f6 25ff00           and     ax, 0xff
+07f9 258000           and     ax, 0x80
+07fc 3d0000           cmp     ax, 0
+07ff 7503             jne     0x804
+0801 e90600           jmp     0x80a
+0804 b80100           mov     ax, 1
+0807 e90300           jmp     0x80d
+080a b80000           mov     ax, 0
+080d 8b4ef0           mov     cx, word ptr [bp - 0x10]
+0810 0bc1             or      ax, cx
+0812 8b4ef2           mov     cx, word ptr [bp - 0xe]
+0815 0bc1             or      ax, cx
+0817 8b4ef4           mov     cx, word ptr [bp - 0xc]
+081a 2bc1             sub     ax, cx
+081c a3f495           mov     word ptr [0x95f4], ax
+081f a0d90b           mov     al, byte ptr [0xbd9]
+0822 25ff00           and     ax, 0xff
+0825 258000           and     ax, 0x80
+0828 3d0000           cmp     ax, 0
+082b 7503             jne     0x830
+082d e90600           jmp     0x836
+0830 b80100           mov     ax, 1
+0833 e90300           jmp     0x839
+0836 b80000           mov     ax, 0
+0839 8946f8           mov     word ptr [bp - 8], ax
+083c a0d80b           mov     al, byte ptr [0xbd8]
+083f 25ff00           and     ax, 0xff
+0842 258000           and     ax, 0x80
+0845 3d0000           cmp     ax, 0
+0848 7503             jne     0x84d
+084a e90600           jmp     0x853
+084d b80100           mov     ax, 1
+0850 e90300           jmp     0x856
+0853 b80000           mov     ax, 0
+0856 8946f6           mov     word ptr [bp - 0xa], ax
+0859 a0d30b           mov     al, byte ptr [0xbd3]
+085c 25ff00           and     ax, 0xff
+085f 258000           and     ax, 0x80
+0862 3d0000           cmp     ax, 0
+0865 7503             jne     0x86a
+0867 e90600           jmp     0x870
+086a b80100           mov     ax, 1
+086d e90300           jmp     0x873
+0870 b80000           mov     ax, 0
+0873 8b4ef6           mov     cx, word ptr [bp - 0xa]
+0876 0bc1             or      ax, cx
+0878 8b4ef8           mov     cx, word ptr [bp - 8]
+087b 0bc1             or      ax, cx
+087d 8946f4           mov     word ptr [bp - 0xc], ax
+0880 a0d70b           mov     al, byte ptr [0xbd7]
+0883 25ff00           and     ax, 0xff
+0886 258000           and     ax, 0x80
+0889 3d0000           cmp     ax, 0
+088c 7503             jne     0x891
+088e e90600           jmp     0x897
+0891 b80100           mov     ax, 1
+0894 e90300           jmp     0x89a
+0897 b80000           mov     ax, 0
+089a 8946f2           mov     word ptr [bp - 0xe], ax
+089d a0d60b           mov     al, byte ptr [0xbd6]
+08a0 25ff00           and     ax, 0xff
+08a3 258000           and     ax, 0x80
+08a6 3d0000           cmp     ax, 0
+08a9 7503             jne     0x8ae
+08ab e90600           jmp     0x8b4
+08ae b80100           mov     ax, 1
+08b1 e90300           jmp     0x8b7
+08b4 b80000           mov     ax, 0
+
+0eeb c8020000         enter   2, 0
+0eef 56               push    si
+0ef0 57               push    di
+0ef1 8b360016         mov     si, word ptr [0x1600]
+0ef5 e90000           jmp     0xef8
+0ef8 39360016         cmp     word ptr [0x1600], si
+0efc 7503             jne     0xf01
+0efe e9f7ff           jmp     0xef8
+0f01 5f               pop     di
+0f02 5e               pop     si
+0f03 c9               leave   
+0f04 c3               ret     
+0f05 c8000000         enter   0, 0
+0f09 56               push    si
+0f0a 57               push    di
+0f0b c7062caf0000     mov     word ptr [0xaf2c], 0
+0f11 c70600160000     mov     word ptr [0x1600], 0
+0f17 e93400           jmp     0xf4e
+0f1a a0da0b           mov     al, byte ptr [0xbda]
+0f1d 25ff00           and     ax, 0xff
+0f20 258000           and     ax, 0x80
+0f23 3d0000           cmp     ax, 0
+0f26 7503             jne     0xf2b
+0f28 e90600           jmp     0xf31
+0f2b b80700           mov     ax, 7
+0f2e e92d00           jmp     0xf5e
+0f31 6a00             push    0
+0f33 e862fd           call    0xc98
+0f36 83c402           add     sp, 2
+0f39 e8afff           call    0xeeb
+0f3c e891ff           call    0xed0
+0f3f a1ac54           mov     ax, word ptr [0x54ac]
+0f42 8b16ae54         mov     dx, word ptr [0x54ae]
+0f46 01061896         add     word ptr [0x9618], ax
+0f4a 11161a96         adc     word ptr [0x961a], dx
+0f4e 833e001648       cmp     word ptr [0x1600], 0x48
+0f53 7303             jae     0xf58
+0f55 e9c2ff           jmp     0xf1a
+0f58 b80000           mov     ax, 0
+0f5b e90000           jmp     0xf5e
+0f5e 5f               pop     di
+0f5f 5e               pop     si
+0f60 c9               leave   
+0f61 c3               ret     
+
+3b9d bbffff           mov     bx, 0xffff
+3ba0 43               inc     bx
+3ba1 80a7d20b7f       and     byte ptr [bx + 0xbd2], 0x7f
+3ba6 75f8             jne     0x3ba0
+3ba8 6a00             push    0
+3baa 07               pop     es
+3bab 26a12400         mov     ax, word ptr es:[0x24]
+3baf 268b162600       mov     dx, word ptr es:[0x26]
+3bb4 2ea3ff3b         mov     word ptr cs:[0x3bff], ax
+3bb8 2e8916013c       mov     word ptr cs:[0x3c01], dx
+3bbd fa               cli     
+3bbe 26c7062400cc3b   mov     word ptr es:[0x24], 0x3bcc
+3bc5 268c0e2600       mov     word ptr es:[0x26], cs
+3bca fb               sti     
+3bcb c3               ret     
+3bcc 60               pushaw  
+3bcd 1e               push    ds
+3bce 2e8e1eca3a       mov     ds, word ptr cs:[0x3aca]
+3bd3 e460             in      al, 0x60
+3bd5 bbd20b           mov     bx, 0xbd2
+3bd8 3a07             cmp     al, byte ptr [bx]
+3bda 7406             je      0x3be2
+3bdc 43               inc     bx
+3bdd f6077f           test    byte ptr [bx], 0x7f
+3be0 75f6             jne     0x3bd8
+3be2 80277f           and     byte ptr [bx], 0x7f
+3be5 2480             and     al, 0x80
+3be7 3480             xor     al, 0x80
+3be9 0807             or      byte ptr [bx], al
+3beb e461             in      al, 0x61
+3bed 8ae0             mov     ah, al
+3bef 0c80             or      al, 0x80
+3bf1 e661             out     0x61, al
+3bf3 8ac4             mov     al, ah
+3bf5 e661             out     0x61, al
+3bf7 b020             mov     al, 0x20
+3bf9 e620             out     0x20, al
+3bfb 1f               pop     ds
+3bfc 61               popaw   
+3bfd cf               iret    
+3bfe ea00000000       ljmp    0:0
+
+0320 c88bd983         enter   -0x2675, -0x7d
+0324 3f               aas     
+0325 007503           add     byte ptr [di + 3], dh
+0328 e90300           jmp     0x32e
+032b 83c601           add     si, 1
+032e 83c701           add     di, 1
+0331 83ff1e           cmp     di, 0x1e
+0334 7303             jae     0x339
+0336 e9dfff           jmp     0x318
+0339 e8173e           call    0x4153
+033c a13293           mov     ax, word ptr [0x9332]
+033f d1e0             shl     ax, 1
+0341 b91c45           mov     cx, 0x451c
+0344 03c8             add     cx, ax
+0346 8bd9             mov     bx, cx
+0348 833f00           cmp     word ptr [bx], 0
+034b 7403             je      0x350
+034d e90e00           jmp     0x35e
+0350 83fe1d           cmp     si, 0x1d
+0353 7403             je      0x358
+0355 e90600           jmp     0x35e
+0358 b80100           mov     ax, 1
+035b e90300           jmp     0x361
+035e b80000           mov     ax, 0
+0361 50               push    ax
+0362 e8d827           call    0x2b3d
+0365 83c402           add     sp, 2
+0368 8bf8             mov     di, ax
+036a 833ef69503       cmp     word ptr [0x95f6], 3
+036f 7403             je      0x374
+0371 e91400           jmp     0x388
+0374 e8c43b           call    0x3f3b
+0377 e8c13b           call    0x3f3b
+037a 83ff07           cmp     di, 7
+037d 7403             je      0x382
+037f e90300           jmp     0x385
+0382 e9adfe           jmp     0x232
+0385 e991fe           jmp     0x219
+0388 83ff00           cmp     di, 0
+038b 7403             je      0x390
+038d e91700           jmp     0x3a7
+0390 a13293           mov     ax, word ptr [0x9332]
+0393 d1e0             shl     ax, 1
+0395 b91c45           mov     cx, 0x451c
+0398 03c8             add     cx, ax
+039a 8bd9             mov     bx, cx
+039c 830701           add     word ptr [bx], 1
+039f 8306329301       add     word ptr [0x9332], 1
+03a4 e8e553           call    0x578c
+03a7 83ff07           cmp     di, 7
+03aa 7503             jne     0x3af
+03ac e90800           jmp     0x3b7
+03af 83ff00           cmp     di, 0
+03b2 7403             je      0x3b7
+03b4 e982ff           jmp     0x339
+03b7 e8813b           call    0x3f3b
+03ba e9a2fe           jmp     0x25f
+03bd 5f               pop     di
+03be 5e               pop     si
+03bf c9               leave   
+03c0 c3               ret     

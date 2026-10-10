@@ -1,0 +1,183 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:3f91": {
+      "name": "FUN_1000_3f91",
+      "size": 81,
+      "address": "1000:3f91",
+      "entry_point": "1000:3f91",
+      "decompiled_code": "\nundefined2 __cdecl16near FUN_1000_3f91(int param_1,int param_2)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  \n  ReadBufferedWordLE();\n  ReadBufferedWordLE();\n  uVar1 = ReadBufferedByte();\n  if (*(int *)0x41aa == 0) {\n    FUN_1000_6595(param_1 + param_2 * 3);\n  }\n  FUN_1000_6595(0xaf3c);\n  return uVar1;\n}\n\n",
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_6595",
+          "address": "1000:6595"
+        },
+        {
+          "name": "ReadBufferedByte",
+          "address": "1000:6490"
+        },
+        {
+          "name": "ReadBufferedWordLE",
+          "address": "1000:6576"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:4084": {
+      "name": "FUN_1000_4084",
+      "size": 151,
+      "address": "1000:4084",
+      "entry_point": "1000:4084",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_4084(undefined2 *param_1,undefined2 param_2)\n\n{\n  int iVar1;\n  undefined2 uVar2;\n  undefined2 unaff_DS;\n  \n  ReadBufferedWordLE();\n  FUN_1000_6595(param_1);\n  iVar1 = param_1[2] * param_1[3];\n  uVar2 = FUN_1000_3ef4(iVar1,0);\n  *param_1 = uVar2;\n  AbortOnResourceError();\n  DecodeLzsBlock(0,uVar2,iVar1);\n  if (*(int *)0x3c == 0) {\n    FUN_1000_3d9e(*param_1,param_1[2],param_1[3],param_1[1] & 1 ^ (uint)param_1[1] / 0x140 & 1);\n  }\n  else {\n    FUN_1000_4052(0,uVar2,iVar1,0,param_2);\n  }\n  return;\n}\n\n",
+      "callee_count": 7,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "DecodeLzsBlock",
+          "address": "1000:66e6"
+        },
+        {
+          "name": "FUN_1000_3d9e",
+          "address": "1000:3d9e"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_4052",
+          "address": "1000:4052"
+        },
+        {
+          "name": "FUN_1000_6595",
+          "address": "1000:6595"
+        },
+        {
+          "name": "ReadBufferedWordLE",
+          "address": "1000:6576"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:411b": {
+      "name": "FUN_1000_411b",
+      "size": 33,
+      "address": "1000:411b",
+      "entry_point": "1000:411b",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_411b(undefined2 param_1)\n\n{\n  undefined2 uVar1;\n  \n  uVar1 = OpenFileReadOnly(param_1,0,0x1000,0);\n  InitializeBufferedInput(uVar1);\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "InitializeBufferedInput",
+          "address": "1000:6420"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:413c": {
+      "name": "FUN_1000_413c",
+      "size": 23,
+      "address": "1000:413c",
+      "entry_point": "1000:413c",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_413c(void)\n\n{\n  undefined2 unaff_DS;\n  \n  CloseFileHandle(*(undefined2 *)0x41ac);\n  AbortOnResourceError();\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0707": {
+      "name": "FUN_1000_0707",
+      "size": 66,
+      "address": "1000:0707",
+      "entry_point": "1000:0707",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_0707(void)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  \n  if (*(int *)0x95f6 == 1) {\n    uVar1 = FUN_1000_05f6(1);\n    *(undefined2 *)0x5172 = uVar1;\n    uVar1 = FUN_1000_05f6(2);\n    *(undefined2 *)0x547c = uVar1;\n  }\n  else if (*(int *)0x95f6 == 2) {\n    FUN_1000_068b();\n  }\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_05f6",
+          "address": "1000:05f6"
+        },
+        {
+          "name": "FUN_1000_068b",
+          "address": "1000:068b"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:34ae": {
+      "name": "FUN_1000_34ae",
+      "size": 417,
+      "address": "1000:34ae",
+      "entry_point": "1000:34ae",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_34ae(void)\n\n{\n  uint *puVar1;\n  undefined2 uVar2;\n  undefined2 uVar3;\n  undefined2 *puVar4;\n  undefined2 *puVar5;\n  int in_AX;\n  int iVar6;\n  byte *pbVar7;\n  undefined2 *puVar8;\n  undefined2 *puVar9;\n  undefined2 unaff_SS;\n  \n  if (*(int *)0x3c == 0) {\n    return;\n  }\n  *(undefined2 *)0xe66 = *(undefined2 *)0x5170;\n  *(undefined2 *)0xe68 = *(undefined2 *)0xe36;\n  *(undefined2 *)0xe42 = 0x364f;\n  if (in_AX != 0) {\n    *(undefined2 *)0xe66 = *(undefined2 *)0xe36;\n    *(undefined2 *)0xe68 = 0xa000;\n    *(undefined2 *)0xe42 = 0x36f3;\n  }\n  if (*(int *)0xe32 == 0) {\n    if (*(int *)0xe2a == *(int *)0xe6a) goto LAB_1000_3627;\n    if ((uint)(*(int *)0xe2a - *(int *)0xe6a) < 8) {\n      *(undefined2 *)0xe64 = 0;\n      if (*(uint *)0xe2a >> 3 == *(uint *)0xe6a >> 3) {\n        *(int *)0xe64 = *(int *)0xe64 + 0x30;\n      }\n      *(undefined2 *)0xe62 = *(undefined2 *)((*(uint *)0xe6a & 7) * 2 + 0xe76);\n      *(undefined2 *)0xe60 = *(undefined2 *)((*(uint *)0xe2a & 7) * 2 + 0xe76);\n      *(int *)0xe4c = (*(uint *)0xe2a >> 3) * 0xe + 0x168e;\n      *(undefined2 *)0xe44 = 0xb;\n      do {\n        *(undefined2 *)0xe46 = 1;\n        do {\n          *(undefined2 *)0xe48 = 0;\n          do {\n            iVar6 = -*(int *)0xe46 + 4;\n            if (*(int *)0xe48 == 1) {\n              iVar6 = -(-*(int *)0xe46 + -2);\n            }\n            pbVar7 = (byte *)(*(int *)0xe4c + iVar6 * 2);\n            *(uint *)0xe56 = *pbVar7 & 0xf;\n            *(uint *)0xe5c = (uint)(*pbVar7 >> 4);\n            *(uint *)0xe4e = (uint)*(byte *)((pbVar7[1] & 7) + 0xba7);\n            *(uint *)0xe58 = pbVar7[-0xe] & 0xf;\n            *(uint *)0xe5e = (uint)(pbVar7[-0xe] >> 4);\n            *(uint *)0xe50 = (uint)*(byte *)((pbVar7[-0xd] & 7) + 0xba7);\n            iVar6 = *(int *)0xe48 * -4;\n            *(uint *)0xe5a = pbVar7[iVar6 + 2] & 0xf;\n            *(uint *)0xe52 = (uint)*(byte *)((pbVar7[iVar6 + 3] & 7) + 0xba7);\n            *(uint *)0xe54 = (uint)*(byte *)((pbVar7[iVar6 + -0xb] & 7) + 0xba7);\n            (*(code *)*(undefined2 *)0xe42)();\n            puVar1 = (uint *)0xe48;\n            *puVar1 = *puVar1 ^ 1;\n          } while (*puVar1 != 0);\n          *(int *)0xe46 = *(int *)0xe46 + 1;\n        } while (*(uint *)0xe46 < 5);\n        *(int *)0xe4c = *(int *)0xe4c + -0xe;\n        *(int *)0xe44 = *(int *)0xe44 + -1;\n      } while (*(int *)0xe44 != 1);\n      goto LAB_1000_3627;\n    }\n  }\n  puVar8 = (undefined2 *)0x2800;\n  iVar6 = 0x4240;\n  if (*(int *)0xe32 != 0) {\n    puVar8 = (undefined2 *)0x0;\n    iVar6 = 0x5640;\n  }\n  uVar2 = *(undefined2 *)0xe66;\n  uVar3 = *(undefined2 *)0xe68;\n  puVar9 = puVar8;\n  for (; iVar6 != 0; iVar6 = iVar6 + -1) {\n    puVar5 = puVar9;\n    puVar9 = puVar9 + 1;\n    puVar4 = puVar8;\n    puVar8 = puVar8 + 1;\n    *puVar5 = *puVar4;\n  }\nLAB_1000_3627:\n  FUN_1000_39d4();\n  return;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_39d4",
+          "address": "1000:39d4"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 6,
+  "requested": 6
+}

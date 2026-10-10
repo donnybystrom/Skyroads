@@ -1,0 +1,775 @@
+{
+  "comparison_completed": true,
+  "compared_boundaries_match": true,
+  "counts": {
+    "initializers": 9,
+    "polls": 4670,
+    "input_samples": 4670,
+    "physics_ticks": 4667,
+    "outer_boundaries": 4215,
+    "pause_polls": 15,
+    "pause_resumes": 1,
+    "attempt_returns": 9,
+    "session_returns": 9,
+    "retry_branch": 3,
+    "selection_branch": 3,
+    "completion_requests": 3,
+    "finish_frames": 212
+  },
+  "runs": [
+    {
+      "run": "reference-keyboard",
+      "counts": {
+        "initializers": 7,
+        "polls": 1264,
+        "input_samples": 1264,
+        "physics_ticks": 1263,
+        "outer_boundaries": 1263,
+        "pause_polls": 15,
+        "pause_resumes": 1,
+        "attempt_returns": 7,
+        "session_returns": 7,
+        "retry_branch": 3,
+        "selection_branch": 3,
+        "completion_requests": 1,
+        "finish_frames": 72
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "road_index": 1,
+          "mode": 0,
+          "start_ms": 7652.64955,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 287,
+          "finish_frames": 0,
+          "result": 3,
+          "end_ms": 15891.63735,
+          "final": {
+            "forward": 2492075,
+            "lateral": 32768,
+            "height": 0,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": -106,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 26678,
+            "oxygen": 29284,
+            "exit_state": 3,
+            "crash_ticks": 0,
+            "end_ticks": 108,
+            "sound_tick": 55,
+            "tick_counter": 287,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 10240,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 65430
+          }
+        },
+        {
+          "attempt": 2,
+          "road_index": 1,
+          "mode": 0,
+          "start_ms": 18068.3368,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 283,
+          "finish_frames": 0,
+          "result": 3,
+          "end_ms": 25918.22245,
+          "final": {
+            "forward": 2497719,
+            "lateral": 32020,
+            "height": 0,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": -106,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 26660,
+            "oxygen": 29300,
+            "exit_state": 3,
+            "crash_ticks": 0,
+            "end_ticks": 108,
+            "sound_tick": 0,
+            "tick_counter": 283,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 65430
+          }
+        },
+        {
+          "attempt": 3,
+          "road_index": 1,
+          "mode": 0,
+          "start_ms": 28084.5222,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 72,
+          "finish_frames": 0,
+          "result": 7,
+          "end_ms": 30084.9651,
+          "final": {
+            "forward": 393708,
+            "lateral": 32768,
+            "height": 10240,
+            "speed": 5400,
+            "steering": 0,
+            "vertical_speed": -115,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 29434,
+            "oxygen": 29712,
+            "exit_state": 0,
+            "crash_ticks": 0,
+            "end_ticks": 0,
+            "sound_tick": 0,
+            "tick_counter": 72,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 1,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 10125
+          }
+        },
+        {
+          "attempt": 4,
+          "road_index": 1,
+          "mode": 0,
+          "start_ms": 34833.3119,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 382,
+          "finish_frames": 72,
+          "result": 0,
+          "end_ms": 47443.30085,
+          "final": {
+            "forward": 4365381,
+            "lateral": 32768,
+            "height": 0,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": -115,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 19829,
+            "oxygen": 28472,
+            "exit_state": 0,
+            "crash_ticks": 0,
+            "end_ticks": 0,
+            "sound_tick": 0,
+            "tick_counter": 382,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 1,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 10125
+          }
+        },
+        {
+          "attempt": 5,
+          "road_index": 2,
+          "mode": 0,
+          "start_ms": 52982.2895,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 73,
+          "finish_frames": 0,
+          "result": 7,
+          "end_ms": 54998.0927,
+          "final": {
+            "forward": 361983,
+            "lateral": 32768,
+            "height": 6560,
+            "speed": 3150,
+            "steering": 0,
+            "vertical_speed": -115,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 29865,
+            "oxygen": 29202,
+            "exit_state": 3,
+            "crash_ticks": 0,
+            "end_ticks": 31,
+            "sound_tick": 0,
+            "tick_counter": 73,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 6560
+          }
+        },
+        {
+          "attempt": 6,
+          "road_index": 30,
+          "mode": 0,
+          "start_ms": 60044.9811,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 93,
+          "finish_frames": 0,
+          "result": 2,
+          "end_ms": 62608.3004,
+          "final": {
+            "forward": 1055311,
+            "lateral": 32768,
+            "height": 13197,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": 71,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 29121,
+            "oxygen": 29592,
+            "exit_state": 2,
+            "crash_ticks": 43,
+            "end_ticks": 42,
+            "sound_tick": 52,
+            "tick_counter": 93,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 13197
+          }
+        },
+        {
+          "attempt": 7,
+          "road_index": 30,
+          "mode": 0,
+          "start_ms": 64724.90625,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 73,
+          "finish_frames": 0,
+          "result": 7,
+          "end_ms": 66746.697,
+          "final": {
+            "forward": 836871,
+            "lateral": 32768,
+            "height": 11777,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": 71,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 29121,
+            "oxygen": 29592,
+            "exit_state": 2,
+            "crash_ticks": 23,
+            "end_ticks": 22,
+            "sound_tick": 52,
+            "tick_counter": 73,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 0,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 11777
+          }
+        }
+      ],
+      "retry_gaps": [
+        {
+          "after_attempt": 1,
+          "before_attempt": 2,
+          "native_ms": 2176.69945,
+          "clone_restart_delay_ticks": 0
+        },
+        {
+          "after_attempt": 2,
+          "before_attempt": 3,
+          "native_ms": 2166.29975,
+          "clone_restart_delay_ticks": 0
+        },
+        {
+          "after_attempt": 6,
+          "before_attempt": 7,
+          "native_ms": 2116.60585,
+          "clone_restart_delay_ticks": 0
+        }
+      ],
+      "actual_game_first_retry_comparison": {
+        "whole_game_equal": false,
+        "compared_physics_ticks_before_difference": 287,
+        "original_return_reason": 3,
+        "clone_attempt_number_at_original_return": 2,
+        "clone_events": [
+          [
+            "return",
+            3
+          ],
+          [
+            "restart",
+            2
+          ]
+        ],
+        "original_ms_until_next_initial": 2176.69945,
+        "difference": "Game has already initialized attempt 2 at the boundary where the original only returns from attempt 1; original wrapper transitions still follow."
+      },
+      "fade_intervals": [
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 0,
+          "native_ms": 48.61985
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 52.8975
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1098.4207
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1075.05435
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1083.68905
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1086.24285
+        },
+        {
+          "attempt": 1,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1092.3197
+        },
+        {
+          "attempt": 1,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1076.3615
+        },
+        {
+          "attempt": 2,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1081.91635
+        },
+        {
+          "attempt": 2,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1076.36215
+        },
+        {
+          "attempt": 3,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1081.44875
+        },
+        {
+          "attempt": 3,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1049.2858
+        },
+        {
+          "attempt": 3,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1083.6945
+        },
+        {
+          "attempt": 3,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1087.8145
+        },
+        {
+          "attempt": 4,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1079.3641
+        },
+        {
+          "attempt": 4,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1086.75735
+        },
+        {
+          "attempt": 4,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1083.69425
+        },
+        {
+          "attempt": 4,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1086.7586
+        },
+        {
+          "attempt": 5,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1094.62835
+        },
+        {
+          "attempt": 5,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1072.8549
+        },
+        {
+          "attempt": 5,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1083.3235
+        },
+        {
+          "attempt": 5,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1074.00015
+        },
+        {
+          "attempt": 6,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1075.0314
+        },
+        {
+          "attempt": 6,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1034.83725
+        },
+        {
+          "attempt": 7,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1074.3729
+        }
+      ],
+      "notice_intervals": [
+        {
+          "target_ticks": 27,
+          "return_timer": 27,
+          "native_ms": 749.64765
+        }
+      ],
+      "changed_copy_files": [
+        "SKYROADS.CFG"
+      ],
+      "cfg_byte_changes": [
+        {
+          "offset": 6,
+          "before": 1,
+          "after": 2
+        }
+      ],
+      "trace_sha256": "b2521a869923acc286e104dc59adf2320218ac07eab0f3aca3a518a76b64250d",
+      "probe_sha256": "ea5ac2436ffa5205305610f0fe434d4974ee1592429379d077277648735dbe99",
+      "emulator_sha256": "b5218bcc1873d52a758aea074d601b7b396c2c025c5c41244c9abf1c495742f1",
+      "config_sha256": "9e65c76afc22a1f877a22028a9a442f9abf4757b1f4092b8e9d5c9913a9bfc84",
+      "original_files_unchanged": true
+    },
+    {
+      "run": "reference-demo-fast",
+      "counts": {
+        "initializers": 1,
+        "polls": 1703,
+        "input_samples": 1703,
+        "physics_ticks": 1702,
+        "outer_boundaries": 1702,
+        "completion_requests": 1,
+        "finish_frames": 72,
+        "attempt_returns": 1,
+        "session_returns": 1
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "road_index": 0,
+          "mode": 3,
+          "start_ms": 40940.0434,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 1702,
+          "finish_frames": 72,
+          "result": 0,
+          "end_ms": 90215.9876,
+          "final": {
+            "forward": 10791823,
+            "lateral": 32888,
+            "height": 0,
+            "speed": 4645,
+            "steering": 0,
+            "vertical_speed": -115,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 23568,
+            "oxygen": 24774,
+            "exit_state": 0,
+            "crash_ticks": 0,
+            "end_ticks": 0,
+            "sound_tick": 1694,
+            "tick_counter": 1702,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 12800,
+            "grounded": 1,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 1,
+            "previous_target_height": 10125
+          }
+        }
+      ],
+      "retry_gaps": [],
+      "actual_game_first_retry_comparison": null,
+      "fade_intervals": [
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 0,
+          "native_ms": 48.6063
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1087.37725
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1080.01135
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1075.42495
+        },
+        {
+          "attempt": 1,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1096.5989
+        }
+      ],
+      "notice_intervals": [
+        {
+          "target_ticks": 27,
+          "return_timer": 27,
+          "native_ms": 749.65105
+        }
+      ],
+      "changed_copy_files": [],
+      "cfg_byte_changes": [],
+      "trace_sha256": "239e8dbd3f65307ee43a1f8ce2fba389e6de117bf6cd1f19857e35fddd39cf5a",
+      "probe_sha256": "ea5ac2436ffa5205305610f0fe434d4974ee1592429379d077277648735dbe99",
+      "emulator_sha256": "b5218bcc1873d52a758aea074d601b7b396c2c025c5c41244c9abf1c495742f1",
+      "config_sha256": "f96fa6792219bd1a350e529aa0a9fd88e9b77299de74a00f3add5b42e499d4b9",
+      "original_files_unchanged": true
+    },
+    {
+      "run": "reference-demo-slow",
+      "counts": {
+        "initializers": 1,
+        "polls": 1703,
+        "input_samples": 1703,
+        "physics_ticks": 1702,
+        "outer_boundaries": 1250,
+        "completion_requests": 1,
+        "finish_frames": 68,
+        "attempt_returns": 1,
+        "session_returns": 1
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "road_index": 0,
+          "mode": 3,
+          "start_ms": 47888.259667,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 1702,
+          "finish_frames": 68,
+          "result": 0,
+          "end_ms": 97182.800333,
+          "final": {
+            "forward": 10773243,
+            "lateral": 32888,
+            "height": 0,
+            "speed": 4645,
+            "steering": 0,
+            "vertical_speed": -115,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 23568,
+            "oxygen": 24774,
+            "exit_state": 0,
+            "crash_ticks": 0,
+            "end_ticks": 0,
+            "sound_tick": 1694,
+            "tick_counter": 1702,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 12800,
+            "grounded": 1,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 1,
+            "previous_target_height": 10125
+          }
+        }
+      ],
+      "retry_gaps": [],
+      "actual_game_first_retry_comparison": null,
+      "fade_intervals": [
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 0,
+          "native_ms": 65.334334
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1096.435
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1086.11
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1036.587666
+        },
+        {
+          "attempt": 1,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1092.239667
+        }
+      ],
+      "notice_intervals": [
+        {
+          "target_ticks": 27,
+          "return_timer": 27,
+          "native_ms": 748.091333
+        }
+      ],
+      "changed_copy_files": [],
+      "cfg_byte_changes": [],
+      "trace_sha256": "72c3076676e07c76db182c470bbd57a8ae9ec184141806bde6de33a75b0db573",
+      "probe_sha256": "ea5ac2436ffa5205305610f0fe434d4974ee1592429379d077277648735dbe99",
+      "emulator_sha256": "b5218bcc1873d52a758aea074d601b7b396c2c025c5c41244c9abf1c495742f1",
+      "config_sha256": "06da322220163baa035c97f3e3ae0a37620f28a5dbb6688c95cff2ba4f207714",
+      "original_files_unchanged": true
+    }
+  ],
+  "model_sha256": {
+    "skyroads_cycle.py": "cbbf6aa471f8c7ab3de58c63f08ca251965e7c1254fe5059d2f49a51171f9b5f",
+    "skyroads_tick.py": "8158648c725c72a541c8810d3d1b8c64d72af8f79241eec52c3b33339ced5589",
+    "skyroads_movement.py": "c695171a5e103ebc579404db52838eb4cf4ccde43cdd846447540bd181872c0d",
+    "skyroads_collision.py": "4ccd28a735cb8b8b0d47c0c6b01f230e837f10fb95f0c080dfad868bdebb7625",
+    "skyroads_timer.py": "3ee1382045433b25218caeec6d46677ef876372229e7baaefdc6d30a1697a7d4",
+    "skyroads-geometry.js": "2e1ce6f3c242945f606ddbc0aa656e4a9122a398a4130fcdebc310601ed860bd",
+    "skyroads-physics.js": "ebcf7dcbfc04c533123c5d53de1670914064996dd0cf7c47abb99d75df3ee5e5",
+    "skyroads-cycle.js": "118021b3856d32a7a914b8d1513c183898059375b1bf4497ecf8673b40ce2245",
+    "skyroads-ui.js": "b59050e10003e0b751976873f099dc00b15a7cc17d0d24e7812dfe5f7d5738db",
+    "skyroads-presentation.js": "69db176ae478a1db7382e66c23dff3069a40c8af546160201ff22cc2b6b2a03a"
+  },
+  "validator_sha256": "4a700d2f6cea6fef56d9e949e12055194ac6bd697314118e3d8bedc924ffe5d1",
+  "corpus_sha256": "78759c0fb9b4dbe2f03fded737bada34f0bfb6790a06b0dea4ad20b73f460594",
+  "known_gameplay_mismatches": [
+    "Clone Game retries immediately. Running original executes fade-out and fade-in around retries; native delays and palette fade arguments are recorded per run.",
+    "Clone success notice begins before the original wrapper palette/message transitions are reproduced."
+  ],
+  "limits": [
+    "Finite recorded sessions, not exhaustive full-game equivalence.",
+    "Seeded model compares all state; canonical clone compares all state except three explicitly unspecified stack words, while carrying state continuously.",
+    "Timer samples are observed emulated PIT values; physical host keyboard-to-photon latency is not measured.",
+    "Full original renders and executes audio routines; host audio output muted.",
+    "Browser/native render projection, menus and disk persistence are not equivalent yet."
+  ]
+}

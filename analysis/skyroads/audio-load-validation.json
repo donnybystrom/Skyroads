@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "cold_effect_plays_when_ready": true,
+  "newer_request_supersedes_pending_effect": true,
+  "pause_cancels_pending_effect": true,
+  "starts": [
+    {
+      "file": "/audio/effect-1.wav",
+      "time": 1.002
+    },
+    {
+      "file": "/audio/effect-3.wav",
+      "time": 1.002
+    }
+  ],
+  "limits": "Scheduling race test with a controlled AudioContext; actual browser playback is verified separately."
+}

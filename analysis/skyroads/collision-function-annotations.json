@@ -1,0 +1,32 @@
+[
+  {
+    "address": "1000:04c0",
+    "name": "GetRoadTileAtPosition",
+    "plate_comment": "Verified in collision-validation.json against unchanged x86 using 31 roads. Near-stack ABI: uint32 forward at BP+4/+6; uint16 lateral BP+8. u=uint16(lateral/128-95); u>=322 returns0. Column=u/46; row=forward/65536. DS-near address arithmetic wraps16 bits. No row bounds check. Loader clears7000-byte road allocation before filling decoded bytes; standalone model bounds this allocation."
+  },
+  {
+    "address": "1000:0c26",
+    "name": "GetRoadSupportHeight",
+    "plate_comment": "Verified original-code comparison. Reads tile; bits0..3 ground surface, bits8..11 structure. If structure0 OR force_ground argument BP+10!=0: ground0=>0, otherwise2800h. Structure1 has no flat support (returns0); structures2/3=>3200h,4/5=>3c00h. Table DS:e4. Caller uses tunnel midline flag to force ground support; this flag is not a collision-free guarantee."
+  },
+  {
+    "address": "1000:0533",
+    "name": "IsBelowTunnelMidline",
+    "plate_comment": "Verified original-code comparison. For structure1/3/5 only: folded lateral profile index=23-(uint16(lateral/128-49)%46), if signed-negative orzero replace with1-index. At index<38, returns uint16(height-2200h)/128 < (lower[index]+upper[index])/2. Tables at DS:4c and98,38 uint16 entries each. This is a tunnel-context heuristic used by rendering/support selection, NOT a complete empty-space/collision test."
+  },
+  {
+    "address": "1000:1631",
+    "name": "TestStructureCollision",
+    "plate_comment": "Verified raw AX against boundary/random cases. Stack args tile BP+4,index BP+6,height BP+8. index>=38=>0; q=uint16(height-2200h)/128; s=tile&f00h. s100: lower[index]<=q<upper[index]. s200: height<3200h. s300: height<3200h AND lower<=q. s400: height<3c00h. s500: height<3c00h AND lower<=q. Unknown s returns masked s unchanged (non-boolean AX); shipped roads only use structures0..5. Preserve16-bit wrap and unsigned comparisons."
+  },
+  {
+    "address": "1000:1732",
+    "name": "TestPositionCollision",
+    "plate_comment": "Verified original-code comparison including actual31-road cases. Samples tile ground at lateral +/-700h. Ground collision if either ground nibble nonzero AND height<2800h AND uint16(height+600h)>2480h. Structure path requires uint16(height+680h)>2800h and nonzero structure at side sample. Tests center structure with folded index, then adjacent column +/-1700h with index47-folded. Near-stack uint32 forward BP+4/+6,lateral BP+8,height BP+10. Movement resolver186b and full physics are outside current verification."
+  },
+  {
+    "address": "1000:1c62",
+    "name": "IsUnsafeLandingTile",
+    "plate_comment": "Verified all ground/top nibble combinations for structures0..5 against original. Structure1 returns0. Otherwise effective surface=(structure? tile>>4:tile)&f. Returns1 for no ground at structure0, or surface12. Called by jump-landing predictor1ccd. Returns a filter result, not a complete guarantee of safe landing. Confirms bits4..7 select upper surface for structured tiles."
+  }
+]

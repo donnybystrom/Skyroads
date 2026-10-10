@@ -1,0 +1,402 @@
+[
+  {
+    "address": "1000:61f3",
+    "name": "InitializeDosRuntime",
+    "plate_comment": "Recovered MZ external entry: relative CS:IP=0000:61f3, analysis load segment=1000. Initializes DS to 1676, establishes stack, resizes DOS allocation, parses environment/command line, clears BSS, then calls RunGameSessionLoop. The original DIET stub was independently emulated to this instruction; all 30076 initialized module bytes matched. Decompiler stack recovery remains incomplete; this is not recovered source."
+  },
+  {
+    "address": "1000:01b8",
+    "name": "RunGameSessionLoop",
+    "plate_comment": "Main orchestration. Playable menu selection DS9332 in0..29 loads archiveindex+1 (1..30);archive0 is demo. Completion countersDS451c:30uint16words. At0339 callerlastRoadFlag iffselectedcounter0 and29 countersnonzero. Result0 increments selectedcounter andselection, callsprofile save578c, thenselection;7 selectionwithoutincrement;otherresults retryRunRoadSession immediately. Original72 result/selected/wrap cases and150 last-road cases match. Resource/menu/hardware rendering remain partly outside current playable clone; keyboard whole-attempt loop verified separately."
+  },
+  {
+    "address": "1000:0069",
+    "name": "AbortOnResourceError",
+    "plate_comment": "Checks DS:41aa error state. Restores text mode/handlers and prints 'Not enough memory' for code 8, otherwise 'Error loading data files'; then terminates. DS:41aa semantics inferred from DOS wrapper writes."
+  },
+  {
+    "address": "1000:00bb",
+    "name": "LoadTrekDataArchive",
+    "plate_comment": "Opens filename at DS:0cfc ('trekdat.lzs'). Initializes buffered input, reads two little-endian words per record, allocates record storage, writes size difference, and calls DecodeLzsBlock. Ends on shared input/error state; exact record semantics and EOF treatment are not yet reconstructed."
+  },
+  {
+    "address": "1000:5614",
+    "name": "LoadRoadByIndex",
+    "plate_comment": "Opens DS:0e08 ('roads.lzs'). Seeks index*4, reads uint16 file offset and uint16 decoded length, then seeks to block. Reads 3 uint16 metadata fields into DS:4562/54a2/4566; copies 216 bytes to DS:41c2, then decodes length bytes into far pointer DS:162c. Clears 7000-byte destination first; returns decoded_length/14. Metadata field meanings and tile bit layout remain unverified."
+  },
+  {
+    "address": "1000:2b3d",
+    "name": "RunRoadSession",
+    "plate_comment": "Road wrapper installs/clears keyboard held bits, initializes HUD caches, sets up drawings, calls RunGameplayLoop. Result0 showsRoad completed orThe End according callerflag, then4459 waits27 timer increments. BIOS-key helper4153 only sets54a0 whenaf32 enabled; normalaf32=0 keys do not dismiss. Restores IRQ09 vector and returns result. Main caller branch semantics verified separately: failures1..6 retry same archive;0 increments30-wordcompletion array andselectedindex;7 returnsselection. Synthetic finish+notice/full progression cases and six failed attempts verified; assets/disk writes virtualized."
+  },
+  {
+    "address": "1000:1fd9",
+    "name": "RunGameplayLoop",
+    "plate_comment": "Verified whole init/input/HUD/wait/gameplay cycle in6926 wait boundaries across31 archives plus26 paused busy-poll cases. Core5370 tick corpus remains unchanged. Starts forward3<<16,lateral32768,height10240,speed0,fuel/oxygen30000. Three BP words are unspecified and explicitly seeded;270 original frames show other state independent of six seeds. Normal inputs poll074c after22f8 timer wait and before catch-up; P/Escape checked after preceding physics at next outer loop. P waits release,any key press,all release, then restores saved timer. Failure gate waits crash_ticks==0 or>42 and reason1/2,reason3 with crash,or end_ticks>=108. Finish calls0f05 without incrementing processed counter. Draw calls virtualized but HUD/sound writes execute. Nominal36.00428485Hz local JS has same integer state/traces; physical DOS/OS latency not yet measured. CYCLE-FORMAT.md.",
+    "labels": [
+      {
+        "address": "1000:2324",
+        "name": "GameplayTickBegin"
+      },
+      {
+        "address": "1000:2afd",
+        "name": "GameplayTickEnd"
+      }
+    ],
+    "comments": [
+      {
+        "address": "1000:2324",
+        "pre_comment": "Verified tick boundary after input polling. Main BP frame and nine persistent local words are required; this is not a standalone function entry."
+      },
+      {
+        "address": "1000:2afd",
+        "pre_comment": "Verification stops here after incrementing BP-02. Outer tick catch-up/render scheduling is outside the recovered tick model."
+      }
+    ]
+  },
+  {
+    "address": "1000:3acc",
+    "name": "InstallTimerHandlers",
+    "plate_comment": "Installs IRQ08h handler at CS:3b17 and INT24h handler at CS:3b14; preserves the old IRQ08h vector in self-modified far-jump operands CS:3b67/3b69. Programs PIT channel 0 in mode 3 with divisor 0x19e4 (6628). IRQ phase DS:3192 counts 9..0; gameplay counter DS:1600 increments at phases 5 and 0, so one physics counter increment every five IRQs. Nominal PC PIT clock 1193182 Hz yields 180.0214 IRQ/s and 36.0043 physics ticks/s. Clock frequency is an emulator/PC model, not a measurement. Verified installer port/IVT writes and 1324 phase/stream IRQ cases against original code; analysis/skyroads/timer-validation.json."
+  },
+  {
+    "address": "1000:5c77",
+    "name": "OpenFileReadOnly",
+    "plate_comment": "DOS open wrapper: loads filename argument into DX and AX=3d00h, then calls shared INT21/error wrapper. ABI/return signature not fully recovered."
+  },
+  {
+    "address": "1000:5c59",
+    "name": "CloseFileHandle",
+    "plate_comment": "DOS INT21 AH=3eh close wrapper; consults shared DS:41aa error state. Register-based handle parameter is not reflected reliably by the current decompiler signature."
+  },
+  {
+    "address": "1000:5c82",
+    "name": "PrintConsoleString",
+    "plate_comment": "Walks NUL-terminated string and calls WriteConsoleCharacter. Uses DS-relative near pointer."
+  },
+  {
+    "address": "1000:5fd4",
+    "name": "WriteConsoleCharacter",
+    "plate_comment": "DOS INT21 AH=02h, DL=character. Emits carriage return before newline (LF) to produce CRLF."
+  },
+  {
+    "address": "1000:6027",
+    "name": "ProbeEgaSupport",
+    "plate_comment": "BIOS INT10 AH=12h BL=10h; returns true if BL was changed and is at least3. Name describes use as fallback EGA support check; hardware behavior not exercised."
+  },
+  {
+    "address": "1000:603b",
+    "name": "ProbeVgaSupport",
+    "plate_comment": "BIOS INT10 AX=1a00h; requires returned AL=1ah and BL in[7,8], the VGA display-combination codes. Hardware behavior not exercised."
+  },
+  {
+    "address": "1000:6420",
+    "name": "InitializeBufferedInput",
+    "plate_comment": "Stores input handle at DS:41ac, prepares buffer via63f0, refills via6364, resets bitreader/EOF flags. Used by archive and road loading."
+  },
+  {
+    "address": "1000:6576",
+    "name": "ReadBufferedWordLE",
+    "plate_comment": "Calls ReadBufferedByte twice and combines first byte as low8bits, second as high8bits."
+  },
+  {
+    "address": "1000:6490",
+    "name": "ReadBufferedByte",
+    "plate_comment": "Reads current buffered byte from DS:41b0 then advances/refills using6326. Current return type is broader than meaningful low8bits."
+  },
+  {
+    "address": "1000:64ab",
+    "name": "ReadBufferedBitMSB",
+    "plate_comment": "Returns highest bit of current byte, shifts left, decrements remaining count DS:41ae and loads next byte when count reaches0."
+  },
+  {
+    "address": "1000:64ff",
+    "name": "ReadBufferedBitsMSB",
+    "plate_comment": "Consumes requested number of MSB-first bits, accumulates result in AX. Current decompiler incorrectly infers void return; register semantics verified in raw instructions. Do not treat current prototype as recovered ABI."
+  },
+  {
+    "address": "1000:66e6",
+    "name": "DecodeLzsBlock",
+    "plate_comment": "Verified resource decoder: Python port matched all31 ROADS.LZS streams (60872 bytes) against isolated replay of these unchanged x86 instructions. Header bytes are length_bits, short_distance_bits, long_distance_bits. MSB-first tokens: 0=short match(distance=read(short)+2), 10=long match(distance=read(long)+(1<<short)+2), 11=8-bit literal. Match length=read(length_bits)+2; overlapping forward copy. Patches widths at6729,671f,674c and long-distance base at6751. Far destination BP+4, output length BP+8. Buffer byte alignment on exit. Runtime helpers require SS=DS. Python rejects malformed streams more strictly than original; equivalence is verified on the31 valid road streams, not all possible inputs. See analysis/skyroads/lzs-validation.json."
+  },
+  {
+    "address": "1000:6679",
+    "name": "AlignBufferedInputToByte",
+    "plate_comment": "If remaining bit count is not8, consumes that count through ReadBufferedBitsMSB. Used after decoded blocks."
+  },
+  {
+    "address": "1000:04c0",
+    "name": "GetRoadTileAtPosition",
+    "plate_comment": "Verified in collision-validation.json against unchanged x86 using 31 roads. Near-stack ABI: uint32 forward at BP+4/+6; uint16 lateral BP+8. u=uint16(lateral/128-95); u>=322 returns0. Column=u/46; row=forward/65536. DS-near address arithmetic wraps16 bits. No row bounds check. Loader clears7000-byte road allocation before filling decoded bytes; standalone model bounds this allocation."
+  },
+  {
+    "address": "1000:1b49",
+    "name": "ApplyRoadSurfaceEffect",
+    "plate_comment": "Surface helper verified as part of5370-tick corpus including matrix of16 surfaces x6 profiles x3 heights. Uses low nibble:2 subtracts303 speed unless crash active;10 adds303 unless crash active;9 refills resources5494/B13c to30000 if no exit, requesting sound4 when either<27000;12 sets exit2 if no exit and crash1 if no crash, requesting sound0. Always signed-clamps32-bit speed54ac/54ae to0..10922. Upper surface selection is performed by caller. See skyroads_tick.py, TICK-FORMAT.md and tick-validation.json."
+  },
+  {
+    "address": "1000:0c26",
+    "name": "GetRoadSupportHeight",
+    "plate_comment": "Verified original-code comparison. Reads tile; bits0..3 ground surface, bits8..11 structure. If structure0 OR force_ground argument BP+10!=0: ground0=>0, otherwise2800h. Structure1 has no flat support (returns0); structures2/3=>3200h,4/5=>3c00h. Table DS:e4. Caller uses tunnel midline flag to force ground support; this flag is not a collision-free guarantee."
+  },
+  {
+    "address": "1000:0533",
+    "name": "IsBelowTunnelMidline",
+    "plate_comment": "Verified original-code comparison. For structure1/3/5 only: folded lateral profile index=23-(uint16(lateral/128-49)%46), if signed-negative orzero replace with1-index. At index<38, returns uint16(height-2200h)/128 < (lower[index]+upper[index])/2. Tables at DS:4c and98,38 uint16 entries each. This is a tunnel-context heuristic used by rendering/support selection, NOT a complete empty-space/collision test."
+  },
+  {
+    "address": "1000:1631",
+    "name": "TestStructureCollision",
+    "plate_comment": "Verified raw AX against boundary/random cases. Stack args tile BP+4,index BP+6,height BP+8. index>=38=>0; q=uint16(height-2200h)/128; s=tile&f00h. s100: lower[index]<=q<upper[index]. s200: height<3200h. s300: height<3200h AND lower<=q. s400: height<3c00h. s500: height<3c00h AND lower<=q. Unknown s returns masked s unchanged (non-boolean AX); shipped roads only use structures0..5. Preserve16-bit wrap and unsigned comparisons."
+  },
+  {
+    "address": "1000:1732",
+    "name": "TestPositionCollision",
+    "plate_comment": "Verified original-code comparison including actual31-road cases. Samples tile ground at lateral +/-700h. Ground collision if either ground nibble nonzero AND height<2800h AND uint16(height+600h)>2480h. Structure path requires uint16(height+680h)>2800h and nonzero structure at side sample. Tests center structure with folded index, then adjacent column +/-1700h with index47-folded. Near-stack uint32 forward BP+4/+6,lateral BP+8,height BP+10. Movement resolver186b and full physics are outside current verification."
+  },
+  {
+    "address": "1000:1c62",
+    "name": "IsUnsafeLandingTile",
+    "plate_comment": "Verified all ground/top nibble combinations for structures0..5 against original. Structure1 returns0. Otherwise effective surface=(structure? tile>>4:tile)&f. Returns1 for no ground at structure0, or surface12. Called by jump-landing predictor1ccd. Returns a filter result, not a complete guarantee of safe landing. Confirms bits4..7 select upper surface for structured tiles."
+  },
+  {
+    "address": "1000:186b",
+    "name": "ResolveShipMovement",
+    "plate_comment": "Verified integer port in scripts/skyroads_movement.py, differential evidence in movement-validation.json (1970 resolver cases; every intermediate collision probe compared). Near C arguments: targetForwardLow, targetForwardHigh, targetLateral, targetHeight. Reads/writes DS:9618/961a forward32, DS:af1c lateral16, DS:af2c height16. Five fractional movement probes; keeps the last clear fraction; refines forward by4096/256/16/1, then lateral and height by signed125/25/5/1. Fractional lateral/height products wrap16 BEFORE signed division by5; forward product wraps32. Division truncates toward zero. Axis order is observable. Forward refinement uses an unsigned remaining distance and assumes ordinary forward motion. Host port bounds road allocation/probes; no general swept-collision or full game-loop equivalence claim."
+  },
+  {
+    "address": "1000:1ccd",
+    "name": "PredictSafeLanding",
+    "plate_comment": "Verified integer port and complete projected-flight traces (1408 direct prediction cases plus calls inside519 assist cases). Near C args: forward32, lateral16, height16, speed32, signedSteering16, signedVerticalSpeed16. Uses DS:54aa gravity, DS:5496 lateral drift, DS:9330 acceleration input. Each step adds gravity to vertical speed, advances forward by current speed, lateral by signed32((speed+1560)*steering)/512+drift, rejects x outside inclusive12160..53376, adds vertical speed to height, clamps speed+75*input to0..10922. Stops at unsigned height<=10240, then tests previous/current tiles with IsUnsafeLandingTile. Does not execute collision resolution or test intermediate walls/roofs. AX=0/1; globals unchanged. See MOVEMENT-FORMAT.md."
+  },
+  {
+    "address": "1000:1dfa",
+    "name": "AdjustJumpForSafeLanding",
+    "plate_comment": "Verified against unchanged x86, including candidate order and all prediction traces (519 direct cases). Tests current projected landing first. If unsafe, for n=1..6 tries steering +/- trunc16(steering*n)/10, then speed +/- trunc32(speed*n)/10. Faster candidate tested only if signed speed<10922 (strict); first accepted candidate wins. Uses current position, vertical speed and environment globals. Writes steering DS:4568, speed DS:54ac/54ae, speed delta DS:af2e/af30, success flag DS:455a. An immediately safe prediction preserves existing flag/delta. Exhausting trials restores original steering/speed, writes delta0 and preserves flag. Helper purpose supported by caller and exact replay; gameplay triggering conditions remain to be reconstructed."
+  },
+  {
+    "address": "1000:03c2",
+    "name": "RequestSoundEffect",
+    "plate_comment": "Request original sound effect and update last-sound timer DSaf38. Index0 crash,1 landing,2 obstruction,3 resource warning,4 refill. Muted451a branch, PC speaker0cb6=0 branch and Sound Blaster digital branch. Five unmuted digital driver/sample cases verified;55 sound requests match native full-game physics tick boundaries. Existing5370 tick/4667 continuous physics results remain unchanged. Browser audio is a presentation sink; it must not change sound_busy or gameplay timestamps."
+  },
+  {
+    "address": "1000:0476",
+    "name": "IsSoundEffectActive",
+    "plate_comment": "If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick validation, including timer wrap boundary tests. PC-speaker pointer branch not independently replayed."
+  },
+  {
+    "address": "1000:3b17",
+    "name": "HandleTimerInterrupt",
+    "plate_comment": "IRQ08h handler recovered from InstallTimerHandlers vector. Preserves general registers and DS, sets DS from relocated CS:3aca, then calls audio stream service 5a55. When byte DS:3192 is 0 or 5, increments word DS:1600 and feeds the speaker PIT from word [DS:bd0], advancing that pointer for nonzero words. Decrements phase; signed-negative result resets phase to 9 and far-jumps to old BIOS handler via CS:3b67/3b69. Other phases emit PIC EOI and IRET. Normal 9..0 cycle has one gameplay tick each 5 IRQs and one BIOS chain each 10. All 256 phase byte values, counter wrap, port outputs and restored registers compared; audio service idle-delay branch only, old BIOS execution excluded. See timer-validation.json and TIMER-FORMAT.md."
+  },
+  {
+    "address": "1000:074c",
+    "name": "PollGameplayInput",
+    "plate_comment": "Keyboard decoder verified for all2048 eleven-key masks against original x86. DS:bd2..bdc scans48,50,4b,4d,47,49,4f,51,01,39,19 correspond arrows, diagonal keypad,Escape,Space,P. OR groups subtract opposing directions: throttle(up/home/pageup)-(down/end/pagedown); direction(right/pageup/pagedown)-(left/home/end); Space jumps. Normal gameplay polls once after timer wait, reusing controls for catch-up ticks. Mode1 joystick,2 mouse,3 demo paths decoded statically; runtime clone uses verified keyboard mode0. See CYCLE-FORMAT.md."
+  },
+  {
+    "address": "1000:0f05",
+    "name": "RunFinishSequence",
+    "plate_comment": "Verified whole finish loop: sets height0,timer0; renders, waits for timer change0eeb, flips, forward+=speed once per wait-frame. Returns0 when timer>=72,7 on Escape. Missed timer increments do not multiply forward advances in this loop. Synthetic tunnel completion checked at dt1 and3 and Escape during finish; original helper instructions execute, drawing virtualized. CYCLE-FORMAT.md."
+  },
+  {
+    "address": "1000:0eeb",
+    "name": "WaitNextTimerTick",
+    "plate_comment": "Raw x86 snapshots DS:1600 into SI and busy-waits until counter differs. Ghidra's volatile high-level self-comparison can be misleading. Real code executes as a controlled timer-wait boundary in whole-cycle oracle."
+  },
+  {
+    "address": "1000:3b9d",
+    "name": "InstallKeyboardHandler",
+    "plate_comment": "Clears bit7 of all scan-table bytes through sentinel atDS:bd2. Saves IRQ09 vectorIVT24/26 toCS:3bff/3c01, installs1000:3bcc underCLI/STI. Installer clear/IVT writes verified against original."
+  },
+  {
+    "address": "1000:3bcc",
+    "name": "HandleKeyboardInterrupt",
+    "plate_comment": "IRQ09: reads port60 make/break scan; finds full byte match inDS:bd2 table until low7 sentinel; clears then sets bit7 to(scan&80)^80. Repeated make and unknown/E0 scans may update sentinel, preserving known key held bits. Acknowledges port61 with bit7 pulse and PIC20 EOI. 36 make/repeat/break/unknown cases execute original ISR and validate output ports; ends IRET3bfd."
+  },
+  {
+    "address": "1000:3c03",
+    "name": "RestoreKeyboardHandler",
+    "plate_comment": "Restores saved IRQ09 vector from self-modifiedCS:3bff/3c01 toIVT24/26 underCLI/STI. Original execution restores sentinel vector1234:5678 in fixture."
+  },
+  {
+    "address": "1000:12f8",
+    "name": "UpdateGameplayHud",
+    "plate_comment": "Verified original HUD rasterization: 4291 continuous native updates, 554 sampled 64000-byte updates and 467 isolated original-code boundary/sequence cases. Speed uses signed32(speed-speed_delta)/321 then unsigned16 clamp34; resources unsigned16(resource+2999)/3000 clamp10. Progress denominator signed32((rows-3)<<16)/30, then unsigned32(forward-(3<<16))/denominator and unsigned16 clamp29. Original mask colors, progress scan, assist glyph and warning palette99/100 swaps retained. Existing cycle preserves warning sound_tick; browser renderer has no physics side effects. P-pause/finish hold HUD. HUD-CHECKPOINT.md."
+  },
+  {
+    "address": "1000:2d1f",
+    "name": "RenderRoadSceneSpans",
+    "plate_comment": "Draw the original VGA road scene using eight TREKDAT span banks selected by forward/8192 modulo 8. Rows are drawn far to near, columns 0,1,2,3 then mirrored 6,5,4,3; special tables 528/576 insert the ship between tunnel layers. Ground/top nibbles, six structure kinds and 74 logical color pairs control facets. Native scene allocation is 320x138 bytes. JS full redraw matches 287 captured native indexed scenes across all roads; native incremental caching is replaced. See analysis/skyroads/GRAPHICS-CHECKPOINT.md."
+  },
+  {
+    "address": "1000:0c98",
+    "name": "RenderShipAndRoadScene",
+    "plate_comment": "Select ship lane, pose, animation/explosion offset and shadow height, then call VGA span renderer 2d1f. Ship atlas frame stride 720; column-major 29x24 visible pixels. VGA camera uses the original fixed projection, not ship-following camera offsets. Eight original arguments observed in running DOSBox; graphics-validation.json checks derived values and indexed scene bytes. EGA path is not ported."
+  },
+  {
+    "address": "1000:0baf",
+    "name": "SelectShipVerticalPose",
+    "plate_comment": "Select one of three ship poses using tunnel context and signed vertical speed thresholds -354/355 plus height 10240. Pose within seven lane views contributes to the 63 normal ship frames. Raw instruction-derived model is exercised in native renderer comparisons."
+  },
+  {
+    "address": "1000:0be9",
+    "name": "SelectShipLaneView",
+    "plate_comment": "Compute original ship view index from lateral/128: signed (value-95)/46, clamped 0..6. This lane selects static horizontal offsets and sprite groups; it does not move the world camera. Verified renderer argument comparisons in graphics-validation.json."
+  },
+  {
+    "address": "1000:3f91",
+    "name": "ReadPictureColorPalette",
+    "plate_comment": "Read CMAP resource header: ASCII CMAP, byte color count, count*3 VGA RGB6 bytes and count*2 EGA mapping bytes. Original palettes compose road 0..71, car 72..91, dashboard 92..141, world 142..255. Each extracted palette matches native RAM over all 30 menu roads and demo."
+  },
+  {
+    "address": "1000:4084",
+    "name": "DecodeResourcePictureBlock",
+    "plate_comment": "Read PICT block: signature plus uint16 destination offset, height, width, followed by shared LZS stream. Nonzero indexed pixels are palette-offset for VGA; zero remains transparent. Exact LZS consumption determines the next block. Extracted car/background bytes match running original RAM; see extract-skyroads-graphics.py."
+  },
+  {
+    "address": "1000:5387",
+    "name": "LoadWorldBackgroundImage",
+    "plate_comment": "Load selected WORLD0..9 CMAP/PICT background. Three playable roads share each world; demo uses WORLD0. World palette starts at index 142. Browser uses original decoded pixels and palette; all ten worlds checked against running original RAM."
+  },
+  {
+    "address": "1000:5567",
+    "name": "LoadShipAndDashboardImages",
+    "plate_comment": "Load CARS.LZS and DASHBRD.LZS CMAP/PICT data with VGA palette bases 72 and 92. Cars decode to 55440 bytes: 77 frames, stride720, 29x24 visible column-major pixels per frame. Dashboard nonzero pixels overlay world at destination offset41280. Native instrument updates remain outside new static dashboard port."
+  },
+  {
+    "address": "1000:57c4",
+    "name": "LoadAdlibMusicScore",
+    "plate_comment": "Load one of ten MUZAX.LZS records: six-byte directory entries (file offset, instrument paragraphs, decoded length). Decode to DS54b0, start score at54b0+paragraphs*16. Main selects1..9 with hardware timer entropy, avoids immediate repeats;0 title/demo. Does not reset remaining IRQ delay byte0c83. All ten decoded assets and21552 sequencer OPL writes match full native runs; audio-validation.json."
+  },
+  {
+    "address": "1000:58cd",
+    "name": "InitializeAdlibSynthesizer",
+    "plate_comment": "Initialize AdLib OPL registers and rhythm instruments. Writes63 register/value pairs via5892, including waveform-enable20h to register01h and rhythm controlBD. Pinned DOSBox-X DBOPL OPL2 renders the extracted original score streams to lossless FLAC. Physical DAC/analog response is outside verification."
+  },
+  {
+    "address": "1000:5892",
+    "name": "WriteAdlibRegister",
+    "plate_comment": "Write AL register to port388h, wait six reads, write AH value to389h, wait35 reads. Native observer records entry AL/AH without modifying guest memory/registers.21552 ordered register/value writes and IRQ-relative timing match isolated original sequencer executions over all ten scores."
+  },
+  {
+    "address": "1000:5a7d",
+    "name": "SetAdlibScorePointers",
+    "plate_comment": "Set DS3196/3198 score cursor/loop pointer from first argument, DS3194 instrument base from second, clear31a6. IRQ0 calls sequencer5a55 at1193182/6628 Hz independently of the36.004 Hz physics counter. Original P-pause continues music; retry does not reload music. Native score changes inherit0c83 delay."
+  },
+  {
+    "address": "1000:5b76",
+    "name": "StartSoundBlasterSample",
+    "plate_comment": "Program DMA and DSP40h time constant, then14h unsigned8-bit single-cycle playback with length-1. SFX.SND begins six uint16 offsets delimiting five effects; each first byte is DSP time constant, followed by unchanged unsigned PCM. All five original driver cases/PCM bytes verified. Reference SB16 caps236 to234 for effect2 (45454Hz integer rate); native other sample calls and intro constant90 verified."
+  },
+  {
+    "address": "1000:5bc0",
+    "name": "StopSoundBlasterSample",
+    "plate_comment": "Stop preceding digital sample with DSPD0h and mask DMA channel before replacement. Original effects share one digital channel; music AdLib channel is independent. Browser mirror interrupts prior effect at each original sound event. Five original unmuted driver cases execute in isolated x86 fixture."
+  },
+  {
+    "address": "1000:0f62",
+    "name": "DecodeHudMaskColors",
+    "plate_comment": "Map source mask byte 0 to transparent zero, 1 to first supplied color, all other nonzero bytes to second. Original embedded assist masks contain 5/6, so both map to 98 in VGA. Scratch segment DSaf2a. Original routine executes in 467 boundary/sequence pixel cases."
+  },
+  {
+    "address": "1000:0f8c",
+    "name": "DrawHudInstrumentSegment",
+    "plate_comment": "Far record: uint16 VGA destination, uint8 width,height, then row-major 0/1/2 mask. On colors 94/95, off 92/93; zero transparent. SPEED.DAT 34 segments; OXY_DISP.DAT/FUL_DISP.DAT ten each. Verified native heap bytes and VGA updates; hud-validation.json."
+  },
+  {
+    "address": "1000:1073",
+    "name": "DrawHudSymbolMask",
+    "plate_comment": "Draw opaque row-major embedded symbol at x,y,width,height. Maps 1 to97, other nonzero to98, zero to0 in VGA. Used by decimal digits and jump-assist glyph. Signature raw stack BP+4 x,+6 y,+8 width,+10 height,+12 DS mask offset."
+  },
+  {
+    "address": "1000:1114",
+    "name": "DrawHudDecimalNumber",
+    "plate_comment": "Right-to-left decimal digits, four-by-five masks at DS016c+digit*20, five-pixel horizontal stride. Draw at least the units zero; skip remaining leading positions when remaining value is zero. Road wrapper calls x96,y156,value=(gravityFactor-3)*100,places4. Native initialization and five isolated gravity cases match."
+  },
+  {
+    "address": "1000:1191",
+    "name": "ReadGameplayPixel",
+    "plate_comment": "Read VGA index A000:y*320+x when DS003c !=0, otherwise EGA helper. Used for progress fill and warning palette swaps."
+  },
+  {
+    "address": "1000:11d3",
+    "name": "WriteGameplayPixel",
+    "plate_comment": "Write VGA index to A000:y*320+x when DS003c !=0, otherwise EGA helper. Original HUD corpus executes real pixel writes."
+  },
+  {
+    "address": "1000:1218",
+    "name": "FillRoadProgressColumn",
+    "plate_comment": "Column x=progressSegment+42. Read color at y143, scan upward to first different pixel, then replace the contiguous matching run with VGA index96. Incremental progress marker only; no invented rectangular bar. Verified 92 progress boundary steps."
+  },
+  {
+    "address": "1000:1282",
+    "name": "SwapHudWarningColors",
+    "plate_comment": "Within x,y,width,height swap only supplied palette indices. VGA resource warnings swap99/100: oxygen(160,161,7,7), fuel(155,169,16,5). UpdateGameplayHud calls on timer%9 blink edge while exit5/4. Separate core retains RequestSoundEffect(3); rendering host never emits duplicate model sound writes."
+  },
+  {
+    "address": "1000:5481",
+    "name": "LoadHudInstrumentFile",
+    "plate_comment": "Read count uint16 offsets from DAT header into DS pointer table, allocate remaining file bytes as far mask bank, then copy payload unchanged. File records have destination word,width byte,height byte and row-major mask. Offsets are relative to payload after table, not file start."
+  },
+  {
+    "address": "1000:5508",
+    "name": "LoadHudAndDemoAssets",
+    "plate_comment": "Load OXY_DISP.DAT ten pointers DS95f8/far bank5474; FUL_DISP.DAT ten DS5480/bank960e; SPEED.DAT34 DS4572/bank54a4. Then load6398 bytes DEMO.REC into DS961e. Source hashes/mask payloads verified against native RAM."
+  },
+  {
+    "address": "1000:4e52",
+    "name": "RunMainMenu",
+    "plate_comment": "Main menu Start/Controls/Help, SI selection 0..2, bounded Up/Down, Enter dispatch. Esc calls termination 0046. INTRO.LZS background/logo and MAINMENU.LZS three overlays. All seven captured main frames match reconstructed indexed pixels and used palette entries; menu-validation.json."
+  },
+  {
+    "address": "1000:4c20",
+    "name": "RunControlsMenu",
+    "plate_comment": "SETMENU.LZS base200 background/base250 ten overlays. Focus0 keyboard,1 joystick,2 mouse,3 AdLib,4 none. Enter writes DS4518 or DS451a=focus-3. Left/Right bounded; Up maps3->0,4->1; Down0->3,1/2->4. Esc saves CFG. Eight whole-program frames match, including music off/on; no joystick/mouse gameplay equivalence claim."
+  },
+  {
+    "address": "1000:4e2e",
+    "name": "RunHelpMenu",
+    "plate_comment": "Opens HELPMENU.LZS; calls ShowHelpMenuPage once, a second time unless first returns Escape. File contains three pictures; this menu consumes only first two. Two native key-wait frames match full indexed framebuffer and all used palette colors."
+  },
+  {
+    "address": "1000:4dc8",
+    "name": "ShowHelpMenuPage",
+    "plate_comment": "Reads next CMAP/PICT at base200; draws, fades in36 ticks, releases temporary allocations, waits ReadDosMenuKey, fades out36 ticks. Returns whether key != Escape. Main help menu displays at most two pages; third resource picture not assigned here."
+  },
+  {
+    "address": "1000:5180",
+    "name": "RunRoadSelectionMenu",
+    "plate_comment": "GOMENU.LZS base0 background and base240 completion star. Thirty roads in two columns of15; selected DS9332 clamps0..29. Up/Down minus/plus1; Left jumps-15 or0; Right+15 thenclamp29. Enter returns0,Esc1. Stars min(completed,7); all30 selected frames match original64000 bytes+used colors. Source CFG already has first road completed once."
+  },
+  {
+    "address": "1000:5080",
+    "name": "DrawRoadSelectionFrame",
+    "plate_comment": "Allocates48x9 border index1 VGA(12 EGA), zero interior. Offset0xf3e+(road/3%5)*0x30c0+(road%3)*0xb40+(road>=15?160:0). Active writesborder; inactive restores background under border via blitter threshold255. Full menu pixel comparison covers every selected road."
+  },
+  {
+    "address": "1000:4acb",
+    "name": "DrawControlsMenuChoice",
+    "plate_comment": "Chooses SETMENU overlay at DS44c2+choice*8, base background DSaf22, destinationA000, transparent zero. Threshold1 draws active choice;255 restores original background for its nonzero mask. Choices0..4 focus;5..9 selected device/music."
+  },
+  {
+    "address": "1000:4afe",
+    "name": "RefreshSelectedControlModes",
+    "plate_comment": "Iterates five selection overlays5..9; active iff i==DS4518 input mode or i==DS451a+3 music mode. Otherwise erase through original background. Native eight settings frames match."
+  },
+  {
+    "address": "1000:5737",
+    "name": "LoadGameProfile",
+    "plate_comment": "Reads66 bytes SKYROADS.CFG to DS4516: checksum word, input mode, music mode,30 completionwords. Missing/error/checksum failure clears66 bytes. Read checksum helper56df separately before implementing persistence."
+  },
+  {
+    "address": "1000:578c",
+    "name": "SaveGameProfile",
+    "plate_comment": "Calls checksum helper56df then writes66 bytes DS4516 to SKYROADS.CFG. Native runs write only copied drive; source preserved. Clone profile persistence remains a separate milestone."
+  },
+  {
+    "address": "1000:5feb",
+    "name": "ReadDosMenuKey",
+    "plate_comment": "DOS INT21 input helper; returns normal byte or for00/E0 prefix reads second byte and returns scan<<8. Menu key constantsEnter0d,Escape1b,arrows4800/5000/4b00/4d00. This is DOS input, not direct BIOS INT16."
+  }
+]

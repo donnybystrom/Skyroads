@@ -1,0 +1,167 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:2d1f": {
+      "name": "RenderRoadSceneSpans",
+      "size": 333,
+      "address": "1000:2d1f",
+      "entry_point": "1000:2d1f",
+      "plate_comment": "Draw the original VGA road scene using eight TREKDAT span banks selected by forward/8192 modulo 8. Rows are drawn far to near, columns 0,1,2,3 then mirrored 6,5,4,3; special tables 528/576 insert the ship between tunnel layers. Ground/top nibbles, six structure kinds and 74 logical color pairs control facets. Native scene allocation is 320x138 bytes. JS full redraw matches 287 captured native indexed scenes across all roads; native incremental caching is replaced. See analysis/skyroads/GRAPHICS-CHECKPOINT.md.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:0c98": {
+      "name": "RenderShipAndRoadScene",
+      "size": 568,
+      "address": "1000:0c98",
+      "entry_point": "1000:0c98",
+      "plate_comment": "Select ship lane, pose, animation/explosion offset and shadow height, then call VGA span renderer 2d1f. Ship atlas frame stride 720; column-major 29x24 visible pixels. VGA camera uses the original fixed projection, not ship-following camera offsets. Eight original arguments observed in running DOSBox; graphics-validation.json checks derived values and indexed scene bytes. EGA path is not ported.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:0baf": {
+      "name": "SelectShipVerticalPose",
+      "size": 58,
+      "address": "1000:0baf",
+      "entry_point": "1000:0baf",
+      "plate_comment": "Select one of three ship poses using tunnel context and signed vertical speed thresholds -354/355 plus height 10240. Pose within seven lane views contributes to the 63 normal ship frames. Raw instruction-derived model is exercised in native renderer comparisons.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:0be9": {
+      "name": "SelectShipLaneView",
+      "size": 61,
+      "address": "1000:0be9",
+      "entry_point": "1000:0be9",
+      "plate_comment": "Compute original ship view index from lateral/128: signed (value-95)/46, clamped 0..6. This lane selects static horizontal offsets and sprite groups; it does not move the world camera. Verified renderer argument comparisons in graphics-validation.json.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:3f91": {
+      "name": "ReadPictureColorPalette",
+      "size": 81,
+      "address": "1000:3f91",
+      "entry_point": "1000:3f91",
+      "plate_comment": "Read CMAP resource header: ASCII CMAP, byte color count, count*3 VGA RGB6 bytes and count*2 EGA mapping bytes. Original palettes compose road 0..71, car 72..91, dashboard 92..141, world 142..255. Each extracted palette matches native RAM over all 30 menu roads and demo.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:4084": {
+      "name": "DecodeResourcePictureBlock",
+      "size": 151,
+      "address": "1000:4084",
+      "entry_point": "1000:4084",
+      "plate_comment": "Read PICT block: signature plus uint16 destination offset, height, width, followed by shared LZS stream. Nonzero indexed pixels are palette-offset for VGA; zero remains transparent. Exact LZS consumption determines the next block. Extracted car/background bytes match running original RAM; see extract-skyroads-graphics.py.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:5387": {
+      "name": "LoadWorldBackgroundImage",
+      "size": 250,
+      "address": "1000:5387",
+      "entry_point": "1000:5387",
+      "plate_comment": "Load selected WORLD0..9 CMAP/PICT background. Three playable roads share each world; demo uses WORLD0. World palette starts at index 142. Browser uses original decoded pixels and palette; all ten worlds checked against running original RAM.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:5567": {
+      "name": "LoadShipAndDashboardImages",
+      "size": 173,
+      "address": "1000:5567",
+      "entry_point": "1000:5567",
+      "plate_comment": "Load CARS.LZS and DASHBRD.LZS CMAP/PICT data with VGA palette bases 72 and 92. Cars decode to 55440 bytes: 77 frames, stride720, 29x24 visible column-major pixels per frame. Dashboard nonzero pixels overlay world at destination offset41280. Native instrument updates remain outside new static dashboard port.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    }
+  },
+  "count": 8,
+  "requested": 8
+}

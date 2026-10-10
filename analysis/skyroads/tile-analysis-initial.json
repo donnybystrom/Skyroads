@@ -1,0 +1,67 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:0533": {
+      "name": "FUN_1000_0533",
+      "size": 195,
+      "address": "1000:0533",
+      "entry_point": "1000:0533",
+      "decompiled_code": "\nbool __cdecl16near FUN_1000_0533(undefined2 param_1,undefined2 param_2,uint param_3,int param_4)\n\n{\n  uint uVar1;\n  undefined2 unaff_DS;\n  uint local_6;\n  \n  uVar1 = FUN_1000_04c0(param_1,param_2,param_3);\n  uVar1 = uVar1 & 0xf00;\n  if (((uVar1 == 0x100) || (uVar1 == 0x300)) || (uVar1 == 0x500)) {\n    local_6 = 0x17 - (param_3 / 0x80 - 0x31) % 0x2e;\n    if ((0x7fff < local_6) || (local_6 == 0)) {\n      local_6 = 1 - local_6;\n    }\n    if (local_6 < 0x26) {\n      return (param_4 + 0xde00U) / 0x80 <\n             (uint)(*(int *)(local_6 * 2 + 0x98) + *(int *)(local_6 * 2 + 0x4c)) / 2;\n    }\n  }\n  return false;\n}\n\n",
+      "revision": {
+        "token": "1791562780035:4f8d24bd:24980",
+        "epoch": "4f8d24bd",
+        "modification_number": 24980,
+        "saved_time": 1791562780035,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0c26": {
+      "name": "FUN_1000_0c26",
+      "size": 105,
+      "address": "1000:0c26",
+      "entry_point": "1000:0c26",
+      "decompiled_code": "\nundefined2 __cdecl16near\nFUN_1000_0c26(undefined2 param_1,undefined2 param_2,undefined2 param_3,int param_4)\n\n{\n  uint uVar1;\n  uint uVar2;\n  undefined2 uVar3;\n  undefined2 unaff_DS;\n  \n  uVar1 = FUN_1000_04c0(param_1,param_2,param_3);\n  uVar2 = uVar1 & 0xf00;\n  if ((uVar2 == 0) || (param_4 != 0)) {\n    if ((uVar1 & 0xf) == 0) {\n      uVar3 = 0;\n    }\n    else {\n      uVar3 = 0x2800;\n    }\n  }\n  else if (uVar2 == 0x100) {\n    uVar3 = 0;\n  }\n  else {\n    uVar3 = *(undefined2 *)((uVar2 >> 8) * 2 + 0xe4);\n  }\n  return uVar3;\n}\n\n",
+      "revision": {
+        "token": "1791562780035:4f8d24bd:24980",
+        "epoch": "4f8d24bd",
+        "modification_number": 24980,
+        "saved_time": 1791562780035,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1631": {
+      "name": "FUN_1000_1631",
+      "size": 254,
+      "address": "1000:1631",
+      "entry_point": "1000:1631",
+      "decompiled_code": "\nuint __cdecl16near FUN_1000_1631(uint param_1,uint param_2,uint param_3)\n\n{\n  uint uVar1;\n  undefined2 unaff_DS;\n  \n  if (param_2 < 0x26) {\n    uVar1 = (param_3 + 0xde00) / 0x80;\n    param_1 = param_1 & 0xf00;\n    if (param_1 == 0x100) {\n      if ((uVar1 < *(uint *)(param_2 * 2 + 0x98)) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n    else if (param_1 == 0x200) {\n      param_1 = (uint)(param_3 < 0x3200);\n    }\n    else if (param_1 == 0x300) {\n      if ((param_3 < 0x3200) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n    else if (param_1 == 0x400) {\n      param_1 = (uint)(param_3 < 0x3c00);\n    }\n    else if (param_1 == 0x500) {\n      if ((param_3 < 0x3c00) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n  }\n  else {\n    param_1 = 0;\n  }\n  return param_1;\n}\n\n",
+      "revision": {
+        "token": "1791562780035:4f8d24bd:24980",
+        "epoch": "4f8d24bd",
+        "modification_number": 24980,
+        "saved_time": 1791562780035,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5d8c": {
+      "name": "FUN_1000_5d8c",
+      "size": 97,
+      "address": "1000:5d8c",
+      "entry_point": "1000:5d8c",
+      "decompiled_code": "\nundefined4 FUN_1000_5d8c(uint param_1,uint param_2,uint param_3,uint param_4)\n\n{\n  ulong uVar1;\n  long lVar2;\n  uint uVar3;\n  int iVar4;\n  uint uVar5;\n  uint uVar7;\n  uint uVar8;\n  uint uVar9;\n  uint uVar6;\n  \n  uVar9 = param_1;\n  uVar6 = param_4;\n  uVar7 = param_2;\n  uVar3 = param_3;\n  if (param_4 == 0) {\n    uVar3 = param_2 / param_3;\n    iVar4 = (int)(((ulong)param_2 % (ulong)param_3 << 0x10 | (ulong)param_1) / (ulong)param_3);\n  }\n  else {\n    do {\n      uVar5 = uVar6 >> 1;\n      uVar3 = (uint)(CONCAT12((uVar6 & 1) != 0,uVar3) >> 1);\n      uVar8 = uVar7 >> 1;\n      uVar9 = (uint)(CONCAT12((uVar7 & 1) != 0,uVar9) >> 1);\n      uVar6 = uVar5;\n      uVar7 = uVar8;\n    } while (uVar5 != 0);\n    uVar1 = CONCAT22(uVar8,uVar9) / (ulong)uVar3;\n    iVar4 = (int)uVar1;\n    lVar2 = (ulong)param_3 * (uVar1 & 0xffff);\n    uVar3 = (uint)((ulong)lVar2 >> 0x10);\n    uVar9 = uVar3 + iVar4 * param_4;\n    if (((CARRY2(uVar3,iVar4 * param_4)) || (param_2 < uVar9)) ||\n       ((param_2 <= uVar9 && (param_1 < (uint)lVar2)))) {\n      iVar4 = iVar4 + -1;\n    }\n    uVar3 = 0;\n  }\n  return CONCAT22(uVar3,iVar4);\n}\n\n",
+      "revision": {
+        "token": "1791562780035:4f8d24bd:24980",
+        "epoch": "4f8d24bd",
+        "modification_number": 24980,
+        "saved_time": 1791562780035,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 4,
+  "requested": 4
+}

@@ -1,0 +1,340 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:3acc": {
+      "name": "InstallTimerHandlers",
+      "size": 72,
+      "address": "1000:3acc",
+      "entry_point": "1000:3acc",
+      "body_start": "1000:3acc",
+      "body_end": "1000:3b13",
+      "plate_comment": "Installs IRQ08h handler at CS:3b17 and INT24h handler at CS:3b14; preserves the old IRQ08h vector in self-modified far-jump operands CS:3b67/3b69. Programs PIT channel 0 in mode 3 with divisor 0x19e4 (6628). IRQ phase DS:3192 counts 9..0; gameplay counter DS:1600 increments at phases 5 and 0, so one physics counter increment every five IRQs. Nominal PC PIT clock 1193182 Hz yields 180.0214 IRQ/s and 36.0043 physics ticks/s. Clock frequency is an emulator/PC model, not a measurement. Verified installer port/IVT writes and 1324 phase/stream IRQ cases against original code; analysis/skyroads/timer-validation.json.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "disassembly": [
+        {
+          "address": "1000:3acc",
+          "mnemonic": "PUSH",
+          "operands": "0x0"
+        },
+        {
+          "address": "1000:3ace",
+          "mnemonic": "POP",
+          "operands": "ES"
+        },
+        {
+          "address": "1000:3acf",
+          "mnemonic": "MOV",
+          "operands": "AX, ES:[0x20]"
+        },
+        {
+          "address": "1000:3ad3",
+          "mnemonic": "MOV",
+          "operands": "DX, word ptr ES:[0x22]"
+        },
+        {
+          "address": "1000:3ad8",
+          "mnemonic": "MOV",
+          "operands": "CS:[0x3b67], AX"
+        },
+        {
+          "address": "1000:3adc",
+          "mnemonic": "MOV",
+          "operands": "word ptr CS:[0x3b69], DX"
+        },
+        {
+          "address": "1000:3ae1",
+          "mnemonic": "CLI",
+          "operands": ""
+        },
+        {
+          "address": "1000:3ae2",
+          "mnemonic": "MOV",
+          "operands": "word ptr ES:[0x20], 0x3b17"
+        },
+        {
+          "address": "1000:3ae9",
+          "mnemonic": "MOV",
+          "operands": "word ptr ES:[0x22], CS"
+        },
+        {
+          "address": "1000:3aee",
+          "mnemonic": "MOV",
+          "operands": "word ptr ES:[0x90], 0x3b14"
+        },
+        {
+          "address": "1000:3af5",
+          "mnemonic": "MOV",
+          "operands": "word ptr ES:[0x92], CS"
+        },
+        {
+          "address": "1000:3afa",
+          "mnemonic": "MOV",
+          "operands": "AL, 0x36"
+        },
+        {
+          "address": "1000:3afc",
+          "mnemonic": "OUT",
+          "operands": "0x43, AL"
+        },
+        {
+          "address": "1000:3afe",
+          "mnemonic": "MOV",
+          "operands": "AL, 0xe4"
+        },
+        {
+          "address": "1000:3b00",
+          "mnemonic": "OUT",
+          "operands": "0x40, AL"
+        },
+        {
+          "address": "1000:3b02",
+          "mnemonic": "MOV",
+          "operands": "AL, 0x19"
+        },
+        {
+          "address": "1000:3b04",
+          "mnemonic": "OUT",
+          "operands": "0x40, AL"
+        },
+        {
+          "address": "1000:3b06",
+          "mnemonic": "MOV",
+          "operands": "AL, 0xb6"
+        },
+        {
+          "address": "1000:3b08",
+          "mnemonic": "OUT",
+          "operands": "0x43, AL"
+        },
+        {
+          "address": "1000:3b0a",
+          "mnemonic": "MOV",
+          "operands": "AL, 0x2"
+        },
+        {
+          "address": "1000:3b0c",
+          "mnemonic": "OUT",
+          "operands": "0x42, AL"
+        },
+        {
+          "address": "1000:3b0e",
+          "mnemonic": "MOV",
+          "operands": "AL, 0x0"
+        },
+        {
+          "address": "1000:3b10",
+          "mnemonic": "OUT",
+          "operands": "0x42, AL"
+        },
+        {
+          "address": "1000:3b12",
+          "mnemonic": "STI",
+          "operands": ""
+        },
+        {
+          "address": "1000:3b13",
+          "mnemonic": "RET",
+          "operands": ""
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    },
+    "1000:3b17": {
+      "name": "HandleTimerInterrupt",
+      "size": 79,
+      "address": "1000:3b17",
+      "entry_point": "1000:3b17",
+      "body_start": "1000:3b17",
+      "body_end": "1000:3b65",
+      "plate_comment": "IRQ08h handler recovered from InstallTimerHandlers vector. Preserves general registers and DS, sets DS from relocated CS:3aca, then calls audio stream service 5a55. When byte DS:3192 is 0 or 5, increments word DS:1600 and feeds the speaker PIT from word [DS:bd0], advancing that pointer for nonzero words. Decrements phase; signed-negative result resets phase to 9 and far-jumps to old BIOS handler via CS:3b67/3b69. Other phases emit PIC EOI and IRET. Normal 9..0 cycle has one gameplay tick each 5 IRQs and one BIOS chain each 10. All 256 phase byte values, counter wrap, port outputs and restored registers compared; audio service idle-delay branch only, old BIOS execution excluded. See timer-validation.json and TIMER-FORMAT.md.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "disassembly": [
+        {
+          "address": "1000:3b17",
+          "mnemonic": "CLD",
+          "operands": ""
+        },
+        {
+          "address": "1000:3b18",
+          "mnemonic": "PUSHA",
+          "operands": ""
+        },
+        {
+          "address": "1000:3b19",
+          "mnemonic": "PUSH",
+          "operands": "DS"
+        },
+        {
+          "address": "1000:3b1a",
+          "mnemonic": "MOV",
+          "operands": "DS, word ptr CS:[0x3aca]"
+        },
+        {
+          "address": "1000:3b1f",
+          "mnemonic": "CALL",
+          "operands": "0x1000:5a55"
+        },
+        {
+          "address": "1000:3b22",
+          "mnemonic": "CMP",
+          "operands": "byte ptr [0x3192], 0x0"
+        },
+        {
+          "address": "1000:3b27",
+          "mnemonic": "JZ",
+          "operands": "0x1000:3b30"
+        },
+        {
+          "address": "1000:3b29",
+          "mnemonic": "CMP",
+          "operands": "byte ptr [0x3192], 0x5"
+        },
+        {
+          "address": "1000:3b2e",
+          "mnemonic": "JNZ",
+          "operands": "0x1000:3b52"
+        },
+        {
+          "address": "1000:3b30",
+          "mnemonic": "INC",
+          "operands": "word ptr [0x1600]"
+        },
+        {
+          "address": "1000:3b34",
+          "mnemonic": "MOV",
+          "operands": "BX, word ptr [0xbd0]"
+        },
+        {
+          "address": "1000:3b38",
+          "mnemonic": "MOV",
+          "operands": "CX, word ptr [BX]"
+        },
+        {
+          "address": "1000:3b3a",
+          "mnemonic": "OR",
+          "operands": "CX, CX"
+        },
+        {
+          "address": "1000:3b3c",
+          "mnemonic": "JZ",
+          "operands": "0x1000:3b43"
+        },
+        {
+          "address": "1000:3b3e",
+          "mnemonic": "ADD",
+          "operands": "word ptr [0xbd0], 0x2"
+        },
+        {
+          "address": "1000:3b43",
+          "mnemonic": "ADD",
+          "operands": "CX, 0x2"
+        },
+        {
+          "address": "1000:3b46",
+          "mnemonic": "MOV",
+          "operands": "AL, 0xb6"
+        },
+        {
+          "address": "1000:3b48",
+          "mnemonic": "OUT",
+          "operands": "0x43, AL"
+        },
+        {
+          "address": "1000:3b4a",
+          "mnemonic": "MOV",
+          "operands": "AL, CL"
+        },
+        {
+          "address": "1000:3b4c",
+          "mnemonic": "OUT",
+          "operands": "0x42, AL"
+        },
+        {
+          "address": "1000:3b4e",
+          "mnemonic": "MOV",
+          "operands": "AL, CH"
+        },
+        {
+          "address": "1000:3b50",
+          "mnemonic": "OUT",
+          "operands": "0x42, AL"
+        },
+        {
+          "address": "1000:3b52",
+          "mnemonic": "DEC",
+          "operands": "byte ptr [0x3192]"
+        },
+        {
+          "address": "1000:3b56",
+          "mnemonic": "JS",
+          "operands": "0x1000:3b5f"
+        },
+        {
+          "address": "1000:3b58",
+          "mnemonic": "MOV",
+          "operands": "AL, 0x20"
+        },
+        {
+          "address": "1000:3b5a",
+          "mnemonic": "OUT",
+          "operands": "0x20, AL"
+        },
+        {
+          "address": "1000:3b5c",
+          "mnemonic": "POP",
+          "operands": "DS"
+        },
+        {
+          "address": "1000:3b5d",
+          "mnemonic": "POPA",
+          "operands": ""
+        },
+        {
+          "address": "1000:3b5e",
+          "mnemonic": "IRET",
+          "operands": ""
+        },
+        {
+          "address": "1000:3b5f",
+          "mnemonic": "MOV",
+          "operands": "byte ptr [0x3192], 0x9"
+        },
+        {
+          "address": "1000:3b64",
+          "mnemonic": "POP",
+          "operands": "DS"
+        },
+        {
+          "address": "1000:3b65",
+          "mnemonic": "POPA",
+          "operands": ""
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": false
+      }
+    }
+  },
+  "count": 2,
+  "requested": 2
+}

@@ -1,0 +1,161 @@
+{
+  "results": [
+    {
+      "address": "1000:57c4",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:57c4 from 'FUN_1000_57c4' to 'LoadAdlibMusicScore'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:57c4\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:58cd",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:58cd from 'FUN_1000_58cd' to 'InitializeAdlibSynthesizer'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:58cd\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:5892",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5892 from 'FUN_1000_5892' to 'WriteAdlibRegister'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5892\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:5a7d",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5a7d from 'FUN_1000_5a7d' to 'SetAdlibScorePointers'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5a7d\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:5b76",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5b76 from 'FUN_1000_5b76' to 'StartSoundBlasterSample'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5b76\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:5bc0",
+      "rename": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5bc0 from 'FUN_1000_5bc0' to 'StopSoundBlasterSample'\"}"
+          }
+        ],
+        "isError": false
+      },
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5bc0\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "address": "1000:03c2",
+      "rename": null,
+      "comment": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:03c2\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "sequencer": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5a55\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  "save": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"program\":\"SKYROADS_UNPACKED.EXE\",\"saved\":true,\"message\":\"Program saved successfully\"}"
+      }
+    ],
+    "isError": false
+  }
+}

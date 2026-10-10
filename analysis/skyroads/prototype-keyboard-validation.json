@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "x86_ticks": 41,
+  "recording": "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-03-20261009-200100-0b75860f.json",
+  "recording_sha256": "108fbb2e4419698e9af7582de87f3220426a385ffb3b2d455192596148decf18",
+  "throttle_values": [
+    -1,
+    0,
+    1
+  ],
+  "direction_values": [
+    -1,
+    0
+  ],
+  "final_state": {
+    "forward": 224583,
+    "lateral": 31520,
+    "height": 10240,
+    "speed": 675,
+    "steering": 0,
+    "vertical_speed": -115,
+    "drift": 0,
+    "speed_delta": 0,
+    "assist_flag": 0,
+    "fuel": 29954,
+    "oxygen": 29221,
+    "exit_state": 0,
+    "crash_ticks": 0,
+    "end_ticks": 0,
+    "sound_tick": 0,
+    "tick_counter": 41,
+    "assist_used": 0,
+    "jumping": 0,
+    "jump_height": 10240,
+    "grounded": 1,
+    "surface8": 0,
+    "surface2": 0,
+    "edge_distance": 0,
+    "previous_target_height": 10125
+  },
+  "elapsed_seconds": 0.8955154170034803
+}

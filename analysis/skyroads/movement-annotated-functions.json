@@ -1,0 +1,219 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:186b": {
+      "name": "ResolveShipMovement",
+      "size": 734,
+      "address": "1000:186b",
+      "entry_point": "1000:186b",
+      "body_end": "1000:1b48",
+      "decompiled_code": "\n// WARNING: Removing unreachable block (ram,0x000119ba)\n// Verified integer port in scripts/skyroads_movement.py, differential evidence in\n// movement-validation.json (1970 resolver cases; every intermediate collision probe compared). Near\n// C arguments: targetForwardLow, targetForwardHigh, targetLateral, targetHeight. Reads/writes\n// DS:9618/961a forward32, DS:af1c lateral16, DS:af2c height16. Five fractional movement probes;\n// keeps the last clear fraction; refines forward by4096/256/16/1, then lateral and height by\n// signed125/25/5/1. Fractional lateral/height products wrap16 BEFORE signed division by5; forward\n// product wraps32. Division truncates toward zero. Axis order is observable. Forward refinement\n// uses an unsigned remaining distance and assumes ordinary forward motion. Host port bounds road\n// allocation/probes; no general swept-collision or full game-loop equivalence claim.\n\nvoid __cdecl16near ResolveShipMovement(uint param_1,int param_2,uint param_3,uint param_4)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  int iVar3;\n  int iVar4;\n  int iVar5;\n  uint uVar6;\n  undefined2 unaff_DS;\n  undefined4 uVar7;\n  ulong uVar8;\n  uint local_a;\n  int local_8;\n  \n  if ((((*(uint *)0x9618 != param_1) || (*(int *)0x961a != param_2)) || (*(uint *)0xaf1c != param_3)\n      ) || (*(uint *)0xaf2c != param_4)) {\n    for (uVar6 = 1; uVar6 < 6; uVar6 = uVar6 + 1) {\n      iVar3 = (int)((param_4 - *(int *)0xaf2c) * uVar6) / 5 + *(int *)0xaf2c;\n      iVar4 = (int)((param_3 - *(int *)0xaf1c) * uVar6) / 5 + *(int *)0xaf1c;\n      uVar7 = FUN_1000_5d4c(param_1 - *(uint *)0x9618,\n                            (param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),uVar6,0);\n      uVar7 = FUN_1000_5e5a(uVar7,5,0);\n      iVar3 = TestPositionCollision\n                        ((uint)uVar7 + *(uint *)0x9618,\n                         (int)((ulong)uVar7 >> 0x10) + *(int *)0x961a +\n                         (uint)CARRY2((uint)uVar7,*(uint *)0x9618),iVar4,iVar3);\n      if (iVar3 != 0) break;\n    }\n    uVar7 = FUN_1000_5d4c(param_1 - *(uint *)0x9618,\n                          (param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),uVar6 - 1,0\n                         );\n    uVar7 = FUN_1000_5e5a(uVar7,5,0);\n    puVar1 = (uint *)0x9618;\n    uVar2 = *puVar1;\n    *puVar1 = *puVar1 + (uint)uVar7;\n    *(int *)0x961a = *(int *)0x961a + (int)((ulong)uVar7 >> 0x10) + (uint)CARRY2(uVar2,(uint)uVar7);\n    *(int *)0xaf1c = *(int *)0xaf1c + (int)((param_3 - *(int *)0xaf1c) * (uVar6 - 1)) / 5;\n    *(int *)0xaf2c = *(int *)0xaf2c + (int)((param_4 - *(int *)0xaf2c) * (uVar6 - 1)) / 5;\n    uVar8 = 0x1000;\n    while( true ) {\n      local_8 = (int)(uVar8 >> 0x10);\n      local_a = (uint)uVar8;\n      if (uVar8 == 0) break;\n      while ((uVar8 <= CONCAT22((param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),\n                                param_1 - *(uint *)0x9618) &&\n             (iVar3 = TestPositionCollision\n                                (uVar8 + CONCAT22(*(undefined2 *)0x961a,*(undefined2 *)0x9618),\n                                 *(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c), iVar3 == 0))) {\n        puVar1 = (uint *)0x9618;\n        uVar6 = *puVar1;\n        *puVar1 = *puVar1 + local_a;\n        *(int *)0x961a = *(int *)0x961a + local_8 + (uint)CARRY2(uVar6,local_a);\n      }\n      uVar8 = FUN_1000_5d8c(uVar8,0x10,0);\n    }\n    if (*(uint *)0xaf1c < param_3) {\n      iVar3 = 0x7d;\n    }\n    else {\n      iVar3 = -0x7d;\n    }\n    for (; iVar3 != 0; iVar3 = iVar3 / 5) {\n      while( true ) {\n        if ((int)(param_3 - *(int *)0xaf1c) < 1) {\n          iVar4 = -(param_3 - *(int *)0xaf1c);\n        }\n        else {\n          iVar4 = param_3 - *(int *)0xaf1c;\n        }\n        iVar5 = iVar3;\n        if (iVar3 < 1) {\n          iVar5 = -iVar3;\n        }\n        if ((iVar4 < iVar5) ||\n           (iVar4 = TestPositionCollision\n                              (*(undefined2 *)0x9618,*(undefined2 *)0x961a,iVar3 + *(int *)0xaf1c,\n                               *(undefined2 *)0xaf2c), iVar4 != 0)) break;\n        *(int *)0xaf1c = *(int *)0xaf1c + iVar3;\n      }\n    }\n    if (*(uint *)0xaf2c < param_4) {\n      iVar3 = 0x7d;\n    }\n    else {\n      iVar3 = -0x7d;\n    }\n    for (; iVar3 != 0; iVar3 = iVar3 / 5) {\n      while( true ) {\n        if ((int)(param_4 - *(int *)0xaf2c) < 1) {\n          iVar4 = -(param_4 - *(int *)0xaf2c);\n        }\n        else {\n          iVar4 = param_4 - *(int *)0xaf2c;\n        }\n        iVar5 = iVar3;\n        if (iVar3 < 1) {\n          iVar5 = -iVar3;\n        }\n        if ((iVar4 < iVar5) ||\n           (iVar4 = TestPositionCollision\n                              (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                               iVar3 + *(int *)0xaf2c), iVar4 != 0)) break;\n        *(int *)0xaf2c = *(int *)0xaf2c + iVar3;\n      }\n    }\n  }\n  return;\n}\n\n",
+      "plate_comment": "Verified integer port in scripts/skyroads_movement.py, differential evidence in movement-validation.json (1970 resolver cases; every intermediate collision probe compared). Near C arguments: targetForwardLow, targetForwardHigh, targetLateral, targetHeight. Reads/writes DS:9618/961a forward32, DS:af1c lateral16, DS:af2c height16. Five fractional movement probes; keeps the last clear fraction; refines forward by4096/256/16/1, then lateral and height by signed125/25/5/1. Fractional lateral/height products wrap16 BEFORE signed division by5; forward product wraps32. Division truncates toward zero. Axis order is observable. Forward refinement uses an unsigned remaining distance and assumes ordinary forward motion. Host port bounds road allocation/probes; no general swept-collision or full game-loop equivalence claim.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 4,
+      "callees": [
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        },
+        {
+          "name": "TestPositionCollision",
+          "address": "1000:1732"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1ccd": {
+      "name": "PredictSafeLanding",
+      "size": 298,
+      "address": "1000:1ccd",
+      "entry_point": "1000:1ccd",
+      "body_end": "1000:1df9",
+      "decompiled_code": "\n// WARNING: Removing unreachable block (ram,0x00011d9e)\n// Verified integer port and complete projected-flight traces (1408 direct prediction cases plus\n// calls inside519 assist cases). Near C args: forward32, lateral16, height16, speed32,\n// signedSteering16, signedVerticalSpeed16. Uses DS:54aa gravity, DS:5496 lateral drift, DS:9330\n// acceleration input. Each step adds gravity to vertical speed, advances forward by current speed,\n// lateral by signed32((speed+1560)*steering)/512+drift, rejects x outside inclusive12160..53376,\n// adds vertical speed to height, clamps speed+75*input to0..10922. Stops at unsigned height<=10240,\n// then tests previous/current tiles with IsUnsafeLandingTile. Does not execute collision resolution\n// or test intermediate walls/roofs. AX=0/1; globals unchanged. See MOVEMENT-FORMAT.md.\n\nundefined2 __cdecl16near\nPredictSafeLanding(undefined2 param_1,undefined2 param_2,uint param_3,uint param_4,\n                  undefined2 param_5,undefined2 param_6,int param_7,int param_8)\n\n{\n  long lVar1;\n  long lVar2;\n  long lVar3;\n  int iVar4;\n  int iVar5;\n  undefined2 uVar6;\n  uint uVar7;\n  undefined2 unaff_DS;\n  undefined4 uVar8;\n  long lVar9;\n  \n  lVar1 = CONCAT22(param_6,param_5);\n  lVar2 = CONCAT22(param_2,param_1);\n  do {\n    lVar3 = lVar2;\n    uVar7 = param_3;\n    param_8 = param_8 + *(int *)0x54aa;\n    lVar2 = lVar1 + lVar3;\n    iVar5 = *(int *)0x5496;\n    uVar8 = FUN_1000_5d4c(lVar1 + 0x618,param_7,param_7 >> 0xf);\n    iVar4 = FUN_1000_5e5a(uVar8,0x200,0);\n    param_3 = uVar7 + iVar4 + iVar5;\n    if ((param_3 < 0x2f80) || (0xd080 < param_3)) {\n      return 0;\n    }\n    param_4 = param_4 + param_8;\n    lVar9 = FUN_1000_5d4c(*(int *)0x9330,*(int *)0x9330 >> 0xf,0x4b,0);\n    lVar1 = lVar9 + lVar1;\n    if ((lVar1 < 0x10000) && (lVar1 < 0)) {\n      lVar1 = 0;\n    }\n    else if (0x2aaa < lVar1) {\n      lVar1 = 0x2aaa;\n    }\n  } while (0x2800 < param_4);\n  iVar5 = IsUnsafeLandingTile(lVar3,uVar7);\n  if ((iVar5 == 0) && (iVar5 = IsUnsafeLandingTile(lVar2,param_3), iVar5 == 0)) {\n    uVar6 = 1;\n  }\n  else {\n    uVar6 = 0;\n  }\n  return uVar6;\n}\n\n",
+      "plate_comment": "Verified integer port and complete projected-flight traces (1408 direct prediction cases plus calls inside519 assist cases). Near C args: forward32, lateral16, height16, speed32, signedSteering16, signedVerticalSpeed16. Uses DS:54aa gravity, DS:5496 lateral drift, DS:9330 acceleration input. Each step adds gravity to vertical speed, advances forward by current speed, lateral by signed32((speed+1560)*steering)/512+drift, rejects x outside inclusive12160..53376, adds vertical speed to height, clamps speed+75*input to0..10922. Stops at unsigned height<=10240, then tests previous/current tiles with IsUnsafeLandingTile. Does not execute collision resolution or test intermediate walls/roofs. AX=0/1; globals unchanged. See MOVEMENT-FORMAT.md.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        },
+        {
+          "name": "IsUnsafeLandingTile",
+          "address": "1000:1c62"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1dfa": {
+      "name": "AdjustJumpForSafeLanding",
+      "size": 479,
+      "address": "1000:1dfa",
+      "entry_point": "1000:1dfa",
+      "body_end": "1000:1fd8",
+      "decompiled_code": "\n// Verified against unchanged x86, including candidate order and all prediction traces (519 direct\n// cases). Tests current projected landing first. If unsafe, for n=1..6 tries steering +/-\n// trunc16(steering*n)/10, then speed +/- trunc32(speed*n)/10. Faster candidate tested only if\n// signed speed<10922 (strict); first accepted candidate wins. Uses current position, vertical speed\n// and environment globals. Writes steering DS:4568, speed DS:54ac/54ae, speed delta DS:af2e/af30,\n// success flag DS:455a. An immediately safe prediction preserves existing flag/delta. Exhausting\n// trials restores original steering/speed, writes delta0 and preserves flag. Helper purpose\n// supported by caller and exact replay; gameplay triggering conditions remain to be reconstructed.\n\nvoid __cdecl16near AdjustJumpForSafeLanding(void)\n\n{\n  uint uVar1;\n  uint uVar2;\n  int iVar3;\n  int iVar4;\n  int iVar5;\n  int iVar6;\n  int iVar7;\n  undefined2 unaff_DS;\n  undefined4 uVar8;\n  long lVar9;\n  undefined2 uVar10;\n  undefined2 uVar11;\n  \n  iVar4 = PredictSafeLanding(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                             *(undefined2 *)0xaf2c,*(undefined2 *)0x54ac,*(undefined2 *)0x54ae,\n                             *(undefined2 *)0x4568,*(undefined2 *)0x9336);\n  if (iVar4 == 0) {\n    uVar1 = *(uint *)0x54ac;\n    iVar4 = *(int *)0x54ae;\n    iVar3 = *(int *)0x4568;\n    for (iVar7 = 1; iVar7 < 7; iVar7 = iVar7 + 1) {\n      uVar11 = *(undefined2 *)0x9336;\n      iVar5 = (iVar3 * iVar7) / 10 + iVar3;\n      *(int *)0x4568 = iVar5;\n      iVar5 = PredictSafeLanding(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                                 *(undefined2 *)0xaf2c,*(undefined2 *)0x54ac,*(undefined2 *)0x54ae,\n                                 iVar5,uVar11);\n      if (iVar5 != 0) break;\n      uVar11 = *(undefined2 *)0x9336;\n      iVar5 = iVar3 - (iVar3 * iVar7) / 10;\n      *(int *)0x4568 = iVar5;\n      iVar5 = PredictSafeLanding(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                                 *(undefined2 *)0xaf2c,*(undefined2 *)0x54ac,*(undefined2 *)0x54ae,\n                                 iVar5,uVar11);\n      if (iVar5 != 0) break;\n      *(int *)0x4568 = iVar3;\n      uVar8 = FUN_1000_5d4c(uVar1,iVar4,iVar7,iVar7 >> 0xf);\n      lVar9 = FUN_1000_5e5a(uVar8,10,0);\n      lVar9 = lVar9 + CONCAT22(iVar4,uVar1);\n      *(undefined2 *)0x54ac = (int)lVar9;\n      *(undefined2 *)0x54ae = (int)((ulong)lVar9 >> 0x10);\n      if ((*(int *)0x54ae < 1) &&\n         (((*(int *)0x54ae < 0 || (*(uint *)0x54ac < 0x2aaa)) &&\n          (iVar5 = PredictSafeLanding(*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                                      *(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c,\n                                      *(undefined2 *)0x54ac,*(undefined2 *)0x54ae,\n                                      *(undefined2 *)0x4568,*(undefined2 *)0x9336), iVar5 != 0))))\n      break;\n      uVar11 = *(undefined2 *)0x9336;\n      uVar10 = *(undefined2 *)0x4568;\n      uVar8 = FUN_1000_5d4c(uVar1,iVar4,iVar7,iVar7 >> 0xf);\n      uVar8 = FUN_1000_5e5a(uVar8,10,0);\n      iVar5 = uVar1 - (uint)uVar8;\n      iVar6 = (iVar4 - (int)((ulong)uVar8 >> 0x10)) - (uint)(uVar1 < (uint)uVar8);\n      *(int *)0x54ac = iVar5;\n      *(int *)0x54ae = iVar6;\n      iVar5 = PredictSafeLanding(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                                 *(undefined2 *)0xaf2c,iVar5,iVar6,uVar10,uVar11);\n      if (iVar5 != 0) break;\n      *(uint *)0x54ac = uVar1;\n      *(int *)0x54ae = iVar4;\n    }\n    uVar2 = *(uint *)0x54ac;\n    iVar3 = *(int *)0x54ae;\n    *(int *)0xaf2e = uVar2 - uVar1;\n    *(int *)0xaf30 = (iVar3 - iVar4) - (uint)(uVar2 < uVar1);\n    if (iVar7 < 7) {\n      *(undefined2 *)0x455a = 1;\n    }\n  }\n  return;\n}\n\n",
+      "plate_comment": "Verified against unchanged x86, including candidate order and all prediction traces (519 direct cases). Tests current projected landing first. If unsafe, for n=1..6 tries steering +/- trunc16(steering*n)/10, then speed +/- trunc32(speed*n)/10. Faster candidate tested only if signed speed<10922 (strict); first accepted candidate wins. Uses current position, vertical speed and environment globals. Writes steering DS:4568, speed DS:54ac/54ae, speed delta DS:af2e/af30, success flag DS:455a. An immediately safe prediction preserves existing flag/delta. Exhausting trials restores original steering/speed, writes delta0 and preserves flag. Helper purpose supported by caller and exact replay; gameplay triggering conditions remain to be reconstructed.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        },
+        {
+          "name": "PredictSafeLanding",
+          "address": "1000:1ccd"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1fd9": {
+      "name": "RunGameplayLoop",
+      "size": 2870,
+      "address": "1000:1fd9",
+      "entry_point": "1000:1fd9",
+      "body_end": "1000:2b0e",
+      "decompiled_code": "\n// Provisional semantic name, supported by repeated tick-synchronized input/render/update loop,\n// collision-style helper calls, movement arithmetic and exit reasons. Returns 7 on tested key flag;\n// exact controls, physics units, and global meanings need tracing. Contains significant decompiler\n// uncertainty.\n\nundefined2 __cdecl16near RunGameplayLoop(void)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  bool bVar3;\n  bool bVar4;\n  bool bVar5;\n  int iVar6;\n  undefined2 uVar7;\n  int iVar8;\n  uint uVar9;\n  undefined2 unaff_DS;\n  bool bVar10;\n  bool bVar11;\n  bool bVar12;\n  undefined4 uVar13;\n  long lVar14;\n  int local_24;\n  uint local_22;\n  int local_20;\n  int local_1e;\n  uint local_1c;\n  uint local_1a;\n  uint local_18;\n  uint local_16;\n  int local_c;\n  uint local_4;\n  \n  if (*(int *)0x95f6 == 2) {\n    FUN_1000_06a4(0xa0,100);\n  }\n  *(undefined2 *)0x516e = 0;\n  uVar13 = FUN_1000_5d4c(*(undefined2 *)0x4562,0,0x1680,0);\n  iVar6 = FUN_1000_5d8c(uVar13,400,0);\n  *(int *)0x54aa = -iVar6;\n  *(undefined2 *)0x9618 = 0;\n  *(undefined2 *)0x961a = 3;\n  *(undefined2 *)0xaf1c = 0x8000;\n  *(undefined2 *)0xaf2c = 0x2800;\n  *(undefined2 *)0x5496 = 0;\n  *(undefined2 *)0x4568 = 0;\n  *(undefined2 *)0x9336 = 0;\n  *(undefined2 *)0x54ac = 0;\n  *(undefined2 *)0x54ae = 0;\n  *(undefined2 *)0x5494 = 30000;\n  *(undefined2 *)0xb13c = 30000;\n  *(undefined2 *)0x456e = 0;\n  *(undefined2 *)0x4558 = 0;\n  *(undefined2 *)0x456a = 0;\n  bVar3 = true;\n  bVar12 = false;\n  bVar11 = false;\n  *(undefined2 *)0x455a = 0;\n  bVar5 = false;\n  bVar4 = false;\n  *(undefined2 *)0xaf2e = 0;\n  *(undefined2 *)0xaf30 = 0;\n  *(undefined2 *)0x1600 = 0;\n  local_4 = 0;\n  *(undefined2 *)0xaf38 = 0;\n  do {\n    if (*(uint *)0x1600 < local_4) {\n      *(undefined2 *)0x1600 = 0;\n      local_4 = 0;\n    }\n    iVar6 = *(int *)0x1600;\n    if ((*(byte *)0xbdc & 0x80) != 0) {\n      do {\n      } while ((*(byte *)0xbdc & 0x80) != 0);\n      while ((((((*(byte *)0xbd2 & 0x80) == 0 && ((*(byte *)0xbd3 & 0x80) == 0)) &&\n               ((*(byte *)0xbd4 & 0x80) == 0)) &&\n              (((*(byte *)0xbd5 & 0x80) == 0 && ((*(byte *)0xbd6 & 0x80) == 0)))) &&\n             ((((*(byte *)0xbd7 & 0x80) == 0 &&\n               (((*(byte *)0xbd8 & 0x80) == 0 && ((*(byte *)0xbd9 & 0x80) == 0)))) &&\n              ((*(byte *)0xbda & 0x80) == 0))))) {\n        if (((*(byte *)0xbdb & 0x80) != 0) || ((*(byte *)0xbdc & 0x80) != 0)) break;\n      }\n      if ((*(byte *)0xbda & 0x80) != 0) {\n        return 7;\n      }\n      do {\n        do {\n        } while ((*(byte *)0xbd2 & 0x80) != 0);\n      } while (((((((*(byte *)0xbd3 & 0x80) != 0) || ((*(byte *)0xbd4 & 0x80) != 0)) ||\n                 ((*(byte *)0xbd5 & 0x80) != 0)) ||\n                ((((*(byte *)0xbd6 & 0x80) != 0 || ((*(byte *)0xbd7 & 0x80) != 0)) ||\n                 (((*(byte *)0xbd8 & 0x80) != 0 ||\n                  (((*(byte *)0xbd9 & 0x80) != 0 || ((*(byte *)0xbda & 0x80) != 0)))))))) ||\n               ((*(byte *)0xbdb & 0x80) != 0)) || ((*(byte *)0xbdc & 0x80) != 0));\n      *(int *)0x1600 = iVar6;\n    }\n    if ((*(byte *)0xbda & 0x80) != 0) {\n      return 7;\n    }\n    if (((*(int *)0x456a == 0) || (0x2a < *(uint *)0x456a)) &&\n       (((*(int *)0x456e == 1 || (*(int *)0x456e == 2)) ||\n        (((*(int *)0x456e == 3 && (*(int *)0x456a != 0)) || (0x6b < *(uint *)0x4558)))))) {\n      return *(undefined2 *)0x456e;\n    }\n    FUN_1000_0c98(bVar12);\n    FUN_1000_12f8();\n    do {\n    } while (*(int *)0x1600 == iVar6);\n    FUN_1000_0ed0();\n    if (*(int *)0x95f6 != 3) {\n      FUN_1000_074c();\n    }\n    for (; local_4 < *(uint *)0x1600; local_4 = local_4 + 1) {\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_074c();\n      }\n      local_16 = GetRoadTileAtPosition\n                           (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c);\n      bVar10 = local_16 != 0;\n      if (bVar3) {\n        if (0x2800 < *(uint *)0xaf2c) {\n          if (*(int *)0xaf2c == *(int *)((local_16 >> 8) * 2 + 0xe4)) {\n            local_16 = local_16 >> 4;\n          }\n          else {\n            local_16 = 0;\n          }\n        }\n        ApplyRoadSurfaceEffect(local_16);\n        bVar11 = (local_16 & 0xf) == 8;\n        bVar12 = (local_16 & 0xf) == 2;\n      }\n      else {\n        bVar12 = false;\n      }\n      lVar14 = FUN_1000_5d80();\n      uVar9 = (uint)((ulong)(lVar14 + -0x8000) >> 0x10);\n      if (((uVar9 <= *(uint *)0x961a) &&\n          ((uVar9 < *(uint *)0x961a || ((uint)(lVar14 + -0x8000) <= *(uint *)0x9618)))) &&\n         ((iVar6 = IsBelowTunnelMidline\n                             (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                              *(undefined2 *)0xaf2c), iVar6 != 0 && (*(int *)0x456e == 0)))) {\n        uVar7 = FUN_1000_0f05();\n        return uVar7;\n      }\n      if (*(int *)0xaf2c != local_1e) {\n        if ((*(int *)0x5496 == 0) || (1 < local_1a)) {\n          if (*(int *)0x9336 < 1) {\n            uVar9 = -*(int *)0x9336;\n          }\n          else {\n            uVar9 = *(uint *)0x9336;\n          }\n          if (((uint)(((long)*(int *)0x4562 * 0x104 & 0xffffU) / 8) <= uVar9) &&\n             (*(int *)0x456a == 0)) {\n            if ((*(int *)0x456e == 0) &&\n               ((*(int *)0x9336 < 0 && (iVar6 = FUN_1000_0476(), iVar6 == 0)))) {\n              FUN_1000_03c2(1);\n            }\n            *(int *)0x9336 = (*(int *)0x9336 * -5) / 10;\n            goto LAB_1000_24ba;\n          }\n        }\n        *(undefined2 *)0x9336 = 0;\n      }\nLAB_1000_24ba:\n      if (*(int *)0x456e == 0) {\n        uVar13 = FUN_1000_5d4c(*(int *)0x9330,*(int *)0x9330 >> 0xf,0x4b,0);\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 + (uint)uVar13;\n        *(int *)0x54ae =\n             *(int *)0x54ae + (int)((ulong)uVar13 >> 0x10) + (uint)CARRY2(uVar9,(uint)uVar13);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        if ((!bVar11) &&\n           (((!bVar4 && (bVar10)) ||\n            ((*(int *)0x4568 == 0 &&\n             ((0 < *(int *)0x9336 && ((uint)(*(int *)0xaf2c - local_c) < 0xf00)))))))) {\n          *(int *)0x4568 = *(int *)0x95f4 * 0x1d;\n        }\n        if ((((!bVar4) && (bVar10)) && (*(int *)0x547a != 0)) && (*(uint *)0x4562 < 0x14)) {\n          *(undefined2 *)0x9336 = 0x480;\n          *(undefined2 *)0x5494 = *(undefined2 *)0x5494;\n          bVar4 = true;\n          local_c = *(int *)0xaf2c;\n        }\n      }\n      if (((*(int *)0x4570 != 0) && (bVar4)) && ((!bVar5 && (0x36ff < *(uint *)0xaf2c)))) {\n        AdjustJumpForSafeLanding();\n        bVar5 = true;\n      }\n      if (*(int *)0x456a == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          if (-0x6a < *(int *)0x9336) {\n            *(undefined2 *)0x9336 = 0xff96;\n          }\n        }\n        else {\n          *(int *)0x9336 = *(int *)0x9336 + *(int *)0x54aa;\n        }\n      }\n      else {\n        if (*(int *)0x9336 < 0) {\n          *(undefined2 *)0x9336 = 0;\n        }\n        if (*(int *)0x9336 < 0x47) {\n          *(int *)0x9336 = *(int *)0x9336 + 0x27;\n        }\n        else {\n          *(undefined2 *)0x9336 = 0x47;\n        }\n      }\n      local_22 = *(uint *)0x54ac + *(uint *)0x9618;\n      local_20 = *(int *)0x54ae + *(int *)0x961a + (uint)CARRY2(*(uint *)0x54ac,*(uint *)0x9618);\n      iVar6 = *(int *)0x5496;\n      if (bVar12 == false) {\n        uVar9 = 0x618;\n      }\n      else {\n        uVar9 = 0;\n      }\n      uVar13 = FUN_1000_5d4c(uVar9 + *(uint *)0x54ac,\n                             *(int *)0x54ae + (uint)CARRY2(uVar9,*(uint *)0x54ac),*(int *)0x4568,\n                             *(int *)0x4568 >> 0xf);\n      iVar8 = FUN_1000_5e5a(uVar13,0x200,0);\n      local_1c = iVar8 + *(int *)0xaf1c + iVar6;\n      local_1e = *(int *)0x9336 + *(int *)0xaf2c;\n      if (((*(uint *)0xaf1c < 0x2f80) && (0xd080 < local_1c)) ||\n         ((local_1c < 0x2f80 && (0xd080 < *(uint *)0xaf1c)))) {\n        local_1c = *(uint *)0xaf1c;\n      }\n      ResolveShipMovement(local_22,local_20,local_1c,local_1e);\n      if ((((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) &&\n          (*(uint *)0xaf1c == local_1c)) &&\n         (iVar6 = TestPositionCollision\n                            (local_22,local_20,*(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c),\n         iVar6 != 0)) {\n        iVar6 = TestPositionCollision\n                          (local_22,local_20,*(int *)0xaf1c + -0x3a0,*(undefined2 *)0xaf2c);\n        if (iVar6 == 0) {\n          *(int *)0xaf1c = *(int *)0xaf1c + -0x3a0;\n          local_22 = *(uint *)0x9618;\n          local_20 = *(int *)0x961a;\n          FUN_1000_03c2(2);\n        }\n        else {\n          iVar6 = TestPositionCollision\n                            (local_22,local_20,*(int *)0xaf1c + 0x3a0,*(undefined2 *)0xaf2c);\n          if (iVar6 == 0) {\n            *(int *)0xaf1c = *(int *)0xaf1c + 0x3a0;\n            local_22 = *(uint *)0x9618;\n            local_20 = *(int *)0x961a;\n            FUN_1000_03c2(2);\n          }\n        }\n      }\n      if ((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) {\n        if (((*(int *)0x54ae < 0) || ((*(int *)0x54ae < 1 && (*(uint *)0x54ac < 0xe38)))) ||\n           (*(int *)0x456a != 0)) {\n          uVar9 = (local_20 - *(int *)0x54ae) - (uint)(local_22 < *(uint *)0x54ac);\n          if ((uVar9 <= *(uint *)0x961a) &&\n             ((uVar9 < *(uint *)0x961a || (local_22 - *(uint *)0x54ac < *(uint *)0x9618)))) {\n            FUN_1000_03c2(2);\n          }\n        }\n        else {\n          *(undefined2 *)0x456a = 1;\n          FUN_1000_03c2(0);\n          if (*(int *)0x456e == 0) {\n            *(undefined2 *)0x456e = 1;\n          }\n        }\n        *(undefined2 *)0x54ac = 0;\n        *(undefined2 *)0x54ae = 0;\n      }\n      if (*(uint *)0xaf1c != local_1c) {\n        *(undefined2 *)0x4568 = 0;\n        if (((0 < *(int *)0x5496) && (*(uint *)0xaf1c < local_1c)) ||\n           ((*(int *)0x5496 < 0 && (local_1c < *(uint *)0xaf1c)))) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - 0x97;\n        *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar9 < 0x97);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n      }\n      bVar3 = false;\n      if ((*(int *)0xaf2c != local_1e) && (*(int *)0x9336 < 0)) {\n        *(undefined2 *)0x455a = 0;\n        bVar5 = false;\n        bVar4 = false;\n        bVar3 = true;\n        uVar2 = *(uint *)0xaf2e;\n        iVar6 = *(int *)0xaf30;\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - uVar2;\n        *(int *)0x54ae = (*(int *)0x54ae - iVar6) - (uint)(uVar9 < uVar2);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        *(undefined2 *)0xaf2e = 0;\n        *(undefined2 *)0xaf30 = 0;\n        local_24 = 0;\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = TestPositionCollision\n                            (*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                             local_18 * 0x80 + *(int *)0xaf1c,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = 1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = TestPositionCollision\n                            (*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                             *(int *)0xaf1c + local_18 * -0x80,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = local_24 + -1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        if (local_24 == 0) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        else {\n          *(int *)0x5496 = *(int *)0x5496 + local_24 * 0x11;\n        }\n      }\n      if (0x7fff < *(uint *)0xaf2c) {\n        *(undefined2 *)0xaf2c = 0;\n      }\n      if (*(int *)0x456e == 0) {\n        *(int *)0xb13c = *(int *)0xb13c - (int)(30000 / ((long)*(int *)0x4566 * 0x24 & 0xffffU));\n        if (30000 < *(uint *)0xb13c) {\n          *(undefined2 *)0xb13c = 0;\n        }\n        uVar13 = FUN_1000_5d4c((int)(30000 / (ulong)*(uint *)0x54a2),0,*(undefined2 *)0x54ac,\n                               *(undefined2 *)0x54ae);\n        iVar6 = FUN_1000_5e5a(uVar13,0,1);\n        *(int *)0x5494 = *(int *)0x5494 - iVar6;\n        if (30000 < *(uint *)0x5494) {\n          *(undefined2 *)0x5494 = 0;\n        }\n      }\n      if (*(int *)0x456e == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          *(undefined2 *)0x456e = 3;\n        }\n        if (*(int *)0x5494 == 0) {\n          *(undefined2 *)0x456e = 4;\n        }\n        if (*(int *)0xb13c == 0) {\n          *(undefined2 *)0x456e = 5;\n        }\n      }\n      else {\n        *(int *)0x4558 = *(int *)0x4558 + 1;\n      }\n      if (*(int *)0x456a != 0) {\n        *(int *)0x456a = *(int *)0x456a + 1;\n      }\n    }\n  } while( true );\n}\n\n",
+      "plate_comment": "Provisional semantic name, supported by repeated tick-synchronized input/render/update loop, collision-style helper calls, movement arithmetic and exit reasons. Returns 7 on tested key flag; exact controls, physics units, and global meanings need tracing. Contains significant decompiler uncertainty.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 18,
+      "callees": [
+        {
+          "name": "AdjustJumpForSafeLanding",
+          "address": "1000:1dfa"
+        },
+        {
+          "name": "ApplyRoadSurfaceEffect",
+          "address": "1000:1b49"
+        },
+        {
+          "name": "FUN_1000_03c2",
+          "address": "1000:03c2"
+        },
+        {
+          "name": "FUN_1000_0476",
+          "address": "1000:0476"
+        },
+        {
+          "name": "FUN_1000_06a4",
+          "address": "1000:06a4"
+        },
+        {
+          "name": "FUN_1000_074c",
+          "address": "1000:074c"
+        },
+        {
+          "name": "FUN_1000_0c98",
+          "address": "1000:0c98"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_0f05",
+          "address": "1000:0f05"
+        },
+        {
+          "name": "FUN_1000_12f8",
+          "address": "1000:12f8"
+        },
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d80",
+          "address": "1000:5d80"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        },
+        {
+          "name": "GetRoadTileAtPosition",
+          "address": "1000:04c0"
+        },
+        {
+          "name": "IsBelowTunnelMidline",
+          "address": "1000:0533"
+        },
+        {
+          "name": "ResolveShipMovement",
+          "address": "1000:186b"
+        },
+        {
+          "name": "TestPositionCollision",
+          "address": "1000:1732"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 4,
+  "requested": 4
+}

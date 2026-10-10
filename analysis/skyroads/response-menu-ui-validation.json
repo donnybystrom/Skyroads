@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "menu_url": "http://127.0.0.1:8766/menu-viewer.html",
+  "ui_checks": [
+    "Controls focus0..4 and music none/AdLib",
+    "Escape returns to main with Controls focus",
+    "Help pages1/2 via Space and Escape return",
+    "Road Right+Down selects17",
+    "Final main Start image visually inspected",
+    "Browser230-step recording saved/Python verified/replayed to completion"
+  ],
+  "console_warnings_errors": [],
+  "screenshot": "screenshots/original-menus.png",
+  "screenshot_sha256": "07fc33d65f25c058a089f16baa2a9e756521ae7ed94943018b4897fc2c3ca631",
+  "source_sha256": {
+    "skyroads-menus.js": "8fbbbf99c0d6435967e722c8331f0eaa7546fb145214195f87c83ed319bc9c66",
+    "skyroads-menu-viewer.js": "1757c6af3ec5a3d56e5c91ccb9528e4a2ebb46bb9baea53e30f2bde70c68d07b",
+    "skyroads-menu-viewer.html": "ff549543978a8991110c1a008537770743378c6fb7534c6ce3ca24063011aaa2",
+    "skyroads-response-ui.js": "e5c016a1f4bce9c2bd5f85c3bba689e812bdac22c25b58f63ff516b0857a8ea6",
+    "skyroads-prototype-server.py": "0e797fc9259186dbf0b1c9987fec29b35cd65e3f8c1c1854bb700e25b03fb143"
+  },
+  "menu_validation_sha256": "492506019adad7ece7c135e3e23787c57409d5a58412a5d0a24ca73201215aa3",
+  "response_validation_sha256": "28e0a1ee315005b51e3c727f959477d3ea42bf97567c4622a3523dbc19c0b5b7",
+  "limits": [
+    "Standalone menu preview, no gameplay transition integration yet.",
+    "Native menu pixel comparisons are indexed VGA boundary captures, not live physical display equivalence."
+  ]
+}

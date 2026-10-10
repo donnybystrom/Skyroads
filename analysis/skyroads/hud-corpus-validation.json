@@ -1,0 +1,64 @@
+{
+  "verified": true,
+  "updates": 467,
+  "pixels_compared": 29888000,
+  "timeline_frames_match": 467,
+  "pause_finish_freeze_groups": 12,
+  "retry_reset_groups": 12,
+  "groups": [
+    {
+      "name": "speed",
+      "updates": 214
+    },
+    {
+      "name": "speed-loss",
+      "updates": 10
+    },
+    {
+      "name": "resources",
+      "updates": 66
+    },
+    {
+      "name": "warning-fuel",
+      "updates": 37
+    },
+    {
+      "name": "warning-oxygen",
+      "updates": 37
+    },
+    {
+      "name": "assist",
+      "updates": 6
+    },
+    {
+      "name": "progress",
+      "updates": 92
+    },
+    {
+      "name": "gravity-3",
+      "updates": 1
+    },
+    {
+      "name": "gravity-4",
+      "updates": 1
+    },
+    {
+      "name": "gravity-10",
+      "updates": 1
+    },
+    {
+      "name": "gravity-16",
+      "updates": 1
+    },
+    {
+      "name": "gravity-20",
+      "updates": 1
+    }
+  ],
+  "result_sha256": "aa006f3944bdb6d5f2884fe954dca8c24c7c83afc0dab74ddc94935b227913cb",
+  "renderer_sha256": "bbad50cf14faa9a03b1930ca48d92b841cc3830acf1f99ce37868a87b11b4ca8",
+  "corpus_manifest_sha256": "850333a720ede1ec63c3055c8d785b36871f2d030352d76711a1b1d3f7b52748",
+  "limits": [
+    "Isolated original HUD/bitmap/division code executes; digital sound mode is muted and no hardware timer advances during a call. Native full-game coverage is separate."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "compared_boundaries_match": true,
+  "counts": {
+    "initializers": 9,
+    "physics_ticks": 4667,
+    "completion_requests": 3,
+    "finish_frames": 212,
+    "pause_polls": 15,
+    "pause_resumes": 1,
+    "attempt_returns": 9
+  },
+  "result_sha256": "d903222452af50ee824af3ca3e66c70f6e96815f7faaab9b95773d36d56eacff",
+  "corpus_sha256": "78759c0fb9b4dbe2f03fded737bada34f0bfb6790a06b0dea4ad20b73f460594",
+  "model_sha256": {
+    "skyroads-geometry.js": "2e1ce6f3c242945f606ddbc0aa656e4a9122a398a4130fcdebc310601ed860bd",
+    "skyroads-physics.js": "ebcf7dcbfc04c533123c5d53de1670914064996dd0cf7c47abb99d75df3ee5e5",
+    "skyroads-cycle.js": "118021b3856d32a7a914b8d1513c183898059375b1bf4497ecf8673b40ce2245"
+  },
+  "limits": [
+    "Full original game executes, but this comparison checks tick/attempt boundaries. Game wrapper fade delays are recorded mismatches, not modeled by this test.",
+    "Physical OS/display latency and full graphical equivalence remain unmeasured."
+  ]
+}

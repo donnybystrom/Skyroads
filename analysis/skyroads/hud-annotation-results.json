@@ -1,0 +1,262 @@
+[
+  {
+    "address": "1000:0f62",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:0f62 from 'FUN_1000_0f62' to 'DecodeHudMaskColors'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0f62",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:0f62\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0f8c",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:0f8c from 'FUN_1000_0f8c' to 'DrawHudInstrumentSegment'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0f8c",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:0f8c\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1073",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:1073 from 'FUN_1000_1073' to 'DrawHudSymbolMask'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1073",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:1073\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1114",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:1114 from 'FUN_1000_1114' to 'DrawHudDecimalNumber'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1114",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:1114\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1191",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:1191 from 'FUN_1000_1191' to 'ReadGameplayPixel'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1191",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:1191\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:11d3",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:11d3 from 'FUN_1000_11d3' to 'WriteGameplayPixel'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:11d3",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:11d3\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1218",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:1218 from 'FUN_1000_1218' to 'FillRoadProgressColumn'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1218",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:1218\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1282",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:1282 from 'FUN_1000_1282' to 'SwapHudWarningColors'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:1282",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:1282\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5481",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5481 from 'FUN_1000_5481' to 'LoadHudInstrumentFile'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5481",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5481\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5508",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5508 from 'FUN_1000_5508' to 'LoadHudAndDemoAssets'\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5508",
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5508\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:12f8\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "saved": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"success\":true,\"program\":\"SKYROADS_UNPACKED.EXE\",\"saved\":true,\"message\":\"Program saved successfully\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

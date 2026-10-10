@@ -1,0 +1,756 @@
+{
+  "verified": true,
+  "original_dsp_effects": [
+    {
+      "effect": 0,
+      "original_sample_arguments": [
+        13,
+        12288,
+        6,
+        3983
+      ],
+      "dsp_bytes": [
+        208,
+        64,
+        6,
+        20,
+        142,
+        15
+      ],
+      "pcm_match": true
+    },
+    {
+      "effect": 1,
+      "original_sample_arguments": [
+        3997,
+        12288,
+        131,
+        5153
+      ],
+      "dsp_bytes": [
+        208,
+        64,
+        131,
+        20,
+        32,
+        20
+      ],
+      "pcm_match": true
+    },
+    {
+      "effect": 2,
+      "original_sample_arguments": [
+        9151,
+        12288,
+        236,
+        8084
+      ],
+      "dsp_bytes": [
+        208,
+        64,
+        236,
+        20,
+        147,
+        31
+      ],
+      "pcm_match": true
+    },
+    {
+      "effect": 3,
+      "original_sample_arguments": [
+        17236,
+        12288,
+        131,
+        800
+      ],
+      "dsp_bytes": [
+        208,
+        64,
+        131,
+        20,
+        31,
+        3
+      ],
+      "pcm_match": true
+    },
+    {
+      "effect": 4,
+      "original_sample_arguments": [
+        18037,
+        12288,
+        131,
+        7770
+      ],
+      "dsp_bytes": [
+        208,
+        64,
+        131,
+        20,
+        89,
+        30
+      ],
+      "pcm_match": true
+    }
+  ],
+  "native_music_tracks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "native_opl_writes_match": 21552,
+  "native_decoded_assets_checked": 67,
+  "native_tick_sound_requests_match": 55,
+  "native_sample_requests": [
+    {
+      "run": "audio-keyboard",
+      "effect": 1,
+      "ms": 9197.87915
+    },
+    {
+      "run": "audio-keyboard",
+      "effect": 1,
+      "ms": 9447.84415
+    },
+    {
+      "run": "audio-keyboard",
+      "effect": 0,
+      "ms": 61497.20715
+    },
+    {
+      "run": "audio-keyboard",
+      "effect": 0,
+      "ms": 66218.8582
+    },
+    {
+      "run": "audio-demo",
+      "effect": "intro",
+      "ms": 2754.17235
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 44277.03185
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 44527.00855
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 45915.72855
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 46166.28145
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 46832.2913
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 47082.254
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 48470.9777
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 48721.46785
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 50304.0928
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 50554.0694
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 53192.77775
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 53886.9995
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 54442.4982
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 54692.4598
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 56303.37925
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 57053.28895
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 57358.81575
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 58303.2762
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 58553.11055
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 59802.9622
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 60052.9319
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 60886.16865
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 61358.3331
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 61941.60565
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 62191.5672
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 63108.12535
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 63358.101
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 64774.5971
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 65080.1123
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 66329.96945
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 67663.14
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 68190.85315
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 69690.6747
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 69940.64665
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 71440.46815
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 71745.9949
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 73079.1656
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 74828.9514
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 75412.22285
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 75717.7345
+    },
+    {
+      "run": "audio-demo",
+      "effect": 4,
+      "ms": 77078.6804
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 77828.5944
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 79022.9008
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 79911.6873
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 80189.42505
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 80994.88385
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 83689.0156
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 84161.17515
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 85910.9721
+    },
+    {
+      "run": "audio-demo",
+      "effect": 1,
+      "ms": 86299.8086
+    },
+    {
+      "run": "audio-demo",
+      "effect": 2,
+      "ms": 87994.50385
+    }
+  ],
+  "runs": [
+    {
+      "run": "audio-gallery",
+      "trace_sha256": "e775542abaa60118b74d7c50654ea6d7d6a6e9a272eb122f6ebcd3cb0bd03216",
+      "manifest_sha256": "30ab6efaf5a3c76a1e7f0150b1367b0b424c81ffc0638eb61b9faa2c179fe9ef",
+      "segments": [
+        {
+          "score": 0,
+          "writes_match": 0,
+          "initial_delay_irqs": 253
+        },
+        {
+          "score": 2,
+          "writes_match": 286,
+          "initial_delay_irqs": 59
+        },
+        {
+          "score": 3,
+          "writes_match": 398,
+          "initial_delay_irqs": 12
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 0
+        },
+        {
+          "score": 4,
+          "writes_match": 143,
+          "initial_delay_irqs": 4
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 6
+        },
+        {
+          "score": 6,
+          "writes_match": 298,
+          "initial_delay_irqs": 13
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 33
+        },
+        {
+          "score": 1,
+          "writes_match": 152,
+          "initial_delay_irqs": 24
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 8
+        },
+        {
+          "score": 4,
+          "writes_match": 143,
+          "initial_delay_irqs": 12
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 19
+        },
+        {
+          "score": 1,
+          "writes_match": 159,
+          "initial_delay_irqs": 4
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 10
+        },
+        {
+          "score": 4,
+          "writes_match": 143,
+          "initial_delay_irqs": 15
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 11
+        },
+        {
+          "score": 5,
+          "writes_match": 458,
+          "initial_delay_irqs": 4
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 10
+        },
+        {
+          "score": 8,
+          "writes_match": 183,
+          "initial_delay_irqs": 17
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 38
+        },
+        {
+          "score": 5,
+          "writes_match": 453,
+          "initial_delay_irqs": 20
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 11
+        },
+        {
+          "score": 6,
+          "writes_match": 298,
+          "initial_delay_irqs": 18
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 39
+        },
+        {
+          "score": 1,
+          "writes_match": 152,
+          "initial_delay_irqs": 29
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 6
+        },
+        {
+          "score": 6,
+          "writes_match": 298,
+          "initial_delay_irqs": 13
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 26
+        },
+        {
+          "score": 1,
+          "writes_match": 159,
+          "initial_delay_irqs": 9
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 4
+        },
+        {
+          "score": 3,
+          "writes_match": 402,
+          "initial_delay_irqs": 12
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 15
+        },
+        {
+          "score": 8,
+          "writes_match": 183,
+          "initial_delay_irqs": 8
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 34
+        },
+        {
+          "score": 6,
+          "writes_match": 277,
+          "initial_delay_irqs": 27
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 11
+        },
+        {
+          "score": 7,
+          "writes_match": 225,
+          "initial_delay_irqs": 18
+        },
+        {
+          "score": 2,
+          "writes_match": 441,
+          "initial_delay_irqs": 19
+        },
+        {
+          "score": 3,
+          "writes_match": 398,
+          "initial_delay_irqs": 4
+        },
+        {
+          "score": 2,
+          "writes_match": 126,
+          "initial_delay_irqs": 254
+        },
+        {
+          "score": 7,
+          "writes_match": 225,
+          "initial_delay_irqs": 5
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 9
+        },
+        {
+          "score": 9,
+          "writes_match": 294,
+          "initial_delay_irqs": 16
+        },
+        {
+          "score": 2,
+          "writes_match": 449,
+          "initial_delay_irqs": 7
+        },
+        {
+          "score": 3,
+          "writes_match": 391,
+          "initial_delay_irqs": 35
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 5
+        },
+        {
+          "score": 8,
+          "writes_match": 177,
+          "initial_delay_irqs": 12
+        },
+        {
+          "score": 2,
+          "writes_match": 127,
+          "initial_delay_irqs": 254
+        },
+        {
+          "score": 1,
+          "writes_match": 152,
+          "initial_delay_irqs": 19
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 6
+        },
+        {
+          "score": 4,
+          "writes_match": 135,
+          "initial_delay_irqs": 13
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 2
+        },
+        {
+          "score": 3,
+          "writes_match": 398,
+          "initial_delay_irqs": 15
+        },
+        {
+          "score": 2,
+          "writes_match": 179,
+          "initial_delay_irqs": 10
+        },
+        {
+          "score": 4,
+          "writes_match": 143,
+          "initial_delay_irqs": 15
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 14
+        },
+        {
+          "score": 7,
+          "writes_match": 177,
+          "initial_delay_irqs": 254
+        }
+      ]
+    },
+    {
+      "run": "audio-keyboard",
+      "trace_sha256": "9e5ad17982f768393e0fd83a4ccb96cd8ab112fd0448b84f265ebad81b1c1528",
+      "manifest_sha256": "afdc0d1490bd4373b9d85fe848fbd413058261b2c0bad6d31044fa1ab58ae745",
+      "segments": [
+        {
+          "score": 0,
+          "writes_match": 0,
+          "initial_delay_irqs": 253
+        },
+        {
+          "score": 2,
+          "writes_match": 286,
+          "initial_delay_irqs": 59
+        },
+        {
+          "score": 3,
+          "writes_match": 2229,
+          "initial_delay_irqs": 12
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 14
+        },
+        {
+          "score": 1,
+          "writes_match": 870,
+          "initial_delay_irqs": 18
+        },
+        {
+          "score": 2,
+          "writes_match": 167,
+          "initial_delay_irqs": 6
+        },
+        {
+          "score": 9,
+          "writes_match": 335,
+          "initial_delay_irqs": 9
+        },
+        {
+          "score": 2,
+          "writes_match": 181,
+          "initial_delay_irqs": 18
+        },
+        {
+          "score": 6,
+          "writes_match": 619,
+          "initial_delay_irqs": 8
+        }
+      ]
+    },
+    {
+      "run": "audio-demo",
+      "trace_sha256": "9fb343bb4b0b250c9167ab71d5110c47c1f83647974526dbd8f9ab15e5e32f67",
+      "manifest_sha256": "548798be1ddb623e19165abf2a00132c893dbf0e00ee0898480cb7eb3d8dd204",
+      "segments": [
+        {
+          "score": 0,
+          "writes_match": 4246,
+          "initial_delay_irqs": 253
+        }
+      ]
+    }
+  ],
+  "audio_manifest_sha256": "928adcb7ce8df3e94820d77d48320ea074d5e19c59ec84ce72ae97a6976bb333",
+  "limits": [
+    "Native score comparisons cover observed continuous prefixes; complete score loops execute the original isolated sequencer.",
+    "Music uses pre-rendered DBOPL OPL2, not physical Yamaha chip/DAC output; looped PCM repeats noise/envelope state.",
+    "Browser/OS output latency and perceptual loudness require separate measurement."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "path": "/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/SKYROADS.EXE",
+  "size": 18035,
+  "sha256": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f",
+  "format": "MS-DOS MZ",
+  "header_size": 32,
+  "entry_cs": 0,
+  "entry_ip": 0,
+  "relocations": 1,
+  "note": "Static header inventory only. Packing status not yet established; target has not been executed.",
+  "tool_sources": {
+    "ghidra-mcp": "9cc29c0f1efb6c63a7d6898c9a23aff39397f992",
+    "rea": "8b4c3591358ee59297d8298ede1b63d08459d817"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:58cd": {
+      "name": "FUN_1000_58cd",
+      "size": 71,
+      "address": "1000:58cd",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_58cd(void)\n\n{\n  byte bVar1;\n  undefined2 unaff_DS;\n  \n  FUN_1000_58a5();\n  FUN_1000_5892();\n  FUN_1000_5892();\n  FUN_1000_5892();\n  *(undefined2 *)0x3194 = 0xc84;\n  bVar1 = 7;\n  do {\n    FUN_1000_5919();\n    *(int *)0x3194 = *(int *)0x3194 + 0xb;\n    bVar1 = bVar1 + 1;\n  } while (bVar1 < 0xb);\n  FUN_1000_5892();\n  FUN_1000_5892();\n  FUN_1000_5892();\n  FUN_1000_5892();\n  return;\n}\n\n",
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_5892",
+          "address": "1000:5892"
+        },
+        {
+          "name": "FUN_1000_58a5",
+          "address": "1000:58a5"
+        },
+        {
+          "name": "FUN_1000_5919",
+          "address": "1000:5919"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:58a5": {
+      "name": "FUN_1000_58a5",
+      "size": 40,
+      "address": "1000:58a5",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_58a5(void)\n\n{\n  byte bVar1;\n  char cVar2;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0x3196 = 0xcb0;\n  *(undefined1 *)0x319a = 0xe0;\n  bVar1 = 0x40;\n  do {\n    FUN_1000_5892();\n    bVar1 = bVar1 + 1;\n  } while (bVar1 < 0x56);\n  cVar2 = '\\a';\n  do {\n    FUN_1000_59cf();\n    cVar2 = cVar2 + -1;\n  } while (-1 < cVar2);\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_5892",
+          "address": "1000:5892"
+        },
+        {
+          "name": "FUN_1000_59cf",
+          "address": "1000:59cf"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5a55": {
+      "error": "Function not found: '1000:5a55' (no function at or containing that address, and no function has that name)"
+    },
+    "1000:5a7d": {
+      "name": "FUN_1000_5a7d",
+      "size": 26,
+      "address": "1000:5a7d",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_5a7d(undefined2 param_1,undefined2 param_2)\n\n{\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0x3196 = param_1;\n  *(undefined2 *)0x3198 = param_1;\n  *(undefined2 *)0x3194 = param_2;\n  *(undefined1 *)0x31a6 = 0;\n  return;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5a98": {
+      "name": "FUN_1000_5a98",
+      "size": 161,
+      "address": "1000:5a98",
+      "decompiled_code": "\nundefined2 __cdecl16near FUN_1000_5a98(void)\n\n{\n  undefined1 uVar1;\n  undefined1 uVar2;\n  undefined1 uVar3;\n  undefined1 uVar4;\n  char cVar5;\n  uint in_AX;\n  byte bVar6;\n  undefined2 unaff_DS;\n  \n  do {\n    out(*(int *)0xcb6 + 6,1);\n    out(0x43,0);\n    uVar1 = in(0x40);\n    uVar2 = in(0x40);\n    do {\n      out(0x43,0);\n      uVar3 = in(0x40);\n      uVar4 = in(0x40);\n    } while ((uint)-(CONCAT11(uVar4,uVar3) - CONCAT11(uVar2,uVar1)) < 8);\n    out(*(int *)0xcb6 + 6,0);\n    out(0x43,0);\n    uVar1 = in(0x40);\n    uVar2 = in(0x40);\n    in_AX = in_AX & 0xff00;\n    do {\n      bVar6 = (byte)(in_AX >> 8);\n      cVar5 = in(*(int *)0xcb6 + 0xe);\n      if ((cVar5 < '\\0') && (cVar5 = in(*(int *)0xcb6 + 10), cVar5 == -0x56)) {\n        do {\n          cVar5 = in(*(int *)0xcb6 + 0xc);\n        } while (cVar5 < '\\0');\n        out(*(int *)0xcb6 + 0xc,0xd1);\n        return CONCAT11(bVar6,0xd1);\n      }\n      out(0x43,0);\n      uVar3 = in(0x40);\n      uVar4 = in(0x40);\n      in_AX = (uint)bVar6 << 8;\n    } while ((uint)-(CONCAT11(uVar4,uVar3) - CONCAT11(uVar2,uVar1)) < 0xf0);\n    *(int *)0xcb6 = *(int *)0xcb6 + 0x10;\n    if (0x260 < *(uint *)0xcb6) {\n      *(undefined2 *)0xcb6 = 0;\n      return 0;\n    }\n  } while( true );\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:044a": {
+      "name": "RequestSoundEffect",
+      "size": 180,
+      "address": "1000:03c2",
+      "decompiled_code": "\n// Always copies DS:1600 timer into DS:af38. If DS:451a is nonzero, returns without audio hardware.\n// Otherwise selects PC-speaker path when DS:0cb6=0, digital sample path otherwise. Verified\n// execution of muted branch inside5370 tick corpus, including391 sound requests and exact timestamp\n// updates. Unmuted playback is statically inspected only; no hardware or digital driver execution.\n// Near C sound index argument.\n\nvoid __cdecl16near RequestSoundEffect(int param_1)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  int iVar3;\n  undefined1 *puVar4;\n  byte bVar5;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0xaf38 = *(undefined2 *)0x1600;\n  if (*(int *)0x451a == 0) {\n    if (*(int *)0xcb6 == 0) {\n      bVar5 = in(0x61);\n      out(0x61,bVar5 | 3);\n      *(undefined2 *)0xbd0 = *(undefined2 *)(param_1 * 2 + 0x162);\n    }\n    else {\n      uVar1 = *(undefined2 *)0x4560;\n      iVar2 = *(int *)((param_1 + 1) * 2);\n      iVar3 = *(int *)(param_1 * 2);\n      puVar4 = (undefined1 *)*(undefined2 *)(param_1 * 2);\n      FUN_1000_5bc0();\n      FUN_1000_5b76(puVar4 + 1,uVar1,*(undefined1 *)CONCAT22(uVar1,puVar4),(iVar2 - iVar3) + -1);\n    }\n  }\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_5b76",
+          "address": "1000:5b76"
+        },
+        {
+          "name": "FUN_1000_5bc0",
+          "address": "1000:5bc0"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0476": {
+      "name": "IsSoundEffectActive",
+      "size": 71,
+      "address": "1000:0476",
+      "decompiled_code": "\n// If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near\n// pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick\n// validation, including timer wrap boundary tests. PC-speaker pointer branch not independently\n// replayed.\n\nbool __cdecl16near IsSoundEffectActive(void)\n\n{\n  undefined2 unaff_DS;\n  bool bVar1;\n  \n  if (*(int *)0xcb6 == 0) {\n    bVar1 = *(int *)*(undefined2 *)0xbd0 != 0;\n  }\n  else {\n    bVar1 = *(uint *)0x1600 < *(int *)0xaf38 + 8U;\n  }\n  return bVar1;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0000": {
+      "name": "FUN_1000_0000",
+      "size": 70,
+      "address": "1000:0000",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_0000(void)\n\n{\n  code *pcVar1;\n  undefined2 unaff_ES;\n  undefined2 unaff_DS;\n  \n  pcVar1 = (code *)swi(0x10);\n  (*pcVar1)();\n  pcVar1 = (code *)swi(0x10);\n  (*pcVar1)();\n  pcVar1 = (code *)swi(0x10);\n  (*pcVar1)();\n  *(undefined1 **)0x3188 = &stack0xfffe;\n  *(undefined2 *)0x318a = unaff_ES;\n  pcVar1 = (code *)swi(0x10);\n  (*pcVar1)();\n  *(undefined1 **)0x318c = &stack0xfffe;\n  *(undefined2 *)0x318e = unaff_ES;\n  return;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:019c": {
+      "name": "FUN_1000_019c",
+      "size": 28,
+      "address": "1000:019c",
+      "decompiled_code": "\nchar __cdecl16near FUN_1000_019c(void)\n\n{\n  char cVar1;\n  char cVar2;\n  byte bVar3;\n  char cVar4;\n  \n  cVar1 = in(0x40);\n  cVar2 = in(0x40);\n  bVar3 = in(0x41);\n  cVar4 = in(0x41);\n  return cVar4 + (cVar1 + cVar2 ^ bVar3);\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:2b3d": {
+      "name": "RunRoadSession",
+      "size": 400,
+      "address": "1000:2b3d",
+      "decompiled_code": "\n// Road wrapper installs/clears keyboard held bits, initializes HUD caches, sets up drawings, calls\n// RunGameplayLoop. Result0 showsRoad completed orThe End according callerflag, then4459 waits27\n// timer increments. BIOS-key helper4153 only sets54a0 whenaf32 enabled; normalaf32=0 keys do not\n// dismiss. Restores IRQ09 vector and returns result. Main caller branch semantics verified\n// separately: failures1..6 retry same archive;0 increments30-wordcompletion array\n// andselectedindex;7 returnsselection. Synthetic finish+notice/full progression cases and six\n// failed attempts verified; assets/disk writes virtualized.\n\nint __cdecl16near RunRoadSession(int param_1)\n\n{\n  int iVar1;\n  int iVar2;\n  int unaff_DS;\n  \n  *(int *)0xaf2a = unaff_DS + 0x31b;\n  InstallKeyboardHandler();\n  *(undefined2 *)0xaf1e = 0;\n  *(undefined2 *)0x455c = 0;\n  *(undefined2 *)0x960c = 0;\n  *(undefined2 *)0x456c = 0;\n  *(undefined2 *)0x41be = 0;\n  *(undefined2 *)0xaf20 = 0xffff;\n  *(undefined2 *)0x9334 = 0;\n  if (*(int *)0x3c == 0) {\n    FUN_1000_2b0f(0xa000,*(undefined2 *)0x5170);\n    FUN_1000_2b0f(0xa200,*(undefined2 *)0x5170);\n  }\n  else {\n    FUN_1000_6053(0xac80,0xa000,0xac80,*(undefined2 *)0x5170,0x4d80);\n  }\n  FUN_1000_1114(0x60,0x9c,(*(int *)0x4562 + -3) * 100,4);\n  if (*(int *)0x3c == 0) {\n    iVar1 = (uint)(*(int *)0x9334 == 0) * 0x200 + -0x6000;\n  }\n  else {\n    iVar1 = *(int *)0x5478;\n  }\n  iVar1 = SelectShipVerticalPose(0,0x2800,1,0,iVar1);\n  iVar2 = SelectShipLaneView(0x8000);\n  RenderRoadSceneSpans\n            (0x100,0x18,0x50,*(int *)0xaf34 + ((iVar2 * 3 + iVar1) * 3 + 0xe) * 0x2d0,\n             *(undefined2 *)0xaf36);\n  FUN_1000_4b8e(0x41c2,1,0x24);\n  iVar1 = RunGameplayLoop();\n  if (*(int *)0x9334 != 0) {\n    *(undefined2 *)0x9334 = 0;\n    FUN_1000_0ed0();\n  }\n  if (iVar1 == 0) {\n    FUN_1000_3c9a();\n    if (param_1 == 0) {\n      FUN_1000_4526(0x68,0x50,0xd42,99);\n    }\n    else {\n      FUN_1000_4526(0x84,0x50,0xd3a,99);\n    }\n    FUN_1000_4459(0x1b);\n  }\n  FUN_1000_4b8e(0x41c2,0,0x24);\n  RestoreKeyboardHandler();\n  return iVar1;\n}\n\n",
+      "callee_count": 14,
+      "callees": [
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_1114",
+          "address": "1000:1114"
+        },
+        {
+          "name": "FUN_1000_2b0f",
+          "address": "1000:2b0f"
+        },
+        {
+          "name": "FUN_1000_3c9a",
+          "address": "1000:3c9a"
+        },
+        {
+          "name": "FUN_1000_4459",
+          "address": "1000:4459"
+        },
+        {
+          "name": "FUN_1000_4526",
+          "address": "1000:4526"
+        },
+        {
+          "name": "FUN_1000_4b8e",
+          "address": "1000:4b8e"
+        },
+        {
+          "name": "FUN_1000_6053",
+          "address": "1000:6053"
+        },
+        {
+          "name": "InstallKeyboardHandler",
+          "address": "1000:3b9d"
+        },
+        {
+          "name": "RenderRoadSceneSpans",
+          "address": "1000:2d1f"
+        },
+        {
+          "name": "RestoreKeyboardHandler",
+          "address": "1000:3c03"
+        },
+        {
+          "name": "RunGameplayLoop",
+          "address": "1000:1fd9"
+        },
+        {
+          "name": "SelectShipLaneView",
+          "address": "1000:0be9"
+        },
+        {
+          "name": "SelectShipVerticalPose",
+          "address": "1000:0baf"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 9,
+  "requested": 10
+}

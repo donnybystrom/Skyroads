@@ -1,0 +1,52 @@
+[
+  {
+    "recording": "cycle-01-20261009-204551-f792baea.json",
+    "ticks": 162,
+    "verified": true,
+    "audio_metadata_present": false,
+    "audio_event_audit_matches": null
+  },
+  {
+    "recording": "cycle-01-20261010-084446-2747714a.json",
+    "ticks": 1069,
+    "verified": true,
+    "audio_metadata_present": false,
+    "audio_event_audit_matches": null
+  },
+  {
+    "recording": "cycle-01-20261010-084815-ece8ee88.json",
+    "ticks": 975,
+    "verified": true,
+    "audio_metadata_present": true,
+    "audio_event_audit_matches": true,
+    "sound_requests": 2,
+    "music_selections": 1
+  },
+  {
+    "recording": "cycle-01-20261010-085008-5975e28f.json",
+    "ticks": 1991,
+    "verified": true,
+    "audio_metadata_present": true,
+    "audio_event_audit_matches": true,
+    "sound_requests": 0,
+    "music_selections": 11
+  },
+  {
+    "recording": "cycle-01-20261010-085326-deda0ff4.json",
+    "ticks": 63,
+    "verified": true,
+    "audio_metadata_present": true,
+    "audio_event_audit_matches": true,
+    "sound_requests": 2,
+    "music_selections": 1
+  },
+  {
+    "recording": "cycle-01-20261010-090221-545e8c4e.json",
+    "ticks": 271,
+    "verified": true,
+    "audio_metadata_present": true,
+    "audio_event_audit_matches": true,
+    "sound_requests": 0,
+    "music_selections": 1
+  }
+]

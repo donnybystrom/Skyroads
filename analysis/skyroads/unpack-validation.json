@@ -1,0 +1,240 @@
+{
+  "method": "original DIET x86-16 unpacker emulated in Unicorn; stop before recovered entry",
+  "load_segment": "0x1000",
+  "expected_entry": "0x161f3",
+  "original_sha256": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f",
+  "unpacked_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+  "initialized_module_bytes_compared": 30076,
+  "reconstructed_relocations": [
+    {
+      "offset": 2820,
+      "segment": 0,
+      "module_offset": 2820
+    },
+    {
+      "offset": 15050,
+      "segment": 0,
+      "module_offset": 15050
+    },
+    {
+      "offset": 25076,
+      "segment": 0,
+      "module_offset": 25076
+    }
+  ],
+  "reached_entry": true,
+  "instructions_including_entry_hook": 447545,
+  "prohibited_runtime_operations": [],
+  "emulation_error": null,
+  "registers_at_handoff": {
+    "CS": 4096,
+    "IP": 25075,
+    "DS": 4080,
+    "ES": 4080,
+    "SS": 8586,
+    "SP": 2048
+  },
+  "expected_load_image_sha256": "15754f981b77ba3e82ca23bdf7b523fad648a1beb84cdb3239225b0a1e56810a",
+  "observed_load_image_sha256": "15754f981b77ba3e82ca23bdf7b523fad648a1beb84cdb3239225b0a1e56810a",
+  "differing_bytes": 0,
+  "first_differences": [],
+  "last_instructions": [
+    {
+      "address": "0x17c4e",
+      "cs": "0x1757",
+      "ip": "0x6de",
+      "bytes": "8ec0"
+    },
+    {
+      "address": "0x17c50",
+      "cs": "0x1757",
+      "ip": "0x6e0",
+      "bytes": "ad"
+    },
+    {
+      "address": "0x17c51",
+      "cs": "0x1757",
+      "ip": "0x6e1",
+      "bytes": "8bd8"
+    },
+    {
+      "address": "0x17c53",
+      "cs": "0x1757",
+      "ip": "0x6e3",
+      "bytes": "eb06"
+    },
+    {
+      "address": "0x17c5b",
+      "cs": "0x1757",
+      "ip": "0x6eb",
+      "bytes": "26012f"
+    },
+    {
+      "address": "0x17c5e",
+      "cs": "0x1757",
+      "ip": "0x6ee",
+      "bytes": "e2e7"
+    },
+    {
+      "address": "0x17c47",
+      "cs": "0x1757",
+      "ip": "0x6d7",
+      "bytes": "ad"
+    },
+    {
+      "address": "0x17c48",
+      "cs": "0x1757",
+      "ip": "0x6d8",
+      "bytes": "0bc0"
+    },
+    {
+      "address": "0x17c4a",
+      "cs": "0x1757",
+      "ip": "0x6da",
+      "bytes": "7809"
+    },
+    {
+      "address": "0x17c55",
+      "cs": "0x1757",
+      "ip": "0x6e5",
+      "bytes": "d1e0"
+    },
+    {
+      "address": "0x17c57",
+      "cs": "0x1757",
+      "ip": "0x6e7",
+      "bytes": "d1f8"
+    },
+    {
+      "address": "0x17c59",
+      "cs": "0x1757",
+      "ip": "0x6e9",
+      "bytes": "03d8"
+    },
+    {
+      "address": "0x17c5b",
+      "cs": "0x1757",
+      "ip": "0x6eb",
+      "bytes": "26012f"
+    },
+    {
+      "address": "0x17c5e",
+      "cs": "0x1757",
+      "ip": "0x6ee",
+      "bytes": "e2e7"
+    },
+    {
+      "address": "0x17c47",
+      "cs": "0x1757",
+      "ip": "0x6d7",
+      "bytes": "ad"
+    },
+    {
+      "address": "0x17c48",
+      "cs": "0x1757",
+      "ip": "0x6d8",
+      "bytes": "0bc0"
+    },
+    {
+      "address": "0x17c4a",
+      "cs": "0x1757",
+      "ip": "0x6da",
+      "bytes": "7809"
+    },
+    {
+      "address": "0x17c55",
+      "cs": "0x1757",
+      "ip": "0x6e5",
+      "bytes": "d1e0"
+    },
+    {
+      "address": "0x17c57",
+      "cs": "0x1757",
+      "ip": "0x6e7",
+      "bytes": "d1f8"
+    },
+    {
+      "address": "0x17c59",
+      "cs": "0x1757",
+      "ip": "0x6e9",
+      "bytes": "03d8"
+    },
+    {
+      "address": "0x17c5b",
+      "cs": "0x1757",
+      "ip": "0x6eb",
+      "bytes": "26012f"
+    },
+    {
+      "address": "0x17c5e",
+      "cs": "0x1757",
+      "ip": "0x6ee",
+      "bytes": "e2e7"
+    },
+    {
+      "address": "0x17c60",
+      "cs": "0x1757",
+      "ip": "0x6f0",
+      "bytes": "07"
+    },
+    {
+      "address": "0x17c61",
+      "cs": "0x1757",
+      "ip": "0x6f1",
+      "bytes": "1f"
+    },
+    {
+      "address": "0x17c62",
+      "cs": "0x1757",
+      "ip": "0x6f2",
+      "bytes": "33ed"
+    },
+    {
+      "address": "0x17c64",
+      "cs": "0x1757",
+      "ip": "0x6f4",
+      "bytes": "33ff"
+    },
+    {
+      "address": "0x17c66",
+      "cs": "0x1757",
+      "ip": "0x6f6",
+      "bytes": "33f6"
+    },
+    {
+      "address": "0x17c68",
+      "cs": "0x1757",
+      "ip": "0x6f8",
+      "bytes": "33d2"
+    },
+    {
+      "address": "0x17c6a",
+      "cs": "0x1757",
+      "ip": "0x6fa",
+      "bytes": "33db"
+    },
+    {
+      "address": "0x17c6c",
+      "cs": "0x1757",
+      "ip": "0x6fc",
+      "bytes": "33c0"
+    },
+    {
+      "address": "0x17c6e",
+      "cs": "0x1757",
+      "ip": "0x6fe",
+      "bytes": "eaf3610010"
+    },
+    {
+      "address": "0x161f3",
+      "cs": "0x1000",
+      "ip": "0x61f3",
+      "bytes": "bf7616"
+    }
+  ],
+  "limitations": [
+    "DOS/BIOS/device behavior and game execution are not verified.",
+    "Compares the entire initialized MZ module; not the uninitialized allocation or historical file byte identity."
+  ],
+  "verified": true
+}

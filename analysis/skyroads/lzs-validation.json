@@ -1,0 +1,3411 @@
+{
+  "method": "standalone Python decoder compared with unchanged x86 66e6/bitreader instructions",
+  "exe_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+  "roads_sha256": "19551b52d5a9e87d62ebea5e98a559f3fe76a98947924f85d2787d00f8333d83",
+  "results": [
+    {
+      "returned": true,
+      "instructions": 39451,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 170,
+        "5": 186,
+        "10": 37,
+        "3": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2240,
+      "guard_unchanged": true,
+      "consumed_bytes": 369,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 0,
+      "length": 2240,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "490c4a2b1b68896a4336e36d63b82ff4116e993557d092d7a2473ae4766e6a54",
+      "x86_sha256": "490c4a2b1b68896a4336e36d63b82ff4116e993557d092d7a2473ae4766e6a54",
+      "python_consumed_bytes": 369,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 14377,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 79,
+        "5": 67,
+        "10": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 3
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 5,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 30
+        },
+        {
+          "width": 5,
+          "di": 30
+        },
+        {
+          "width": 8,
+          "di": 43
+        },
+        {
+          "width": 8,
+          "di": 44
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 770,
+      "guard_unchanged": true,
+      "consumed_bytes": 137,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 1,
+      "length": 770,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "046df562fee796005f3fbb3d2de260dfedb7a2174ee6b8d3d4374a4f19aed5aa",
+      "x86_sha256": "046df562fee796005f3fbb3d2de260dfedb7a2174ee6b8d3d4374a4f19aed5aa",
+      "python_consumed_bytes": 137,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 33153,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 168,
+        "5": 159,
+        "10": 14,
+        "6": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 28
+        },
+        {
+          "width": 8,
+          "di": 29
+        },
+        {
+          "width": 5,
+          "di": 29
+        },
+        {
+          "width": 8,
+          "di": 31
+        },
+        {
+          "width": 5,
+          "di": 31
+        },
+        {
+          "width": 8,
+          "di": 35
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1610,
+      "guard_unchanged": true,
+      "consumed_bytes": 316,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 2,
+      "length": 1610,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "da345a8976b8cf46cb21b9fd280cc2836ab8bcfc8c31979385189afb8d502ffe",
+      "x86_sha256": "da345a8976b8cf46cb21b9fd280cc2836ab8bcfc8c31979385189afb8d502ffe",
+      "python_consumed_bytes": 316,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 14152,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 75,
+        "5": 66,
+        "10": 2
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 63
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 840,
+      "guard_unchanged": true,
+      "consumed_bytes": 133,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 3,
+      "length": 840,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "47807de0e7949050fb88b72ecd2e72f42e165d57c1b6a1fd6ba47a8dda7ff940",
+      "x86_sha256": "47807de0e7949050fb88b72ecd2e72f42e165d57c1b6a1fd6ba47a8dda7ff940",
+      "python_consumed_bytes": 133,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 23610,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 115,
+        "5": 113,
+        "10": 11,
+        "7": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 5,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1316,
+      "guard_unchanged": true,
+      "consumed_bytes": 222,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 4,
+      "length": 1316,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "e37413dedb155c976b8a9c3078a03051e8b08c52136f111eabf36f4a1165ff10",
+      "x86_sha256": "e37413dedb155c976b8a9c3078a03051e8b08c52136f111eabf36f4a1165ff10",
+      "python_consumed_bytes": 222,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 27080,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 136,
+        "5": 126,
+        "10": 8
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 5
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 5,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 11
+        },
+        {
+          "width": 5,
+          "di": 11
+        },
+        {
+          "width": 8,
+          "di": 15
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 23
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1764,
+      "guard_unchanged": true,
+      "consumed_bytes": 249,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 5,
+      "length": 1764,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "0a019e3a9b7ac200f3341d1ca34d5fcbe232d12b0539eee27f27d09a446d7374",
+      "x86_sha256": "0a019e3a9b7ac200f3341d1ca34d5fcbe232d12b0539eee27f27d09a446d7374",
+      "python_consumed_bytes": 249,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 13153,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 71,
+        "5": 62,
+        "9": 2,
+        "2": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 5,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 672,
+      "guard_unchanged": true,
+      "consumed_bytes": 126,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        9
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 6,
+      "length": 672,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "41edc9c53bd228d4cd76c5d2e2ae948de788fae323895456f8283586b4c7cbf2",
+      "x86_sha256": "41edc9c53bd228d4cd76c5d2e2ae948de788fae323895456f8283586b4c7cbf2",
+      "python_consumed_bytes": 126,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 15609,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 83,
+        "5": 76,
+        "10": 2
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 59
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 840,
+      "guard_unchanged": true,
+      "consumed_bytes": 148,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 7,
+      "length": 840,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "1b02bed4108f43b7151109b75f325e9ccd3d9b33c7b09eeb7c8b421c36cd7ea0",
+      "x86_sha256": "1b02bed4108f43b7151109b75f325e9ccd3d9b33c7b09eeb7c8b421c36cd7ea0",
+      "python_consumed_bytes": 148,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 31380,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 154,
+        "5": 152,
+        "10": 17,
+        "7": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 34
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 45
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1484,
+      "guard_unchanged": true,
+      "consumed_bytes": 300,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 8,
+      "length": 1484,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "be79b10f0f972f7579275c82fe1ef52d3825cfdcbeeaac1a6647aa6b3a631a63",
+      "x86_sha256": "be79b10f0f972f7579275c82fe1ef52d3825cfdcbeeaac1a6647aa6b3a631a63",
+      "python_consumed_bytes": 300,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 14323,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 72,
+        "5": 64,
+        "10": 4,
+        "4": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 3
+        },
+        {
+          "width": 5,
+          "di": 3
+        },
+        {
+          "width": 8,
+          "di": 5
+        },
+        {
+          "width": 5,
+          "di": 5
+        },
+        {
+          "width": 8,
+          "di": 9
+        },
+        {
+          "width": 5,
+          "di": 9
+        },
+        {
+          "width": 8,
+          "di": 12
+        },
+        {
+          "width": 5,
+          "di": 12
+        },
+        {
+          "width": 8,
+          "di": 14
+        },
+        {
+          "width": 5,
+          "di": 14
+        },
+        {
+          "width": 8,
+          "di": 28
+        },
+        {
+          "width": 5,
+          "di": 28
+        },
+        {
+          "width": 8,
+          "di": 56
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 980,
+      "guard_unchanged": true,
+      "consumed_bytes": 132,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 9,
+      "length": 980,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "d0a9c7738ff29d89a19cdd57103d78d6290c7c1addd22b03baeef8841e4eda88",
+      "x86_sha256": "d0a9c7738ff29d89a19cdd57103d78d6290c7c1addd22b03baeef8841e4eda88",
+      "python_consumed_bytes": 132,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 22661,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 122,
+        "5": 108,
+        "10": 4
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 5
+        },
+        {
+          "width": 5,
+          "di": 5
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 11
+        },
+        {
+          "width": 5,
+          "di": 11
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 64
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1134,
+      "guard_unchanged": true,
+      "consumed_bytes": 216,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 10,
+      "length": 1134,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "8a2c0d8e9f14ee62ec4d99ad8f506060aab07413878019f3a57a41d44dc31b2e",
+      "x86_sha256": "8a2c0d8e9f14ee62ec4d99ad8f506060aab07413878019f3a57a41d44dc31b2e",
+      "python_consumed_bytes": 216,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 45920,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 222,
+        "5": 216,
+        "10": 22,
+        "6": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 49
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2786,
+      "guard_unchanged": true,
+      "consumed_bytes": 425,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 11,
+      "length": 2786,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "7e7fb390ceda39bab7a3392c86a6440180060932dd78dd8729608a8b146767c9",
+      "x86_sha256": "7e7fb390ceda39bab7a3392c86a6440180060932dd78dd8729608a8b146767c9",
+      "python_consumed_bytes": 425,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 30618,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 133,
+        "5": 140,
+        "10": 22
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2296,
+      "guard_unchanged": true,
+      "consumed_bytes": 275,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 12,
+      "length": 2296,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "83869c23275c5f0bfdbd35d7d1497a4a54daf77666b3eac8a6999e01a7eaaf55",
+      "x86_sha256": "83869c23275c5f0bfdbd35d7d1497a4a54daf77666b3eac8a6999e01a7eaaf55",
+      "python_consumed_bytes": 275,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 38892,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 186,
+        "5": 184,
+        "10": 31
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 34
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 47
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1568,
+      "guard_unchanged": true,
+      "consumed_bytes": 378,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 13,
+      "length": 1568,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "caa493369b406bc44521fdeb2bf8abdc5296c8559e4a827e6fe6a5f32f03afc2",
+      "x86_sha256": "caa493369b406bc44521fdeb2bf8abdc5296c8559e4a827e6fe6a5f32f03afc2",
+      "python_consumed_bytes": 378,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 76628,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 361,
+        "5": 356,
+        "10": 65,
+        "1": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 5,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 3318,
+      "guard_unchanged": true,
+      "consumed_bytes": 738,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 14,
+      "length": 3318,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "a83846d73cfeed73d9fb30c8cf8239138b3cfc1371d2d4974554cc5f223b6aaf",
+      "x86_sha256": "a83846d73cfeed73d9fb30c8cf8239138b3cfc1371d2d4974554cc5f223b6aaf",
+      "python_consumed_bytes": 738,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 80533,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 322,
+        "5": 401,
+        "10": 112
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 62
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2814,
+      "guard_unchanged": true,
+      "consumed_bytes": 788,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 15,
+      "length": 2814,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "14e24cc48ab0e01ebc0ea836479ad1595f48858f2decfab12bac42383f34edc9",
+      "x86_sha256": "14e24cc48ab0e01ebc0ea836479ad1595f48858f2decfab12bac42383f34edc9",
+      "python_consumed_bytes": 788,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 33480,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 169,
+        "5": 157,
+        "10": 12,
+        "6": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 34
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 49
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1918,
+      "guard_unchanged": true,
+      "consumed_bytes": 313,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 16,
+      "length": 1918,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "ec11453ea60038d991777f69a74866076a64df906d3843e351bc971293d726ac",
+      "x86_sha256": "ec11453ea60038d991777f69a74866076a64df906d3843e351bc971293d726ac",
+      "python_consumed_bytes": 313,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 35481,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 171,
+        "5": 169,
+        "10": 17
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 20
+        },
+        {
+          "width": 8,
+          "di": 21
+        },
+        {
+          "width": 5,
+          "di": 21
+        },
+        {
+          "width": 8,
+          "di": 34
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2142,
+      "guard_unchanged": true,
+      "consumed_bytes": 329,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 17,
+      "length": 2142,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "c88457a3c2b7f11823db918ecb6c18089d7e9a58440a98408c55e3401320d6ba",
+      "x86_sha256": "c88457a3c2b7f11823db918ecb6c18089d7e9a58440a98408c55e3401320d6ba",
+      "python_consumed_bytes": 329,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 36912,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 177,
+        "5": 175,
+        "10": 18
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 56
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2282,
+      "guard_unchanged": true,
+      "consumed_bytes": 341,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 18,
+      "length": 2282,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "f0dd21ff1ab2b0237c5fa182894a9cac33e4d09e212a1568bf52b14229aea83c",
+      "x86_sha256": "f0dd21ff1ab2b0237c5fa182894a9cac33e4d09e212a1568bf52b14229aea83c",
+      "python_consumed_bytes": 341,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 25726,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 117,
+        "5": 113,
+        "10": 14,
+        "4": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 34
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 49
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2058,
+      "guard_unchanged": true,
+      "consumed_bytes": 229,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 19,
+      "length": 2058,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "de7a5f859f25c8c2c9c142f61412e558e0119dd2a037328f30a518b487922450",
+      "x86_sha256": "de7a5f859f25c8c2c9c142f61412e558e0119dd2a037328f30a518b487922450",
+      "python_consumed_bytes": 229,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 44415,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 232,
+        "5": 209,
+        "10": 9,
+        "7": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 14
+        },
+        {
+          "width": 5,
+          "di": 14
+        },
+        {
+          "width": 8,
+          "di": 21
+        },
+        {
+          "width": 5,
+          "di": 21
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2604,
+      "guard_unchanged": true,
+      "consumed_bytes": 413,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 20,
+      "length": 2604,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "a058d094686442f3bab15d35c3cc643e33adc3cb66d5f3b718cb1fb4d4f33c05",
+      "x86_sha256": "a058d094686442f3bab15d35c3cc643e33adc3cb66d5f3b718cb1fb4d4f33c05",
+      "python_consumed_bytes": 413,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 33728,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 164,
+        "5": 158,
+        "10": 19
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 56
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1820,
+      "guard_unchanged": true,
+      "consumed_bytes": 318,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 21,
+      "length": 1820,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "962deb2f378a9f5d5b7eeea85cca14620f5814ecb0c446850241405274dadd22",
+      "x86_sha256": "962deb2f378a9f5d5b7eeea85cca14620f5814ecb0c446850241405274dadd22",
+      "python_consumed_bytes": 318,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 39451,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 170,
+        "5": 186,
+        "10": 37,
+        "3": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2240,
+      "guard_unchanged": true,
+      "consumed_bytes": 369,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 22,
+      "length": 2240,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "490c4a2b1b68896a4336e36d63b82ff4116e993557d092d7a2473ae4766e6a54",
+      "x86_sha256": "490c4a2b1b68896a4336e36d63b82ff4116e993557d092d7a2473ae4766e6a54",
+      "python_consumed_bytes": 369,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 66289,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 330,
+        "5": 322,
+        "10": 33,
+        "7": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 20
+        },
+        {
+          "width": 8,
+          "di": 21
+        },
+        {
+          "width": 5,
+          "di": 21
+        },
+        {
+          "width": 8,
+          "di": 35
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 3136,
+      "guard_unchanged": true,
+      "consumed_bytes": 631,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 23,
+      "length": 3136,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "25497b83e6073cdd6b131bea112ac2dece5acdd7a01ec12dc467cb646f534450",
+      "x86_sha256": "25497b83e6073cdd6b131bea112ac2dece5acdd7a01ec12dc467cb646f534450",
+      "python_consumed_bytes": 631,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 23660,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 124,
+        "5": 113,
+        "10": 7
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 35
+        },
+        {
+          "width": 5,
+          "di": 35
+        },
+        {
+          "width": 8,
+          "di": 38
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1162,
+      "guard_unchanged": true,
+      "consumed_bytes": 226,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 24,
+      "length": 1162,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "3c449fa4bfd7495f84ba9d5d599d4619d9cf2a9adf4be6e3404d021923158646",
+      "x86_sha256": "3c449fa4bfd7495f84ba9d5d599d4619d9cf2a9adf4be6e3404d021923158646",
+      "python_consumed_bytes": 226,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 27617,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 102,
+        "5": 124,
+        "10": 34,
+        "2": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 50
+        },
+        {
+          "width": 8,
+          "di": 51
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2100,
+      "guard_unchanged": true,
+      "consumed_bytes": 248,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 25,
+      "length": 2100,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "dc8919c6bfd2a9a7252268ed3cf55c590be898b691eb8979cf87fcf5cfb44c5d",
+      "x86_sha256": "dc8919c6bfd2a9a7252268ed3cf55c590be898b691eb8979cf87fcf5cfb44c5d",
+      "python_consumed_bytes": 248,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 52491,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 235,
+        "5": 232,
+        "10": 53
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 5,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 48
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2674,
+      "guard_unchanged": true,
+      "consumed_bytes": 499,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 26,
+      "length": 2674,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "bfccd7803d2cdc1737bc1acf13c8684b890b69ebb308ccff4577cd68754cd24a",
+      "x86_sha256": "bfccd7803d2cdc1737bc1acf13c8684b890b69ebb308ccff4577cd68754cd24a",
+      "python_consumed_bytes": 499,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 28026,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 139,
+        "5": 126,
+        "10": 4,
+        "6": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 48
+        },
+        {
+          "width": 8,
+          "di": 49
+        },
+        {
+          "width": 5,
+          "di": 49
+        },
+        {
+          "width": 8,
+          "di": 62
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2324,
+      "guard_unchanged": true,
+      "consumed_bytes": 247,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 27,
+      "length": 2324,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "b3d1d033c4bcc7fbbcbebdab81869767eff37bb2f086cf0c044756912c9dfe91",
+      "x86_sha256": "b3d1d033c4bcc7fbbcbebdab81869767eff37bb2f086cf0c044756912c9dfe91",
+      "python_consumed_bytes": 247,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 40226,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 175,
+        "5": 182,
+        "10": 26
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 5,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 19
+        },
+        {
+          "width": 5,
+          "di": 19
+        },
+        {
+          "width": 8,
+          "di": 33
+        },
+        {
+          "width": 5,
+          "di": 33
+        },
+        {
+          "width": 8,
+          "di": 61
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 3276,
+      "guard_unchanged": true,
+      "consumed_bytes": 355,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x16742",
+        "0x16712",
+        "0x16715",
+        "0x16760",
+        "0x16679",
+        "0x1667e",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 28,
+      "length": 3276,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "4a5166e7644eb6d267046e95b694b6c68f9c7620c82dbb0fff905c67a6d32a04",
+      "x86_sha256": "4a5166e7644eb6d267046e95b694b6c68f9c7620c82dbb0fff905c67a6d32a04",
+      "python_consumed_bytes": 355,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 34038,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 170,
+        "5": 161,
+        "10": 14,
+        "2": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 5,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 5,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 16
+        },
+        {
+          "width": 5,
+          "di": 16
+        },
+        {
+          "width": 8,
+          "di": 32
+        },
+        {
+          "width": 5,
+          "di": 32
+        },
+        {
+          "width": 8,
+          "di": 44
+        },
+        {
+          "width": 8,
+          "di": 45
+        },
+        {
+          "width": 5,
+          "di": 45
+        },
+        {
+          "width": 8,
+          "di": 49
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 1904,
+      "guard_unchanged": true,
+      "consumed_bytes": 319,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 29,
+      "length": 1904,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "7ea015728c28bc2efb74ff9bdd3552f800884eb298911b6135d68b6e870a3dd7",
+      "x86_sha256": "7ea015728c28bc2efb74ff9bdd3552f800884eb298911b6135d68b6e870a3dd7",
+      "python_consumed_bytes": 319,
+      "verified": true
+    },
+    {
+      "returned": true,
+      "instructions": 34049,
+      "prohibited": [],
+      "bit_width_counts": {
+        "8": 152,
+        "5": 155,
+        "10": 18,
+        "2": 1
+      },
+      "first_bit_reads": [
+        {
+          "width": 8,
+          "di": 0
+        },
+        {
+          "width": 8,
+          "di": 1
+        },
+        {
+          "width": 8,
+          "di": 2
+        },
+        {
+          "width": 5,
+          "di": 2
+        },
+        {
+          "width": 8,
+          "di": 4
+        },
+        {
+          "width": 8,
+          "di": 5
+        },
+        {
+          "width": 8,
+          "di": 6
+        },
+        {
+          "width": 8,
+          "di": 7
+        },
+        {
+          "width": 8,
+          "di": 8
+        },
+        {
+          "width": 8,
+          "di": 9
+        },
+        {
+          "width": 5,
+          "di": 9
+        },
+        {
+          "width": 8,
+          "di": 13
+        },
+        {
+          "width": 5,
+          "di": 13
+        },
+        {
+          "width": 8,
+          "di": 17
+        },
+        {
+          "width": 5,
+          "di": 17
+        },
+        {
+          "width": 8,
+          "di": 25
+        }
+      ],
+      "emulation_error": null,
+      "written_bytes": 2800,
+      "guard_unchanged": true,
+      "consumed_bytes": 300,
+      "remaining_bits": 8,
+      "patched_width_immediates": [
+        5,
+        8,
+        10
+      ],
+      "patched_long_distance_base": 256,
+      "last_addresses": [
+        "0x1653b",
+        "0x1653d",
+        "0x1653f",
+        "0x16540",
+        "0x16542",
+        "0x16687",
+        "0x16688",
+        "0x16763",
+        "0x16764",
+        "0x16765",
+        "0x16766",
+        "0x16800"
+      ],
+      "index": 30,
+      "length": 2800,
+      "differing_bytes": 0,
+      "first_differences": [],
+      "python_sha256": "0b7c170dbdf95ab07c65bef7c5cc20f8304b04b07499f87a8626761836030a24",
+      "x86_sha256": "0b7c170dbdf95ab07c65bef7c5cc20f8304b04b07499f87a8626761836030a24",
+      "python_consumed_bytes": 300,
+      "verified": true
+    }
+  ],
+  "verified": true,
+  "compared_bytes": 60872,
+  "limitations": [
+    "Input is preloaded; DOS file refill and full loader are not exercised.",
+    "One explicit lookahead byte models prefetch after final encoded byte.",
+    "Equivalence covers these 31 valid road streams, not every possible LZS input.",
+    "Game rendering, physics and device execution are not exercised."
+  ]
+}

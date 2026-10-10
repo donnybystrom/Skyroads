@@ -1,0 +1,27 @@
+[
+  {
+    "recording": "cycle-01-20261010-140216-7b25751f.json",
+    "ticks": 327,
+    "verified": true
+  },
+  {
+    "recording": "cycle-01-20261010-090221-545e8c4e.json",
+    "ticks": 271,
+    "verified": true
+  },
+  {
+    "recording": "cycle-01-20261010-085326-deda0ff4.json",
+    "ticks": 63,
+    "verified": true
+  },
+  {
+    "recording": "cycle-01-20261010-084815-ece8ee88.json",
+    "ticks": 975,
+    "verified": true
+  },
+  {
+    "recording": "cycle-01-20261009-204551-f792baea.json",
+    "ticks": 162,
+    "verified": true
+  }
+]

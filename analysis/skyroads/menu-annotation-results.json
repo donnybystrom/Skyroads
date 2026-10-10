@@ -1,0 +1,209 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4e52 from 'FUN_1000_4e52' to 'RunMainMenu'\",\"warnings\":[\"Function name 'RunMainMenu' does not start with a recognized verb. First word 'Run' not in allowed list. Common verbs: Get, Set, Initialize, Process, Calculate, Find, Check, Handle\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4e52\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4c20 from 'FUN_1000_4c20' to 'RunControlsMenu'\",\"warnings\":[\"Function name 'RunControlsMenu' does not start with a recognized verb. First word 'Run' not in allowed list. Common verbs: Get, Set, Initialize, Process, Calculate, Find, Check, Handle\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4c20\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4e2e from 'FUN_1000_4e2e' to 'RunHelpMenu'\",\"warnings\":[\"Function name 'RunHelpMenu' does not start with a recognized verb. First word 'Run' not in allowed list. Common verbs: Get, Set, Initialize, Process, Calculate, Find, Check, Handle\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4e2e\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4dc8 from 'FUN_1000_4dc8' to 'ShowHelpMenuPage'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4dc8\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5180 from 'FUN_1000_5180' to 'RunRoadSelectionMenu'\",\"warnings\":[\"Function name 'RunRoadSelectionMenu' does not start with a recognized verb. First word 'Run' not in allowed list. Common verbs: Get, Set, Initialize, Process, Calculate, Find, Check, Handle\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5180\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5080 from 'FUN_1000_5080' to 'DrawRoadSelectionFrame'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5080\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4acb from 'FUN_1000_4acb' to 'DrawControlsMenuChoice'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4acb\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4afe from 'FUN_1000_4afe' to 'RefreshSelectedControlModes'\",\"warnings\":[\"Function name 'RefreshSelectedControlModes' does not start with a recognized verb. First word 'Refresh' not in allowed list. Common verbs: Get, Set, Initialize, Process, Calculate, Find, Check, Handle\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4afe\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5737 from 'FUN_1000_5737' to 'LoadGameProfile'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5737\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:578c from 'FUN_1000_578c' to 'SaveGameProfile'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:578c\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5feb from 'FUN_1000_5feb' to 'ReadDosMenuKey'\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5feb\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"program\":\"SKYROADS_UNPACKED.EXE\",\"saved\":true,\"message\":\"Program saved successfully\"}"
+      }
+    ],
+    "isError": false
+  }
+]

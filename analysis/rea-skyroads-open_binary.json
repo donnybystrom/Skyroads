@@ -1,0 +1,18 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/SKYROADS.EXE\",\"format\":\"dos-mz\",\"kind\":\"executable\",\"sha256\":\"ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f\",\"architecture\":\"x86\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/SKYROADS.EXE",
+      "format": "dos-mz",
+      "kind": "executable",
+      "sha256": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f",
+      "architecture": "x86"
+    }
+  },
+  "isError": false
+}

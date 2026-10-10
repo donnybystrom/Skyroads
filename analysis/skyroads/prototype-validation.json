@@ -1,0 +1,294 @@
+{
+  "verified": true,
+  "elapsed_seconds": 40.98005791600008,
+  "x86_ticks": 2835,
+  "runs": [
+    {
+      "label": "http-road-00",
+      "road_index": 0,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "02a23f37223747919b8a6a2931b1e5bf68fc00b7cdd9e7d80e97d17f53baf2be"
+    },
+    {
+      "label": "http-road-01",
+      "road_index": 1,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "a568cb2b15e1b452b93ab2a1e8a004c44fa62156fbccafcac1ebe91e5ff47e09"
+    },
+    {
+      "label": "http-road-02",
+      "road_index": 2,
+      "ticks": 54,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "133e82621de08142d4bc045206d3b8359b3e27b351a882582e88ab3f866cc5e4"
+    },
+    {
+      "label": "http-road-03",
+      "road_index": 3,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "45256fc3aa62dc04d3de9cfcfa0f37db713e052b88ef2fd62fba8c2a99822895"
+    },
+    {
+      "label": "http-road-04",
+      "road_index": 4,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "57d088877f909a07d95eac4f1f666914f70442bcde09b4566ab8f6b1114ea8ff"
+    },
+    {
+      "label": "http-road-05",
+      "road_index": 5,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "aa7d0441e102d213ae8909d3c4c18cd62624be38f477efbc642c9ecda3155062"
+    },
+    {
+      "label": "http-road-06",
+      "road_index": 6,
+      "ticks": 89,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "7bfabc140983681530d4a7dae75fdfd66b95bccce6a81f2867c8a85bb9d047f7"
+    },
+    {
+      "label": "http-road-07",
+      "road_index": 7,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "d0f35fbac6c2e56459f22ad0c69052e2b698319798222db28af4c593d7d8dce5"
+    },
+    {
+      "label": "http-road-08",
+      "road_index": 8,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "ef2b0ac4363071328243d42f2d3747c2aa31704132c620ca8bb24f3d44019740"
+    },
+    {
+      "label": "http-road-09",
+      "road_index": 9,
+      "ticks": 94,
+      "assist": 0,
+      "exit_state": 3,
+      "trace_sha256": "03121ecf6e43764528f6d7d0d73416d72df51587c466f36038a97a0d498567b5"
+    },
+    {
+      "label": "http-road-10",
+      "road_index": 10,
+      "ticks": 54,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "28382ef66a8c7e8353fb3fbfc438caa8c34b722747460b78341643f4db51212c"
+    },
+    {
+      "label": "http-road-11",
+      "road_index": 11,
+      "ticks": 95,
+      "assist": 0,
+      "exit_state": 3,
+      "trace_sha256": "47d643e5366805707d0c16ffaaef2392b0beeeb4a24a5f22e68454de6a34485a"
+    },
+    {
+      "label": "http-road-12",
+      "road_index": 12,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "bbbb7f17d4382ebebe5bf9af0f18a6407a45313d140f28d01841e0c3af83ea9b"
+    },
+    {
+      "label": "http-road-13",
+      "road_index": 13,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "de4c644b8725bb7f63e9e962af6fcaeee5a60bf19a16af54735e701d71e1832a"
+    },
+    {
+      "label": "http-road-14",
+      "road_index": 14,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "6f350eec33e0c0977f92e646c294f1f925eb72e58c2ce006cf58c2f0b2db4977"
+    },
+    {
+      "label": "http-road-15",
+      "road_index": 15,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "8a13ea1b725258ecd29a637cfd557ff7fbaf7bf3fc54762a5ab731798cd2fdf2"
+    },
+    {
+      "label": "http-road-16",
+      "road_index": 16,
+      "ticks": 59,
+      "assist": 1,
+      "exit_state": 1,
+      "trace_sha256": "3909581aa3d7e10383fb895787816946220ad048be44c4fa44032a2847a76aff"
+    },
+    {
+      "label": "http-road-17",
+      "road_index": 17,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "c3f7bcc2eb93874a3bec1e9b5409dda4cf8ef3938ebc4d1403c066bcf668ef47"
+    },
+    {
+      "label": "http-road-18",
+      "road_index": 18,
+      "ticks": 94,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "d27c5886a42bf1c8c20dd7747b2c1efb56a544bd9fb382f589f4bdf4afbdf7f9"
+    },
+    {
+      "label": "http-road-19",
+      "road_index": 19,
+      "ticks": 84,
+      "assist": 0,
+      "exit_state": 3,
+      "trace_sha256": "56500568643d094317ae11b79c0ef157bd34b260de6c8d01e96288e4117ac7ee"
+    },
+    {
+      "label": "http-road-20",
+      "road_index": 20,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "4076cfcb47364735f6b9b51b3736e8bd0ca1c3b0f87f6744372b70a79ebed3f2"
+    },
+    {
+      "label": "http-road-21",
+      "road_index": 21,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "aa8d1f7a01f506a6f59fcabda8f235ace590afd2acaa22167302ed3094141e05"
+    },
+    {
+      "label": "http-road-22",
+      "road_index": 22,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "02a23f37223747919b8a6a2931b1e5bf68fc00b7cdd9e7d80e97d17f53baf2be"
+    },
+    {
+      "label": "http-road-23",
+      "road_index": 23,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "c14270d17b4d7f3c3f2f8a0d89861f2657ff103853d59b9f0e9dad1194a859d7"
+    },
+    {
+      "label": "http-road-24",
+      "road_index": 24,
+      "ticks": 93,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "24dc3fc1094735ee6af27b9ff8d125b05c3faf1c839c4823985e894fc713f205"
+    },
+    {
+      "label": "http-road-25",
+      "road_index": 25,
+      "ticks": 59,
+      "assist": 0,
+      "exit_state": 3,
+      "trace_sha256": "e9c226891b0d3705eccc110b255f837b7e346d2c890e45aa89bd3d957b814c38"
+    },
+    {
+      "label": "http-road-26",
+      "road_index": 26,
+      "ticks": 100,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "d842268964348cde8a27bee667fbe4def235c4ebed534ba0c76c63c808d85285"
+    },
+    {
+      "label": "http-road-27",
+      "road_index": 27,
+      "ticks": 100,
+      "assist": 0,
+      "exit_state": 0,
+      "trace_sha256": "6625d1d3ede60843a82566039a4271fc08a371eda62cacf3dafcc477cb47da6d"
+    },
+    {
+      "label": "http-road-28",
+      "road_index": 28,
+      "ticks": 94,
+      "assist": 1,
+      "exit_state": 3,
+      "trace_sha256": "e6dafcb9568b92f89b6fc90b8f8eefe9e1b059344ae4a4efae6f6aac37e5c6bd"
+    },
+    {
+      "label": "http-road-29",
+      "road_index": 29,
+      "ticks": 42,
+      "assist": 0,
+      "exit_state": 3,
+      "trace_sha256": "2554fea3abe055bdbe5e96ec60a69f33188fb6a260310e3ea38eb39c01c13bfc"
+    },
+    {
+      "label": "http-road-30",
+      "road_index": 30,
+      "ticks": 55,
+      "assist": 1,
+      "exit_state": 2,
+      "trace_sha256": "0f624358a9bd9924e4447f6fb6e9800599b55303b32cce99b9617dde6082721f"
+    },
+    {
+      "label": "saved-http-run",
+      "road_index": 0,
+      "ticks": 40,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "5d3d86a506e243db09b6cd5f0e8ce8f261da505e62427f36e62e7e226e6a93bf"
+    },
+    {
+      "label": "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-00-20261009-195614-13dad833.json",
+      "road_index": 0,
+      "ticks": 29,
+      "assist": 1,
+      "exit_state": 0,
+      "trace_sha256": "1c263a7f4cb879f77f955578fc403eeb7b13bf126d3d72af8a8c515fe6e45f25"
+    }
+  ],
+  "checks": [
+    "31 catalog roads",
+    "31 HTTP trajectories and exact-state/event x86 comparisons",
+    "31 server replays",
+    "terminal sessions stop",
+    "single tick vs 8-tick batch invariance",
+    "malformed batch is atomic",
+    "stale tick rejected without mutation",
+    "cross-origin write rejected",
+    "HTTP save -> file -> independent CLI replay"
+  ],
+  "model_sha256": {
+    "skyroads_tick.py": "8158648c725c72a541c8810d3d1b8c64d72af8f79241eec52c3b33339ced5589",
+    "skyroads_movement.py": "c695171a5e103ebc579404db52838eb4cf4ccde43cdd846447540bd181872c0d",
+    "skyroads_collision.py": "4ccd28a735cb8b8b0d47c0c6b01f230e837f10fb95f0c080dfad868bdebb7625",
+    "skyroads_timer.py": "3ee1382045433b25218caeec6d46677ef876372229e7baaefdc6d30a1697a7d4",
+    "skyroads_session.py": "4cab1d9d144d10aab60a23b8519b9f311b61dc5c182b33eb6998be68c5c17ee2"
+  },
+  "api_saved_recording": "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-00-20261009-195706-f5e8bf5e.json",
+  "browser_recordings": [
+    "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-00-20261009-195614-13dad833.json"
+  ],
+  "boundary": "post-input-poll deterministic physics; fixed timer per tick; muted audio helpers; analytical rendering"
+}

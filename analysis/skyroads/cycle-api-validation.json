@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "counts": {
+    "http_complete_replay": 1,
+    "rejected_saves": 11,
+    "cross_origin_rejected": 1,
+    "legacy_replays": 4
+  },
+  "rejected_saves_write_no_files": true
+}

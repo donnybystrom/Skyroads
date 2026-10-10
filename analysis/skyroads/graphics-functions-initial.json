@@ -1,0 +1,361 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:01b8": {
+      "name": "RunGameSessionLoop",
+      "size": 521,
+      "address": "1000:01b8",
+      "entry_point": "1000:01b8",
+      "decompiled_code": "\n// Main orchestration. Playable menu selection DS9332 in0..29 loads archiveindex+1 (1..30);archive0\n// is demo. Completion countersDS451c:30uint16words. At0339 callerlastRoadFlag iffselectedcounter0\n// and29 countersnonzero. Result0 increments selectedcounter andselection, callsprofile save578c,\n// thenselection;7 selectionwithoutincrement;otherresults retryRunRoadSession immediately.\n// Original72 result/selected/wrap cases and150 last-road cases match. Resource/menu/hardware\n// rendering remain partly outside current playable clone; keyboard whole-attempt loop verified\n// separately.\n\nvoid __cdecl16near RunGameSessionLoop(void)\n\n{\n  int *piVar1;\n  bool bVar2;\n  int iVar3;\n  uint uVar4;\n  undefined2 uVar5;\n  int iVar6;\n  undefined2 unaff_DS;\n  uint local_8;\n  \n  local_8 = 0xffff;\n  iVar3 = ProbeVgaSupport();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x3c = 0;\n    iVar3 = ProbeEgaSupport();\n    if (iVar3 == 0) {\n      PrintConsoleString(0xd08);\n      return;\n    }\n  }\n  FUN_1000_5a98();\n  FUN_1000_58cd();\n  InstallTimerHandlers();\n  *(undefined2 *)0x4570 = 1;\n  FUN_1000_0000();\n  FUN_1000_5737();\n  FUN_1000_57c4(0);\n  FUN_1000_5508();\n  LoadTrekDataArchive();\n  AbortOnResourceError();\n  FUN_1000_2cce();\nLAB_1000_0219:\n  bVar2 = true;\n  iVar3 = FUN_1000_4591();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x95f6 = 3;\n    goto LAB_1000_0251;\n  }\nLAB_1000_0232:\n  *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n  FUN_1000_4e52(!bVar2);\nLAB_1000_0251:\n  bVar2 = false;\n  FUN_1000_3f20();\n  FUN_1000_5567();\n  do {\n    FUN_1000_3f20();\n    if (*(int *)0x95f6 == 3) {\n      uVar5 = LoadRoadByIndex(0);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(0);\n    }\n    else {\n      iVar3 = FUN_1000_5180();\n      if (iVar3 != 0) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        goto LAB_1000_0232;\n      }\n      *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n      uVar4 = FUN_1000_019c();\n      uVar4 = uVar4 % 9;\n      if (uVar4 == local_8) {\n        uVar4 = (uVar4 + 1) % 9;\n      }\n      FUN_1000_57c4(uVar4 + 1);\n      uVar5 = LoadRoadByIndex(*(int *)0x9332 + 1);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(*(uint *)0x9332 / 3);\n      local_8 = uVar4;\n    }\n    if (*(int *)0x3c != 0) {\n      uVar5 = FUN_1000_3ef4(0xac80,0);\n      *(undefined2 *)0x5478 = uVar5;\n    }\n    AbortOnResourceError();\n    FUN_1000_0707();\n    iVar3 = 0;\n    for (uVar4 = 0; uVar4 < 0x1e; uVar4 = uVar4 + 1) {\n      if (*(int *)(uVar4 * 2 + 0x451c) != 0) {\n        iVar3 = iVar3 + 1;\n      }\n    }\n    do {\n      FUN_1000_4153();\n      if ((*(int *)(*(int *)0x9332 * 2 + 0x451c) == 0) && (iVar3 == 0x1d)) {\n        uVar5 = 1;\n      }\n      else {\n        uVar5 = 0;\n      }\n      iVar6 = RunRoadSession(uVar5);\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        if (iVar6 != 7) goto LAB_1000_0219;\n        goto LAB_1000_0232;\n      }\n      if (iVar6 == 0) {\n        piVar1 = (int *)(*(int *)0x9332 * 2 + 0x451c);\n        *piVar1 = *piVar1 + 1;\n        *(int *)0x9332 = *(int *)0x9332 + 1;\n        FUN_1000_578c();\n      }\n    } while ((iVar6 != 7) && (iVar6 != 0));\n    FUN_1000_3f3b();\n  } while( true );\n}\n\n",
+      "callee_count": 27,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "FUN_1000_0000",
+          "address": "1000:0000"
+        },
+        {
+          "name": "FUN_1000_019c",
+          "address": "1000:019c"
+        },
+        {
+          "name": "FUN_1000_0707",
+          "address": "1000:0707"
+        },
+        {
+          "name": "FUN_1000_2cce",
+          "address": "1000:2cce"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f20",
+          "address": "1000:3f20"
+        },
+        {
+          "name": "FUN_1000_3f3b",
+          "address": "1000:3f3b"
+        },
+        {
+          "name": "FUN_1000_4153",
+          "address": "1000:4153"
+        },
+        {
+          "name": "FUN_1000_4591",
+          "address": "1000:4591"
+        },
+        {
+          "name": "FUN_1000_4e52",
+          "address": "1000:4e52"
+        },
+        {
+          "name": "FUN_1000_5180",
+          "address": "1000:5180"
+        },
+        {
+          "name": "FUN_1000_5387",
+          "address": "1000:5387"
+        },
+        {
+          "name": "FUN_1000_5508",
+          "address": "1000:5508"
+        },
+        {
+          "name": "FUN_1000_5567",
+          "address": "1000:5567"
+        },
+        {
+          "name": "FUN_1000_5737",
+          "address": "1000:5737"
+        },
+        {
+          "name": "FUN_1000_578c",
+          "address": "1000:578c"
+        },
+        {
+          "name": "FUN_1000_57c4",
+          "address": "1000:57c4"
+        },
+        {
+          "name": "FUN_1000_58cd",
+          "address": "1000:58cd"
+        },
+        {
+          "name": "FUN_1000_5a98",
+          "address": "1000:5a98"
+        },
+        {
+          "name": "InstallTimerHandlers",
+          "address": "1000:3acc"
+        },
+        {
+          "name": "LoadRoadByIndex",
+          "address": "1000:5614"
+        },
+        {
+          "name": "LoadTrekDataArchive",
+          "address": "1000:00bb"
+        },
+        {
+          "name": "PrintConsoleString",
+          "address": "1000:5c82"
+        },
+        {
+          "name": "ProbeEgaSupport",
+          "address": "1000:6027"
+        },
+        {
+          "name": "ProbeVgaSupport",
+          "address": "1000:603b"
+        },
+        {
+          "name": "RunRoadSession",
+          "address": "1000:2b3d"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0f8c": {
+      "name": "FUN_1000_0f8c",
+      "size": 231,
+      "address": "1000:0f8c",
+      "entry_point": "1000:0f8c",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_0f8c(undefined2 *param_1,int param_2)\n\n{\n  undefined2 uVar1;\n  undefined2 *puVar2;\n  undefined2 uVar3;\n  undefined2 uVar4;\n  undefined2 unaff_DS;\n  undefined2 local_10;\n  undefined2 local_e;\n  uint local_c;\n  uint local_a;\n  int local_8;\n  \n  if (*(int *)0x3c == 0) {\n    uVar3 = 0;\n    if (param_2 == 0) {\n      uVar1 = 8;\n    }\n    else {\n      uVar1 = 5;\n    }\n  }\n  else if (param_2 == 0) {\n    uVar3 = 0x5c;\n    uVar1 = 0x5d;\n  }\n  else {\n    uVar3 = 0x5e;\n    uVar1 = 0x5f;\n  }\n  local_10 = *(undefined2 *)0xaf2a;\n  local_e = *param_1;\n  uVar4 = (undefined2)((ulong)param_1 >> 0x10);\n  puVar2 = (undefined2 *)param_1;\n  local_a = (uint)*(byte *)(puVar2 + 1);\n  local_c = (uint)*(byte *)((int)puVar2 + 3);\n  local_8 = local_a * local_c;\n  FUN_1000_0f62(puVar2 + 2,uVar4,local_8,uVar3,uVar1);\n  if (*(int *)0x3c == 0) {\n    FUN_1000_3c9a();\n  }\n  FUN_1000_417e(0,0xa000,0,1);\n  FUN_1000_4201(&local_10);\n  if (*(int *)0x3c == 0) {\n    FUN_1000_417e(0,0xa200,0,1);\n    FUN_1000_4201(&local_10);\n  }\n  return;\n}\n\n",
+      "callee_count": 4,
+      "callees": [
+        {
+          "name": "FUN_1000_0f62",
+          "address": "1000:0f62"
+        },
+        {
+          "name": "FUN_1000_3c9a",
+          "address": "1000:3c9a"
+        },
+        {
+          "name": "FUN_1000_417e",
+          "address": "1000:417e"
+        },
+        {
+          "name": "FUN_1000_4201",
+          "address": "1000:4201"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0c98": {
+      "name": "FUN_1000_0c98",
+      "size": 568,
+      "address": "1000:0c98",
+      "entry_point": "1000:0c98",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_0c98(int param_1)\n\n{\n  int iVar1;\n  int iVar2;\n  int iVar3;\n  uint uVar4;\n  uint uVar5;\n  uint uVar6;\n  undefined2 uVar7;\n  int iVar8;\n  undefined2 unaff_DS;\n  undefined2 uVar9;\n  undefined2 uVar10;\n  \n  iVar1 = IsBelowTunnelMidline\n                    (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                     *(undefined2 *)0xaf2c);\n  if (*(int *)0x456a == 0) {\n    if (*(int *)0x456e == 4) {\n      iVar8 = 0;\n    }\n    else {\n      iVar8 = *(int *)((int)(((ulong)*(uint *)0x1600 / 2) % 4) * 2 + 0x11a);\n    }\n    if (iVar1 == 0) {\n      iVar2 = FUN_1000_0baf(*(undefined2 *)0x9336,*(undefined2 *)0xaf2c);\n    }\n    else {\n      iVar2 = 0;\n    }\n    iVar3 = FUN_1000_0be9(*(undefined2 *)0xaf1c);\n    uVar4 = (iVar3 * 3 + iVar2) * 3 + 0xe + iVar8;\n  }\n  else {\n    uVar4 = *(uint *)0x456a / 3;\n    if (0xd < uVar4) {\n      uVar4 = 0xffff;\n    }\n  }\n  uVar5 = GetRoadSupportHeight\n                    (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(int *)0xaf1c + -0x380,iVar1);\n  uVar6 = GetRoadSupportHeight\n                    (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(int *)0xaf1c + 0x380,iVar1);\n  if ((((*(int *)0xe1c != *(int *)0x9618) || (*(int *)0xe1e != *(int *)0x961a)) ||\n      (*(int *)0xe20 != *(int *)0xaf1c)) ||\n     (((*(int *)0xe22 != *(int *)0xaf2c || (*(uint *)0xe24 != uVar4)) ||\n      (*(int *)0xe26 != *(int *)0x9334)))) {\n    uVar9 = *(undefined2 *)0x961a;\n    *(undefined2 *)0xe1c = *(undefined2 *)0x9618;\n    *(undefined2 *)0xe1e = uVar9;\n    *(undefined2 *)0xe20 = *(undefined2 *)0xaf1c;\n    if (param_1 == 0) {\n      iVar1 = *(int *)0xaf2c;\n    }\n    else {\n      iVar1 = *(int *)0xaf2c + -0x80;\n    }\n    *(int *)0xe22 = iVar1;\n    *(uint *)0xe24 = uVar4;\n    *(undefined2 *)0xe26 = *(undefined2 *)0x9334;\n    if (*(int *)0x3c == 0) {\n      iVar1 = (uint)(*(int *)0x9334 == 0) * 0x200 + -0x6000;\n    }\n    else {\n      iVar1 = *(int *)0x5478;\n    }\n    if (*(int *)0x456a == 0) {\n      if (uVar5 < uVar6) {\n        uVar5 = uVar6;\n      }\n      uVar5 = (*(int *)0xaf2c - uVar5) / 0x80;\n    }\n    else {\n      uVar5 = 0x7fff;\n    }\n    uVar10 = 0;\n    uVar9 = *(undefined2 *)0xaf36;\n    iVar8 = *(int *)0xaf34 + uVar4 * 0x2d0;\n    if (uVar4 == 0xffff) {\n      uVar4 = 0;\n    }\n    else {\n      uVar4 = *(uint *)0xe22 / 0x80;\n    }\n    uVar7 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x2000,0);\n    iVar1 = FUN_1000_0be9(*(undefined2 *)0xaf1c,uVar7,uVar4,iVar8,uVar9,uVar10,uVar5,iVar1);\n    FUN_1000_2d1f(*(uint *)0xaf1c / 0x80 + *(int *)(iVar1 * 2 + 0x3e));\n    *(uint *)0x9334 = *(uint *)0x9334 ^ 1;\n  }\n  return;\n}\n\n",
+      "callee_count": 6,
+      "callees": [
+        {
+          "name": "FUN_1000_0baf",
+          "address": "1000:0baf"
+        },
+        {
+          "name": "FUN_1000_0be9",
+          "address": "1000:0be9"
+        },
+        {
+          "name": "FUN_1000_2d1f",
+          "address": "1000:2d1f"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "GetRoadSupportHeight",
+          "address": "1000:0c26"
+        },
+        {
+          "name": "IsBelowTunnelMidline",
+          "address": "1000:0533"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0baf": {
+      "name": "FUN_1000_0baf",
+      "size": 58,
+      "address": "1000:0baf",
+      "entry_point": "1000:0baf",
+      "decompiled_code": "\nundefined2 __cdecl16near FUN_1000_0baf(int param_1,uint param_2)\n\n{\n  undefined2 uVar1;\n  \n  if ((param_1 < -0x162) || (param_2 < 0x2800)) {\n    uVar1 = 2;\n  }\n  else if (param_1 < 0x163) {\n    uVar1 = 0;\n  }\n  else {\n    uVar1 = 1;\n  }\n  return uVar1;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0be9": {
+      "name": "FUN_1000_0be9",
+      "size": 61,
+      "address": "1000:0be9",
+      "entry_point": "1000:0be9",
+      "decompiled_code": "\nint __cdecl16near FUN_1000_0be9(uint param_1)\n\n{\n  int iVar1;\n  \n  iVar1 = (int)(param_1 / 0x80 - 0x5f) / 0x2e;\n  if (iVar1 < 0) {\n    iVar1 = 0;\n  }\n  else if (6 < iVar1) {\n    iVar1 = 6;\n  }\n  return iVar1;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:2d1f": {
+      "name": "FUN_1000_2d1f",
+      "size": 333,
+      "address": "1000:2d1f",
+      "entry_point": "1000:2d1f",
+      "decompiled_code": "\nvoid __cdecl16near\nFUN_1000_2d1f(undefined2 param_1,undefined2 param_2,undefined2 param_3,undefined2 param_4,\n             undefined2 param_5,undefined2 param_6,undefined2 param_7,undefined2 param_8)\n\n{\n  int *piVar1;\n  undefined2 *puVar2;\n  undefined2 *puVar3;\n  int iVar4;\n  int iVar5;\n  undefined2 *puVar6;\n  undefined2 *puVar7;\n  undefined2 unaff_SS;\n  undefined2 unaff_DS;\n  undefined1 *puVar8;\n  \n  puVar8 = &stack0xfffe;\n  *(undefined2 *)0xe28 = param_1;\n  *(undefined2 *)0xe2a = param_2;\n  *(undefined2 *)0xe2c = param_3;\n  *(undefined2 *)0xe2e = param_4;\n  *(undefined2 *)0xe30 = param_5;\n  *(undefined2 *)0xe32 = param_6;\n  *(undefined2 *)0xe34 = param_7;\n  *(undefined2 *)0xe36 = param_8;\n  (*(code *)*(undefined2 *)0xe38)();\n  iVar4 = (*(uint *)0xe2a >> 3) * 0xe + 0x168e;\n  *(undefined2 *)0xe4a = 0;\n  *(undefined2 *)0xe44 = 0xb;\n  do {\n    while( true ) {\n      *(undefined2 *)0xe48 = 0;\n      *(undefined2 *)0xe40 = *(undefined2 *)0xe3a;\n      do {\n        *(undefined2 *)0xe46 = 4;\n        do {\n          (*(code *)*(undefined2 *)((*(byte *)(iVar4 + 1) & 0xf) * 2 + 0xbaf))(puVar8);\n          iVar5 = iVar4 + 2;\n          if (*(int *)0xe48 != 0) {\n            iVar5 = iVar4 + -2;\n          }\n          piVar1 = (int *)0xe46;\n          *piVar1 = *piVar1 + -1;\n          iVar4 = iVar5;\n        } while (*piVar1 != 0);\n        iVar4 = iVar5 + 4;\n        *(undefined2 *)0xe40 = *(undefined2 *)0xe3c;\n        *(int *)0xe48 = *(int *)0xe48 + 1;\n      } while (*(uint *)0xe48 < 2);\n      if ((*(int *)0xe44 != 4) || (*(int *)0xe4a = *(int *)0xe4a + 1, 1 < *(uint *)0xe4a)) break;\n      iVar4 = iVar5 + -4;\n      puVar8 = (undefined1 *)0x2e2a;\n      (*(code *)*(undefined2 *)0xe3e)();\n    }\n    iVar4 = iVar5 + -0x12;\n    piVar1 = (int *)0xe44;\n    *piVar1 = *piVar1 + -1;\n  } while (*piVar1 != 0);\n  FUN_1000_34ae();\n  *(undefined2 *)0xe6a = *(undefined2 *)0xe2a;\n  *(undefined2 *)0xe6e = *(undefined2 *)0xe6c;\n  *(undefined2 *)0xe72 = *(undefined2 *)0xe70;\n  puVar6 = (undefined2 *)0xe86;\n  puVar7 = (undefined2 *)0x1243;\n  for (iVar4 = 0x1de; iVar4 != 0; iVar4 = iVar4 + -1) {\n    puVar3 = puVar7;\n    puVar7 = puVar7 + 1;\n    puVar2 = puVar6;\n    puVar6 = puVar6 + 1;\n    *puVar3 = *puVar2;\n  }\n  return;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_34ae",
+          "address": "1000:34ae"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:4b8e": {
+      "name": "FUN_1000_4b8e",
+      "size": 146,
+      "address": "1000:4b8e",
+      "entry_point": "1000:4b8e",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_4b8e(undefined2 param_1,int param_2,undefined2 param_3)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  undefined1 local_e [6];\n  undefined1 local_8 [6];\n  \n  FUN_1000_5d07(0x31a8,0,0x300);\n  if (*(int *)0x3c == 0) {\n    FUN_1000_6006();\n    if (param_2 == 0) {\n      uVar1 = 0x31a8;\n    }\n    else {\n      uVar1 = 0xbe0;\n    }\n    FUN_1000_61e4(uVar1);\n    FUN_1000_6006();\n  }\n  else {\n    FUN_1000_3f20();\n    FUN_1000_4b43(local_8,param_1);\n    FUN_1000_4b43(local_e,0x31a8);\n    if (param_2 == 0) {\n      FUN_1000_4331(local_8,local_e,param_3);\n    }\n    else {\n      FUN_1000_4331(local_e,local_8,param_3);\n    }\n    FUN_1000_3f3b();\n  }\n  return;\n}\n\n",
+      "callee_count": 7,
+      "callees": [
+        {
+          "name": "FUN_1000_3f20",
+          "address": "1000:3f20"
+        },
+        {
+          "name": "FUN_1000_3f3b",
+          "address": "1000:3f3b"
+        },
+        {
+          "name": "FUN_1000_4331",
+          "address": "1000:4331"
+        },
+        {
+          "name": "FUN_1000_4b43",
+          "address": "1000:4b43"
+        },
+        {
+          "name": "FUN_1000_5d07",
+          "address": "1000:5d07"
+        },
+        {
+          "name": "FUN_1000_6006",
+          "address": "1000:6006"
+        },
+        {
+          "name": "FUN_1000_61e4",
+          "address": "1000:61e4"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:00bb": {
+      "name": "LoadTrekDataArchive",
+      "size": 225,
+      "address": "1000:00bb",
+      "entry_point": "1000:00bb",
+      "decompiled_code": "\n// Opens filename at DS:0cfc ('trekdat.lzs'). Initializes buffered input, reads two little-endian\n// words per record, allocates record storage, writes size difference, and calls DecodeLzsBlock.\n// Ends on shared input/error state; exact record semantics and EOF treatment are not yet\n// reconstructed.\n\nvoid __cdecl16near LoadTrekDataArchive(void)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  int iVar3;\n  undefined2 uVar4;\n  uint uVar5;\n  undefined2 unaff_DS;\n  undefined4 local_6;\n  \n  uVar1 = OpenFileReadOnly(0xcfc);\n  InitializeBufferedInput(uVar1,0,0x1000,0);\n  *(undefined2 *)0x54a8 = 0;\n  while (*(int *)0x41aa == 0) {\n    iVar2 = ReadBufferedWordLE();\n    iVar3 = ReadBufferedWordLE();\n    if (*(int *)0x41aa == 0) {\n      if (*(int *)0x4560 == 0) {\n        uVar4 = FUN_1000_3ef4(0x7d64,0);\n        *(undefined2 *)0x4560 = uVar4;\n        if ((*(int *)0x4560 + 0x7d7U & 0xf000) != (*(uint *)0x4560 & 0xf000)) {\n          FUN_1000_3f72();\n          *(undefined2 *)0x4560 = 0;\n        }\n      }\n      uVar5 = FUN_1000_3ef4(iVar2,0);\n      *(uint *)(*(int *)0x54a8 * 2 + 0xe76) = uVar5;\n      local_6 = (int *)((ulong)uVar5 << 0x10);\n      *local_6 = iVar2 - iVar3;\n      if (*(int *)0x41aa == 0) {\n        DecodeLzsBlock(iVar2 - iVar3,uVar5,iVar3);\n      }\n    }\n    *(int *)0x54a8 = *(int *)0x54a8 + 1;\n  }\n  FUN_1000_5c11();\n  CloseFileHandle(uVar1);\n  return;\n}\n\n",
+      "callee_count": 8,
+      "callees": [
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        },
+        {
+          "name": "DecodeLzsBlock",
+          "address": "1000:66e6"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f72",
+          "address": "1000:3f72"
+        },
+        {
+          "name": "FUN_1000_5c11",
+          "address": "1000:5c11"
+        },
+        {
+          "name": "InitializeBufferedInput",
+          "address": "1000:6420"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        },
+        {
+          "name": "ReadBufferedWordLE",
+          "address": "1000:6576"
+        }
+      ],
+      "revision": {
+        "token": "1791578308776:4f8d24bd:25209",
+        "epoch": "4f8d24bd",
+        "modification_number": 25209,
+        "saved_time": 1791578308776,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 8,
+  "requested": 8
+}

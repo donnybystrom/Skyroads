@@ -1,0 +1,296 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:34ae": {
+      "name": "FUN_1000_34ae",
+      "size": 417,
+      "address": "1000:34ae",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_34ae(void)\n\n{\n  uint *puVar1;\n  undefined2 uVar2;\n  undefined2 uVar3;\n  undefined2 *puVar4;\n  undefined2 *puVar5;\n  int in_AX;\n  int iVar6;\n  byte *pbVar7;\n  undefined2 *puVar8;\n  undefined2 *puVar9;\n  undefined2 unaff_SS;\n  \n  if (*(int *)0x3c == 0) {\n    return;\n  }\n  *(undefined2 *)0xe66 = *(undefined2 *)0x5170;\n  *(undefined2 *)0xe68 = *(undefined2 *)0xe36;\n  *(undefined2 *)0xe42 = 0x364f;\n  if (in_AX != 0) {\n    *(undefined2 *)0xe66 = *(undefined2 *)0xe36;\n    *(undefined2 *)0xe68 = 0xa000;\n    *(undefined2 *)0xe42 = 0x36f3;\n  }\n  if (*(int *)0xe32 == 0) {\n    if (*(int *)0xe2a == *(int *)0xe6a) goto LAB_1000_3627;\n    if ((uint)(*(int *)0xe2a - *(int *)0xe6a) < 8) {\n      *(undefined2 *)0xe64 = 0;\n      if (*(uint *)0xe2a >> 3 == *(uint *)0xe6a >> 3) {\n        *(int *)0xe64 = *(int *)0xe64 + 0x30;\n      }\n      *(undefined2 *)0xe62 = *(undefined2 *)((*(uint *)0xe6a & 7) * 2 + 0xe76);\n      *(undefined2 *)0xe60 = *(undefined2 *)((*(uint *)0xe2a & 7) * 2 + 0xe76);\n      *(int *)0xe4c = (*(uint *)0xe2a >> 3) * 0xe + 0x168e;\n      *(undefined2 *)0xe44 = 0xb;\n      do {\n        *(undefined2 *)0xe46 = 1;\n        do {\n          *(undefined2 *)0xe48 = 0;\n          do {\n            iVar6 = -*(int *)0xe46 + 4;\n            if (*(int *)0xe48 == 1) {\n              iVar6 = -(-*(int *)0xe46 + -2);\n            }\n            pbVar7 = (byte *)(*(int *)0xe4c + iVar6 * 2);\n            *(uint *)0xe56 = *pbVar7 & 0xf;\n            *(uint *)0xe5c = (uint)(*pbVar7 >> 4);\n            *(uint *)0xe4e = (uint)*(byte *)((pbVar7[1] & 7) + 0xba7);\n            *(uint *)0xe58 = pbVar7[-0xe] & 0xf;\n            *(uint *)0xe5e = (uint)(pbVar7[-0xe] >> 4);\n            *(uint *)0xe50 = (uint)*(byte *)((pbVar7[-0xd] & 7) + 0xba7);\n            iVar6 = *(int *)0xe48 * -4;\n            *(uint *)0xe5a = pbVar7[iVar6 + 2] & 0xf;\n            *(uint *)0xe52 = (uint)*(byte *)((pbVar7[iVar6 + 3] & 7) + 0xba7);\n            *(uint *)0xe54 = (uint)*(byte *)((pbVar7[iVar6 + -0xb] & 7) + 0xba7);\n            (*(code *)*(undefined2 *)0xe42)();\n            puVar1 = (uint *)0xe48;\n            *puVar1 = *puVar1 ^ 1;\n          } while (*puVar1 != 0);\n          *(int *)0xe46 = *(int *)0xe46 + 1;\n        } while (*(uint *)0xe46 < 5);\n        *(int *)0xe4c = *(int *)0xe4c + -0xe;\n        *(int *)0xe44 = *(int *)0xe44 + -1;\n      } while (*(int *)0xe44 != 1);\n      goto LAB_1000_3627;\n    }\n  }\n  puVar8 = (undefined2 *)0x2800;\n  iVar6 = 0x4240;\n  if (*(int *)0xe32 != 0) {\n    puVar8 = (undefined2 *)0x0;\n    iVar6 = 0x5640;\n  }\n  uVar2 = *(undefined2 *)0xe66;\n  uVar3 = *(undefined2 *)0xe68;\n  puVar9 = puVar8;\n  for (; iVar6 != 0; iVar6 = iVar6 + -1) {\n    puVar5 = puVar9;\n    puVar9 = puVar9 + 1;\n    puVar4 = puVar8;\n    puVar8 = puVar8 + 1;\n    *puVar5 = *puVar4;\n  }\nLAB_1000_3627:\n  FUN_1000_39d4();\n  return;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_39d4",
+          "address": "1000:39d4"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:3acc": {
+      "name": "InstallTimerHandlers",
+      "size": 72,
+      "address": "1000:3acc",
+      "decompiled_code": "\n// Installs IRQ08h handler at CS:3b17 and INT24h handler at CS:3b14; preserves the old IRQ08h vector\n// in self-modified far-jump operands CS:3b67/3b69. Programs PIT channel 0 in mode 3 with divisor\n// 0x19e4 (6628). IRQ phase DS:3192 counts 9..0; gameplay counter DS:1600 increments at phases 5 and\n// 0, so one physics counter increment every five IRQs. Nominal PC PIT clock 1193182 Hz yields\n// 180.0214 IRQ/s and 36.0043 physics ticks/s. Clock frequency is an emulator/PC model, not a\n// measurement. Verified installer port/IVT writes and 1324 phase/stream IRQ cases against original\n// code; analysis/skyroads/timer-validation.json.\n\nuint __cdecl16near InstallTimerHandlers(void)\n\n{\n  uint uVar1;\n  \n  uVar1 = uRam00000020;\n  DAT_1000_3b67 = uRam00000020;\n  DAT_1000_3b69 = uRam00000022;\n  uRam00000020 = 0x3b17;\n  uRam00000022 = 0x1000;\n  uRam00000090 = 0x3b14;\n  uRam00000092 = 0x1000;\n  out(0x43,0x36);\n  out(0x40,0xe4);\n  out(0x40,0x19);\n  out(0x43,0xb6);\n  out(0x42,2);\n  out(0x42,0);\n  return uVar1 & 0xff00;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5508": {
+      "name": "FUN_1000_5508",
+      "size": 95,
+      "address": "1000:5508",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_5508(void)\n\n{\n  undefined2 uVar1;\n  \n  FUN_1000_5481(0xdba,0x95f8,10,0x5474);\n  FUN_1000_5481(0xdc8,0x5480,10,0x960e);\n  FUN_1000_5481(0xdd6,0x4572,0x22,0x54a4);\n  uVar1 = OpenFileReadOnly(0xde0);\n  FUN_1000_5f7d(uVar1,0x961e,0x18fe);\n  FUN_1000_5c11();\n  CloseFileHandle(uVar1);\n  return;\n}\n\n",
+      "callee_count": 5,
+      "callees": [
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        },
+        {
+          "name": "FUN_1000_5481",
+          "address": "1000:5481"
+        },
+        {
+          "name": "FUN_1000_5c11",
+          "address": "1000:5c11"
+        },
+        {
+          "name": "FUN_1000_5f7d",
+          "address": "1000:5f7d"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:01b8": {
+      "name": "RunGameSessionLoop",
+      "size": 521,
+      "address": "1000:01b8",
+      "decompiled_code": "\n// Main orchestration. Playable menu selection DS9332 in0..29 loads archiveindex+1 (1..30);archive0\n// is demo. Completion countersDS451c:30uint16words. At0339 callerlastRoadFlag iffselectedcounter0\n// and29 countersnonzero. Result0 increments selectedcounter andselection, callsprofile save578c,\n// thenselection;7 selectionwithoutincrement;otherresults retryRunRoadSession immediately.\n// Original72 result/selected/wrap cases and150 last-road cases match. Resource/menu/hardware\n// rendering remain partly outside current playable clone; keyboard whole-attempt loop verified\n// separately.\n\nvoid __cdecl16near RunGameSessionLoop(void)\n\n{\n  int *piVar1;\n  bool bVar2;\n  int iVar3;\n  uint uVar4;\n  undefined2 uVar5;\n  int iVar6;\n  undefined2 unaff_DS;\n  uint local_8;\n  \n  local_8 = 0xffff;\n  iVar3 = ProbeVgaSupport();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x3c = 0;\n    iVar3 = ProbeEgaSupport();\n    if (iVar3 == 0) {\n      PrintConsoleString(0xd08);\n      return;\n    }\n  }\n  FUN_1000_5a98();\n  FUN_1000_58cd();\n  InstallTimerHandlers();\n  *(undefined2 *)0x4570 = 1;\n  FUN_1000_0000();\n  FUN_1000_5737();\n  FUN_1000_57c4(0);\n  FUN_1000_5508();\n  LoadTrekDataArchive();\n  AbortOnResourceError();\n  FUN_1000_2cce();\nLAB_1000_0219:\n  bVar2 = true;\n  iVar3 = FUN_1000_4591();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x95f6 = 3;\n    goto LAB_1000_0251;\n  }\nLAB_1000_0232:\n  *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n  FUN_1000_4e52(!bVar2);\nLAB_1000_0251:\n  bVar2 = false;\n  FUN_1000_3f20();\n  LoadShipAndDashboardImages();\n  do {\n    FUN_1000_3f20();\n    if (*(int *)0x95f6 == 3) {\n      uVar5 = LoadRoadByIndex(0);\n      *(undefined2 *)0x41c0 = uVar5;\n      LoadWorldBackgroundImage(0);\n    }\n    else {\n      iVar3 = FUN_1000_5180();\n      if (iVar3 != 0) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        goto LAB_1000_0232;\n      }\n      *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n      uVar4 = FUN_1000_019c();\n      uVar4 = uVar4 % 9;\n      if (uVar4 == local_8) {\n        uVar4 = (uVar4 + 1) % 9;\n      }\n      FUN_1000_57c4(uVar4 + 1);\n      uVar5 = LoadRoadByIndex(*(int *)0x9332 + 1);\n      *(undefined2 *)0x41c0 = uVar5;\n      LoadWorldBackgroundImage(*(uint *)0x9332 / 3);\n      local_8 = uVar4;\n    }\n    if (*(int *)0x3c != 0) {\n      uVar5 = FUN_1000_3ef4(0xac80,0);\n      *(undefined2 *)0x5478 = uVar5;\n    }\n    AbortOnResourceError();\n    FUN_1000_0707();\n    iVar3 = 0;\n    for (uVar4 = 0; uVar4 < 0x1e; uVar4 = uVar4 + 1) {\n      if (*(int *)(uVar4 * 2 + 0x451c) != 0) {\n        iVar3 = iVar3 + 1;\n      }\n    }\n    do {\n      FUN_1000_4153();\n      if ((*(int *)(*(int *)0x9332 * 2 + 0x451c) == 0) && (iVar3 == 0x1d)) {\n        uVar5 = 1;\n      }\n      else {\n        uVar5 = 0;\n      }\n      iVar6 = RunRoadSession(uVar5);\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        if (iVar6 != 7) goto LAB_1000_0219;\n        goto LAB_1000_0232;\n      }\n      if (iVar6 == 0) {\n        piVar1 = (int *)(*(int *)0x9332 * 2 + 0x451c);\n        *piVar1 = *piVar1 + 1;\n        *(int *)0x9332 = *(int *)0x9332 + 1;\n        FUN_1000_578c();\n      }\n    } while ((iVar6 != 7) && (iVar6 != 0));\n    FUN_1000_3f3b();\n  } while( true );\n}\n\n",
+      "callee_count": 27,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "FUN_1000_0000",
+          "address": "1000:0000"
+        },
+        {
+          "name": "FUN_1000_019c",
+          "address": "1000:019c"
+        },
+        {
+          "name": "FUN_1000_0707",
+          "address": "1000:0707"
+        },
+        {
+          "name": "FUN_1000_2cce",
+          "address": "1000:2cce"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f20",
+          "address": "1000:3f20"
+        },
+        {
+          "name": "FUN_1000_3f3b",
+          "address": "1000:3f3b"
+        },
+        {
+          "name": "FUN_1000_4153",
+          "address": "1000:4153"
+        },
+        {
+          "name": "FUN_1000_4591",
+          "address": "1000:4591"
+        },
+        {
+          "name": "FUN_1000_4e52",
+          "address": "1000:4e52"
+        },
+        {
+          "name": "FUN_1000_5180",
+          "address": "1000:5180"
+        },
+        {
+          "name": "FUN_1000_5508",
+          "address": "1000:5508"
+        },
+        {
+          "name": "FUN_1000_5737",
+          "address": "1000:5737"
+        },
+        {
+          "name": "FUN_1000_578c",
+          "address": "1000:578c"
+        },
+        {
+          "name": "FUN_1000_57c4",
+          "address": "1000:57c4"
+        },
+        {
+          "name": "FUN_1000_58cd",
+          "address": "1000:58cd"
+        },
+        {
+          "name": "FUN_1000_5a98",
+          "address": "1000:5a98"
+        },
+        {
+          "name": "InstallTimerHandlers",
+          "address": "1000:3acc"
+        },
+        {
+          "name": "LoadRoadByIndex",
+          "address": "1000:5614"
+        },
+        {
+          "name": "LoadShipAndDashboardImages",
+          "address": "1000:5567"
+        },
+        {
+          "name": "LoadTrekDataArchive",
+          "address": "1000:00bb"
+        },
+        {
+          "name": "LoadWorldBackgroundImage",
+          "address": "1000:5387"
+        },
+        {
+          "name": "PrintConsoleString",
+          "address": "1000:5c82"
+        },
+        {
+          "name": "ProbeEgaSupport",
+          "address": "1000:6027"
+        },
+        {
+          "name": "ProbeVgaSupport",
+          "address": "1000:603b"
+        },
+        {
+          "name": "RunRoadSession",
+          "address": "1000:2b3d"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5737": {
+      "name": "FUN_1000_5737",
+      "size": 85,
+      "address": "1000:5737",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_5737(void)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  undefined2 unaff_DS;\n  \n  uVar1 = OpenFileReadOnly(0xbfc);\n  FUN_1000_5f7d(uVar1,0x4516,0x42);\n  CloseFileHandle(uVar1);\n  if ((*(int *)0x41aa != 0) || (iVar2 = FUN_1000_56df(), iVar2 != 0)) {\n    FUN_1000_5d07(0x4516,0,0x42);\n  }\n  *(undefined2 *)0x41aa = 0;\n  return;\n}\n\n",
+      "callee_count": 5,
+      "callees": [
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        },
+        {
+          "name": "FUN_1000_56df",
+          "address": "1000:56df"
+        },
+        {
+          "name": "FUN_1000_5d07",
+          "address": "1000:5d07"
+        },
+        {
+          "name": "FUN_1000_5f7d",
+          "address": "1000:5f7d"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:57c4": {
+      "name": "FUN_1000_57c4",
+      "size": 206,
+      "address": "1000:57c4",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_57c4(int param_1)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  undefined2 local_8;\n  int local_6;\n  uint local_4;\n  \n  if ((*(int *)0xbf2 != param_1) && (FUN_1000_58a5(), *(int *)0x451a == 0)) {\n    uVar1 = OpenFileReadOnly(0xe12);\n    *(undefined2 *)0x41ac = uVar1;\n    FUN_1000_5ca6(*(undefined2 *)0x41ac,param_1 * 6,0,0);\n    FUN_1000_5f7d(*(undefined2 *)0x41ac,&local_8,6);\n    FUN_1000_5ca6(*(undefined2 *)0x41ac,local_8,0,0);\n    InitializeBufferedInput(*(undefined2 *)0x41ac,0,0x1000,0);\n    if (local_4 < 16000) {\n      DecodeLzsBlock(0x54b0);\n    }\n    else {\n      FUN_1000_5c26(0xff);\n    }\n    FUN_1000_413c();\n    if (*(int *)0x41aa == 0) {\n      FUN_1000_5a7d(local_6 * 0x10 + 0x54b0,0x54b0);\n      *(int *)0xbf2 = param_1;\n    }\n  }\n  return;\n}\n\n",
+      "callee_count": 9,
+      "callees": [
+        {
+          "name": "DecodeLzsBlock",
+          "address": "1000:66e6"
+        },
+        {
+          "name": "FUN_1000_413c",
+          "address": "1000:413c"
+        },
+        {
+          "name": "FUN_1000_58a5",
+          "address": "1000:58a5"
+        },
+        {
+          "name": "FUN_1000_5a7d",
+          "address": "1000:5a7d"
+        },
+        {
+          "name": "FUN_1000_5c26",
+          "address": "1000:5c26"
+        },
+        {
+          "name": "FUN_1000_5ca6",
+          "address": "1000:5ca6"
+        },
+        {
+          "name": "FUN_1000_5f7d",
+          "address": "1000:5f7d"
+        },
+        {
+          "name": "InitializeBufferedInput",
+          "address": "1000:6420"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        }
+      ],
+      "revision": {
+        "token": "1791620625098:4f8d24bd:25226",
+        "epoch": "4f8d24bd",
+        "modification_number": 25226,
+        "saved_time": 1791620625098,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 6,
+  "requested": 6
+}

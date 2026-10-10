@@ -1,0 +1,42 @@
+[
+  {
+    "address": "1000:1fd9",
+    "name": "RunGameplayLoop",
+    "plate_comment": "Gameplay orchestration with verified per-tick core at2324..2afd. scripts/skyroads_tick.py matches unchanged original x86 in5370 ticks across all31 roads, including3671 chained ticks, full output globals/nine persistent stack locals and intermediate traces. Enter2324 after polling; stop2afd after processed tick increment, or before finish animation0f05. Audio replay uses muted digital configuration451a=1,cb6=1; real sound timestamp/busy routines execute. Full outer scheduling, input devices, rendering, hardware audio and finish animation are NOT verified. BP locals: -02 tick counter,-06 assist used,-08 jumping,-0a jump height,-0c grounded,-0e surface8,-10 surface2,-18 edge distance,-1c previous requested height. Not all initialized at function entry; host default explicitly defines its initial frame. See TICK-FORMAT.md and tick-validation.json.",
+    "labels": [
+      {
+        "address": "1000:2324",
+        "name": "GameplayTickBegin"
+      },
+      {
+        "address": "1000:2afd",
+        "name": "GameplayTickEnd"
+      }
+    ],
+    "comments": [
+      {
+        "address": "1000:2324",
+        "pre_comment": "Verified tick boundary after input polling. Main BP frame and nine persistent local words are required; this is not a standalone function entry."
+      },
+      {
+        "address": "1000:2afd",
+        "pre_comment": "Verification stops here after incrementing BP-02. Outer tick catch-up/render scheduling is outside the recovered tick model."
+      }
+    ]
+  },
+  {
+    "address": "1000:03c2",
+    "name": "RequestSoundEffect",
+    "plate_comment": "Always copies DS:1600 timer into DS:af38. If DS:451a is nonzero, returns without audio hardware. Otherwise selects PC-speaker path when DS:0cb6=0, digital sample path otherwise. Verified execution of muted branch inside5370 tick corpus, including391 sound requests and exact timestamp updates. Unmuted playback is statically inspected only; no hardware or digital driver execution. Near C sound index argument."
+  },
+  {
+    "address": "1000:0476",
+    "name": "IsSoundEffectActive",
+    "plate_comment": "If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick validation, including timer wrap boundary tests. PC-speaker pointer branch not independently replayed."
+  },
+  {
+    "address": "1000:1b49",
+    "name": "ApplyRoadSurfaceEffect",
+    "plate_comment": "Surface helper verified as part of5370-tick corpus including matrix of16 surfaces x6 profiles x3 heights. Uses low nibble:2 subtracts303 speed unless crash active;10 adds303 unless crash active;9 refills resources5494/B13c to30000 if no exit, requesting sound4 when either<27000;12 sets exit2 if no exit and crash1 if no crash, requesting sound0. Always signed-clamps32-bit speed54ac/54ae to0..10922. Upper surface selection is performed by caller. See skyroads_tick.py, TICK-FORMAT.md and tick-validation.json."
+  }
+]

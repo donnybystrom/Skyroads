@@ -1,0 +1,251 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:1fd9": {
+      "name": "RunGameplayLoop",
+      "size": 2870,
+      "address": "1000:1fd9",
+      "entry_point": "1000:1fd9",
+      "body_end": "1000:2b0e",
+      "decompiled_code": "\n// Gameplay orchestration with verified per-tick core at2324..2afd. scripts/skyroads_tick.py matches\n// unchanged original x86 in5370 ticks across all31 roads, including3671 chained ticks, full output\n// globals/nine persistent stack locals and intermediate traces. Enter2324 after polling; stop2afd\n// after processed tick increment, or before finish animation0f05. Audio replay uses muted digital\n// configuration451a=1,cb6=1; real sound timestamp/busy routines execute. Full outer scheduling,\n// input devices, rendering, hardware audio and finish animation are NOT verified. BP locals: -02\n// tick counter,-06 assist used,-08 jumping,-0a jump height,-0c grounded,-0e surface8,-10\n// surface2,-18 edge distance,-1c previous requested height. Not all initialized at function entry;\n// host default explicitly defines its initial frame. See TICK-FORMAT.md and tick-validation.json.\n\nundefined2 __cdecl16near RunGameplayLoop(void)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  bool bVar3;\n  bool bVar4;\n  bool bVar5;\n  int iVar6;\n  undefined2 uVar7;\n  int iVar8;\n  uint uVar9;\n  undefined2 unaff_DS;\n  bool bVar10;\n  bool bVar11;\n  bool bVar12;\n  undefined4 uVar13;\n  long lVar14;\n  int local_24;\n  uint local_22;\n  int local_20;\n  int local_1e;\n  uint local_1c;\n  uint local_1a;\n  uint local_18;\n  uint local_16;\n  int local_c;\n  uint local_4;\n  \n  if (*(int *)0x95f6 == 2) {\n    FUN_1000_06a4(0xa0,100);\n  }\n  *(undefined2 *)0x516e = 0;\n  uVar13 = FUN_1000_5d4c(*(undefined2 *)0x4562,0,0x1680,0);\n  iVar6 = FUN_1000_5d8c(uVar13,400,0);\n  *(int *)0x54aa = -iVar6;\n  *(undefined2 *)0x9618 = 0;\n  *(undefined2 *)0x961a = 3;\n  *(undefined2 *)0xaf1c = 0x8000;\n  *(undefined2 *)0xaf2c = 0x2800;\n  *(undefined2 *)0x5496 = 0;\n  *(undefined2 *)0x4568 = 0;\n  *(undefined2 *)0x9336 = 0;\n  *(undefined2 *)0x54ac = 0;\n  *(undefined2 *)0x54ae = 0;\n  *(undefined2 *)0x5494 = 30000;\n  *(undefined2 *)0xb13c = 30000;\n  *(undefined2 *)0x456e = 0;\n  *(undefined2 *)0x4558 = 0;\n  *(undefined2 *)0x456a = 0;\n  bVar3 = true;\n  bVar12 = false;\n  bVar11 = false;\n  *(undefined2 *)0x455a = 0;\n  bVar5 = false;\n  bVar4 = false;\n  *(undefined2 *)0xaf2e = 0;\n  *(undefined2 *)0xaf30 = 0;\n  *(undefined2 *)0x1600 = 0;\n  local_4 = 0;\n  *(undefined2 *)0xaf38 = 0;\n  do {\n    if (*(uint *)0x1600 < local_4) {\n      *(undefined2 *)0x1600 = 0;\n      local_4 = 0;\n    }\n    iVar6 = *(int *)0x1600;\n    if ((*(byte *)0xbdc & 0x80) != 0) {\n      do {\n      } while ((*(byte *)0xbdc & 0x80) != 0);\n      while ((((((*(byte *)0xbd2 & 0x80) == 0 && ((*(byte *)0xbd3 & 0x80) == 0)) &&\n               ((*(byte *)0xbd4 & 0x80) == 0)) &&\n              (((*(byte *)0xbd5 & 0x80) == 0 && ((*(byte *)0xbd6 & 0x80) == 0)))) &&\n             ((((*(byte *)0xbd7 & 0x80) == 0 &&\n               (((*(byte *)0xbd8 & 0x80) == 0 && ((*(byte *)0xbd9 & 0x80) == 0)))) &&\n              ((*(byte *)0xbda & 0x80) == 0))))) {\n        if (((*(byte *)0xbdb & 0x80) != 0) || ((*(byte *)0xbdc & 0x80) != 0)) break;\n      }\n      if ((*(byte *)0xbda & 0x80) != 0) {\n        return 7;\n      }\n      do {\n        do {\n        } while ((*(byte *)0xbd2 & 0x80) != 0);\n      } while (((((((*(byte *)0xbd3 & 0x80) != 0) || ((*(byte *)0xbd4 & 0x80) != 0)) ||\n                 ((*(byte *)0xbd5 & 0x80) != 0)) ||\n                ((((*(byte *)0xbd6 & 0x80) != 0 || ((*(byte *)0xbd7 & 0x80) != 0)) ||\n                 (((*(byte *)0xbd8 & 0x80) != 0 ||\n                  (((*(byte *)0xbd9 & 0x80) != 0 || ((*(byte *)0xbda & 0x80) != 0)))))))) ||\n               ((*(byte *)0xbdb & 0x80) != 0)) || ((*(byte *)0xbdc & 0x80) != 0));\n      *(int *)0x1600 = iVar6;\n    }\n    if ((*(byte *)0xbda & 0x80) != 0) {\n      return 7;\n    }\n    if (((*(int *)0x456a == 0) || (0x2a < *(uint *)0x456a)) &&\n       (((*(int *)0x456e == 1 || (*(int *)0x456e == 2)) ||\n        (((*(int *)0x456e == 3 && (*(int *)0x456a != 0)) || (0x6b < *(uint *)0x4558)))))) {\n      return *(undefined2 *)0x456e;\n    }\n    FUN_1000_0c98(bVar12);\n    FUN_1000_12f8();\n    do {\n    } while (*(int *)0x1600 == iVar6);\n    FUN_1000_0ed0();\n    if (*(int *)0x95f6 != 3) {\n      FUN_1000_074c();\n    }\n                    // Verification stops here after incrementing BP-02. Outer tick catch-up/render\n                    // scheduling is outside the recovered tick model.\n    for (; local_4 < *(uint *)0x1600; local_4 = local_4 + 1) {\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_074c();\n      }\n                    // Verified tick boundary after input polling. Main BP frame and nine persistent\n                    // local words are required; this is not a standalone function entry.\n      local_16 = GetRoadTileAtPosition\n                           (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c);\n      bVar10 = local_16 != 0;\n      if (bVar3) {\n        if (0x2800 < *(uint *)0xaf2c) {\n          if (*(int *)0xaf2c == *(int *)((local_16 >> 8) * 2 + 0xe4)) {\n            local_16 = local_16 >> 4;\n          }\n          else {\n            local_16 = 0;\n          }\n        }\n        ApplyRoadSurfaceEffect(local_16);\n        bVar11 = (local_16 & 0xf) == 8;\n        bVar12 = (local_16 & 0xf) == 2;\n      }\n      else {\n        bVar12 = false;\n      }\n      lVar14 = FUN_1000_5d80();\n      uVar9 = (uint)((ulong)(lVar14 + -0x8000) >> 0x10);\n      if (((uVar9 <= *(uint *)0x961a) &&\n          ((uVar9 < *(uint *)0x961a || ((uint)(lVar14 + -0x8000) <= *(uint *)0x9618)))) &&\n         ((iVar6 = IsBelowTunnelMidline\n                             (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                              *(undefined2 *)0xaf2c), iVar6 != 0 && (*(int *)0x456e == 0)))) {\n        uVar7 = FUN_1000_0f05();\n        return uVar7;\n      }\n      if (*(int *)0xaf2c != local_1e) {\n        if ((*(int *)0x5496 == 0) || (1 < local_1a)) {\n          if (*(int *)0x9336 < 1) {\n            uVar9 = -*(int *)0x9336;\n          }\n          else {\n            uVar9 = *(uint *)0x9336;\n          }\n          if (((uint)(((long)*(int *)0x4562 * 0x104 & 0xffffU) / 8) <= uVar9) &&\n             (*(int *)0x456a == 0)) {\n            if ((*(int *)0x456e == 0) &&\n               ((*(int *)0x9336 < 0 && (iVar6 = IsSoundEffectActive(), iVar6 == 0)))) {\n              RequestSoundEffect(1);\n            }\n            *(int *)0x9336 = (*(int *)0x9336 * -5) / 10;\n            goto LAB_1000_24ba;\n          }\n        }\n        *(undefined2 *)0x9336 = 0;\n      }\nLAB_1000_24ba:\n      if (*(int *)0x456e == 0) {\n        uVar13 = FUN_1000_5d4c(*(int *)0x9330,*(int *)0x9330 >> 0xf,0x4b,0);\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 + (uint)uVar13;\n        *(int *)0x54ae =\n             *(int *)0x54ae + (int)((ulong)uVar13 >> 0x10) + (uint)CARRY2(uVar9,(uint)uVar13);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        if ((!bVar11) &&\n           (((!bVar4 && (bVar10)) ||\n            ((*(int *)0x4568 == 0 &&\n             ((0 < *(int *)0x9336 && ((uint)(*(int *)0xaf2c - local_c) < 0xf00)))))))) {\n          *(int *)0x4568 = *(int *)0x95f4 * 0x1d;\n        }\n        if ((((!bVar4) && (bVar10)) && (*(int *)0x547a != 0)) && (*(uint *)0x4562 < 0x14)) {\n          *(undefined2 *)0x9336 = 0x480;\n          *(undefined2 *)0x5494 = *(undefined2 *)0x5494;\n          bVar4 = true;\n          local_c = *(int *)0xaf2c;\n        }\n      }\n      if (((*(int *)0x4570 != 0) && (bVar4)) && ((!bVar5 && (0x36ff < *(uint *)0xaf2c)))) {\n        AdjustJumpForSafeLanding();\n        bVar5 = true;\n      }\n      if (*(int *)0x456a == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          if (-0x6a < *(int *)0x9336) {\n            *(undefined2 *)0x9336 = 0xff96;\n          }\n        }\n        else {\n          *(int *)0x9336 = *(int *)0x9336 + *(int *)0x54aa;\n        }\n      }\n      else {\n        if (*(int *)0x9336 < 0) {\n          *(undefined2 *)0x9336 = 0;\n        }\n        if (*(int *)0x9336 < 0x47) {\n          *(int *)0x9336 = *(int *)0x9336 + 0x27;\n        }\n        else {\n          *(undefined2 *)0x9336 = 0x47;\n        }\n      }\n      local_22 = *(uint *)0x54ac + *(uint *)0x9618;\n      local_20 = *(int *)0x54ae + *(int *)0x961a + (uint)CARRY2(*(uint *)0x54ac,*(uint *)0x9618);\n      iVar6 = *(int *)0x5496;\n      if (bVar12 == false) {\n        uVar9 = 0x618;\n      }\n      else {\n        uVar9 = 0;\n      }\n      uVar13 = FUN_1000_5d4c(uVar9 + *(uint *)0x54ac,\n                             *(int *)0x54ae + (uint)CARRY2(uVar9,*(uint *)0x54ac),*(int *)0x4568,\n                             *(int *)0x4568 >> 0xf);\n      iVar8 = FUN_1000_5e5a(uVar13,0x200,0);\n      local_1c = iVar8 + *(int *)0xaf1c + iVar6;\n      local_1e = *(int *)0x9336 + *(int *)0xaf2c;\n      if (((*(uint *)0xaf1c < 0x2f80) && (0xd080 < local_1c)) ||\n         ((local_1c < 0x2f80 && (0xd080 < *(uint *)0xaf1c)))) {\n        local_1c = *(uint *)0xaf1c;\n      }\n      ResolveShipMovement(local_22,local_20,local_1c,local_1e);\n      if ((((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) &&\n          (*(uint *)0xaf1c == local_1c)) &&\n         (iVar6 = TestPositionCollision\n                            (local_22,local_20,*(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c),\n         iVar6 != 0)) {\n        iVar6 = TestPositionCollision\n                          (local_22,local_20,*(int *)0xaf1c + -0x3a0,*(undefined2 *)0xaf2c);\n        if (iVar6 == 0) {\n          *(int *)0xaf1c = *(int *)0xaf1c + -0x3a0;\n          local_22 = *(uint *)0x9618;\n          local_20 = *(int *)0x961a;\n          RequestSoundEffect(2);\n        }\n        else {\n          iVar6 = TestPositionCollision\n                            (local_22,local_20,*(int *)0xaf1c + 0x3a0,*(undefined2 *)0xaf2c);\n          if (iVar6 == 0) {\n            *(int *)0xaf1c = *(int *)0xaf1c + 0x3a0;\n            local_22 = *(uint *)0x9618;\n            local_20 = *(int *)0x961a;\n            RequestSoundEffect(2);\n          }\n        }\n      }\n      if ((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) {\n        if (((*(int *)0x54ae < 0) || ((*(int *)0x54ae < 1 && (*(uint *)0x54ac < 0xe38)))) ||\n           (*(int *)0x456a != 0)) {\n          uVar9 = (local_20 - *(int *)0x54ae) - (uint)(local_22 < *(uint *)0x54ac);\n          if ((uVar9 <= *(uint *)0x961a) &&\n             ((uVar9 < *(uint *)0x961a || (local_22 - *(uint *)0x54ac < *(uint *)0x9618)))) {\n            RequestSoundEffect(2);\n          }\n        }\n        else {\n          *(undefined2 *)0x456a = 1;\n          RequestSoundEffect(0);\n          if (*(int *)0x456e == 0) {\n            *(undefined2 *)0x456e = 1;\n          }\n        }\n        *(undefined2 *)0x54ac = 0;\n        *(undefined2 *)0x54ae = 0;\n      }\n      if (*(uint *)0xaf1c != local_1c) {\n        *(undefined2 *)0x4568 = 0;\n        if (((0 < *(int *)0x5496) && (*(uint *)0xaf1c < local_1c)) ||\n           ((*(int *)0x5496 < 0 && (local_1c < *(uint *)0xaf1c)))) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - 0x97;\n        *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar9 < 0x97);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n      }\n      bVar3 = false;\n      if ((*(int *)0xaf2c != local_1e) && (*(int *)0x9336 < 0)) {\n        *(undefined2 *)0x455a = 0;\n        bVar5 = false;\n        bVar4 = false;\n        bVar3 = true;\n        uVar2 = *(uint *)0xaf2e;\n        iVar6 = *(int *)0xaf30;\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - uVar2;\n        *(int *)0x54ae = (*(int *)0x54ae - iVar6) - (uint)(uVar9 < uVar2);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        *(undefined2 *)0xaf2e = 0;\n        *(undefined2 *)0xaf30 = 0;\n        local_24 = 0;\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = TestPositionCollision\n                            (*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                             local_18 * 0x80 + *(int *)0xaf1c,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = 1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = TestPositionCollision\n                            (*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                             *(int *)0xaf1c + local_18 * -0x80,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = local_24 + -1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        if (local_24 == 0) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        else {\n          *(int *)0x5496 = *(int *)0x5496 + local_24 * 0x11;\n        }\n      }\n      if (0x7fff < *(uint *)0xaf2c) {\n        *(undefined2 *)0xaf2c = 0;\n      }\n      if (*(int *)0x456e == 0) {\n        *(int *)0xb13c = *(int *)0xb13c - (int)(30000 / ((long)*(int *)0x4566 * 0x24 & 0xffffU));\n        if (30000 < *(uint *)0xb13c) {\n          *(undefined2 *)0xb13c = 0;\n        }\n        uVar13 = FUN_1000_5d4c((int)(30000 / (ulong)*(uint *)0x54a2),0,*(undefined2 *)0x54ac,\n                               *(undefined2 *)0x54ae);\n        iVar6 = FUN_1000_5e5a(uVar13,0,1);\n        *(int *)0x5494 = *(int *)0x5494 - iVar6;\n        if (30000 < *(uint *)0x5494) {\n          *(undefined2 *)0x5494 = 0;\n        }\n      }\n      if (*(int *)0x456e == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          *(undefined2 *)0x456e = 3;\n        }\n        if (*(int *)0x5494 == 0) {\n          *(undefined2 *)0x456e = 4;\n        }\n        if (*(int *)0xb13c == 0) {\n          *(undefined2 *)0x456e = 5;\n        }\n      }\n      else {\n        *(int *)0x4558 = *(int *)0x4558 + 1;\n      }\n      if (*(int *)0x456a != 0) {\n        *(int *)0x456a = *(int *)0x456a + 1;\n      }\n    }\n  } while( true );\n}\n\n",
+      "plate_comment": "Gameplay orchestration with verified per-tick core at2324..2afd. scripts/skyroads_tick.py matches unchanged original x86 in5370 ticks across all31 roads, including3671 chained ticks, full output globals/nine persistent stack locals and intermediate traces. Enter2324 after polling; stop2afd after processed tick increment, or before finish animation0f05. Audio replay uses muted digital configuration451a=1,cb6=1; real sound timestamp/busy routines execute. Full outer scheduling, input devices, rendering, hardware audio and finish animation are NOT verified. BP locals: -02 tick counter,-06 assist used,-08 jumping,-0a jump height,-0c grounded,-0e surface8,-10 surface2,-18 edge distance,-1c previous requested height. Not all initialized at function entry; host default explicitly defines its initial frame. See TICK-FORMAT.md and tick-validation.json.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "comments": [
+        {
+          "address": "1000:1fd9",
+          "relative_offset": 0,
+          "kind": "plate",
+          "text": "Gameplay orchestration with verified per-tick core at2324..2afd. scripts/skyroads_tick.py matches unchanged original x86 in5370 ticks across all31 roads, including3671 chained ticks, full output globals/nine persistent stack locals and intermediate traces. Enter2324 after polling; stop2afd after processed tick increment, or before finish animation0f05. Audio replay uses muted digital configuration451a=1,cb6=1; real sound timestamp/busy routines execute. Full outer scheduling, input devices, rendering, hardware audio and finish animation are NOT verified. BP locals: -02 tick counter,-06 assist used,-08 jumping,-0a jump height,-0c grounded,-0e surface8,-10 surface2,-18 edge distance,-1c previous requested height. Not all initialized at function entry; host default explicitly defines its initial frame. See TICK-FORMAT.md and tick-validation.json."
+        },
+        {
+          "address": "1000:2324",
+          "relative_offset": 843,
+          "kind": "pre",
+          "text": "Verified tick boundary after input polling. Main BP frame and nine persistent local words are required; this is not a standalone function entry."
+        },
+        {
+          "address": "1000:2afd",
+          "relative_offset": 2852,
+          "kind": "pre",
+          "text": "Verification stops here after incrementing BP-02. Outer tick catch-up/render scheduling is outside the recovered tick model."
+        }
+      ],
+      "labels": [
+        {
+          "address": "1000:2324",
+          "relative_offset": 843,
+          "name": "GameplayTickBegin",
+          "source": "USER_DEFINED"
+        },
+        {
+          "address": "1000:2afd",
+          "relative_offset": 2852,
+          "name": "GameplayTickEnd",
+          "source": "USER_DEFINED"
+        }
+      ],
+      "callee_count": 18,
+      "callees": [
+        {
+          "name": "AdjustJumpForSafeLanding",
+          "address": "1000:1dfa"
+        },
+        {
+          "name": "ApplyRoadSurfaceEffect",
+          "address": "1000:1b49"
+        },
+        {
+          "name": "FUN_1000_06a4",
+          "address": "1000:06a4"
+        },
+        {
+          "name": "FUN_1000_074c",
+          "address": "1000:074c"
+        },
+        {
+          "name": "FUN_1000_0c98",
+          "address": "1000:0c98"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_0f05",
+          "address": "1000:0f05"
+        },
+        {
+          "name": "FUN_1000_12f8",
+          "address": "1000:12f8"
+        },
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d80",
+          "address": "1000:5d80"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        },
+        {
+          "name": "GetRoadTileAtPosition",
+          "address": "1000:04c0"
+        },
+        {
+          "name": "IsBelowTunnelMidline",
+          "address": "1000:0533"
+        },
+        {
+          "name": "IsSoundEffectActive",
+          "address": "1000:0476"
+        },
+        {
+          "name": "RequestSoundEffect",
+          "address": "1000:03c2"
+        },
+        {
+          "name": "ResolveShipMovement",
+          "address": "1000:186b"
+        },
+        {
+          "name": "TestPositionCollision",
+          "address": "1000:1732"
+        }
+      ],
+      "revision": {
+        "token": "1791574791335:4f8d24bd:25019",
+        "epoch": "4f8d24bd",
+        "modification_number": 25019,
+        "saved_time": 1791574791335,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1b49": {
+      "name": "ApplyRoadSurfaceEffect",
+      "size": 278,
+      "address": "1000:1b49",
+      "entry_point": "1000:1b49",
+      "body_end": "1000:1c61",
+      "decompiled_code": "\n// Surface helper verified as part of5370-tick corpus including matrix of16 surfaces x6 profiles x3\n// heights. Uses low nibble:2 subtracts303 speed unless crash active;10 adds303 unless crash\n// active;9 refills resources5494/B13c to30000 if no exit, requesting sound4 when either<27000;12\n// sets exit2 if no exit and crash1 if no crash, requesting sound0. Always signed-clamps32-bit\n// speed54ac/54ae to0..10922. Upper surface selection is performed by caller. See skyroads_tick.py,\n// TICK-FORMAT.md and tick-validation.json.\n\nvoid __cdecl16near ApplyRoadSurfaceEffect(uint param_1)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  undefined2 unaff_DS;\n  \n  param_1 = param_1 & 0xf;\n  if (param_1 == 2) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 - 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar2 < 0x12f);\n    }\n  }\n  else if (param_1 == 9) {\n    if (*(int *)0x456e == 0) {\n      if ((*(uint *)0x5494 < 27000) || (*(uint *)0xb13c < 27000)) {\n        RequestSoundEffect(4);\n      }\n      *(undefined2 *)0x5494 = 30000;\n      *(undefined2 *)0xb13c = 30000;\n    }\n  }\n  else if (param_1 == 10) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 + 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae + (uint)(0xfed0 < uVar2);\n    }\n  }\n  else if (param_1 == 0xc) {\n    if (*(int *)0x456e == 0) {\n      *(undefined2 *)0x456e = 2;\n    }\n    if (*(int *)0x456a == 0) {\n      *(undefined2 *)0x456a = 1;\n      RequestSoundEffect(0);\n    }\n  }\n  if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n    *(undefined2 *)0x54ac = 0;\n    *(undefined2 *)0x54ae = 0;\n  }\n  else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n    *(undefined2 *)0x54ac = 0x2aaa;\n    *(undefined2 *)0x54ae = 0;\n  }\n  return;\n}\n\n",
+      "plate_comment": "Surface helper verified as part of5370-tick corpus including matrix of16 surfaces x6 profiles x3 heights. Uses low nibble:2 subtracts303 speed unless crash active;10 adds303 unless crash active;9 refills resources5494/B13c to30000 if no exit, requesting sound4 when either<27000;12 sets exit2 if no exit and crash1 if no crash, requesting sound0. Always signed-clamps32-bit speed54ac/54ae to0..10922. Upper surface selection is performed by caller. See skyroads_tick.py, TICK-FORMAT.md and tick-validation.json.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "comments": [
+        {
+          "address": "1000:1b49",
+          "relative_offset": 0,
+          "kind": "plate",
+          "text": "Surface helper verified as part of5370-tick corpus including matrix of16 surfaces x6 profiles x3 heights. Uses low nibble:2 subtracts303 speed unless crash active;10 adds303 unless crash active;9 refills resources5494/B13c to30000 if no exit, requesting sound4 when either<27000;12 sets exit2 if no exit and crash1 if no crash, requesting sound0. Always signed-clamps32-bit speed54ac/54ae to0..10922. Upper surface selection is performed by caller. See skyroads_tick.py, TICK-FORMAT.md and tick-validation.json."
+        }
+      ],
+      "labels": [],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "RequestSoundEffect",
+          "address": "1000:03c2"
+        }
+      ],
+      "revision": {
+        "token": "1791574791335:4f8d24bd:25019",
+        "epoch": "4f8d24bd",
+        "modification_number": 25019,
+        "saved_time": 1791574791335,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:03c2": {
+      "name": "RequestSoundEffect",
+      "size": 180,
+      "address": "1000:03c2",
+      "entry_point": "1000:03c2",
+      "body_end": "1000:0475",
+      "decompiled_code": "\n// Always copies DS:1600 timer into DS:af38. If DS:451a is nonzero, returns without audio hardware.\n// Otherwise selects PC-speaker path when DS:0cb6=0, digital sample path otherwise. Verified\n// execution of muted branch inside5370 tick corpus, including391 sound requests and exact timestamp\n// updates. Unmuted playback is statically inspected only; no hardware or digital driver execution.\n// Near C sound index argument.\n\nvoid __cdecl16near RequestSoundEffect(int param_1)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  int iVar3;\n  undefined1 *puVar4;\n  byte bVar5;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0xaf38 = *(undefined2 *)0x1600;\n  if (*(int *)0x451a == 0) {\n    if (*(int *)0xcb6 == 0) {\n      bVar5 = in(0x61);\n      out(0x61,bVar5 | 3);\n      *(undefined2 *)0xbd0 = *(undefined2 *)(param_1 * 2 + 0x162);\n    }\n    else {\n      uVar1 = *(undefined2 *)0x4560;\n      iVar2 = *(int *)((param_1 + 1) * 2);\n      iVar3 = *(int *)(param_1 * 2);\n      puVar4 = (undefined1 *)*(undefined2 *)(param_1 * 2);\n      FUN_1000_5bc0();\n      FUN_1000_5b76(puVar4 + 1,uVar1,*(undefined1 *)CONCAT22(uVar1,puVar4),(iVar2 - iVar3) + -1);\n    }\n  }\n  return;\n}\n\n",
+      "plate_comment": "Always copies DS:1600 timer into DS:af38. If DS:451a is nonzero, returns without audio hardware. Otherwise selects PC-speaker path when DS:0cb6=0, digital sample path otherwise. Verified execution of muted branch inside5370 tick corpus, including391 sound requests and exact timestamp updates. Unmuted playback is statically inspected only; no hardware or digital driver execution. Near C sound index argument.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "comments": [
+        {
+          "address": "1000:03c2",
+          "relative_offset": 0,
+          "kind": "plate",
+          "text": "Always copies DS:1600 timer into DS:af38. If DS:451a is nonzero, returns without audio hardware. Otherwise selects PC-speaker path when DS:0cb6=0, digital sample path otherwise. Verified execution of muted branch inside5370 tick corpus, including391 sound requests and exact timestamp updates. Unmuted playback is statically inspected only; no hardware or digital driver execution. Near C sound index argument."
+        }
+      ],
+      "labels": [],
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_5b76",
+          "address": "1000:5b76"
+        },
+        {
+          "name": "FUN_1000_5bc0",
+          "address": "1000:5bc0"
+        }
+      ],
+      "revision": {
+        "token": "1791574791335:4f8d24bd:25019",
+        "epoch": "4f8d24bd",
+        "modification_number": 25019,
+        "saved_time": 1791574791335,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0476": {
+      "name": "IsSoundEffectActive",
+      "size": 71,
+      "address": "1000:0476",
+      "entry_point": "1000:0476",
+      "body_end": "1000:04bf",
+      "decompiled_code": "\n// If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near\n// pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick\n// validation, including timer wrap boundary tests. PC-speaker pointer branch not independently\n// replayed.\n\nbool __cdecl16near IsSoundEffectActive(void)\n\n{\n  undefined2 unaff_DS;\n  bool bVar1;\n  \n  if (*(int *)0xcb6 == 0) {\n    bVar1 = *(int *)*(undefined2 *)0xbd0 != 0;\n  }\n  else {\n    bVar1 = *(uint *)0x1600 < *(int *)0xaf38 + 8U;\n  }\n  return bVar1;\n}\n\n",
+      "plate_comment": "If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick validation, including timer wrap boundary tests. PC-speaker pointer branch not independently replayed.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "comments": [
+        {
+          "address": "1000:0476",
+          "relative_offset": 0,
+          "kind": "plate",
+          "text": "If DS:0cb6!=0, returns unsigned timer1600 < uint16(lastSoundTickAF38+8). If0, follows near pointer DS:0bd0 and tests word!=0. Digital-mode branch executed and compared189 times in tick validation, including timer wrap boundary tests. PC-speaker pointer branch not independently replayed."
+        }
+      ],
+      "labels": [],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791574791335:4f8d24bd:25019",
+        "epoch": "4f8d24bd",
+        "modification_number": 25019,
+        "saved_time": 1791574791335,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 4,
+  "requested": 4
+}

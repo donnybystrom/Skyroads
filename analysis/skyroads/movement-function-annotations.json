@@ -1,0 +1,17 @@
+[
+  {
+    "address": "1000:186b",
+    "name": "ResolveShipMovement",
+    "plate_comment": "Verified integer port in scripts/skyroads_movement.py, differential evidence in movement-validation.json (1970 resolver cases; every intermediate collision probe compared). Near C arguments: targetForwardLow, targetForwardHigh, targetLateral, targetHeight. Reads/writes DS:9618/961a forward32, DS:af1c lateral16, DS:af2c height16. Five fractional movement probes; keeps the last clear fraction; refines forward by4096/256/16/1, then lateral and height by signed125/25/5/1. Fractional lateral/height products wrap16 BEFORE signed division by5; forward product wraps32. Division truncates toward zero. Axis order is observable. Forward refinement uses an unsigned remaining distance and assumes ordinary forward motion. Host port bounds road allocation/probes; no general swept-collision or full game-loop equivalence claim."
+  },
+  {
+    "address": "1000:1ccd",
+    "name": "PredictSafeLanding",
+    "plate_comment": "Verified integer port and complete projected-flight traces (1408 direct prediction cases plus calls inside519 assist cases). Near C args: forward32, lateral16, height16, speed32, signedSteering16, signedVerticalSpeed16. Uses DS:54aa gravity, DS:5496 lateral drift, DS:9330 acceleration input. Each step adds gravity to vertical speed, advances forward by current speed, lateral by signed32((speed+1560)*steering)/512+drift, rejects x outside inclusive12160..53376, adds vertical speed to height, clamps speed+75*input to0..10922. Stops at unsigned height<=10240, then tests previous/current tiles with IsUnsafeLandingTile. Does not execute collision resolution or test intermediate walls/roofs. AX=0/1; globals unchanged. See MOVEMENT-FORMAT.md."
+  },
+  {
+    "address": "1000:1dfa",
+    "name": "AdjustJumpForSafeLanding",
+    "plate_comment": "Verified against unchanged x86, including candidate order and all prediction traces (519 direct cases). Tests current projected landing first. If unsafe, for n=1..6 tries steering +/- trunc16(steering*n)/10, then speed +/- trunc32(speed*n)/10. Faster candidate tested only if signed speed<10922 (strict); first accepted candidate wins. Uses current position, vertical speed and environment globals. Writes steering DS:4568, speed DS:54ac/54ae, speed delta DS:af2e/af30, success flag DS:455a. An immediately safe prediction preserves existing flag/delta. Exhausting trials restores original steering/speed, writes delta0 and preserves flag. Helper purpose supported by caller and exact replay; gameplay triggering conditions remain to be reconstructed."
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "comparison_completed": true,
+  "compared_boundaries_match": true,
+  "counts": {
+    "initializers": 1,
+    "polls": 287,
+    "input_samples": 287,
+    "physics_ticks": 287,
+    "outer_boundaries": 287,
+    "pause_polls": 16,
+    "pause_resumes": 1,
+    "attempt_returns": 1,
+    "session_returns": 1
+  },
+  "runs": [
+    {
+      "run": "response-realtime-20000",
+      "counts": {
+        "initializers": 1,
+        "polls": 287,
+        "input_samples": 287,
+        "physics_ticks": 287,
+        "outer_boundaries": 287,
+        "pause_polls": 16,
+        "pause_resumes": 1,
+        "attempt_returns": 1,
+        "session_returns": 1
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "road_index": 1,
+          "mode": 0,
+          "start_ms": 7638.38165,
+          "initial_stack_seeds": {
+            "jump_height": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 1
+          },
+          "ticks": 287,
+          "finish_frames": 0,
+          "result": 3,
+          "end_ms": 15863.8728,
+          "final": {
+            "forward": 2492525,
+            "lateral": 32768,
+            "height": 0,
+            "speed": 10922,
+            "steering": 0,
+            "vertical_speed": -106,
+            "drift": 0,
+            "speed_delta": 0,
+            "assist_flag": 0,
+            "fuel": 26678,
+            "oxygen": 29284,
+            "exit_state": 3,
+            "crash_ticks": 0,
+            "end_ticks": 108,
+            "sound_tick": 56,
+            "tick_counter": 287,
+            "assist_used": 0,
+            "jumping": 0,
+            "jump_height": 10240,
+            "grounded": 0,
+            "surface8": 0,
+            "surface2": 0,
+            "edge_distance": 19450,
+            "previous_target_height": 65430
+          }
+        }
+      ],
+      "retry_gaps": [],
+      "actual_game_first_retry_comparison": null,
+      "fade_intervals": [
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 0,
+          "native_ms": 48.6014
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 52.8973
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1098.4216
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1075.05455
+        },
+        {
+          "attempt": 0,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1083.69015
+        },
+        {
+          "attempt": 0,
+          "direction": 1,
+          "duration_argument": 36,
+          "native_ms": 1073.7941
+        },
+        {
+          "attempt": 1,
+          "direction": 0,
+          "duration_argument": 36,
+          "native_ms": 1077.27975
+        }
+      ],
+      "notice_intervals": [],
+      "changed_copy_files": [],
+      "cfg_byte_changes": [],
+      "trace_sha256": "db96dfd57278bf27283e86237a09ab568c76cd30b0f480127fd019b18f5a6700",
+      "probe_sha256": "9d074328645417cf83f231cdd3a8ed34a7ae477f76d7f5493fe0d383fc69039c",
+      "emulator_sha256": "98f92e4ea44fa55b529f091c328e662c3d27b025bca6f1a0530dae35eb4b70b2",
+      "config_sha256": "f682638e90c67bb575e069e4a8be0b7472f9c4d05b4b654d8e71c11159b3020d",
+      "original_files_unchanged": true
+    }
+  ],
+  "model_sha256": {
+    "skyroads_cycle.py": "cbbf6aa471f8c7ab3de58c63f08ca251965e7c1254fe5059d2f49a51171f9b5f",
+    "skyroads_tick.py": "8158648c725c72a541c8810d3d1b8c64d72af8f79241eec52c3b33339ced5589",
+    "skyroads_movement.py": "c695171a5e103ebc579404db52838eb4cf4ccde43cdd846447540bd181872c0d",
+    "skyroads_collision.py": "4ccd28a735cb8b8b0d47c0c6b01f230e837f10fb95f0c080dfad868bdebb7625",
+    "skyroads_timer.py": "3ee1382045433b25218caeec6d46677ef876372229e7baaefdc6d30a1697a7d4",
+    "skyroads-geometry.js": "2e1ce6f3c242945f606ddbc0aa656e4a9122a398a4130fcdebc310601ed860bd",
+    "skyroads-physics.js": "ebcf7dcbfc04c533123c5d53de1670914064996dd0cf7c47abb99d75df3ee5e5",
+    "skyroads-cycle.js": "118021b3856d32a7a914b8d1513c183898059375b1bf4497ecf8673b40ce2245",
+    "skyroads-ui.js": "b59050e10003e0b751976873f099dc00b15a7cc17d0d24e7812dfe5f7d5738db",
+    "skyroads-presentation.js": "69db176ae478a1db7382e66c23dff3069a40c8af546160201ff22cc2b6b2a03a"
+  },
+  "validator_sha256": "600a4fc7c5d9309968456118b030d924056731b8743014ca70300984a1268606",
+  "corpus_sha256": "cf12e6aa8a657193912b0cfeddaa18cda6264c89b10cde87fe06b3cc5b4558df",
+  "known_gameplay_mismatches": [
+    "Clone Game retries immediately. Running original executes fade-out and fade-in around retries; native delays and palette fade arguments are recorded per run.",
+    "Clone success notice begins before the original wrapper palette/message transitions are reproduced."
+  ],
+  "limits": [
+    "Finite recorded sessions, not exhaustive full-game equivalence.",
+    "Seeded model compares all state; canonical clone compares all state except three explicitly unspecified stack words, while carrying state continuously.",
+    "Timer samples are observed emulated PIT values; physical host keyboard-to-photon latency is not measured.",
+    "Full original renders and executes audio routines; host audio output muted.",
+    "Browser/native render projection, menus and disk persistence are not equivalent yet."
+  ]
+}

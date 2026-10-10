@@ -1,0 +1,5 @@
+{
+  "verified": true,
+  "frames": 26,
+  "boundary": "Original paused busy loops run with elapsed=0; resume restores timer then waits for next IRQ."
+}

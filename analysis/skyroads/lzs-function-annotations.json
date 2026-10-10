@@ -1,0 +1,22 @@
+[
+  {
+    "address": "1000:66e6",
+    "name": "DecodeLzsBlock",
+    "plate_comment": "Verified resource decoder: Python port matched all31 ROADS.LZS streams (60872 bytes) against isolated replay of these unchanged x86 instructions. Header bytes are length_bits, short_distance_bits, long_distance_bits. MSB-first tokens: 0=short match(distance=read(short)+2), 10=long match(distance=read(long)+(1<<short)+2), 11=8-bit literal. Match length=read(length_bits)+2; overlapping forward copy. Patches widths at6729,671f,674c and long-distance base at6751. Far destination BP+4, output length BP+8. Buffer byte alignment on exit. Runtime helpers require SS=DS. Python rejects malformed streams more strictly than original; equivalence is verified on the31 valid road streams, not all possible inputs. See analysis/skyroads/lzs-validation.json."
+  },
+  {
+    "address": "1000:04c0",
+    "name": "GetRoadTileAtPosition",
+    "plate_comment": "Maps unsigned forward32-bit position and lateral16-bit coordinate to decoded road word at DS:162c. u=lateral/128-95; if u>=322 returns0. Column=u/46 (0..6), row=(forward/8192)/8=forward/65536. Offset=row*14+column*2. Seven16-bit cells per row. No row-bound check is present here; callers/runtime buffers enforce the game context."
+  },
+  {
+    "address": "1000:1b49",
+    "name": "ApplyRoadSurfaceEffect",
+    "plate_comment": "Uses tile&0x0f. Type2 subtracts303 from32-bit accumulator DS:54ac/54ae; type10 adds303. Type9 resets DS:5494 andB13c to30000 if exitstate456e=0, optionally plays sound. Type12 sets exitstate456e=2 and animation456a=1. Clamps accumulator to0..10922. Names of resource counters/physics units remain hypotheses."
+  },
+  {
+    "address": "1000:0c26",
+    "name": "GetRoadSupportHeight",
+    "plate_comment": "Reads GetRoadTileAtPosition. Uses tile&0x0f for base surface and tile&0x0f00 for structure. No structure or forced baseline: low nibble0=>height0, else2800h. Structure1=>0; other structures index DS:00e4 uint16 table. Static semantic name; geometry/profile meanings not yet fully mapped."
+  }
+]

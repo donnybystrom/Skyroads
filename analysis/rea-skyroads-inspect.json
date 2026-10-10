@@ -1,0 +1,99 @@
+{
+  "evidence_id": "ev_a885e3eab84f1c5c671f78cf65c95da8738e92663a9224dd40e95654eaeae55d",
+  "subject": {
+    "name": "SKYROADS.EXE",
+    "digest": {
+      "sha256": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f"
+    },
+    "format": "dos-mz",
+    "architecture": "x86",
+    "local_path": "/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/SKYROADS.EXE"
+  },
+  "provider": {
+    "id": "rea-workflow",
+    "name": "REA composed investigation workflow",
+    "version": "1"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "parameters": {
+      "upstream_analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "dos-mz",
+          "architecture": "x86",
+          "available_architectures": [
+            "x86"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "process_launch": "inspected-jvm-launch-support-v1",
+          "load_image_evidence": "independent-mz-mapping-relocations-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "MzLoader",
+          "language_id": "x86:LE:16:Real Mode",
+          "compiler_spec_id": "default",
+          "load_segment": "0x1000",
+          "address_coordinates": "linear-byte-offset",
+          "analyzer_preset": "ghidra-default"
+        },
+        "digest": "894e458d232de9bdeb2a5d661cd2b4791ee9e10f88d297423fc0c7553a7a66d8"
+      },
+      "workflow_revision": 2
+    },
+    "digest": "8aecc44347caf7012f3357eb96d1b8e2fa130f1e5dc3242a2ba1d964d0eb73d7"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "binary_overview",
+  "parameters": {},
+  "raw_result": null,
+  "normalized_result": {
+    "document": "target-ce1b1ec1688e.EXE",
+    "segments": [
+      {
+        "name": "CODE_0",
+        "start": "0x10000",
+        "end": "0x14653",
+        "length": 18003
+      },
+      {
+        "name": "DATA",
+        "start": "0x14653",
+        "end": "0x22123",
+        "length": 56016
+      },
+      {
+        "name": "HEADER",
+        "start": "HEADER:0x0",
+        "end": "HEADER:0x20",
+        "length": 32
+      }
+    ],
+    "segment_count": 3,
+    "procedure_count": 1,
+    "string_count": 1
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Derived by an REA composed workflow."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

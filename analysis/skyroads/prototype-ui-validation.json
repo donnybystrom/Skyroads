@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-10-09T20:05:23.528770+00:00",
+  "browser": "Codex in-app browser",
+  "url": "http://127.0.0.1:8766/physics-viewer.html",
+  "checks": [
+    "31 selector options visible; road0/3/30 selected",
+    "reset returns initial state",
+    "road0 automatic-throttle single step yields tick1/speed75",
+    "held Right and Space; P pause; 29-tick saved recording",
+    "server replay completed; timeline Home restores initial frame",
+    "assist toggle resets session",
+    "terminal road3 run stops at102 ticks; replay pause stays enabled",
+    "held Up/Left/Down without auto throttle; 41-tick saved recording",
+    "raw-state disclosure expands",
+    "updated server reopened; road3 selected; start-ready state"
+  ],
+  "console_warning_error_count": 0,
+  "recordings": [
+    {
+      "file": "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-00-20261009-195614-13dad833.json",
+      "sha256": "13161322f7ae00ab81f662e9eedb749c042eec0ffd687ba1f93e4b4a1c4d277b",
+      "ticks": 29,
+      "throttle_values": [
+        1
+      ],
+      "direction_values": [
+        0,
+        1
+      ],
+      "jump_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "file": "/Users/donnybystrom/code/SRE/analysis/skyroads/recordings/road-03-20261009-200100-0b75860f.json",
+      "sha256": "108fbb2e4419698e9af7582de87f3220426a385ffb3b2d455192596148decf18",
+      "ticks": 41,
+      "throttle_values": [
+        -1,
+        0,
+        1
+      ],
+      "direction_values": [
+        -1,
+        0
+      ],
+      "jump_values": [
+        0
+      ]
+    }
+  ],
+  "html_sha256": "a0b2ff370db97c4493c17d592bd7e32337b156cf98ff4c714410657e3c9f51dc",
+  "screenshot": "/Users/donnybystrom/code/SRE/analysis/skyroads/screenshots/physics-prototype.jpg",
+  "boundary": "Observed browser interactions; no pixel-equivalence claim against DOS rendering"
+}

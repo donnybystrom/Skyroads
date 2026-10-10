@@ -1,0 +1,145 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:1b49": {
+      "name": "ApplyRoadSurfaceEffect",
+      "size": 278,
+      "address": "1000:1b49",
+      "entry_point": "1000:1b49",
+      "body_end": "1000:1c61",
+      "decompiled_code": "\n// Uses tile&0x0f. Type2 subtracts303 from32-bit accumulator DS:54ac/54ae; type10 adds303. Type9\n// resets DS:5494 andB13c to30000 if exitstate456e=0, optionally plays sound. Type12 sets\n// exitstate456e=2 and animation456a=1. Clamps accumulator to0..10922. Names of resource\n// counters/physics units remain hypotheses.\n\nvoid __cdecl16near ApplyRoadSurfaceEffect(uint param_1)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  undefined2 unaff_DS;\n  \n  param_1 = param_1 & 0xf;\n  if (param_1 == 2) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 - 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar2 < 0x12f);\n    }\n  }\n  else if (param_1 == 9) {\n    if (*(int *)0x456e == 0) {\n      if ((*(uint *)0x5494 < 27000) || (*(uint *)0xb13c < 27000)) {\n        FUN_1000_03c2(4);\n      }\n      *(undefined2 *)0x5494 = 30000;\n      *(undefined2 *)0xb13c = 30000;\n    }\n  }\n  else if (param_1 == 10) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 + 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae + (uint)(0xfed0 < uVar2);\n    }\n  }\n  else if (param_1 == 0xc) {\n    if (*(int *)0x456e == 0) {\n      *(undefined2 *)0x456e = 2;\n    }\n    if (*(int *)0x456a == 0) {\n      *(undefined2 *)0x456a = 1;\n      FUN_1000_03c2(0);\n    }\n  }\n  if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n    *(undefined2 *)0x54ac = 0;\n    *(undefined2 *)0x54ae = 0;\n  }\n  else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n    *(undefined2 *)0x54ac = 0x2aaa;\n    *(undefined2 *)0x54ae = 0;\n  }\n  return;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_03c2",
+          "address": "1000:03c2"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:03c2": {
+      "name": "FUN_1000_03c2",
+      "size": 180,
+      "address": "1000:03c2",
+      "entry_point": "1000:03c2",
+      "body_end": "1000:0475",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_03c2(int param_1)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  int iVar3;\n  undefined1 *puVar4;\n  byte bVar5;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0xaf38 = *(undefined2 *)0x1600;\n  if (*(int *)0x451a == 0) {\n    if (*(int *)0xcb6 == 0) {\n      bVar5 = in(0x61);\n      out(0x61,bVar5 | 3);\n      *(undefined2 *)0xbd0 = *(undefined2 *)(param_1 * 2 + 0x162);\n    }\n    else {\n      uVar1 = *(undefined2 *)0x4560;\n      iVar2 = *(int *)((param_1 + 1) * 2);\n      iVar3 = *(int *)(param_1 * 2);\n      puVar4 = (undefined1 *)*(undefined2 *)(param_1 * 2);\n      FUN_1000_5bc0();\n      FUN_1000_5b76(puVar4 + 1,uVar1,*(undefined1 *)CONCAT22(uVar1,puVar4),(iVar2 - iVar3) + -1);\n    }\n  }\n  return;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_5b76",
+          "address": "1000:5b76"
+        },
+        {
+          "name": "FUN_1000_5bc0",
+          "address": "1000:5bc0"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0476": {
+      "name": "FUN_1000_0476",
+      "size": 71,
+      "address": "1000:0476",
+      "entry_point": "1000:0476",
+      "body_end": "1000:04bf",
+      "decompiled_code": "\nbool __cdecl16near FUN_1000_0476(void)\n\n{\n  undefined2 unaff_DS;\n  bool bVar1;\n  \n  if (*(int *)0xcb6 == 0) {\n    bVar1 = *(int *)*(undefined2 *)0xbd0 != 0;\n  }\n  else {\n    bVar1 = *(uint *)0x1600 < *(int *)0xaf38 + 8U;\n  }\n  return bVar1;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0f05": {
+      "name": "FUN_1000_0f05",
+      "size": 93,
+      "address": "1000:0f05",
+      "entry_point": "1000:0f05",
+      "body_end": "1000:0f61",
+      "decompiled_code": "\nundefined2 __cdecl16near FUN_1000_0f05(void)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  uint uVar3;\n  int iVar4;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0xaf2c = 0;\n  *(undefined2 *)0x1600 = 0;\n  while( true ) {\n    if (0x47 < *(uint *)0x1600) {\n      return 0;\n    }\n    if ((*(byte *)0xbda & 0x80) != 0) break;\n    FUN_1000_0c98(0);\n    FUN_1000_0eeb();\n    FUN_1000_0ed0();\n    uVar3 = *(uint *)0x54ac;\n    iVar4 = *(int *)0x54ae;\n    puVar1 = (uint *)0x9618;\n    uVar2 = *puVar1;\n    *puVar1 = *puVar1 + uVar3;\n    *(int *)0x961a = *(int *)0x961a + iVar4 + (uint)CARRY2(uVar2,uVar3);\n  }\n  return 7;\n}\n\n",
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_0c98",
+          "address": "1000:0c98"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_0eeb",
+          "address": "1000:0eeb"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:074c": {
+      "name": "FUN_1000_074c",
+      "size": 939,
+      "address": "1000:074c",
+      "entry_point": "1000:074c",
+      "body_end": "1000:0af9",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_074c(void)\n\n{\n  uint uVar1;\n  uint uVar2;\n  undefined2 uVar3;\n  int iVar4;\n  undefined2 unaff_DS;\n  \n  iVar4 = *(int *)0x95f6;\n  if (iVar4 == 0) {\n    *(int *)0x95f4 =\n         (uint)(((*(byte *)0xbd5 & 0x80) != 0 || (*(byte *)0xbd7 & 0x80) != 0) ||\n               (*(byte *)0xbd9 & 0x80) != 0) -\n         (uint)(((*(byte *)0xbd4 & 0x80) != 0 || (*(byte *)0xbd6 & 0x80) != 0) ||\n               (*(byte *)0xbd8 & 0x80) != 0);\n    *(int *)0x9330 =\n         (uint)(((*(byte *)0xbd2 & 0x80) != 0 || (*(byte *)0xbd6 & 0x80) != 0) ||\n               (*(byte *)0xbd7 & 0x80) != 0) -\n         (uint)(((*(byte *)0xbd3 & 0x80) != 0 || (*(byte *)0xbd8 & 0x80) != 0) ||\n               (*(byte *)0xbd9 & 0x80) != 0);\n    *(uint *)0x547a = (uint)((*(byte *)0xbdb & 0x80) != 0);\n  }\n  else if (iVar4 == 1) {\n    uVar1 = FUN_1000_05f6(1);\n    uVar2 = FUN_1000_05f6(2);\n    *(int *)0x95f4 =\n         (uint)((uint)(((long)*(int *)0x5172 * 3 & 0xffffU) / 2) < uVar1) -\n         (uint)(uVar1 < *(uint *)0x5172 / 2);\n    *(int *)0x9330 =\n         (uint)(uVar2 < *(uint *)0x547c / 2) -\n         (uint)((uint)(((long)*(int *)0x547c * 3 & 0xffffU) / 2) < uVar2);\n    uVar3 = FUN_1000_0672();\n    *(undefined2 *)0x547a = uVar3;\n  }\n  else if (iVar4 == 2) {\n    uVar1 = FUN_1000_06b9(0);\n    uVar2 = FUN_1000_06b9(0);\n    *(int *)0x95f4 = (uint)(0xaa < uVar2) - (uint)(uVar1 < 0x96);\n    uVar1 = FUN_1000_06b9(1);\n    uVar2 = FUN_1000_06b9(1);\n    *(int *)0x9330 = (uint)(uVar2 < 0xf) - (uint)(0xb9 < uVar1);\n    uVar3 = FUN_1000_06b9(2);\n    *(undefined2 *)0x547a = uVar3;\n    uVar3 = FUN_1000_06b9(1);\n    FUN_1000_06a4(0xa0,uVar3);\n  }\n  else if (iVar4 == 3) {\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(int *)0x9330 = (*(byte *)(iVar4 + -0x69e2) & 3) - 1;\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(int *)0x95f4 = (*(byte *)(iVar4 + -0x69e2) >> 2 & 3) - 1;\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(uint *)0x547a = *(byte *)(iVar4 + -0x69e2) >> 4 & 1;\n  }\n  return;\n}\n\n",
+      "callee_count": 5,
+      "callees": [
+        {
+          "name": "FUN_1000_05f6",
+          "address": "1000:05f6"
+        },
+        {
+          "name": "FUN_1000_0672",
+          "address": "1000:0672"
+        },
+        {
+          "name": "FUN_1000_06a4",
+          "address": "1000:06a4"
+        },
+        {
+          "name": "FUN_1000_06b9",
+          "address": "1000:06b9"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        }
+      ],
+      "revision": {
+        "token": "1791573218500:4f8d24bd:25006",
+        "epoch": "4f8d24bd",
+        "modification_number": 25006,
+        "saved_time": 1791573218500,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 5,
+  "requested": 5
+}

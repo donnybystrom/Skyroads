@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"program\":\"SKYROADS.EXE\",\"functions\":[{\"name\":\"entry\",\"address\":\"1000:0000\",\"xref_count\":1,\"is_external\":false,\"tags\":[],\"is_thunk\":false}],\"count\":1,\"offset\":0,\"limit\":5,\"total\":1}"
+    }
+  ],
+  "isError": false
+}

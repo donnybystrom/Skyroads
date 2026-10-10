@@ -1,0 +1,666 @@
+{
+  "source": "/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/ROADS.LZS",
+  "source_sha256": "19551b52d5a9e87d62ebea5e98a559f3fe76a98947924f85d2787d00f8333d83",
+  "source_size": 17095,
+  "basis": "static instructions at 1000:5614; directory extent inferred from first block offset",
+  "entry_count": 31,
+  "directory_bytes": 124,
+  "entries": [
+    {
+      "index": 0,
+      "file_offset": 124,
+      "next_offset_or_eof": 715,
+      "stored_block_bytes": 591,
+      "decoded_tile_bytes": 2240,
+      "returned_units_decoded_length_div_14": 160,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        130,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000a181b0023000c0f0e1e221e191e231b1b191f261b1414141111351135113232323511113f2638142828353535081316001d00090c0b181c1814181d161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b071113001900080a0a151815121519131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626060e100015000709081214120f121510100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f2225231c1e1d181a191416151416151c1e1d1416152225232023211b1e1c141615",
+      "decoder_file_offset": 346,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 369
+    },
+    {
+      "index": 1,
+      "file_offset": 715,
+      "next_offset_or_eof": 1074,
+      "stored_block_bytes": 359,
+      "decoded_tile_bytes": 770,
+      "returned_units_decoded_length_div_14": 55,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        150,
+        180
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002b14040023003119112611082323282c1b191f1a151414141111351135111517193511113f2638142828353535231003001d0028140e1f0e061d1d212416141915111010100e0e2b0e2b0e1113142b0e0e341f2e1021212b2b2b1e0e0200190023120c1b0c0519191c1f131216120f0e0e0e0c0c260c260c0f1012260c0c2d1b280e1c1c262626190c020015001d0f0a160a041515181a100f120f0c0c0c0c0a0a1f0a1f0a0c0d0f1f0a0a2516210c18181f1f1f3f0f19340c142d0a1225090f25090f340c1425090f3f0f193c0e18330c1425090f",
+      "decoder_file_offset": 937,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 137
+    },
+    {
+      "index": 2,
+      "file_offset": 1074,
+      "next_offset_or_eof": 1612,
+      "stored_block_bytes": 538,
+      "decoded_tile_bytes": 1610,
+      "returned_units_decoded_length_div_14": 115,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        42
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000001e2f1e002300001c232300002300232311002323231414141111351135111135353511112d1f273e2b0b353535182718001d0000171d1d00001d001d1d0e001d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e2519203323092b2b2b152115001900001419190000190019190c001919190e0e0e0c0c260c260c0c2626260c0c20161c2c1e07262626121c12001500001015150000150015150a001515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1b12172519061f1f1f3f3f3f3434342d2d2d2525252525252a09021e0601330b03300a022909021e0601",
+      "decoder_file_offset": 1296,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 316
+    },
+    {
+      "index": 3,
+      "file_offset": 1612,
+      "next_offset_or_eof": 1967,
+      "stored_block_bytes": 355,
+      "decoded_tile_bytes": 840,
+      "returned_units_decoded_length_div_14": 60,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        42
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000000002a002a003a3a002a00002a002a2a15002a2a2a15151515153f153f15153f3f3f15153f153f3f3f153f3f3f00002200220030300022000022002222110022222211111111113411341111343434111134113434341134343400001e001e002929001e00001e001e1e0f001e1e1e0f0f0f0f0f2d0f2d0f0f2d2d2d0f0f2d0f2d2d2d0f2d2d2d000019001900222200190000190019190c001919190c0c0c0c0c250c250c0c2525250c0c250c2525250c2525253f3f3f3434342d2d2d2525252525253400002500003f00003c0000330000250000",
+      "decoder_file_offset": 1834,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 133
+    },
+    {
+      "index": 4,
+      "file_offset": 1967,
+      "next_offset_or_eof": 2411,
+      "stored_block_bytes": 444,
+      "decoded_tile_bytes": 1316,
+      "returned_units_decoded_length_div_14": 94,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        100,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000001e292200230035200c24001723002323110023232314141411113511351111353535111135113535351135353518221c001d002b1a091d00131d001d1d0e001d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b2b2b0e2b2b2b151d18001900261708190010190019190c001919190e0e0e0c0c260c260c0c2626260c0c260c2626260c2626261218140015001f130715000d150015150a001515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1f1f0a1f1f1f2b3431232b281e2523191f1d191f1d342900251e003f32003c3000332900251e00",
+      "decoder_file_offset": 2189,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 222
+    },
+    {
+      "index": 5,
+      "file_offset": 2411,
+      "next_offset_or_eof": 2882,
+      "stored_block_bytes": 471,
+      "decoded_tile_bytes": 1764,
+      "returned_units_decoded_length_div_14": 126,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        120
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000001c141700230000232314141d2300232311000f1e241414141111351135110d3030351111351135353511353535171013001d00001d1d1010181d001d1d0e000c181d1010100e0e2b0e2b0e0a27272b0e0e2b0e2b2b2b0e2b2b2b140e100019000019190e0e14190019190c000a15190e0e0e0c0c260c260c092222260c0c260c2626260c262626100c0d0015000015150c0c11150015150a000912150c0c0c0a0a1f0a1f0a071c1c1f0a0a1f0a1f1f1f0a1f1f1f00282d002125001c2000181b00181b002934001e2500323f00303c002933001e25",
+      "decoder_file_offset": 2633,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 249
+    },
+    {
+      "index": 6,
+      "file_offset": 2882,
+      "next_offset_or_eof": 3230,
+      "stored_block_bytes": 348,
+      "decoded_tile_bytes": 672,
+      "returned_units_decoded_length_div_14": 48,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000234290023002a2a213e39323f1e233f34323f262b1414141111351135113232323511113f2638142828353535012b22001d0022221b332f2934181d342b29341f231010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b01251d0019001e1e172c29242d15192d25242d1b1e0e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626011f1800150019191325221e251215251f1e2516190c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f3e27013320002c1c002517002517003100002400003c0000390000310000240000",
+      "decoder_file_offset": 3104,
+      "decoder_control_bytes": [
+        5,
+        8,
+        9
+      ],
+      "encoded_stream_bytes_including_controls": 126
+    },
+    {
+      "index": 7,
+      "file_offset": 3230,
+      "next_offset_or_eof": 3600,
+      "stored_block_bytes": 370,
+      "decoded_tile_bytes": 840,
+      "returned_units_decoded_length_div_14": 60,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        7,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002e19110023002e20201b11102300232311001a182a14141411113511351111353535111135113511293535353526140e001d00261a1a160e0d1d001d1d0e001513221010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b0e222b2b2b2b21120c001900211717130c0b190019190c0012111e0e0e0e0c0c260c260c0c2626260c0c260c260c1d262626261b0f0a0015001b1313100a09150015150a000f0e190c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f0a181f1f1f1f15152b1111230f0f1e0c0c190c0c19001f0c00160900260f00240e001f0c001609",
+      "decoder_file_offset": 3452,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 148
+    },
+    {
+      "index": 8,
+      "file_offset": 3600,
+      "next_offset_or_eof": 4122,
+      "stored_block_bytes": 522,
+      "decoded_tile_bytes": 1484,
+      "returned_units_decoded_length_div_14": 106,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002b0e3f002300281730270030230023231100232323141414111135113511113535351111261c35262733353535230b34001d002113272000271d001d1d0e001d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e1f172b1f202a2b2b2b1e0a2d0019001c10221c0022190019190c001919190e0e0e0c0c260c260c0c2626260c0c1b14261b1c24262626190825001500180d1c17001c150015150a001515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a16101f16171e1f1f1f04073f03053402052d02042502042500003400002500003f00003c000033000025",
+      "decoder_file_offset": 3822,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 300
+    },
+    {
+      "index": 9,
+      "file_offset": 4122,
+      "next_offset_or_eof": 4476,
+      "stored_block_bytes": 354,
+      "decoded_tile_bytes": 980,
+      "returned_units_decoded_length_div_14": 70,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        50,
+        20
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000000002300230000232323000023002323110015172314141411113511351111353535111135113535001135353500001d001d00001d1d1d00001d001d1d0e0011131d1010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b2b000e2b2b2b000019001900001919190000190019190c000f10190e0e0e0c0c260c260c0c2626260c0c260c2626000c262626000015001500001515150000150015150a000c0d150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1f000a1f1f1f2e313f26283421232d1b1d251b1d25001d1e001516002425002223001d1e001516",
+      "decoder_file_offset": 4344,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 132
+    },
+    {
+      "index": 10,
+      "file_offset": 4476,
+      "next_offset_or_eof": 4914,
+      "stored_block_bytes": 438,
+      "decoded_tile_bytes": 1134,
+      "returned_units_decoded_length_div_14": 81,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002417140023002b1e1e230000230023231100312a2a1414141111351135111135353511113511353535113535351d1310001d002318181d00001d001d1d0e002822221010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b2b2b0e2b2b2b19100e0019001e1515190000190019190c00231e1e0e0e0e0c0c260c260c0c2626260c0c260c2626260c262626150d0c001500191212150000150015150a001d19190c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1f1f0a1f1f1f352a242b221d261e191f19151f19152f1907221205391f09361d082e1907221205",
+      "decoder_file_offset": 4698,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 216
+    },
+    {
+      "index": 11,
+      "file_offset": 4914,
+      "next_offset_or_eof": 5561,
+      "stored_block_bytes": 647,
+      "decoded_tile_bytes": 2786,
+      "returned_units_decoded_length_div_14": 199,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        4,
+        200,
+        42
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000003529100023003523232300002313232311002323231414141111351135112d2c353511113511353535113535352b220d001d002b1d1d1d00001d0f1d1d0e001d1d1d1010100e0e2b0e2b0e25242b2b0e0e2b0e2b2b2b0e2b2b2b261d0b001900261919190000190d19190c001919190e0e0e0c0c260c260c201f26260c0c260c2626260c2626261f18090015001f1515150000150b15150a001515150c0c0c0a0a1f0a1f0a1b1a1f1f0a0a1f0a1f1f1f0a1f1f1f3d2b2432231d2b1e19241915241915291d1a1e151332232030211e291c1a1e1513",
+      "decoder_file_offset": 5136,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 425
+    },
+    {
+      "index": 12,
+      "file_offset": 5561,
+      "next_offset_or_eof": 6058,
+      "stored_block_bytes": 497,
+      "decoded_tile_bytes": 2296,
+      "returned_units_decoded_length_div_14": 164,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        150,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000039240d00230025160129180611292d1b1b191f261b1414141111351135113232323511113f26381428283535352f1d0a001d001e12002213040e2225161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b2919090019001a0f001d11040c1d20131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626221507001500160d00180e030a181b10100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f272316201d121c190f17150d17150d0a1b1d0713150d21230c1f210a1b1c071315",
+      "decoder_file_offset": 5783,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 275
+    },
+    {
+      "index": 13,
+      "file_offset": 6058,
+      "next_offset_or_eof": 6658,
+      "stored_block_bytes": 600,
+      "decoded_tile_bytes": 1568,
+      "returned_units_decoded_length_div_14": 112,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000000002300230004001f08001b0c001611001215000e14141411113511351119000a3511111d000522000115152300001d001d000300190600160900120e000e11000b1010100e0e2b0e2b0e1400082b0e0e1800041c000011111d00001900190002001605001308000f0c000c0f000a0e0e0e0c0c260c260c120007260c0c1400031800000f0f1900001500150002001204001007000d0a000a0c00080c0c0c0a0a1f0a1f0a0f00061f0a0a1100031400000c0c1517172d1313251010200d0d1b0d0d1b10101b0c0c1314142113131f10101b0c0c13",
+      "decoder_file_offset": 6280,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 378
+    },
+    {
+      "index": 14,
+      "file_offset": 6658,
+      "next_offset_or_eof": 7618,
+      "stored_block_bytes": 960,
+      "decoded_tile_bytes": 3318,
+      "returned_units_decoded_length_div_14": 237,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        225,
+        111
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000000002300230004001f08001b0c001611001215000e14141411113511351119000a3511111d000522000126000000001d001d000300190600160900120e000e11000b1010100e0e2b0e2b0e1400082b0e0e1800041c00001f000000001900190002001605001308000f0c000c0f000a0e0e0e0c0c260c260c120007260c0c1400031800001b000000001500150002001204001007000d0a000a0c00080c0c0c0a0a1f0a1f0a0f00061f0a0a1100031400001600000f11210c0e1b0a0c17090a13090a13002900001e00003200003000002900001e00",
+      "decoder_file_offset": 6880,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 738
+    },
+    {
+      "index": 15,
+      "file_offset": 7618,
+      "next_offset_or_eof": 8628,
+      "stored_block_bytes": 1010,
+      "decoded_tile_bytes": 2814,
+      "returned_units_decoded_length_div_14": 201,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "000000180f1000230016120f14150e12180d101b0c0e1e0b1c14141111351135110c210a3511110a2409082708062a07130c0d001d00120e0c10110b0e130a0d16090b18091710100e0e2b0e2b0e091b082b0e0e081d07062006042205110a0b0019000f0c0a0e0f0a0c11090b13080a1507140e0e0c0c260c260c081707260c0c071906051c05041e050e09090015000d0a090c0c080a0e07091007081206100c0c0a0a1f0a1f0a0713061f0a0a0615050417040319043f00003400002d00002500002500003400002500003f00003c0000330000250000",
+      "decoder_file_offset": 7840,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 788
+    },
+    {
+      "index": 16,
+      "file_offset": 8628,
+      "next_offset_or_eof": 9163,
+      "stored_block_bytes": 535,
+      "decoded_tile_bytes": 1918,
+      "returned_units_decoded_length_div_14": 137,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        180
+      ],
+      "metadata_216_bytes_to_ds_41c2": "00000036301c0023002d23002300003523132311002323231414141111351135111e2a183511113511353535113535352c2717001d00251d001d00002b1d0f1d0e001d1d1d1010100e0e2b0e2b0e1822132b0e0e2b0e2b2b2b0e2b2b2b26221400190020190019000026190d190c001919190e0e0e0c0c260c260c151e11260c0c260c2626260c262626201c100015001b15001500001f150b150a001515150c0c0c0a0a1f0a1f0a12190e1f0a0a1f0a1f1f1f0a1f1f1f3131312828282323231d1d1d1d1d1d101f0d0c160914261013240f101f0d0c1609",
+      "decoder_file_offset": 8850,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 313
+    },
+    {
+      "index": 17,
+      "file_offset": 9163,
+      "next_offset_or_eof": 9714,
+      "stored_block_bytes": 551,
+      "decoded_tile_bytes": 2142,
+      "returned_units_decoded_length_div_14": 153,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        7,
+        175,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000001815290023000023231b0c0923002323110023232314141411113511351111272d35111124191c353511352a1f131122001d00001d1d1609071d001d1d0e001d1d1d1010100e0e2b0e2b0e0e20252b0e0e1d14172b2b0e2b2219110f1d001900001919130806190019190c001919190e0e0e0c0c260c260c0c1c20260c0c19121426260c261e160e0c18001500001515100705150015150a001515150c0c0c0a0a1f0a1f0a0a171b1f0a0a150f101f1f0a1f191214142010101a0e0e170c0c130c0c13091d1207150d0c23160b2115091c1207150d",
+      "decoder_file_offset": 9385,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 329
+    },
+    {
+      "index": 18,
+      "file_offset": 9714,
+      "next_offset_or_eof": 10277,
+      "stored_block_bytes": 563,
+      "decoded_tile_bytes": 2282,
+      "returned_units_decoded_length_div_14": 163,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        150,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002b14040023003119112611083b29162c1b191f261b1414141111351135113232323511113f2638142828353535231003001d0028140e1f0e06302212241614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b1e0e0200190023120c1b0c052a1d0f1f1312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626190c020015001d0f0a160a0423180d1a100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f2814162110121c0e0f180c0d180c0d271c131c140e2f22182d2017261b131c140e",
+      "decoder_file_offset": 9936,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 341
+    },
+    {
+      "index": 19,
+      "file_offset": 10277,
+      "next_offset_or_eof": 10728,
+      "stored_block_bytes": 451,
+      "decoded_tile_bytes": 2058,
+      "returned_units_decoded_length_div_14": 147,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        4,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002e19110023003d2c212300002300232311002323231414141111351135111135353511113511352d151535353526140e001d0032241b1d00001d001d1d0e001d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b2511112b2b2b21120c0019002b1f17190000190019190c001919190e0e0e0c0c260c260c0c2626260c0c260c26200f0f2626261b0f0a001500241a13150000150015150a001515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1b0c0c1f1f1f3f3f3f3434342d2d2d2525252525252924291e1a1e322c32302a302924291e1a1e",
+      "decoder_file_offset": 10499,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 229
+    },
+    {
+      "index": 20,
+      "file_offset": 10728,
+      "next_offset_or_eof": 11363,
+      "stored_block_bytes": 635,
+      "decoded_tile_bytes": 2604,
+      "returned_units_decoded_length_div_14": 186,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        20,
+        195,
+        120
+      ],
+      "metadata_216_bytes_to_ds_41c2": "000000280f11002300200c001919000c1f000024112d16061414141111351135112e1c163511112518142d2223151718210c0e001d001a0900141400091900001d0e2512041010100e0e2b0e2b0e2617122b0e0e1e1310251c1d1113131c0a0c00190017080012120008160000190c200f040e0e0e0c0c260c260c21140f260c0c1a110e2018190f101118090a0015001307000f0f0007120000150a1b0d030c0c0c0a0a1f0a1f0a1b100d1f0a0a160e0c1b14150c0d0e352c2b2b2423261f1e1f1a191f1a192b24231f1a19352c2b322a292b24231f1a19",
+      "decoder_file_offset": 10950,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 413
+    },
+    {
+      "index": 21,
+      "file_offset": 11363,
+      "next_offset_or_eof": 11903,
+      "stored_block_bytes": 540,
+      "decoded_tile_bytes": 1820,
+      "returned_units_decoded_length_div_14": 130,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        200,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000234290023002a2f321c1c1c3f1e233f3432341d131414141111351135113232323511113f2638142828353535012b22001d0022272917171734181d342b292b180f1010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b01251d0019001e21241414142d15192d252425140d0e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626011f18001500191c1e101010251215251f1e1f110b0c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f3d2523321e1d2b1a19241615241615321e1d2416153d25233a2321321e1c241615",
+      "decoder_file_offset": 11585,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 318
+    },
+    {
+      "index": 22,
+      "file_offset": 11903,
+      "next_offset_or_eof": 12494,
+      "stored_block_bytes": 591,
+      "decoded_tile_bytes": 2240,
+      "returned_units_decoded_length_div_14": 160,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        130,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000a181b0023000c0f0e1e221e191e231b1b191f261b1414141111351135113232323511113f2638142828353535081316001d00090c0b181c1814181d161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b071113001900080a0a151815121519131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626060e100015000709081214120f121510100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f2225231c1e1d181a191416151416151c1e1d1416152225232023211b1e1c141615",
+      "decoder_file_offset": 12125,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 369
+    },
+    {
+      "index": 23,
+      "file_offset": 12494,
+      "next_offset_or_eof": 13347,
+      "stored_block_bytes": 853,
+      "decoded_tile_bytes": 3136,
+      "returned_units_decoded_length_div_14": 224,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        7,
+        145,
+        40
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000000230023001b0d261d0818230023170c2e2816321414141111351135112111273511112711352f271d20053900001d001d00160a1f1806131d001d1309262112291010100e0e2b0e2b0e1b0e202b0e0e200e2b2720181a042f00001900190013091b1405111900191008211c0f240e0e0e0c0c260c260c170c1c260c0c1c0c26211c1417032900001500150010071611040e1500150d071b180d1e0c0c0c0a0a1f0a1f0a130a171f0a0a170a1f1c17111303223a3524302b1d292619221f15221f15061227040d1c08163007152e061227040d1c",
+      "decoder_file_offset": 12716,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 631
+    },
+    {
+      "index": 24,
+      "file_offset": 13347,
+      "next_offset_or_eof": 13795,
+      "stored_block_bytes": 448,
+      "decoded_tile_bytes": 1162,
+      "returned_units_decoded_length_div_14": 83,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        100,
+        60
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002d2c3700230000232323000023002323113523232314141411113511351111353535111135113530252d35353525242d001d00001d1d1d00001d001d1d0e2b1d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b271e252b2b2b201f27001900001919190000190019190c261919190e0e0e0c0c260c260c0c2626260c0c260c26221a202626261b1a21001500001515150000150015150a1f1515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1c161b1f1f1f2425221d1e1c191a181516141516142b241a1f1a13352c20322a1e2b241a1f1a13",
+      "decoder_file_offset": 13569,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 226
+    },
+    {
+      "index": 25,
+      "file_offset": 13795,
+      "next_offset_or_eof": 14265,
+      "stored_block_bytes": 470,
+      "decoded_tile_bytes": 2100,
+      "returned_units_decoded_length_div_14": 150,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        150,
+        30
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002e2829002300282324231e1f1e191a1a1415130f0f1414141111351135113232323511113f2638142828353535262122001d00211d1d1d18191814151510110f0c0c1010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b211c1d0019001c1919191516151212120e0f0d0a0a0e0e0e0c0c260c260c242424260c0c2d1b280e1c1c2626261b1818001500181515151212120f0f0f0c0c0b09090c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f1514161110120f0e0f0c0c0d0c0c0d121c130d140e162218152017121b130d140e",
+      "decoder_file_offset": 14017,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 248
+    },
+    {
+      "index": 26,
+      "file_offset": 14265,
+      "next_offset_or_eof": 14986,
+      "stored_block_bytes": 721,
+      "decoded_tile_bytes": 2674,
+      "returned_units_decoded_length_div_14": 191,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        12,
+        195,
+        45
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000000707070023000c0c0c1111111616161c1c1c2121211414141111351135112626263511112b2b2b303030353535050505001d000909090e0e0e1212121717171b1b1b1010100e0e2b0e2b0e1f1f1f2b0e0e2323232727272b2b2b0505050019000808080c0c0c0f0f0f1414141717170e0e0e0c0c260c260c1b1b1b260c0c1e1e1e2222222626260404040015000707070a0a0a0d0d0d1010101313130c0c0c0a0a1f0a1f0a1616161f0a0a1919191c1c1c1f1f1f3535352b2b2b2626261f1f1f1f1f1f141d170f151019241c18221a141d160f1510",
+      "decoder_file_offset": 14487,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 499
+    },
+    {
+      "index": 27,
+      "file_offset": 14986,
+      "next_offset_or_eof": 15455,
+      "stored_block_bytes": 469,
+      "decoded_tile_bytes": 2324,
+      "returned_units_decoded_length_div_14": 166,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        12,
+        200,
+        2
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000001a1a190023000c0f0e1e221e191e231b1b191f261b1414141111351135113232323511113f2638142828353535151514001d00090c0b181c1814181d161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b121212001900080a0a151815121519131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c2626260f0f0f0015000709081214120f121510100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f2225231c1e1d181a191416151416151c2725141c1b22302d202e2b1b2724141c1b",
+      "decoder_file_offset": 15208,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 247
+    },
+    {
+      "index": 28,
+      "file_offset": 15455,
+      "next_offset_or_eof": 16032,
+      "stored_block_bytes": 577,
+      "decoded_tile_bytes": 3276,
+      "returned_units_decoded_length_div_14": 234,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        225,
+        125
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002412000023000023232300002300232311002323231414141111351135111135353511113511353535113535351d0e00001d00001d1d1d00001d001d1d0e001d1d1d1010100e0e2b0e2b0e0e2b2b2b0e0e2b0e2b2b2b0e2b2b2b190c00001900001919190000190019190c001919190e0e0e0c0c260c260c0c2626260c0c260c2626260c262626150a00001500001515150000150015150a001515150c0c0c0a0a1f0a1f0a0a1f1f1f0a0a1f0a1f1f1f0a1f1f1f35160d2b120a260f091f0d071f0d07321500240f003d1a003a1800321500240f00",
+      "decoder_file_offset": 15677,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 355
+    },
+    {
+      "index": 29,
+      "file_offset": 16032,
+      "next_offset_or_eof": 16573,
+      "stored_block_bytes": 541,
+      "decoded_tile_bytes": 1904,
+      "returned_units_decoded_length_div_14": 136,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        9,
+        120,
+        55
+      ],
+      "metadata_216_bytes_to_ds_41c2": "0000002914110023001e0a2814071b1104141b1b191f261b1414141111351135113232323511113f263814282835353522100e001d001808211005160e0310161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b1d0e0c00190015071c0e05130c020e131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c262626180c0a0015001206180c04100a020c10100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f331f122a190e24160c1e120a1e120a1c1e1d1416152225232023211b1e1c141615",
+      "decoder_file_offset": 16254,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 319
+    },
+    {
+      "index": 30,
+      "file_offset": 16573,
+      "next_offset_or_eof": 17095,
+      "stored_block_bytes": 522,
+      "decoded_tile_bytes": 2800,
+      "returned_units_decoded_length_div_14": 200,
+      "metadata_words_to_ds_4562_54a2_4566": [
+        8,
+        201,
+        100
+      ],
+      "metadata_216_bytes_to_ds_41c2": "000000290f1c0023001e1e3c1414280a0a141b1b191f261b1414141111351135113232323511113f2638142828353535220c17001d00181831101021080810161614191f161010100e0e2b0e2b0e2929292b0e0e341f2e1021212b2b2b1d0a1400190015152b0e0e1c07070e131312161b130e0e0e0c0c260c260c242424260c0c2d1b280e1c1c2626261809100015001212240c0c1806060c10100f1216100c0c0c0a0a1f0a1f0a1e1e1e1f0a0a2516210c18181f1f1f2817162113121c100f180d0d180d0d1c1e1d1416152225232023211b1e1c141615",
+      "decoder_file_offset": 16795,
+      "decoder_control_bytes": [
+        5,
+        8,
+        10
+      ],
+      "encoded_stream_bytes_including_controls": 300
+    }
+  ],
+  "limitations": [
+    "No level decompression or game execution.",
+    "Metadata meanings, tile encoding, and index-to-name mapping remain unknown.",
+    "The first block offset bounds the inferred directory; this is not an explicit count field."
+  ]
+}

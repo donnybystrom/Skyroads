@@ -1,0 +1,21 @@
+# Local reverse-engineering installations and generated runtime state
+ghidra-mcp/
+rea/
+tools/
+runtime/
+downloads/
+logs/
+projects/
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+dist/
+node_modules/
+
+# Large native RAM/screenshot captures remain local; reports/corpora are tracked.
+analysis/skyroads/original-runs/
+analysis/skyroads/hud-corpus/
+*.log

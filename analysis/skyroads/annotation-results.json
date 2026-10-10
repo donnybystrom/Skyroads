@@ -1,0 +1,323 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "count": 21,
+  "succeeded": 21,
+  "failed": 0,
+  "results": [
+    {
+      "address": "1000:61f3",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:01b8",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:0069",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:00bb",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:5614",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:2b3d",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:1fd9",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:3acc",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:5c77",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:5c59",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:5c82",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:5fd4",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:6027",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:603b",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:6420",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:6576",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:6490",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:64ab",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:64ff",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:66e6",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "address": "1000:6679",
+      "steps": {
+        "rename": {
+          "success": true
+        },
+        "comments": {
+          "success": true,
+          "eol": 0,
+          "pre": 0,
+          "plate": true
+        }
+      },
+      "errors": []
+    }
+  ]
+}

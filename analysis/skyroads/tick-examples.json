@@ -1,0 +1,5624 @@
+{
+  "surface_effect": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 200683,
+        "lateral": 32768,
+        "height": 10125,
+        "speed": 4075,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 25986,
+        "oxygen": 25987,
+        "exit_state": 3,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        32768,
+        10125
+      ],
+      [
+        "collision",
+        197423,
+        32768,
+        10217
+      ],
+      [
+        "collision",
+        198238,
+        32768,
+        10194
+      ],
+      [
+        "collision",
+        199053,
+        32768,
+        10171
+      ],
+      [
+        "collision",
+        199868,
+        32768,
+        10148
+      ],
+      [
+        "collision",
+        200683,
+        32768,
+        10125
+      ]
+    ]
+  },
+  "exit_fall": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 200683,
+        "lateral": 32768,
+        "height": 10125,
+        "speed": 4075,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 25986,
+        "oxygen": 25987,
+        "exit_state": 3,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        32768,
+        10125
+      ],
+      [
+        "collision",
+        197423,
+        32768,
+        10217
+      ],
+      [
+        "collision",
+        198238,
+        32768,
+        10194
+      ],
+      [
+        "collision",
+        199053,
+        32768,
+        10171
+      ],
+      [
+        "collision",
+        199868,
+        32768,
+        10148
+      ],
+      [
+        "collision",
+        200683,
+        32768,
+        10125
+      ]
+    ]
+  },
+  "landing": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "0d97591e601dbbf90729438f1168f868221f80c4418e258f267f2781b3421874",
+    "road_hex": "1100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100",
+    "result": {
+      "state": {
+        "forward": 200683,
+        "lateral": 33087,
+        "height": 10240,
+        "speed": 4075,
+        "steering": 29,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 25986,
+        "oxygen": 25987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        33087,
+        10125
+      ],
+      [
+        "collision",
+        197423,
+        32831,
+        10217
+      ],
+      [
+        "collision",
+        196864,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        197120,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        197376,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        197632,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        197888,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        198144,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        198400,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        198656,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        198912,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        199168,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        199424,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        199680,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        199936,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200192,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200448,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200464,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200480,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200496,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200512,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200528,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200544,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200560,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200576,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200592,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200608,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200624,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200640,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200656,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200672,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200673,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200674,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200675,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200676,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200677,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200678,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200679,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200680,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200681,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200682,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        32893,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33018,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33043,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33068,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33073,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33078,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33083,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33084,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33085,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33086,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        10240
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        10215
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        10235
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33215,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33343,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33471,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33599,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33727,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33855,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        33983,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34111,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34239,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34367,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34495,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34623,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34751,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        34879,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32959,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32831,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32703,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32575,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32447,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32319,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32191,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        32063,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31935,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31807,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31679,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31551,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31423,
+        10239
+      ],
+      [
+        "collision",
+        200683,
+        31295,
+        10239
+      ]
+    ]
+  },
+  "crash_vertical": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "902e29695c6bb4500074f8d7befd77aec41735ddb1b39f0101442bf26456ac56",
+    "road_hex": "cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00",
+    "result": {
+      "state": {
+        "forward": 200608,
+        "lateral": 32768,
+        "height": 10279,
+        "speed": 4000,
+        "steering": 0,
+        "vertical_speed": 39,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 26000,
+        "oxygen": 26000,
+        "exit_state": 2,
+        "crash_ticks": 2,
+        "end_ticks": 1,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10279
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "sound",
+        0
+      ],
+      [
+        "resolve",
+        200608,
+        32768,
+        10279
+      ],
+      [
+        "collision",
+        197408,
+        32768,
+        10247
+      ],
+      [
+        "collision",
+        198208,
+        32768,
+        10255
+      ],
+      [
+        "collision",
+        199008,
+        32768,
+        10263
+      ],
+      [
+        "collision",
+        199808,
+        32768,
+        10271
+      ],
+      [
+        "collision",
+        200608,
+        32768,
+        10279
+      ]
+    ]
+  },
+  "exit_timer": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "902e29695c6bb4500074f8d7befd77aec41735ddb1b39f0101442bf26456ac56",
+    "road_hex": "cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00",
+    "result": {
+      "state": {
+        "forward": 200608,
+        "lateral": 32768,
+        "height": 10279,
+        "speed": 4000,
+        "steering": 0,
+        "vertical_speed": 39,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 26000,
+        "oxygen": 26000,
+        "exit_state": 2,
+        "crash_ticks": 2,
+        "end_ticks": 1,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10279
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "sound",
+        0
+      ],
+      [
+        "resolve",
+        200608,
+        32768,
+        10279
+      ],
+      [
+        "collision",
+        197408,
+        32768,
+        10247
+      ],
+      [
+        "collision",
+        198208,
+        32768,
+        10255
+      ],
+      [
+        "collision",
+        199008,
+        32768,
+        10263
+      ],
+      [
+        "collision",
+        199808,
+        32768,
+        10271
+      ],
+      [
+        "collision",
+        200608,
+        32768,
+        10279
+      ]
+    ]
+  },
+  "crash_timer": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "902e29695c6bb4500074f8d7befd77aec41735ddb1b39f0101442bf26456ac56",
+    "road_hex": "cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00cc00",
+    "result": {
+      "state": {
+        "forward": 200608,
+        "lateral": 32768,
+        "height": 10279,
+        "speed": 4000,
+        "steering": 0,
+        "vertical_speed": 39,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 26000,
+        "oxygen": 26000,
+        "exit_state": 2,
+        "crash_ticks": 2,
+        "end_ticks": 1,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10279
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "sound",
+        0
+      ],
+      [
+        "resolve",
+        200608,
+        32768,
+        10279
+      ],
+      [
+        "collision",
+        197408,
+        32768,
+        10247
+      ],
+      [
+        "collision",
+        198208,
+        32768,
+        10255
+      ],
+      [
+        "collision",
+        199008,
+        32768,
+        10263
+      ],
+      [
+        "collision",
+        199808,
+        32768,
+        10271
+      ],
+      [
+        "collision",
+        200608,
+        32768,
+        10279
+      ]
+    ]
+  },
+  "edge_drift": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 12800,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 12800
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "7d4c13d39aeda53861e4246e243824b8ac2b04b72e7caadde9f92f24a80bfef5",
+    "road_hex": "0001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001",
+    "result": {
+      "state": {
+        "forward": 200683,
+        "lateral": 33087,
+        "height": 12800,
+        "speed": 4075,
+        "steering": 29,
+        "vertical_speed": -115,
+        "drift": 17,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 25986,
+        "oxygen": 25987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 14,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        33087,
+        12685
+      ],
+      [
+        "collision",
+        197423,
+        32831,
+        12777
+      ],
+      [
+        "collision",
+        196864,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        197120,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        197376,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        197632,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        197888,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        198144,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        198400,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        198656,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        198912,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        199168,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        199424,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        199680,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        199936,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200192,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200448,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200464,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200480,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200496,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200512,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200528,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200544,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200560,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200576,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200592,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200608,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200624,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200640,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200656,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200672,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200673,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200674,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200675,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200676,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200677,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200678,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200679,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200680,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200681,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200682,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        32768,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        32893,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33018,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33043,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33068,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33073,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33078,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33083,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33084,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33085,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33086,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        12800
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        12775
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        12795
+      ],
+      [
+        "collision",
+        200683,
+        33087,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33215,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33343,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33471,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33599,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33727,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33855,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        33983,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34111,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34239,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34367,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34495,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34623,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34751,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        34879,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32959,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32831,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32703,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32575,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32447,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32319,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32191,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        32063,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31935,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31807,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31679,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31551,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31423,
+        12799
+      ],
+      [
+        "collision",
+        200683,
+        31295,
+        12799
+      ]
+    ]
+  },
+  "frontal_crash": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "1e51a78dae33b3c2dcdf1e00b68a33ae23048238120532cf10e107356fccac3e",
+    "road_hex": "0002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002",
+    "result": {
+      "state": {
+        "forward": 196608,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 26000,
+        "oxygen": 26000,
+        "exit_state": 1,
+        "crash_ticks": 2,
+        "end_ticks": 1,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        33087,
+        10125
+      ],
+      [
+        "collision",
+        197423,
+        32831,
+        10217
+      ],
+      [
+        "collision",
+        196864,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196624,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196609,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32893,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32793,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32773,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32769,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10215
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10235
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10239
+      ],
+      [
+        "sound",
+        0
+      ],
+      [
+        "collision",
+        196608,
+        32896,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33024,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33152,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33280,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33408,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33536,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33664,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33792,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33920,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34048,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34176,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34304,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34432,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34560,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32640,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32512,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32384,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32256,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32128,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32000,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31872,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31744,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31616,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31488,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31360,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31232,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31104,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        30976,
+        10239
+      ]
+    ]
+  },
+  "lateral_block": {
+    "group": "surface_matrix",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 26000,
+      "oxygen": 26000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 1,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "1e51a78dae33b3c2dcdf1e00b68a33ae23048238120532cf10e107356fccac3e",
+    "road_hex": "0002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002000200020002",
+    "result": {
+      "state": {
+        "forward": 196608,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 26000,
+        "oxygen": 26000,
+        "exit_state": 1,
+        "crash_ticks": 2,
+        "end_ticks": 1,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        200683,
+        33087,
+        10125
+      ],
+      [
+        "collision",
+        197423,
+        32831,
+        10217
+      ],
+      [
+        "collision",
+        196864,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196624,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196609,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32893,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32793,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32773,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32769,
+        10240
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10215
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10235
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        10239
+      ],
+      [
+        "sound",
+        0
+      ],
+      [
+        "collision",
+        196608,
+        32896,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33024,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33152,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33280,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33408,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33536,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33664,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33792,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        33920,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34048,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34176,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34304,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34432,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        34560,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32640,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32512,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32384,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32256,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32128,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        32000,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31872,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31744,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31616,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31488,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31360,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31232,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        31104,
+        10239
+      ],
+      [
+        "collision",
+        196608,
+        30976,
+        10239
+      ]
+    ]
+  },
+  "airborne_surface": {
+    "group": "collision_thresholds",
+    "state": {
+      "forward": 262044,
+      "lateral": 29824,
+      "height": 10240,
+      "speed": 0,
+      "steering": 0,
+      "vertical_speed": -800,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "7bcb78aa1c5b2b2f91ce81aa4c731e9e24794438c3c054bbc675d1a14f5a60fc",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102",
+    "result": {
+      "state": {
+        "forward": 262044,
+        "lateral": 29824,
+        "height": 10240,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": -915,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 9325
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        262044,
+        29824,
+        9325
+      ],
+      [
+        "collision",
+        262044,
+        29824,
+        10057
+      ],
+      [
+        "collision",
+        262044,
+        29824,
+        10115
+      ],
+      [
+        "collision",
+        262044,
+        29824,
+        10215
+      ],
+      [
+        "collision",
+        262044,
+        29824,
+        10235
+      ],
+      [
+        "collision",
+        262044,
+        29824,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29952,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30080,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30208,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30336,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30464,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30592,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30720,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30848,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        30976,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        31104,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        31232,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        31360,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        31488,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        31616,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29696,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29568,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29440,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29312,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29184,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        29056,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28928,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28800,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28672,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28544,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28416,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28288,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28160,
+        10239
+      ],
+      [
+        "collision",
+        262044,
+        28032,
+        10239
+      ]
+    ]
+  },
+  "low_speed_bump": {
+    "group": "collision_thresholds",
+    "state": {
+      "forward": 262044,
+      "lateral": 29824,
+      "height": 10240,
+      "speed": 3639,
+      "steering": 0,
+      "vertical_speed": -800,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "7bcb78aa1c5b2b2f91ce81aa4c731e9e24794438c3c054bbc675d1a14f5a60fc",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102010201020102",
+    "result": {
+      "state": {
+        "forward": 262143,
+        "lateral": 29824,
+        "height": 10240,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": -915,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 9325
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        265683,
+        29824,
+        9325
+      ],
+      [
+        "collision",
+        262771,
+        29824,
+        10057
+      ],
+      [
+        "collision",
+        262300,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262060,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262076,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262092,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262108,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262124,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262140,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262156,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262141,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262142,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262143,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262144,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        262143,
+        29824,
+        10115
+      ],
+      [
+        "collision",
+        262143,
+        29824,
+        10215
+      ],
+      [
+        "collision",
+        262143,
+        29824,
+        10235
+      ],
+      [
+        "collision",
+        262143,
+        29824,
+        10239
+      ],
+      [
+        "collision",
+        265683,
+        29824,
+        10240
+      ],
+      [
+        "collision",
+        265683,
+        28896,
+        10240
+      ],
+      [
+        "collision",
+        265683,
+        30752,
+        10240
+      ],
+      [
+        "sound",
+        2
+      ],
+      [
+        "collision",
+        262143,
+        29952,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30080,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30208,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30336,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30464,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30592,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30720,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30848,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        30976,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        31104,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        31232,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        31360,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        31488,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        31616,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29696,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29568,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29440,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29312,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29184,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        29056,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28928,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28800,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28672,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28544,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28416,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28288,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28160,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28032,
+        10239
+      ]
+    ]
+  },
+  "shove_left": {
+    "group": "left_shove_boundary",
+    "state": {
+      "forward": 262044,
+      "lateral": 28056,
+      "height": 10240,
+      "speed": 4000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 12,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "7747efebcc9d7d33c1bc137cd752bffeb3ce30f8f9c9924a454e61eefde31d8a",
+    "road_hex": "010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001020100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 262143,
+        "lateral": 27128,
+        "height": 10240,
+        "speed": 3849,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29987,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 50,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        266044,
+        28056,
+        10125
+      ],
+      [
+        "collision",
+        262844,
+        28056,
+        10217
+      ],
+      [
+        "collision",
+        262300,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262060,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262076,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262092,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262108,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262124,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262140,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262156,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262141,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262142,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262143,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262144,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        262143,
+        28056,
+        10215
+      ],
+      [
+        "collision",
+        262143,
+        28056,
+        10235
+      ],
+      [
+        "collision",
+        262143,
+        28056,
+        10239
+      ],
+      [
+        "collision",
+        266044,
+        28056,
+        10240
+      ],
+      [
+        "collision",
+        266044,
+        27128,
+        10240
+      ],
+      [
+        "sound",
+        2
+      ],
+      [
+        "collision",
+        262143,
+        27256,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27384,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27512,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27640,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27768,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27896,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28024,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28152,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28280,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28408,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28536,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28664,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28792,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        28920,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        27000,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26872,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26744,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26616,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26488,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26360,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26232,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        26104,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25976,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25848,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25720,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25592,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25464,
+        10239
+      ],
+      [
+        "collision",
+        262143,
+        25336,
+        10239
+      ]
+    ]
+  },
+  "bounce": {
+    "group": "jump_gate_and_initial_locals",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 7000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 42405,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 42405,
+      "previous_target_height": 42405
+    },
+    "config": {
+      "gravity_factor": 0,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": -1,
+      "jump": 0,
+      "timer": 65535
+    },
+    "road_index": null,
+    "road_sha256": "ea11d3cce17f2b37847d0df5b08f8f1a3f9b0bc7dbce50a076be650dbd0dd544",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 203683,
+        "lateral": 32279,
+        "height": 10240,
+        "speed": 7075,
+        "steering": -29,
+        "vertical_speed": 0,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29976,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 42405,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 42405,
+        "previous_target_height": 10240
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        203683,
+        32279,
+        10240
+      ],
+      [
+        "collision",
+        198023,
+        32671,
+        10240
+      ],
+      [
+        "collision",
+        199438,
+        32573,
+        10240
+      ],
+      [
+        "collision",
+        200853,
+        32475,
+        10240
+      ],
+      [
+        "collision",
+        202268,
+        32377,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        10240
+      ]
+    ]
+  },
+  "jump_start": {
+    "group": "jump_gate_and_initial_locals",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 7000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 42405,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 42405,
+      "previous_target_height": 42405
+    },
+    "config": {
+      "gravity_factor": 0,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": -1,
+      "jump": 1,
+      "timer": 65535
+    },
+    "road_index": null,
+    "road_sha256": "ea11d3cce17f2b37847d0df5b08f8f1a3f9b0bc7dbce50a076be650dbd0dd544",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 203683,
+        "lateral": 32279,
+        "height": 11392,
+        "speed": 7075,
+        "steering": -29,
+        "vertical_speed": 1152,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29976,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 42405,
+        "previous_target_height": 11392
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        203683,
+        32279,
+        11392
+      ],
+      [
+        "collision",
+        198023,
+        32671,
+        10470
+      ],
+      [
+        "collision",
+        199438,
+        32573,
+        10700
+      ],
+      [
+        "collision",
+        200853,
+        32475,
+        10931
+      ],
+      [
+        "collision",
+        202268,
+        32377,
+        11161
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        11392
+      ]
+    ]
+  },
+  "vertical_stop": {
+    "group": "jump_gate_and_initial_locals",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 7000,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 42405,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 42405,
+      "previous_target_height": 42405
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": -1,
+      "jump": 0,
+      "timer": 65535
+    },
+    "road_index": null,
+    "road_sha256": "ea11d3cce17f2b37847d0df5b08f8f1a3f9b0bc7dbce50a076be650dbd0dd544",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 203683,
+        "lateral": 32279,
+        "height": 10240,
+        "speed": 7075,
+        "steering": -29,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29976,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 42405,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 42405,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        203683,
+        32279,
+        10125
+      ],
+      [
+        "collision",
+        198023,
+        32671,
+        10217
+      ],
+      [
+        "collision",
+        200704,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        200960,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        201216,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        201472,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        201728,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        201984,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        202240,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        202496,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        202752,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203008,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203264,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203520,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203536,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203552,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203568,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203584,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203600,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203616,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203632,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203648,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203664,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203680,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203681,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203682,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32768,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32643,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32518,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32393,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32368,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32343,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32318,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32293,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32288,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32283,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32282,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32281,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32280,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        10240
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        10215
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        10235
+      ],
+      [
+        "collision",
+        203683,
+        32279,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32407,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32535,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32663,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32791,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32919,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33047,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33175,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33303,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33431,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33559,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33687,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33815,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        33943,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        34071,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32151,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        32023,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31895,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31767,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31639,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31511,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31383,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31255,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        31127,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        30999,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        30871,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        30743,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        30615,
+        10239
+      ],
+      [
+        "collision",
+        203683,
+        30487,
+        10239
+      ]
+    ]
+  },
+  "fall_speed_floor": {
+    "group": "resource_exit_priority",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 9000,
+      "speed": 10922,
+      "steering": 0,
+      "vertical_speed": -1,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 0,
+      "oxygen": 0,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9000
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 207530,
+        "lateral": 32768,
+        "height": 8894,
+        "speed": 10922,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 0,
+        "oxygen": 0,
+        "exit_state": 5,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 8894
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        207530,
+        32768,
+        8894
+      ],
+      [
+        "collision",
+        198792,
+        32768,
+        8979
+      ],
+      [
+        "collision",
+        200976,
+        32768,
+        8958
+      ],
+      [
+        "collision",
+        203161,
+        32768,
+        8937
+      ],
+      [
+        "collision",
+        205345,
+        32768,
+        8916
+      ],
+      [
+        "collision",
+        207530,
+        32768,
+        8894
+      ]
+    ]
+  },
+  "oxygen_underflow": {
+    "group": "resource_exit_priority",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 9000,
+      "speed": 10922,
+      "steering": 0,
+      "vertical_speed": -1,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 0,
+      "oxygen": 0,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9000
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 207530,
+        "lateral": 32768,
+        "height": 8894,
+        "speed": 10922,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 0,
+        "oxygen": 0,
+        "exit_state": 5,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 8894
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        207530,
+        32768,
+        8894
+      ],
+      [
+        "collision",
+        198792,
+        32768,
+        8979
+      ],
+      [
+        "collision",
+        200976,
+        32768,
+        8958
+      ],
+      [
+        "collision",
+        203161,
+        32768,
+        8937
+      ],
+      [
+        "collision",
+        205345,
+        32768,
+        8916
+      ],
+      [
+        "collision",
+        207530,
+        32768,
+        8894
+      ]
+    ]
+  },
+  "fuel_underflow": {
+    "group": "resource_exit_priority",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 9000,
+      "speed": 10922,
+      "steering": 0,
+      "vertical_speed": -1,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 0,
+      "oxygen": 0,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9000
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 207530,
+        "lateral": 32768,
+        "height": 8894,
+        "speed": 10922,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 0,
+        "oxygen": 0,
+        "exit_state": 5,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 8894
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        207530,
+        32768,
+        8894
+      ],
+      [
+        "collision",
+        198792,
+        32768,
+        8979
+      ],
+      [
+        "collision",
+        200976,
+        32768,
+        8958
+      ],
+      [
+        "collision",
+        203161,
+        32768,
+        8937
+      ],
+      [
+        "collision",
+        205345,
+        32768,
+        8916
+      ],
+      [
+        "collision",
+        207530,
+        32768,
+        8894
+      ]
+    ]
+  },
+  "exit_fuel": {
+    "group": "resource_exit_priority",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 9000,
+      "speed": 10922,
+      "steering": 0,
+      "vertical_speed": -1,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 0,
+      "oxygen": 0,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9000
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 207530,
+        "lateral": 32768,
+        "height": 8894,
+        "speed": 10922,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 0,
+        "oxygen": 0,
+        "exit_state": 5,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 8894
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        207530,
+        32768,
+        8894
+      ],
+      [
+        "collision",
+        198792,
+        32768,
+        8979
+      ],
+      [
+        "collision",
+        200976,
+        32768,
+        8958
+      ],
+      [
+        "collision",
+        203161,
+        32768,
+        8937
+      ],
+      [
+        "collision",
+        205345,
+        32768,
+        8916
+      ],
+      [
+        "collision",
+        207530,
+        32768,
+        8894
+      ]
+    ]
+  },
+  "exit_oxygen": {
+    "group": "resource_exit_priority",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 9000,
+      "speed": 10922,
+      "steering": 0,
+      "vertical_speed": -1,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 0,
+      "oxygen": 0,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9000
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 50
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 207530,
+        "lateral": 32768,
+        "height": 8894,
+        "speed": 10922,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 0,
+        "oxygen": 0,
+        "exit_state": 5,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 8894
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        207530,
+        32768,
+        8894
+      ],
+      [
+        "collision",
+        198792,
+        32768,
+        8979
+      ],
+      [
+        "collision",
+        200976,
+        32768,
+        8958
+      ],
+      [
+        "collision",
+        203161,
+        32768,
+        8937
+      ],
+      [
+        "collision",
+        205345,
+        32768,
+        8916
+      ],
+      [
+        "collision",
+        207530,
+        32768,
+        8894
+      ]
+    ]
+  },
+  "bounce_sound": {
+    "group": "bounce_and_audio_clock",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 15360,
+      "speed": 2000,
+      "steering": 0,
+      "vertical_speed": -32768,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 1,
+      "jumping": 1,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 9999
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 8
+    },
+    "road_index": null,
+    "road_sha256": "ea11d3cce17f2b37847d0df5b08f8f1a3f9b0bc7dbce50a076be650dbd0dd544",
+    "road_hex": "0100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 198608,
+        "lateral": 32768,
+        "height": 11969,
+        "speed": 2000,
+        "steering": 0,
+        "vertical_speed": -3391,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29993,
+        "oxygen": 29987,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 8,
+        "tick_counter": 1,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 11969
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "sound_busy",
+        0
+      ],
+      [
+        "sound",
+        1
+      ],
+      [
+        "resolve",
+        198608,
+        32768,
+        11969
+      ],
+      [
+        "collision",
+        197008,
+        32768,
+        14682
+      ],
+      [
+        "collision",
+        197408,
+        32768,
+        14004
+      ],
+      [
+        "collision",
+        197808,
+        32768,
+        13326
+      ],
+      [
+        "collision",
+        198208,
+        32768,
+        12648
+      ],
+      [
+        "collision",
+        198608,
+        32768,
+        11969
+      ]
+    ]
+  },
+  "height_underflow": {
+    "group": "wrap_boundaries",
+    "state": {
+      "forward": 196608,
+      "lateral": 32768,
+      "height": 0,
+      "speed": 0,
+      "steering": 0,
+      "vertical_speed": -106,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 0
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 100,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 65535
+    },
+    "road_index": null,
+    "road_sha256": "671a03b622d3d43fba5bbe87536a2f2b381488a896d9199522aec397ec5de576",
+    "road_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "result": {
+      "state": {
+        "forward": 196608,
+        "lateral": 32768,
+        "height": 0,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": -106,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29987,
+        "exit_state": 3,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 65430
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        196608,
+        32768,
+        65430
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        65515
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        65494
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        65473
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        65452
+      ],
+      [
+        "collision",
+        196608,
+        32768,
+        65430
+      ]
+    ]
+  },
+  "finish_boundary": {
+    "group": "finish_boundary",
+    "state": {
+      "forward": 622592,
+      "lateral": 32768,
+      "height": 10240,
+      "speed": 0,
+      "steering": 0,
+      "vertical_speed": 0,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 30000,
+      "oxygen": 30000,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 0,
+      "jump_height": 10240,
+      "grounded": 1,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 10,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 0,
+      "direction": 0,
+      "jump": 0,
+      "timer": 0
+    },
+    "road_index": null,
+    "road_sha256": "89ae85497a48890d94a4eaf3a2c008e95cbe6162d602de2e962cbafb1445daa7",
+    "road_hex": "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+    "result": {
+      "state": {
+        "forward": 622592,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 0,
+        "steering": 0,
+        "vertical_speed": 0,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 30000,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 0,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10240
+      },
+      "completion_requested": true
+    },
+    "events": [
+      [
+        "finish"
+      ]
+    ]
+  },
+  "jump_assist": {
+    "group": "synthetic_trajectory",
+    "state": {
+      "forward": 220983,
+      "lateral": 32768,
+      "height": 14275,
+      "speed": 1875,
+      "steering": 0,
+      "vertical_speed": 577,
+      "drift": 0,
+      "speed_delta": 0,
+      "assist_flag": 0,
+      "fuel": 19926,
+      "oxygen": 19675,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 25,
+      "assist_used": 0,
+      "jumping": 1,
+      "jump_height": 10240,
+      "grounded": 0,
+      "surface8": 0,
+      "surface2": 0,
+      "edge_distance": 0,
+      "previous_target_height": 14275
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 130,
+      "oxygen_factor": 60,
+      "road_rows": 500,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": 0,
+      "jump": 0,
+      "timer": 75
+    },
+    "road_index": null,
+    "road_sha256": "9d6b1a1fca7f4ffa72ae84dabce0529a8a9d4c6d3024cf4488d2e75420902598",
+    "road_hex": "01000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100",
+    "result": {
+      "state": {
+        "forward": 222933,
+        "lateral": 32768,
+        "height": 14737,
+        "speed": 1950,
+        "steering": 0,
+        "vertical_speed": 462,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 19920,
+        "oxygen": 19662,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 26,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14737
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "predict",
+        220983,
+        32768,
+        14275,
+        1950,
+        0,
+        577
+      ],
+      [
+        "flight",
+        220983,
+        32768,
+        14275,
+        1950,
+        577
+      ],
+      [
+        "flight",
+        222933,
+        32768,
+        14737,
+        2025,
+        462
+      ],
+      [
+        "flight",
+        224958,
+        32768,
+        15084,
+        2100,
+        347
+      ],
+      [
+        "flight",
+        227058,
+        32768,
+        15316,
+        2175,
+        232
+      ],
+      [
+        "flight",
+        229233,
+        32768,
+        15433,
+        2250,
+        117
+      ],
+      [
+        "flight",
+        231483,
+        32768,
+        15435,
+        2325,
+        2
+      ],
+      [
+        "flight",
+        233808,
+        32768,
+        15322,
+        2400,
+        -113
+      ],
+      [
+        "flight",
+        236208,
+        32768,
+        15094,
+        2475,
+        -228
+      ],
+      [
+        "flight",
+        238683,
+        32768,
+        14751,
+        2550,
+        -343
+      ],
+      [
+        "flight",
+        241233,
+        32768,
+        14293,
+        2625,
+        -458
+      ],
+      [
+        "flight",
+        243858,
+        32768,
+        13720,
+        2700,
+        -573
+      ],
+      [
+        "flight",
+        246558,
+        32768,
+        13032,
+        2775,
+        -688
+      ],
+      [
+        "flight",
+        249333,
+        32768,
+        12229,
+        2850,
+        -803
+      ],
+      [
+        "flight",
+        252183,
+        32768,
+        11311,
+        2925,
+        -918
+      ],
+      [
+        "flight",
+        255108,
+        32768,
+        10278,
+        3000,
+        -1033
+      ],
+      [
+        "landing",
+        255108,
+        32768
+      ],
+      [
+        "landing",
+        258108,
+        32768
+      ],
+      [
+        "resolve",
+        222933,
+        32768,
+        14737
+      ],
+      [
+        "collision",
+        221373,
+        32768,
+        14367
+      ],
+      [
+        "collision",
+        221763,
+        32768,
+        14459
+      ],
+      [
+        "collision",
+        222153,
+        32768,
+        14552
+      ],
+      [
+        "collision",
+        222543,
+        32768,
+        14644
+      ],
+      [
+        "collision",
+        222933,
+        32768,
+        14737
+      ]
+    ]
+  },
+  "shove_right": {
+    "group": "real_road_states",
+    "state": {
+      "forward": 2088928,
+      "lateral": 38168,
+      "height": 10240,
+      "speed": 10767,
+      "steering": -23,
+      "vertical_speed": 285,
+      "drift": 79,
+      "speed_delta": -500,
+      "assist_flag": 1,
+      "fuel": 20934,
+      "oxygen": 11804,
+      "exit_state": 0,
+      "crash_ticks": 0,
+      "end_ticks": 0,
+      "sound_tick": 0,
+      "tick_counter": 0,
+      "assist_used": 0,
+      "jumping": 1,
+      "jump_height": 11666,
+      "grounded": 1,
+      "surface8": 1,
+      "surface2": 0,
+      "edge_distance": 4,
+      "previous_target_height": 10240
+    },
+    "config": {
+      "gravity_factor": 8,
+      "fuel_divisor": 200,
+      "oxygen_factor": 60,
+      "road_rows": 48,
+      "assist_enabled": 1
+    },
+    "input": {
+      "throttle": 1,
+      "direction": -1,
+      "jump": 1,
+      "timer": 100
+    },
+    "road_index": 6,
+    "road_sha256": "41edc9c53bd228d4cd76c5d2e2ae948de788fae323895456f8283586b4c7cbf2",
+    "road_hex": "0000000000000300000000000000000000000000030000000000000000000000000003000000000000000000000000000300000000000000000000000000030003000300030000000000000003000300030003000000000000000300030003000300000000000000000003000300030000000000000000000000030003000000000000000000000003000300000000000000000000000300030000000000000000000000030103010000000000000000000003000300000000000000000000000301030100000000000000000000030003000000000000000000000003000300000000000000000000000000000003020300000000000000030003000302030003000000000003000300030203000300030000000300030003020300030003000000030003000302030003000300000003000300030203000300030000000301030103020300030003000000030003000302030003000300000003000300000000000000000000000000000003040300030003000300030003040300030003000300030003000300030403000300030003000300030400000000000000000000000000000000000004000400040000000000040004000400000004000400040000000000040304030403000000000000000004030000040300000000000000000400000004000000000000000000040000000400000000000000000000000000000000000000000000000e0000000c0000000000000000000e0000000c0000000000000000000000000000000000000000000000040000000400000000000000000004000000040000000000000000000403000004030000000000000000040004000400000000000000000004000400040000000000000000000404040004040000000000000000000404000004000000000000000000040401000400000000",
+    "result": {
+      "state": {
+        "forward": 2097151,
+        "lateral": 38618,
+        "height": 10410,
+        "speed": 10691,
+        "steering": 0,
+        "vertical_speed": 170,
+        "drift": 79,
+        "speed_delta": 4294966796,
+        "assist_flag": 1,
+        "fuel": 20910,
+        "oxygen": 11791,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 100,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 11666,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 4,
+        "previous_target_height": 10410
+      },
+      "completion_requested": false
+    },
+    "events": [
+      [
+        "resolve",
+        2099770,
+        37690,
+        10410
+      ],
+      [
+        "collision",
+        2091096,
+        38073,
+        10274
+      ],
+      [
+        "collision",
+        2093264,
+        37977,
+        10308
+      ],
+      [
+        "collision",
+        2095433,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097601,
+        37786,
+        10376
+      ],
+      [
+        "collision",
+        2099529,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2095689,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2095945,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2096201,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2096457,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2096713,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2096969,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097225,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2096985,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097001,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097017,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097033,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097049,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097065,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097081,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097097,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097113,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097129,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097145,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097161,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097146,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097147,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097148,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097149,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097150,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097152,
+        37882,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37757,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37732,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37707,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37702,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37697,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37692,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37691,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10342
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10367
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10392
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10397
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10402
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10407
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10408
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10409
+      ],
+      [
+        "collision",
+        2097151,
+        37690,
+        10410
+      ],
+      [
+        "collision",
+        2099770,
+        37690,
+        10410
+      ],
+      [
+        "collision",
+        2099770,
+        36762,
+        10410
+      ],
+      [
+        "collision",
+        2099770,
+        38618,
+        10410
+      ],
+      [
+        "sound",
+        2
+      ]
+    ]
+  }
+}

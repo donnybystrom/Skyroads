@@ -1,0 +1,12 @@
+[
+  {
+    "address": "1000:3acc",
+    "name": "InstallTimerHandlers",
+    "plate_comment": "Installs IRQ08h handler at CS:3b17 and INT24h handler at CS:3b14; preserves the old IRQ08h vector in self-modified far-jump operands CS:3b67/3b69. Programs PIT channel 0 in mode 3 with divisor 0x19e4 (6628). IRQ phase DS:3192 counts 9..0; gameplay counter DS:1600 increments at phases 5 and 0, so one physics counter increment every five IRQs. Nominal PC PIT clock 1193182 Hz yields 180.0214 IRQ/s and 36.0043 physics ticks/s. Clock frequency is an emulator/PC model, not a measurement. Verified installer port/IVT writes and 1324 phase/stream IRQ cases against original code; analysis/skyroads/timer-validation.json."
+  },
+  {
+    "address": "1000:3b17",
+    "name": "HandleTimerInterrupt",
+    "plate_comment": "IRQ08h handler recovered from InstallTimerHandlers vector. Preserves general registers and DS, sets DS from relocated CS:3aca, then calls audio stream service 5a55. When byte DS:3192 is 0 or 5, increments word DS:1600 and feeds the speaker PIT from word [DS:bd0], advancing that pointer for nonzero words. Decrements phase; signed-negative result resets phase to 9 and far-jumps to old BIOS handler via CS:3b67/3b69. Other phases emit PIC EOI and IRET. Normal 9..0 cycle has one gameplay tick each 5 IRQs and one BIOS chain each 10. All 256 phase byte values, counter wrap, port outputs and restored registers compared; audio service idle-delay branch only, old BIOS execution excluded. See timer-validation.json and TIMER-FORMAT.md."
+  }
+]

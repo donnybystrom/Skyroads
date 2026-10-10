@@ -1,0 +1,52 @@
+[
+  {
+    "address": "1000:074c",
+    "name": "PollGameplayInput",
+    "plate_comment": "Keyboard decoder verified for all2048 eleven-key masks against original x86. DS:bd2..bdc scans48,50,4b,4d,47,49,4f,51,01,39,19 correspond arrows, diagonal keypad,Escape,Space,P. OR groups subtract opposing directions: throttle(up/home/pageup)-(down/end/pagedown); direction(right/pageup/pagedown)-(left/home/end); Space jumps. Normal gameplay polls once after timer wait, reusing controls for catch-up ticks. Mode1 joystick,2 mouse,3 demo paths decoded statically; runtime clone uses verified keyboard mode0. See CYCLE-FORMAT.md."
+  },
+  {
+    "address": "1000:0f05",
+    "name": "RunFinishSequence",
+    "plate_comment": "Verified whole finish loop: sets height0,timer0; renders, waits for timer change0eeb, flips, forward+=speed once per wait-frame. Returns0 when timer>=72,7 on Escape. Missed timer increments do not multiply forward advances in this loop. Synthetic tunnel completion checked at dt1 and3 and Escape during finish; original helper instructions execute, drawing virtualized. CYCLE-FORMAT.md."
+  },
+  {
+    "address": "1000:0eeb",
+    "name": "WaitNextTimerTick",
+    "plate_comment": "Raw x86 snapshots DS:1600 into SI and busy-waits until counter differs. Ghidra's volatile high-level self-comparison can be misleading. Real code executes as a controlled timer-wait boundary in whole-cycle oracle."
+  },
+  {
+    "address": "1000:3b9d",
+    "name": "InstallKeyboardHandler",
+    "plate_comment": "Clears bit7 of all scan-table bytes through sentinel atDS:bd2. Saves IRQ09 vectorIVT24/26 toCS:3bff/3c01, installs1000:3bcc underCLI/STI. Installer clear/IVT writes verified against original."
+  },
+  {
+    "address": "1000:3bcc",
+    "name": "HandleKeyboardInterrupt",
+    "plate_comment": "IRQ09: reads port60 make/break scan; finds full byte match inDS:bd2 table until low7 sentinel; clears then sets bit7 to(scan&80)^80. Repeated make and unknown/E0 scans may update sentinel, preserving known key held bits. Acknowledges port61 with bit7 pulse and PIC20 EOI. 36 make/repeat/break/unknown cases execute original ISR and validate output ports; ends IRET3bfd."
+  },
+  {
+    "address": "1000:3c03",
+    "name": "RestoreKeyboardHandler",
+    "plate_comment": "Restores saved IRQ09 vector from self-modifiedCS:3bff/3c01 toIVT24/26 underCLI/STI. Original execution restores sentinel vector1234:5678 in fixture."
+  },
+  {
+    "address": "1000:12f8",
+    "name": "UpdateGameplayHud",
+    "plate_comment": "Rendering HUD also writes gameplay-observable sound_tick via RequestSoundEffect(3) when exit4/5 resource blink changes to(timer%9)>4. Real arithmetic/sound calls retained in cycle oracle; drawing helpers virtualized. Caches segments at41be/456c/960c/455c, blinkaf1e,assistmirroraf20. Muted digital mode preserves timestamps."
+  },
+  {
+    "address": "1000:1fd9",
+    "name": "RunGameplayLoop",
+    "plate_comment": "Verified whole init/input/HUD/wait/gameplay cycle in6926 wait boundaries across31 archives plus26 paused busy-poll cases. Core5370 tick corpus remains unchanged. Starts forward3<<16,lateral32768,height10240,speed0,fuel/oxygen30000. Three BP words are unspecified and explicitly seeded;270 original frames show other state independent of six seeds. Normal inputs poll074c after22f8 timer wait and before catch-up; P/Escape checked after preceding physics at next outer loop. P waits release,any key press,all release, then restores saved timer. Failure gate waits crash_ticks==0 or>42 and reason1/2,reason3 with crash,or end_ticks>=108. Finish calls0f05 without incrementing processed counter. Draw calls virtualized but HUD/sound writes execute. Nominal36.00428485Hz local JS has same integer state/traces; physical DOS/OS latency not yet measured. CYCLE-FORMAT.md."
+  },
+  {
+    "address": "1000:2b3d",
+    "name": "RunRoadSession",
+    "plate_comment": "Road wrapper installs/clears keyboard held bits, initializes HUD caches, sets up drawings, calls RunGameplayLoop. Result0 showsRoad completed orThe End according callerflag, then4459 waits27 timer increments. BIOS-key helper4153 only sets54a0 whenaf32 enabled; normalaf32=0 keys do not dismiss. Restores IRQ09 vector and returns result. Main caller branch semantics verified separately: failures1..6 retry same archive;0 increments30-wordcompletion array andselectedindex;7 returnsselection. Synthetic finish+notice/full progression cases and six failed attempts verified; assets/disk writes virtualized."
+  },
+  {
+    "address": "1000:01b8",
+    "name": "RunGameSessionLoop",
+    "plate_comment": "Main orchestration. Playable menu selection DS9332 in0..29 loads archiveindex+1 (1..30);archive0 is demo. Completion countersDS451c:30uint16words. At0339 callerlastRoadFlag iffselectedcounter0 and29 countersnonzero. Result0 increments selectedcounter andselection, callsprofile save578c, thenselection;7 selectionwithoutincrement;otherresults retryRunRoadSession immediately. Original72 result/selected/wrap cases and150 last-road cases match. Resource/menu/hardware rendering remain partly outside current playable clone; keyboard whole-attempt loop verified separately."
+  }
+]

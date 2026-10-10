@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "counts": {
+    "main_return_branches": 72,
+    "last_road_branches": 150,
+    "notice_frames": 85,
+    "keyboard_irq_sequences": 36,
+    "chained_attempt_frames": 1194,
+    "success_lifecycle_frames": 377
+  },
+  "limitations": [
+    "Original main return/progression branches and keyboard install/IRQ/restore execute.",
+    "Notice helper executes with BIOS key availability/read boundaries; af32=0 keys cannot dismiss.",
+    "Attempts run contiguously; asset drawing/loading/profile file writes are virtualized.",
+    "Three unspecified stack words use explicit seeds between attempts."
+  ]
+}

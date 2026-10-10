@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "tick_cases": 5370,
+  "cycle_frames": 6952,
+  "lifecycle_frames": 1571,
+  "compared_events": 322185,
+  "input_queue_cases": 18,
+  "result_sha256": "93ec930f21c30fd1aa32ccf1231e2ab9370682eb3ea41d9a4c0f966aaf81f8da",
+  "code_sha256": {
+    "skyroads-physics.js": "ebcf7dcbfc04c533123c5d53de1670914064996dd0cf7c47abb99d75df3ee5e5",
+    "skyroads-cycle.js": "118021b3856d32a7a914b8d1513c183898059375b1bf4497ecf8673b40ce2245",
+    "skyroads-geometry.js": "2e1ce6f3c242945f606ddbc0aa656e4a9122a398a4130fcdebc310601ed860bd"
+  },
+  "limitations": [
+    "Logical input boundaries validated; physical OS/display latency requires measured runtime evidence."
+  ],
+  "presentation_boundaries": 137
+}

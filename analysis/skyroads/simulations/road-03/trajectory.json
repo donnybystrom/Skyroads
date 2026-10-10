@@ -1,0 +1,4679 @@
+{
+  "road_index": 3,
+  "road_sha256": "47807de0e7949050fb88b72ecd2e72f42e165d57c1b6a1fd6ba47a8dda7ff940",
+  "model_sha256": "8158648c725c72a541c8810d3d1b8c64d72af8f79241eec52c3b33339ced5589",
+  "config": {
+    "gravity_factor": 8,
+    "fuel_divisor": 200,
+    "oxygen_factor": 42,
+    "road_rows": 60,
+    "assist_enabled": 1
+  },
+  "initial_state": {
+    "forward": 196608,
+    "lateral": 32768,
+    "height": 10240,
+    "speed": 0,
+    "steering": 0,
+    "vertical_speed": 0,
+    "drift": 0,
+    "speed_delta": 0,
+    "assist_flag": 0,
+    "fuel": 30000,
+    "oxygen": 30000,
+    "exit_state": 0,
+    "crash_ticks": 0,
+    "end_ticks": 0,
+    "sound_tick": 0,
+    "tick_counter": 0,
+    "assist_used": 0,
+    "jumping": 0,
+    "jump_height": 10240,
+    "grounded": 1,
+    "surface8": 0,
+    "surface2": 0,
+    "edge_distance": 0,
+    "previous_target_height": 10240
+  },
+  "ticks_executed": 105,
+  "stop_reason": "exit_state_3",
+  "boundary": "Defined initial frame, post-poll controls, synthetic timer; no graphics/audio/scheduling or finish animation.",
+  "samples": [
+    {
+      "tick": 0,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 50
+      },
+      "state": {
+        "forward": 196683,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 75,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29981,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 1,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          196683,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 1,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 51
+      },
+      "state": {
+        "forward": 196833,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 150,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29962,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 2,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          196833,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 2,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 52
+      },
+      "state": {
+        "forward": 197058,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 225,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29943,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 3,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          197058,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 3,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 53
+      },
+      "state": {
+        "forward": 197358,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 300,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29924,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 4,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          197358,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 4,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 54
+      },
+      "state": {
+        "forward": 197733,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 375,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 30000,
+        "oxygen": 29905,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 5,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          197733,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 5,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 55
+      },
+      "state": {
+        "forward": 198183,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 450,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29999,
+        "oxygen": 29886,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 6,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          198183,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 6,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 56
+      },
+      "state": {
+        "forward": 198708,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 525,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29998,
+        "oxygen": 29867,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 7,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          198708,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 7,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 57
+      },
+      "state": {
+        "forward": 199308,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 600,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29997,
+        "oxygen": 29848,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 8,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          199308,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 8,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 58
+      },
+      "state": {
+        "forward": 199983,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 675,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29996,
+        "oxygen": 29829,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 9,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          199983,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 9,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 59
+      },
+      "state": {
+        "forward": 200733,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 750,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29995,
+        "oxygen": 29810,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 10,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          200733,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 10,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 60
+      },
+      "state": {
+        "forward": 201558,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 825,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29994,
+        "oxygen": 29791,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 11,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          201558,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 11,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 61
+      },
+      "state": {
+        "forward": 202458,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 900,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29992,
+        "oxygen": 29772,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 12,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          202458,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 12,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 62
+      },
+      "state": {
+        "forward": 203433,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 975,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29990,
+        "oxygen": 29753,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 13,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          203433,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 13,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 63
+      },
+      "state": {
+        "forward": 204483,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1050,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29988,
+        "oxygen": 29734,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 14,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          204483,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 14,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 64
+      },
+      "state": {
+        "forward": 205608,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1125,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29986,
+        "oxygen": 29715,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 15,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          205608,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 15,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 65
+      },
+      "state": {
+        "forward": 206808,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1200,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29984,
+        "oxygen": 29696,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 16,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          206808,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 16,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 66
+      },
+      "state": {
+        "forward": 208083,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1275,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29982,
+        "oxygen": 29677,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 17,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          208083,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 17,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 67
+      },
+      "state": {
+        "forward": 209433,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1350,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29979,
+        "oxygen": 29658,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 18,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          209433,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 18,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 68
+      },
+      "state": {
+        "forward": 210858,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1425,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29976,
+        "oxygen": 29639,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 19,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          210858,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 19,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 69
+      },
+      "state": {
+        "forward": 212358,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1500,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29973,
+        "oxygen": 29620,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 20,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          212358,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 20,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 70
+      },
+      "state": {
+        "forward": 213933,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1575,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29970,
+        "oxygen": 29601,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 21,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          213933,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 21,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 71
+      },
+      "state": {
+        "forward": 215583,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1650,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29967,
+        "oxygen": 29582,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 22,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          215583,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 22,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 72
+      },
+      "state": {
+        "forward": 217308,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1725,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29964,
+        "oxygen": 29563,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 23,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          217308,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 23,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 73
+      },
+      "state": {
+        "forward": 219108,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1800,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29960,
+        "oxygen": 29544,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 24,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          219108,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 24,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 74
+      },
+      "state": {
+        "forward": 220983,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 1875,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29956,
+        "oxygen": 29525,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 25,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10125
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          220983,
+          32768,
+          10125
+        ]
+      ]
+    },
+    {
+      "tick": 25,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 1,
+        "timer": 75
+      },
+      "state": {
+        "forward": 222933,
+        "lateral": 32768,
+        "height": 11277,
+        "speed": 1950,
+        "steering": 0,
+        "vertical_speed": 1037,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29952,
+        "oxygen": 29506,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 26,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 11277
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          222933,
+          32768,
+          11277
+        ]
+      ]
+    },
+    {
+      "tick": 26,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 76
+      },
+      "state": {
+        "forward": 224958,
+        "lateral": 32768,
+        "height": 12199,
+        "speed": 2025,
+        "steering": 0,
+        "vertical_speed": 922,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29948,
+        "oxygen": 29487,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 27,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12199
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          224958,
+          32768,
+          12199
+        ]
+      ]
+    },
+    {
+      "tick": 27,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 77
+      },
+      "state": {
+        "forward": 227058,
+        "lateral": 32768,
+        "height": 13006,
+        "speed": 2100,
+        "steering": 0,
+        "vertical_speed": 807,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29944,
+        "oxygen": 29468,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 28,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13006
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          227058,
+          32768,
+          13006
+        ]
+      ]
+    },
+    {
+      "tick": 28,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 78
+      },
+      "state": {
+        "forward": 229233,
+        "lateral": 32768,
+        "height": 13698,
+        "speed": 2175,
+        "steering": 0,
+        "vertical_speed": 692,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29940,
+        "oxygen": 29449,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 29,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13698
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          229233,
+          32768,
+          13698
+        ]
+      ]
+    },
+    {
+      "tick": 29,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 79
+      },
+      "state": {
+        "forward": 231483,
+        "lateral": 32768,
+        "height": 14275,
+        "speed": 2250,
+        "steering": 0,
+        "vertical_speed": 577,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29935,
+        "oxygen": 29430,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 30,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14275
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          231483,
+          32768,
+          14275
+        ]
+      ]
+    },
+    {
+      "tick": 30,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 80
+      },
+      "state": {
+        "forward": 233808,
+        "lateral": 32768,
+        "height": 14737,
+        "speed": 2325,
+        "steering": 0,
+        "vertical_speed": 462,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29930,
+        "oxygen": 29411,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 31,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14737
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          233808,
+          32768,
+          14737
+        ]
+      ]
+    },
+    {
+      "tick": 31,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 81
+      },
+      "state": {
+        "forward": 236208,
+        "lateral": 32768,
+        "height": 15084,
+        "speed": 2400,
+        "steering": 0,
+        "vertical_speed": 347,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29925,
+        "oxygen": 29392,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 32,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15084
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          236208,
+          32768,
+          15084
+        ]
+      ]
+    },
+    {
+      "tick": 32,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 82
+      },
+      "state": {
+        "forward": 238683,
+        "lateral": 32768,
+        "height": 15316,
+        "speed": 2475,
+        "steering": 0,
+        "vertical_speed": 232,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29920,
+        "oxygen": 29373,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 33,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15316
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          238683,
+          32768,
+          15316
+        ]
+      ]
+    },
+    {
+      "tick": 33,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 83
+      },
+      "state": {
+        "forward": 241233,
+        "lateral": 32768,
+        "height": 15433,
+        "speed": 2550,
+        "steering": 0,
+        "vertical_speed": 117,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29915,
+        "oxygen": 29354,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 34,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15433
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          241233,
+          32768,
+          15433
+        ]
+      ]
+    },
+    {
+      "tick": 34,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 84
+      },
+      "state": {
+        "forward": 243858,
+        "lateral": 32768,
+        "height": 15435,
+        "speed": 2625,
+        "steering": 0,
+        "vertical_speed": 2,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29909,
+        "oxygen": 29335,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 35,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15435
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          243858,
+          32768,
+          15435
+        ]
+      ]
+    },
+    {
+      "tick": 35,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 85
+      },
+      "state": {
+        "forward": 246558,
+        "lateral": 32768,
+        "height": 15322,
+        "speed": 2700,
+        "steering": 0,
+        "vertical_speed": -113,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29903,
+        "oxygen": 29316,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 36,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15322
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          246558,
+          32768,
+          15322
+        ]
+      ]
+    },
+    {
+      "tick": 36,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 86
+      },
+      "state": {
+        "forward": 249333,
+        "lateral": 32768,
+        "height": 15094,
+        "speed": 2775,
+        "steering": 0,
+        "vertical_speed": -228,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29897,
+        "oxygen": 29297,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 37,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15094
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          249333,
+          32768,
+          15094
+        ]
+      ]
+    },
+    {
+      "tick": 37,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 87
+      },
+      "state": {
+        "forward": 252183,
+        "lateral": 32768,
+        "height": 14751,
+        "speed": 2850,
+        "steering": 0,
+        "vertical_speed": -343,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29891,
+        "oxygen": 29278,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 38,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14751
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          252183,
+          32768,
+          14751
+        ]
+      ]
+    },
+    {
+      "tick": 38,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 88
+      },
+      "state": {
+        "forward": 255108,
+        "lateral": 32768,
+        "height": 14293,
+        "speed": 2925,
+        "steering": 0,
+        "vertical_speed": -458,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29885,
+        "oxygen": 29259,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 39,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14293
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          255108,
+          32768,
+          14293
+        ]
+      ]
+    },
+    {
+      "tick": 39,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 89
+      },
+      "state": {
+        "forward": 258108,
+        "lateral": 32768,
+        "height": 13720,
+        "speed": 3000,
+        "steering": 0,
+        "vertical_speed": -573,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29879,
+        "oxygen": 29240,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 40,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13720
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          258108,
+          32768,
+          13720
+        ]
+      ]
+    },
+    {
+      "tick": 40,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 90
+      },
+      "state": {
+        "forward": 261183,
+        "lateral": 32768,
+        "height": 13032,
+        "speed": 3075,
+        "steering": 0,
+        "vertical_speed": -688,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29872,
+        "oxygen": 29221,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 41,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13032
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          261183,
+          32768,
+          13032
+        ]
+      ]
+    },
+    {
+      "tick": 41,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 91
+      },
+      "state": {
+        "forward": 264333,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3150,
+        "steering": 0,
+        "vertical_speed": -803,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29865,
+        "oxygen": 29202,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 0,
+        "tick_counter": 42,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12229
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          264333,
+          32768,
+          12229
+        ]
+      ]
+    },
+    {
+      "tick": 42,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 92
+      },
+      "state": {
+        "forward": 267558,
+        "lateral": 32768,
+        "height": 13086,
+        "speed": 3225,
+        "steering": 0,
+        "vertical_speed": 286,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29858,
+        "oxygen": 29183,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 43,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13086
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "sound",
+          1
+        ],
+        [
+          "resolve",
+          267558,
+          32768,
+          13086
+        ]
+      ]
+    },
+    {
+      "tick": 43,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 93
+      },
+      "state": {
+        "forward": 270858,
+        "lateral": 32768,
+        "height": 13257,
+        "speed": 3300,
+        "steering": 0,
+        "vertical_speed": 171,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29851,
+        "oxygen": 29164,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 44,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13257
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          270858,
+          32768,
+          13257
+        ]
+      ]
+    },
+    {
+      "tick": 44,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 94
+      },
+      "state": {
+        "forward": 274233,
+        "lateral": 32768,
+        "height": 13313,
+        "speed": 3375,
+        "steering": 0,
+        "vertical_speed": 56,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29844,
+        "oxygen": 29145,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 45,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13313
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          274233,
+          32768,
+          13313
+        ]
+      ]
+    },
+    {
+      "tick": 45,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 95
+      },
+      "state": {
+        "forward": 277683,
+        "lateral": 32768,
+        "height": 13254,
+        "speed": 3450,
+        "steering": 0,
+        "vertical_speed": -59,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29837,
+        "oxygen": 29126,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 46,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13254
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          277683,
+          32768,
+          13254
+        ]
+      ]
+    },
+    {
+      "tick": 46,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 96
+      },
+      "state": {
+        "forward": 281208,
+        "lateral": 32768,
+        "height": 13080,
+        "speed": 3525,
+        "steering": 0,
+        "vertical_speed": -174,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29829,
+        "oxygen": 29107,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 47,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13080
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          281208,
+          32768,
+          13080
+        ]
+      ]
+    },
+    {
+      "tick": 47,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 97
+      },
+      "state": {
+        "forward": 284808,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3600,
+        "steering": 0,
+        "vertical_speed": -289,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29821,
+        "oxygen": 29088,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 48,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12791
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          284808,
+          32768,
+          12791
+        ]
+      ]
+    },
+    {
+      "tick": 48,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 98
+      },
+      "state": {
+        "forward": 288483,
+        "lateral": 32768,
+        "height": 12829,
+        "speed": 3675,
+        "steering": 0,
+        "vertical_speed": 29,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29813,
+        "oxygen": 29069,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 49,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12829
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          288483,
+          32768,
+          12829
+        ]
+      ]
+    },
+    {
+      "tick": 49,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 99
+      },
+      "state": {
+        "forward": 292233,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3750,
+        "steering": 0,
+        "vertical_speed": -86,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29805,
+        "oxygen": 29050,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 50,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12743
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          292233,
+          32768,
+          12743
+        ]
+      ]
+    },
+    {
+      "tick": 50,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 100
+      },
+      "state": {
+        "forward": 296058,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3825,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29797,
+        "oxygen": 29031,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 51,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          296058,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 51,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 101
+      },
+      "state": {
+        "forward": 299958,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3900,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29789,
+        "oxygen": 29012,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 52,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          299958,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 52,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 102
+      },
+      "state": {
+        "forward": 303933,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 3975,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29780,
+        "oxygen": 28993,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 53,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          303933,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 53,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 103
+      },
+      "state": {
+        "forward": 307983,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4050,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29771,
+        "oxygen": 28974,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 54,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          307983,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 54,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 104
+      },
+      "state": {
+        "forward": 312108,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4125,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29762,
+        "oxygen": 28955,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 55,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          312108,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 55,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 105
+      },
+      "state": {
+        "forward": 316308,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4200,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29753,
+        "oxygen": 28936,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 56,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          316308,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 56,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 106
+      },
+      "state": {
+        "forward": 320583,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4275,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29744,
+        "oxygen": 28917,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 57,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          320583,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 57,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 107
+      },
+      "state": {
+        "forward": 324933,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4350,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29735,
+        "oxygen": 28898,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 58,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          324933,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 58,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 108
+      },
+      "state": {
+        "forward": 329358,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4425,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29725,
+        "oxygen": 28879,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 59,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          329358,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 59,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 109
+      },
+      "state": {
+        "forward": 333858,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 4500,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29715,
+        "oxygen": 28860,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 60,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 10240,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12685
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          333858,
+          32768,
+          12685
+        ]
+      ]
+    },
+    {
+      "tick": 60,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 1,
+        "timer": 110
+      },
+      "state": {
+        "forward": 338433,
+        "lateral": 32768,
+        "height": 13837,
+        "speed": 4575,
+        "steering": 0,
+        "vertical_speed": 1037,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29705,
+        "oxygen": 28841,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 61,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13837
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          338433,
+          32768,
+          13837
+        ]
+      ]
+    },
+    {
+      "tick": 61,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 111
+      },
+      "state": {
+        "forward": 343083,
+        "lateral": 32768,
+        "height": 14759,
+        "speed": 4650,
+        "steering": 0,
+        "vertical_speed": 922,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29695,
+        "oxygen": 28822,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 62,
+        "assist_used": 0,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14759
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          343083,
+          32768,
+          14759
+        ]
+      ]
+    },
+    {
+      "tick": 62,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 112
+      },
+      "state": {
+        "forward": 347808,
+        "lateral": 32768,
+        "height": 15566,
+        "speed": 4725,
+        "steering": 0,
+        "vertical_speed": 807,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29685,
+        "oxygen": 28803,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 63,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15566
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          347808,
+          32768,
+          15566
+        ]
+      ]
+    },
+    {
+      "tick": 63,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 113
+      },
+      "state": {
+        "forward": 352608,
+        "lateral": 32768,
+        "height": 16258,
+        "speed": 4800,
+        "steering": 0,
+        "vertical_speed": 692,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29675,
+        "oxygen": 28784,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 64,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 16258
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          352608,
+          32768,
+          16258
+        ]
+      ]
+    },
+    {
+      "tick": 64,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 114
+      },
+      "state": {
+        "forward": 357483,
+        "lateral": 32768,
+        "height": 16835,
+        "speed": 4875,
+        "steering": 0,
+        "vertical_speed": 577,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29664,
+        "oxygen": 28765,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 65,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 16835
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          357483,
+          32768,
+          16835
+        ]
+      ]
+    },
+    {
+      "tick": 65,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 115
+      },
+      "state": {
+        "forward": 362433,
+        "lateral": 32768,
+        "height": 17297,
+        "speed": 4950,
+        "steering": 0,
+        "vertical_speed": 462,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29653,
+        "oxygen": 28746,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 66,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17297
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          362433,
+          32768,
+          17297
+        ]
+      ]
+    },
+    {
+      "tick": 66,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 116
+      },
+      "state": {
+        "forward": 367458,
+        "lateral": 32768,
+        "height": 17644,
+        "speed": 5025,
+        "steering": 0,
+        "vertical_speed": 347,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29642,
+        "oxygen": 28727,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 67,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17644
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          367458,
+          32768,
+          17644
+        ]
+      ]
+    },
+    {
+      "tick": 67,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 117
+      },
+      "state": {
+        "forward": 372558,
+        "lateral": 32768,
+        "height": 17876,
+        "speed": 5100,
+        "steering": 0,
+        "vertical_speed": 232,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29631,
+        "oxygen": 28708,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 68,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17876
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          372558,
+          32768,
+          17876
+        ]
+      ]
+    },
+    {
+      "tick": 68,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 118
+      },
+      "state": {
+        "forward": 377733,
+        "lateral": 32768,
+        "height": 17993,
+        "speed": 5175,
+        "steering": 0,
+        "vertical_speed": 117,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29620,
+        "oxygen": 28689,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 69,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17993
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          377733,
+          32768,
+          17993
+        ]
+      ]
+    },
+    {
+      "tick": 69,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 119
+      },
+      "state": {
+        "forward": 382983,
+        "lateral": 32768,
+        "height": 17995,
+        "speed": 5250,
+        "steering": 0,
+        "vertical_speed": 2,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29608,
+        "oxygen": 28670,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 70,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17995
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          382983,
+          32768,
+          17995
+        ]
+      ]
+    },
+    {
+      "tick": 70,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 120
+      },
+      "state": {
+        "forward": 388308,
+        "lateral": 32768,
+        "height": 17882,
+        "speed": 5325,
+        "steering": 0,
+        "vertical_speed": -113,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29596,
+        "oxygen": 28651,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 71,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17882
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          388308,
+          32768,
+          17882
+        ]
+      ]
+    },
+    {
+      "tick": 71,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 121
+      },
+      "state": {
+        "forward": 393708,
+        "lateral": 32768,
+        "height": 17654,
+        "speed": 5400,
+        "steering": 0,
+        "vertical_speed": -228,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29584,
+        "oxygen": 28632,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 72,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17654
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          393708,
+          32768,
+          17654
+        ]
+      ]
+    },
+    {
+      "tick": 72,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 122
+      },
+      "state": {
+        "forward": 399183,
+        "lateral": 32768,
+        "height": 17311,
+        "speed": 5475,
+        "steering": 0,
+        "vertical_speed": -343,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29572,
+        "oxygen": 28613,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 73,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 17311
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          399183,
+          32768,
+          17311
+        ]
+      ]
+    },
+    {
+      "tick": 73,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 123
+      },
+      "state": {
+        "forward": 404733,
+        "lateral": 32768,
+        "height": 16853,
+        "speed": 5550,
+        "steering": 0,
+        "vertical_speed": -458,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29560,
+        "oxygen": 28594,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 74,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 16853
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          404733,
+          32768,
+          16853
+        ]
+      ]
+    },
+    {
+      "tick": 74,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 124
+      },
+      "state": {
+        "forward": 410358,
+        "lateral": 32768,
+        "height": 16280,
+        "speed": 5625,
+        "steering": 0,
+        "vertical_speed": -573,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29548,
+        "oxygen": 28575,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 75,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 16280
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          410358,
+          32768,
+          16280
+        ]
+      ]
+    },
+    {
+      "tick": 75,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 125
+      },
+      "state": {
+        "forward": 416058,
+        "lateral": 32768,
+        "height": 15592,
+        "speed": 5700,
+        "steering": 0,
+        "vertical_speed": -688,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29535,
+        "oxygen": 28556,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 76,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 15592
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          416058,
+          32768,
+          15592
+        ]
+      ]
+    },
+    {
+      "tick": 76,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 126
+      },
+      "state": {
+        "forward": 421833,
+        "lateral": 32768,
+        "height": 14789,
+        "speed": 5775,
+        "steering": 0,
+        "vertical_speed": -803,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29522,
+        "oxygen": 28537,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 77,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 14789
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          421833,
+          32768,
+          14789
+        ]
+      ]
+    },
+    {
+      "tick": 77,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 127
+      },
+      "state": {
+        "forward": 427683,
+        "lateral": 32768,
+        "height": 13871,
+        "speed": 5850,
+        "steering": 0,
+        "vertical_speed": -918,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29509,
+        "oxygen": 28518,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 78,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13871
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          427683,
+          32768,
+          13871
+        ]
+      ]
+    },
+    {
+      "tick": 78,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 128
+      },
+      "state": {
+        "forward": 433608,
+        "lateral": 32768,
+        "height": 12838,
+        "speed": 5925,
+        "steering": 0,
+        "vertical_speed": -1033,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29496,
+        "oxygen": 28499,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 79,
+        "assist_used": 1,
+        "jumping": 1,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12838
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          433608,
+          32768,
+          12838
+        ]
+      ]
+    },
+    {
+      "tick": 79,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 129
+      },
+      "state": {
+        "forward": 439608,
+        "lateral": 32768,
+        "height": 12800,
+        "speed": 6000,
+        "steering": 0,
+        "vertical_speed": -1148,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29483,
+        "oxygen": 28480,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 92,
+        "tick_counter": 80,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 11690
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          439608,
+          32768,
+          11690
+        ]
+      ]
+    },
+    {
+      "tick": 80,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 130
+      },
+      "state": {
+        "forward": 445683,
+        "lateral": 32768,
+        "height": 13259,
+        "speed": 6075,
+        "steering": 0,
+        "vertical_speed": 459,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29470,
+        "oxygen": 28461,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 81,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13259
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "sound",
+          1
+        ],
+        [
+          "resolve",
+          445683,
+          32768,
+          13259
+        ]
+      ]
+    },
+    {
+      "tick": 81,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 131
+      },
+      "state": {
+        "forward": 451833,
+        "lateral": 32768,
+        "height": 13603,
+        "speed": 6150,
+        "steering": 0,
+        "vertical_speed": 344,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29456,
+        "oxygen": 28442,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 82,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13603
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          451833,
+          32768,
+          13603
+        ]
+      ]
+    },
+    {
+      "tick": 82,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 132
+      },
+      "state": {
+        "forward": 458058,
+        "lateral": 32768,
+        "height": 13832,
+        "speed": 6225,
+        "steering": 0,
+        "vertical_speed": 229,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29442,
+        "oxygen": 28423,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 83,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13832
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          458058,
+          32768,
+          13832
+        ]
+      ]
+    },
+    {
+      "tick": 83,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 133
+      },
+      "state": {
+        "forward": 464358,
+        "lateral": 32768,
+        "height": 13946,
+        "speed": 6300,
+        "steering": 0,
+        "vertical_speed": 114,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29428,
+        "oxygen": 28404,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 84,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13946
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          464358,
+          32768,
+          13946
+        ]
+      ]
+    },
+    {
+      "tick": 84,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 134
+      },
+      "state": {
+        "forward": 470733,
+        "lateral": 32768,
+        "height": 13945,
+        "speed": 6375,
+        "steering": 0,
+        "vertical_speed": -1,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29414,
+        "oxygen": 28385,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 85,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13945
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          470733,
+          32768,
+          13945
+        ]
+      ]
+    },
+    {
+      "tick": 85,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 135
+      },
+      "state": {
+        "forward": 477183,
+        "lateral": 32768,
+        "height": 13829,
+        "speed": 6450,
+        "steering": 0,
+        "vertical_speed": -116,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29400,
+        "oxygen": 28366,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 86,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13829
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          477183,
+          32768,
+          13829
+        ]
+      ]
+    },
+    {
+      "tick": 86,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 136
+      },
+      "state": {
+        "forward": 483708,
+        "lateral": 32768,
+        "height": 13598,
+        "speed": 6525,
+        "steering": 0,
+        "vertical_speed": -231,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29386,
+        "oxygen": 28347,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 87,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13598
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          483708,
+          32768,
+          13598
+        ]
+      ]
+    },
+    {
+      "tick": 87,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 137
+      },
+      "state": {
+        "forward": 490308,
+        "lateral": 32768,
+        "height": 13252,
+        "speed": 6600,
+        "steering": 0,
+        "vertical_speed": -346,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29371,
+        "oxygen": 28328,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 88,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 13252
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          490308,
+          32768,
+          13252
+        ]
+      ]
+    },
+    {
+      "tick": 88,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 138
+      },
+      "state": {
+        "forward": 496983,
+        "lateral": 32768,
+        "height": 12791,
+        "speed": 6675,
+        "steering": 0,
+        "vertical_speed": -461,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29356,
+        "oxygen": 28309,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 89,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12791
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          496983,
+          32768,
+          12791
+        ]
+      ]
+    },
+    {
+      "tick": 89,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 139
+      },
+      "state": {
+        "forward": 503733,
+        "lateral": 32768,
+        "height": 12215,
+        "speed": 6750,
+        "steering": 0,
+        "vertical_speed": -576,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29341,
+        "oxygen": 28290,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 90,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 12215
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          503733,
+          32768,
+          12215
+        ]
+      ]
+    },
+    {
+      "tick": 90,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 140
+      },
+      "state": {
+        "forward": 510558,
+        "lateral": 32768,
+        "height": 11524,
+        "speed": 6825,
+        "steering": 0,
+        "vertical_speed": -691,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29326,
+        "oxygen": 28271,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 91,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 11524
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          510558,
+          32768,
+          11524
+        ]
+      ]
+    },
+    {
+      "tick": 91,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 141
+      },
+      "state": {
+        "forward": 517458,
+        "lateral": 32768,
+        "height": 10718,
+        "speed": 6900,
+        "steering": 0,
+        "vertical_speed": -806,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29311,
+        "oxygen": 28252,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 92,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10718
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          517458,
+          32768,
+          10718
+        ]
+      ]
+    },
+    {
+      "tick": 92,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 142
+      },
+      "state": {
+        "forward": 524433,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 6975,
+        "steering": 0,
+        "vertical_speed": -921,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29296,
+        "oxygen": 28233,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 130,
+        "tick_counter": 93,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 9797
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          524433,
+          32768,
+          9797
+        ]
+      ]
+    },
+    {
+      "tick": 93,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 143
+      },
+      "state": {
+        "forward": 531483,
+        "lateral": 32768,
+        "height": 10585,
+        "speed": 7050,
+        "steering": 0,
+        "vertical_speed": 345,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29280,
+        "oxygen": 28214,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 94,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10585
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "sound",
+          1
+        ],
+        [
+          "resolve",
+          531483,
+          32768,
+          10585
+        ]
+      ]
+    },
+    {
+      "tick": 94,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 144
+      },
+      "state": {
+        "forward": 538608,
+        "lateral": 32768,
+        "height": 10815,
+        "speed": 7125,
+        "steering": 0,
+        "vertical_speed": 230,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29264,
+        "oxygen": 28195,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 95,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10815
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          538608,
+          32768,
+          10815
+        ]
+      ]
+    },
+    {
+      "tick": 95,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 145
+      },
+      "state": {
+        "forward": 545808,
+        "lateral": 32768,
+        "height": 10930,
+        "speed": 7200,
+        "steering": 0,
+        "vertical_speed": 115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29248,
+        "oxygen": 28176,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 96,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10930
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          545808,
+          32768,
+          10930
+        ]
+      ]
+    },
+    {
+      "tick": 96,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 146
+      },
+      "state": {
+        "forward": 553083,
+        "lateral": 32768,
+        "height": 10930,
+        "speed": 7275,
+        "steering": 0,
+        "vertical_speed": 0,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29232,
+        "oxygen": 28157,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 97,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10930
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          553083,
+          32768,
+          10930
+        ]
+      ]
+    },
+    {
+      "tick": 97,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 147
+      },
+      "state": {
+        "forward": 560433,
+        "lateral": 32768,
+        "height": 10815,
+        "speed": 7350,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29216,
+        "oxygen": 28138,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 98,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10815
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          560433,
+          32768,
+          10815
+        ]
+      ]
+    },
+    {
+      "tick": 98,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 148
+      },
+      "state": {
+        "forward": 567858,
+        "lateral": 32768,
+        "height": 10585,
+        "speed": 7425,
+        "steering": 0,
+        "vertical_speed": -230,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29200,
+        "oxygen": 28119,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 99,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10585
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          567858,
+          32768,
+          10585
+        ]
+      ]
+    },
+    {
+      "tick": 99,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 149
+      },
+      "state": {
+        "forward": 575358,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 7500,
+        "steering": 0,
+        "vertical_speed": -345,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29183,
+        "oxygen": 28100,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 100,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10240
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          575358,
+          32768,
+          10240
+        ]
+      ]
+    },
+    {
+      "tick": 100,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 150
+      },
+      "state": {
+        "forward": 582933,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 7575,
+        "steering": 0,
+        "vertical_speed": -460,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29166,
+        "oxygen": 28081,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 143,
+        "tick_counter": 101,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 1,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 9780
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          582933,
+          32768,
+          9780
+        ]
+      ]
+    },
+    {
+      "tick": 101,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 151
+      },
+      "state": {
+        "forward": 590583,
+        "lateral": 32768,
+        "height": 10355,
+        "speed": 7650,
+        "steering": 0,
+        "vertical_speed": 115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29149,
+        "oxygen": 28062,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 151,
+        "tick_counter": 102,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10355
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "sound",
+          1
+        ],
+        [
+          "resolve",
+          590583,
+          32768,
+          10355
+        ]
+      ]
+    },
+    {
+      "tick": 102,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 152
+      },
+      "state": {
+        "forward": 598308,
+        "lateral": 32768,
+        "height": 10355,
+        "speed": 7725,
+        "steering": 0,
+        "vertical_speed": 0,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29132,
+        "oxygen": 28043,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 151,
+        "tick_counter": 103,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10355
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          598308,
+          32768,
+          10355
+        ]
+      ]
+    },
+    {
+      "tick": 103,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 153
+      },
+      "state": {
+        "forward": 606108,
+        "lateral": 32768,
+        "height": 10240,
+        "speed": 7800,
+        "steering": 0,
+        "vertical_speed": -115,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29115,
+        "oxygen": 28024,
+        "exit_state": 0,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 151,
+        "tick_counter": 104,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10240
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          606108,
+          32768,
+          10240
+        ]
+      ]
+    },
+    {
+      "tick": 104,
+      "input": {
+        "throttle": 1,
+        "direction": 0,
+        "jump": 0,
+        "timer": 154
+      },
+      "state": {
+        "forward": 613983,
+        "lateral": 32768,
+        "height": 10010,
+        "speed": 7875,
+        "steering": 0,
+        "vertical_speed": -230,
+        "drift": 0,
+        "speed_delta": 0,
+        "assist_flag": 0,
+        "fuel": 29097,
+        "oxygen": 28005,
+        "exit_state": 3,
+        "crash_ticks": 0,
+        "end_ticks": 0,
+        "sound_tick": 151,
+        "tick_counter": 105,
+        "assist_used": 0,
+        "jumping": 0,
+        "jump_height": 12800,
+        "grounded": 0,
+        "surface8": 0,
+        "surface2": 0,
+        "edge_distance": 0,
+        "previous_target_height": 10010
+      },
+      "completion_requested": false,
+      "events": [
+        [
+          "resolve",
+          613983,
+          32768,
+          10010
+        ]
+      ]
+    }
+  ]
+}

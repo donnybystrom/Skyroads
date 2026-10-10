@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\":\"ok\",\"server_kind\":\"headless\",\"version\":\"7.0.0\",\"program\":\"SKYROADS.EXE\"}"
+    }
+  ],
+  "isError": false
+}

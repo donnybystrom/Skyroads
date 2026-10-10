@@ -1,0 +1,307 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:074c": {
+      "name": "FUN_1000_074c",
+      "size": 939,
+      "address": "1000:074c",
+      "entry_point": "1000:074c",
+      "body_end": "1000:0af9",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_074c(void)\n\n{\n  uint uVar1;\n  uint uVar2;\n  undefined2 uVar3;\n  int iVar4;\n  undefined2 unaff_DS;\n  \n  iVar4 = *(int *)0x95f6;\n  if (iVar4 == 0) {\n    *(int *)0x95f4 =\n         (uint)(((*(byte *)0xbd5 & 0x80) != 0 || (*(byte *)0xbd7 & 0x80) != 0) ||\n               (*(byte *)0xbd9 & 0x80) != 0) -\n         (uint)(((*(byte *)0xbd4 & 0x80) != 0 || (*(byte *)0xbd6 & 0x80) != 0) ||\n               (*(byte *)0xbd8 & 0x80) != 0);\n    *(int *)0x9330 =\n         (uint)(((*(byte *)0xbd2 & 0x80) != 0 || (*(byte *)0xbd6 & 0x80) != 0) ||\n               (*(byte *)0xbd7 & 0x80) != 0) -\n         (uint)(((*(byte *)0xbd3 & 0x80) != 0 || (*(byte *)0xbd8 & 0x80) != 0) ||\n               (*(byte *)0xbd9 & 0x80) != 0);\n    *(uint *)0x547a = (uint)((*(byte *)0xbdb & 0x80) != 0);\n  }\n  else if (iVar4 == 1) {\n    uVar1 = FUN_1000_05f6(1);\n    uVar2 = FUN_1000_05f6(2);\n    *(int *)0x95f4 =\n         (uint)((uint)(((long)*(int *)0x5172 * 3 & 0xffffU) / 2) < uVar1) -\n         (uint)(uVar1 < *(uint *)0x5172 / 2);\n    *(int *)0x9330 =\n         (uint)(uVar2 < *(uint *)0x547c / 2) -\n         (uint)((uint)(((long)*(int *)0x547c * 3 & 0xffffU) / 2) < uVar2);\n    uVar3 = FUN_1000_0672();\n    *(undefined2 *)0x547a = uVar3;\n  }\n  else if (iVar4 == 2) {\n    uVar1 = FUN_1000_06b9(0);\n    uVar2 = FUN_1000_06b9(0);\n    *(int *)0x95f4 = (uint)(0xaa < uVar2) - (uint)(uVar1 < 0x96);\n    uVar1 = FUN_1000_06b9(1);\n    uVar2 = FUN_1000_06b9(1);\n    *(int *)0x9330 = (uint)(uVar2 < 0xf) - (uint)(0xb9 < uVar1);\n    uVar3 = FUN_1000_06b9(2);\n    *(undefined2 *)0x547a = uVar3;\n    uVar3 = FUN_1000_06b9(1);\n    FUN_1000_06a4(0xa0,uVar3);\n  }\n  else if (iVar4 == 3) {\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(int *)0x9330 = (*(byte *)(iVar4 + -0x69e2) & 3) - 1;\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(int *)0x95f4 = (*(byte *)(iVar4 + -0x69e2) >> 2 & 3) - 1;\n    iVar4 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x666,0);\n    *(uint *)0x547a = *(byte *)(iVar4 + -0x69e2) >> 4 & 1;\n  }\n  return;\n}\n\n",
+      "caller_count": 1,
+      "callers": [
+        {
+          "name": "RunGameplayLoop",
+          "address": "1000:1fd9"
+        }
+      ],
+      "callee_count": 5,
+      "callees": [
+        {
+          "name": "FUN_1000_05f6",
+          "address": "1000:05f6"
+        },
+        {
+          "name": "FUN_1000_0672",
+          "address": "1000:0672"
+        },
+        {
+          "name": "FUN_1000_06a4",
+          "address": "1000:06a4"
+        },
+        {
+          "name": "FUN_1000_06b9",
+          "address": "1000:06b9"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0f05": {
+      "name": "FUN_1000_0f05",
+      "size": 93,
+      "address": "1000:0f05",
+      "entry_point": "1000:0f05",
+      "body_end": "1000:0f61",
+      "decompiled_code": "\nundefined2 __cdecl16near FUN_1000_0f05(void)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  uint uVar3;\n  int iVar4;\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0xaf2c = 0;\n  *(undefined2 *)0x1600 = 0;\n  while( true ) {\n    if (0x47 < *(uint *)0x1600) {\n      return 0;\n    }\n    if ((*(byte *)0xbda & 0x80) != 0) break;\n    FUN_1000_0c98(0);\n    FUN_1000_0eeb();\n    FUN_1000_0ed0();\n    uVar3 = *(uint *)0x54ac;\n    iVar4 = *(int *)0x54ae;\n    puVar1 = (uint *)0x9618;\n    uVar2 = *puVar1;\n    *puVar1 = *puVar1 + uVar3;\n    *(int *)0x961a = *(int *)0x961a + iVar4 + (uint)CARRY2(uVar2,uVar3);\n  }\n  return 7;\n}\n\n",
+      "caller_count": 1,
+      "callers": [
+        {
+          "name": "RunGameplayLoop",
+          "address": "1000:1fd9"
+        }
+      ],
+      "callee_count": 3,
+      "callees": [
+        {
+          "name": "FUN_1000_0c98",
+          "address": "1000:0c98"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_0eeb",
+          "address": "1000:0eeb"
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:01b8": {
+      "name": "RunGameSessionLoop",
+      "size": 521,
+      "address": "1000:01b8",
+      "entry_point": "1000:01b8",
+      "body_end": "1000:03c0",
+      "decompiled_code": "\n// High-confidence orchestration function: VGA/EGA detection, timer/resource initialization,\n// menu/selection flow, road loading, repeated RunRoadSession calls and completion bookkeeping. Mode\n// values and all global types remain provisional.\n\nvoid __cdecl16near RunGameSessionLoop(void)\n\n{\n  int *piVar1;\n  bool bVar2;\n  int iVar3;\n  uint uVar4;\n  undefined2 uVar5;\n  int iVar6;\n  undefined2 unaff_DS;\n  uint local_8;\n  \n  local_8 = 0xffff;\n  iVar3 = ProbeVgaSupport();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x3c = 0;\n    iVar3 = ProbeEgaSupport();\n    if (iVar3 == 0) {\n      PrintConsoleString(0xd08);\n      return;\n    }\n  }\n  FUN_1000_5a98();\n  FUN_1000_58cd();\n  InstallTimerHandlers();\n  *(undefined2 *)0x4570 = 1;\n  FUN_1000_0000();\n  FUN_1000_5737();\n  FUN_1000_57c4(0);\n  FUN_1000_5508();\n  LoadTrekDataArchive();\n  AbortOnResourceError();\n  FUN_1000_2cce();\nLAB_1000_0219:\n  bVar2 = true;\n  iVar3 = FUN_1000_4591();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x95f6 = 3;\n    goto LAB_1000_0251;\n  }\nLAB_1000_0232:\n  *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n  FUN_1000_4e52(!bVar2);\nLAB_1000_0251:\n  bVar2 = false;\n  FUN_1000_3f20();\n  FUN_1000_5567();\n  do {\n    FUN_1000_3f20();\n    if (*(int *)0x95f6 == 3) {\n      uVar5 = LoadRoadByIndex(0);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(0);\n    }\n    else {\n      iVar3 = FUN_1000_5180();\n      if (iVar3 != 0) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        goto LAB_1000_0232;\n      }\n      *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n      uVar4 = FUN_1000_019c();\n      uVar4 = uVar4 % 9;\n      if (uVar4 == local_8) {\n        uVar4 = (uVar4 + 1) % 9;\n      }\n      FUN_1000_57c4(uVar4 + 1);\n      uVar5 = LoadRoadByIndex(*(int *)0x9332 + 1);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(*(uint *)0x9332 / 3);\n      local_8 = uVar4;\n    }\n    if (*(int *)0x3c != 0) {\n      uVar5 = FUN_1000_3ef4(0xac80,0);\n      *(undefined2 *)0x5478 = uVar5;\n    }\n    AbortOnResourceError();\n    FUN_1000_0707();\n    iVar3 = 0;\n    for (uVar4 = 0; uVar4 < 0x1e; uVar4 = uVar4 + 1) {\n      if (*(int *)(uVar4 * 2 + 0x451c) != 0) {\n        iVar3 = iVar3 + 1;\n      }\n    }\n    do {\n      FUN_1000_4153();\n      if ((*(int *)(*(int *)0x9332 * 2 + 0x451c) == 0) && (iVar3 == 0x1d)) {\n        uVar5 = 1;\n      }\n      else {\n        uVar5 = 0;\n      }\n      iVar6 = RunRoadSession(uVar5);\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        if (iVar6 != 7) goto LAB_1000_0219;\n        goto LAB_1000_0232;\n      }\n      if (iVar6 == 0) {\n        piVar1 = (int *)(*(int *)0x9332 * 2 + 0x451c);\n        *piVar1 = *piVar1 + 1;\n        *(int *)0x9332 = *(int *)0x9332 + 1;\n        FUN_1000_578c();\n      }\n    } while ((iVar6 != 7) && (iVar6 != 0));\n    FUN_1000_3f3b();\n  } while( true );\n}\n\n",
+      "caller_count": 1,
+      "callers": [
+        {
+          "name": "InitializeDosRuntime",
+          "address": "1000:61f3"
+        }
+      ],
+      "callee_count": 27,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "FUN_1000_0000",
+          "address": "1000:0000"
+        },
+        {
+          "name": "FUN_1000_019c",
+          "address": "1000:019c"
+        },
+        {
+          "name": "FUN_1000_0707",
+          "address": "1000:0707"
+        },
+        {
+          "name": "FUN_1000_2cce",
+          "address": "1000:2cce"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f20",
+          "address": "1000:3f20"
+        },
+        {
+          "name": "FUN_1000_3f3b",
+          "address": "1000:3f3b"
+        },
+        {
+          "name": "FUN_1000_4153",
+          "address": "1000:4153"
+        },
+        {
+          "name": "FUN_1000_4591",
+          "address": "1000:4591"
+        },
+        {
+          "name": "FUN_1000_4e52",
+          "address": "1000:4e52"
+        },
+        {
+          "name": "FUN_1000_5180",
+          "address": "1000:5180"
+        },
+        {
+          "name": "FUN_1000_5387",
+          "address": "1000:5387"
+        },
+        {
+          "name": "FUN_1000_5508",
+          "address": "1000:5508"
+        },
+        {
+          "name": "FUN_1000_5567",
+          "address": "1000:5567"
+        },
+        {
+          "name": "FUN_1000_5737",
+          "address": "1000:5737"
+        },
+        {
+          "name": "FUN_1000_578c",
+          "address": "1000:578c"
+        },
+        {
+          "name": "FUN_1000_57c4",
+          "address": "1000:57c4"
+        },
+        {
+          "name": "FUN_1000_58cd",
+          "address": "1000:58cd"
+        },
+        {
+          "name": "FUN_1000_5a98",
+          "address": "1000:5a98"
+        },
+        {
+          "name": "InstallTimerHandlers",
+          "address": "1000:3acc"
+        },
+        {
+          "name": "LoadRoadByIndex",
+          "address": "1000:5614"
+        },
+        {
+          "name": "LoadTrekDataArchive",
+          "address": "1000:00bb"
+        },
+        {
+          "name": "PrintConsoleString",
+          "address": "1000:5c82"
+        },
+        {
+          "name": "ProbeEgaSupport",
+          "address": "1000:6027"
+        },
+        {
+          "name": "ProbeVgaSupport",
+          "address": "1000:603b"
+        },
+        {
+          "name": "RunRoadSession",
+          "address": "1000:2b3d"
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:2b3d": {
+      "name": "RunRoadSession",
+      "size": 400,
+      "address": "1000:2b3d",
+      "entry_point": "1000:2b3d",
+      "body_end": "1000:2ccc",
+      "decompiled_code": "\n// Sets up road presentation, calls RunGameplayLoop, and on result 0 displays 'Road completed' or\n// 'The End', selected by caller argument. Restores session resources and returns gameplay result.\n\nint __cdecl16near RunRoadSession(int param_1)\n\n{\n  int iVar1;\n  int iVar2;\n  int unaff_DS;\n  \n  *(int *)0xaf2a = unaff_DS + 0x31b;\n  FUN_1000_3b9d();\n  *(undefined2 *)0xaf1e = 0;\n  *(undefined2 *)0x455c = 0;\n  *(undefined2 *)0x960c = 0;\n  *(undefined2 *)0x456c = 0;\n  *(undefined2 *)0x41be = 0;\n  *(undefined2 *)0xaf20 = 0xffff;\n  *(undefined2 *)0x9334 = 0;\n  if (*(int *)0x3c == 0) {\n    FUN_1000_2b0f(0xa000,*(undefined2 *)0x5170);\n    FUN_1000_2b0f(0xa200,*(undefined2 *)0x5170);\n  }\n  else {\n    FUN_1000_6053(0xac80,0xa000,0xac80,*(undefined2 *)0x5170,0x4d80);\n  }\n  FUN_1000_1114(0x60,0x9c,(*(int *)0x4562 + -3) * 100,4);\n  if (*(int *)0x3c == 0) {\n    iVar1 = (uint)(*(int *)0x9334 == 0) * 0x200 + -0x6000;\n  }\n  else {\n    iVar1 = *(int *)0x5478;\n  }\n  iVar1 = FUN_1000_0baf(0,0x2800,1,0,iVar1);\n  iVar2 = FUN_1000_0be9(0x8000);\n  FUN_1000_2d1f(0x100,0x18,0x50,*(int *)0xaf34 + ((iVar2 * 3 + iVar1) * 3 + 0xe) * 0x2d0,\n                *(undefined2 *)0xaf36);\n  FUN_1000_4b8e(0x41c2,1,0x24);\n  iVar1 = RunGameplayLoop();\n  if (*(int *)0x9334 != 0) {\n    *(undefined2 *)0x9334 = 0;\n    FUN_1000_0ed0();\n  }\n  if (iVar1 == 0) {\n    FUN_1000_3c9a();\n    if (param_1 == 0) {\n      FUN_1000_4526(0x68,0x50,0xd42,99);\n    }\n    else {\n      FUN_1000_4526(0x84,0x50,0xd3a,99);\n    }\n    FUN_1000_4459(0x1b);\n  }\n  FUN_1000_4b8e(0x41c2,0,0x24);\n  FUN_1000_3c03();\n  return iVar1;\n}\n\n",
+      "caller_count": 1,
+      "callers": [
+        {
+          "name": "RunGameSessionLoop",
+          "address": "1000:01b8"
+        }
+      ],
+      "callee_count": 14,
+      "callees": [
+        {
+          "name": "FUN_1000_0baf",
+          "address": "1000:0baf"
+        },
+        {
+          "name": "FUN_1000_0be9",
+          "address": "1000:0be9"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_1114",
+          "address": "1000:1114"
+        },
+        {
+          "name": "FUN_1000_2b0f",
+          "address": "1000:2b0f"
+        },
+        {
+          "name": "FUN_1000_2d1f",
+          "address": "1000:2d1f"
+        },
+        {
+          "name": "FUN_1000_3b9d",
+          "address": "1000:3b9d"
+        },
+        {
+          "name": "FUN_1000_3c03",
+          "address": "1000:3c03"
+        },
+        {
+          "name": "FUN_1000_3c9a",
+          "address": "1000:3c9a"
+        },
+        {
+          "name": "FUN_1000_4459",
+          "address": "1000:4459"
+        },
+        {
+          "name": "FUN_1000_4526",
+          "address": "1000:4526"
+        },
+        {
+          "name": "FUN_1000_4b8e",
+          "address": "1000:4b8e"
+        },
+        {
+          "name": "FUN_1000_6053",
+          "address": "1000:6053"
+        },
+        {
+          "name": "RunGameplayLoop",
+          "address": "1000:1fd9"
+        }
+      ],
+      "revision": {
+        "token": "1791575974459:4f8d24bd:25135",
+        "epoch": "4f8d24bd",
+        "modification_number": 25135,
+        "saved_time": 1791575974459,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 4,
+  "requested": 4
+}

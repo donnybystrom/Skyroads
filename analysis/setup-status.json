@@ -1,0 +1,86 @@
+{
+  "verified_at": "2026-10-09T20:05:23.529327+00:00",
+  "host_architecture": "arm64",
+  "ghidra": "12.1.4",
+  "ghidra_mcp": "7.0.0",
+  "rea": "6.1.0",
+  "ghidra_mcp_tools": 197,
+  "rea_mcp_tools": 139,
+  "builds": {
+    "ghidra_mcp": "passed",
+    "ghidra_mac_arm_64_natives": "passed",
+    "rea": "passed"
+  },
+  "verification": {
+    "ghidra_import_and_project_save": "passed",
+    "ghidra_stdio_tool_call": "passed",
+    "ghidra_entry_decompilation": "passed with truncated control flow",
+    "ghidra_automatic_restart_and_project_reopen": "passed with minimal PATH environment",
+    "rea_ghidra_doctor": "passed",
+    "rea_stdio_inventory_and_identity": "passed",
+    "rea_skyroads_stdio_open_list_decompile_verify_close": "passed outside shell sandbox",
+    "rea_mz_load_image": "verified",
+    "original_sha256_unchanged": true,
+    "codex_global_mcp_entries": "verified; original config backed up and unrelated settings preserved",
+    "active_desktop_chat_tools": "passed; direct Ghidra-MCP and REA calls after Desktop restart",
+    "ghidra_gui": "extension installed; GUI not exercised",
+    "skyroads_unpack": "passed; DIET CRC and independent original-stub emulation, 30076 module bytes identical",
+    "rea_unpacked_mz_load_image": "verified",
+    "ghidra_unpacked_functions": 180,
+    "ghidra_documented_functions": 34,
+    "skyroads_lzs_original_code_comparison": {
+      "verified": true,
+      "blocks": 31,
+      "bytes": 60872
+    },
+    "skyroads_lzs_bounds_and_token_tests": "7 passed",
+    "road_viewer": "31 selectors, 3 modes, wraparound, keyboard inspection, zoom endpoints; BIN export matches",
+    "skyroads_collision_original_code_comparison": {
+      "verified": true,
+      "cases": 41328
+    },
+    "skyroads_geometry_browser_model_comparison": {
+      "verified": true,
+      "cases": 15808
+    },
+    "road_viewer_geometry": "31 road selectors,4color modes,cross-section,free tunnel/side wall/roof states; no warning/error logs",
+    "skyroads_movement_original_code_comparison": {
+      "verified": true,
+      "cases": 3897,
+      "routines": [
+        "ResolveShipMovement",
+        "PredictSafeLanding",
+        "AdjustJumpForSafeLanding"
+      ],
+      "collision_probes": 26645,
+      "projected_flight_states": 96408
+    },
+    "skyroads_tick_original_code_comparison": {
+      "verified": true,
+      "cases": 5370,
+      "chained_ticks": 3671,
+      "collision_probes": 127137,
+      "required_semantic_branches": 25,
+      "boundary": "2324..2afd, muted digital sound, post-poll input; stop before finish animation"
+    },
+    "skyroads_portable_simulator": "25 saved branch examples replayed; road0 and road3 JSON/CSV trajectories generated",
+    "skyroads_timer_original_code_comparison": {
+      "verified": true,
+      "cases": 1324,
+      "pit_divisor": 6628,
+      "physics_hz": 36.004284852142426
+    },
+    "skyroads_prototype_original_code_comparison": {
+      "verified": true,
+      "new_unique_ticks": 2876,
+      "roads": 31,
+      "browser_recorded_ticks": 70,
+      "reports": [
+        "prototype-validation.json",
+        "prototype-keyboard-validation.json"
+      ]
+    },
+    "skyroads_controllable_prototype": "Keyboard controls,31 road options,pause/step/reset,assist,timeline,record/save/server+CLI replay passed; analytical graphics; no warning/error logs"
+  },
+  "next_analysis": "Recover original graphical resources/palette/projection; read PHYSICS-CHECKPOINT.md."
+}

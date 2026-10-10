@@ -1,0 +1,35 @@
+{
+  "verified": true,
+  "cases": 1324,
+  "phase_boundary_cases": 1024,
+  "stream_irqs": 300,
+  "stream_game_ticks": 60,
+  "stream_bios_chains": 30,
+  "first_game_tick_irqs": [
+    1,
+    6,
+    11,
+    16,
+    21,
+    26,
+    31,
+    36,
+    41,
+    46,
+    51,
+    56
+  ],
+  "pit_hz": 1193182,
+  "pit_divisor": 6628,
+  "irq_hz": 180.02142426071214,
+  "physics_hz": 36.004284852142426,
+  "tick_seconds": 0.0277744719581757,
+  "result_stream_sha256": "c5f49c6587de363c3257e18fe9ab1b498f3a380950eb49c662126f01d028969e",
+  "exe_sha256": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+  "clock_source": "https://github.com/dosbox-staging/dosbox-staging/blob/main/src/hardware/timer.h",
+  "limitations": [
+    "OUT captured in virtual hooks; no physical hardware timing measured.",
+    "Audio helper runs its idle delay branch; audio stream processing excluded.",
+    "Stops before chaining old BIOS handler; verifies restored registers and chain decision."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"instructions\":[{\"address\":\"1000:4e2e\",\"instruction\":\"ENTER 0x0,0x0\"},{\"address\":\"1000:4e32\",\"instruction\":\"PUSH SI\"},{\"address\":\"1000:4e33\",\"instruction\":\"PUSH DI\"},{\"address\":\"1000:4e34\",\"instruction\":\"PUSH 0xd7c\"},{\"address\":\"1000:4e37\",\"instruction\":\"CALL 0x1000:411b\"},{\"address\":\"1000:4e3a\",\"instruction\":\"ADD SP,0x2\"},{\"address\":\"1000:4e3d\",\"instruction\":\"CALL 0x1000:4dc8\"},{\"address\":\"1000:4e40\",\"instruction\":\"CMP AX,0x0\"},{\"address\":\"1000:4e43\",\"instruction\":\"JNZ 0x1000:4e48\"},{\"address\":\"1000:4e45\",\"instruction\":\"JMP 0x1000:4e4b\"},{\"address\":\"1000:4e48\",\"instruction\":\"CALL 0x1000:4dc8\"},{\"address\":\"1000:4e4b\",\"instruction\":\"CALL 0x1000:413c\"},{\"address\":\"1000:4e4e\",\"instruction\":\"POP DI\"},{\"address\":\"1000:4e4f\",\"instruction\":\"POP SI\"},{\"address\":\"1000:4e50\",\"instruction\":\"LEAVE\"},{\"address\":\"1000:4e51\",\"instruction\":\"RET\"}],\"count\":16}"
+    }
+  ],
+  "isError": false
+}

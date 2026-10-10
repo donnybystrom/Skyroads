@@ -1,0 +1,81 @@
+{
+  "verified": true,
+  "counts": {
+    "resolve_profile_boundary": 720,
+    "resolve_wrap_and_noop": 10,
+    "predict_boundary": 147,
+    "assist_boundary": 147,
+    "predict_speed_clamp": 21,
+    "resolve_real_roads": 1240,
+    "predict_real_roads": 1240,
+    "assist_real_roads": 372
+  },
+  "total_cases": 3897,
+  "outcomes": {
+    "resolved_partial": 689,
+    "resolved_target": 1281,
+    "prediction_0": 842,
+    "assist_no_solution": 284,
+    "prediction_1": 566,
+    "assist_already_safe": 176,
+    "assist_adjusted": 59
+  },
+  "compared_intermediate_events": {
+    "collision": 26645,
+    "predict": 8794,
+    "flight": 96408,
+    "landing": 6913
+  },
+  "result_stream_sha256": "e22ab2d8ba2facf4dc7034b9f50afca995b4a79327a70adca8a9b7747d1a80f0",
+  "seed": 18611993,
+  "instructions_including_return_hooks": 24411660,
+  "max_instructions_per_case": 153184,
+  "elapsed_seconds": 38.74,
+  "code_allowlist_module_offsets": [
+    [
+      "0x4c0",
+      "0x533"
+    ],
+    [
+      "0x1631",
+      "0x1b49"
+    ],
+    [
+      "0x1c62",
+      "0x1dfa"
+    ],
+    [
+      "0x1dfa",
+      "0x1fd9"
+    ],
+    [
+      "0x5d4c",
+      "0x5d80"
+    ],
+    [
+      "0x5d8c",
+      "0x5ded"
+    ],
+    [
+      "0x5e5a",
+      "0x5ef6"
+    ]
+  ],
+  "write_guard": "Stack e000:f020 plus function-specific output globals; all other writes rejected.",
+  "input_sha256": {
+    "unpacked_exe": "5b7c06dedb0b25f9034c5a898ae9aacf9df15f0c353a0e3969474d2644760104",
+    "roads_lzs": "19551b52d5a9e87d62ebea5e98a559f3fe76a98947924f85d2787d00f8333d83"
+  },
+  "implementation_sha256": {
+    "skyroads_movement.py": "c695171a5e103ebc579404db52838eb4cf4ccde43cdd846447540bd181872c0d",
+    "skyroads_collision.py": "4ccd28a735cb8b8b0d47c0c6b01f230e837f10fb95f0c080dfad868bdebb7625",
+    "validate-skyroads-movement.py": "1b8eef8fd8df41cce81dab86def78f0fed2cbeafdb6f156cde6523a1821fd508",
+    "validate-skyroads-collision.py": "41e6a77179fe533ab77e08ad44f048509658fa4e88caa7754967d01ad7b7c270"
+  },
+  "limitations": [
+    "Isolated resolver, landing predictor and adjustment caller; no full game loop.",
+    "All31 real roads plus synthetic boundaries; sampled states are not proof of exhaustive equivalence.",
+    "Port restricts road accesses to the recovered7000-byte allocation and imposes execution budgets.",
+    "Landing prediction ignores intervening collisions, as does the original helper."
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "program": "SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:04c0": {
+      "name": "GetRoadTileAtPosition",
+      "size": 112,
+      "address": "1000:04c0",
+      "entry_point": "1000:04c0",
+      "body_end": "1000:0532",
+      "decompiled_code": "\n// Maps unsigned forward32-bit position and lateral16-bit coordinate to decoded road word at\n// DS:162c. u=lateral/128-95; if u>=322 returns0. Column=u/46 (0..6),\n// row=(forward/8192)/8=forward/65536. Offset=row*14+column*2. Seven16-bit cells per row. No\n// row-bound check is present here; callers/runtime buffers enforce the game context.\n\nundefined2 __cdecl16near GetRoadTileAtPosition(undefined2 param_1,undefined2 param_2,uint param_3)\n\n{\n  uint uVar1;\n  int iVar2;\n  undefined2 uVar3;\n  undefined2 unaff_DS;\n  undefined4 uVar4;\n  \n  uVar1 = param_3 / 0x80 - 0x5f;\n  if (uVar1 < 0x142) {\n    uVar4 = FUN_1000_5d8c(param_1,param_2,0x2000,0);\n    uVar4 = FUN_1000_5d8c(uVar4,8,0);\n    iVar2 = FUN_1000_5d4c(uVar4,0xe,0);\n    uVar3 = *(undefined2 *)(iVar2 + 0x162c + (uVar1 / 0x2e) * 2);\n  }\n  else {\n    uVar3 = 0;\n  }\n  return uVar3;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0c26": {
+      "name": "GetRoadSupportHeight",
+      "size": 105,
+      "address": "1000:0c26",
+      "entry_point": "1000:0c26",
+      "body_end": "1000:0c97",
+      "decompiled_code": "\n// Reads GetRoadTileAtPosition. Uses tile&0x0f for base surface and tile&0x0f00 for structure. No\n// structure or forced baseline: low nibble0=>height0, else2800h. Structure1=>0; other structures\n// index DS:00e4 uint16 table. Static semantic name; geometry/profile meanings not yet fully mapped.\n\nundefined2 __cdecl16near\nGetRoadSupportHeight(undefined2 param_1,undefined2 param_2,undefined2 param_3,int param_4)\n\n{\n  uint uVar1;\n  uint uVar2;\n  undefined2 uVar3;\n  undefined2 unaff_DS;\n  \n  uVar1 = GetRoadTileAtPosition(param_1,param_2,param_3);\n  uVar2 = uVar1 & 0xf00;\n  if ((uVar2 == 0) || (param_4 != 0)) {\n    if ((uVar1 & 0xf) == 0) {\n      uVar3 = 0;\n    }\n    else {\n      uVar3 = 0x2800;\n    }\n  }\n  else if (uVar2 == 0x100) {\n    uVar3 = 0;\n  }\n  else {\n    uVar3 = *(undefined2 *)((uVar2 >> 8) * 2 + 0xe4);\n  }\n  return uVar3;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "GetRoadTileAtPosition",
+          "address": "1000:04c0"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0533": {
+      "name": "FUN_1000_0533",
+      "size": 195,
+      "address": "1000:0533",
+      "entry_point": "1000:0533",
+      "body_end": "1000:05f5",
+      "decompiled_code": "\nbool __cdecl16near FUN_1000_0533(undefined2 param_1,undefined2 param_2,uint param_3,int param_4)\n\n{\n  uint uVar1;\n  undefined2 unaff_DS;\n  uint local_6;\n  \n  uVar1 = GetRoadTileAtPosition(param_1,param_2,param_3);\n  uVar1 = uVar1 & 0xf00;\n  if (((uVar1 == 0x100) || (uVar1 == 0x300)) || (uVar1 == 0x500)) {\n    local_6 = 0x17 - (param_3 / 0x80 - 0x31) % 0x2e;\n    if ((0x7fff < local_6) || (local_6 == 0)) {\n      local_6 = 1 - local_6;\n    }\n    if (local_6 < 0x26) {\n      return (param_4 + 0xde00U) / 0x80 <\n             (uint)(*(int *)(local_6 * 2 + 0x98) + *(int *)(local_6 * 2 + 0x4c)) / 2;\n    }\n  }\n  return false;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "GetRoadTileAtPosition",
+          "address": "1000:04c0"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1631": {
+      "name": "FUN_1000_1631",
+      "size": 254,
+      "address": "1000:1631",
+      "entry_point": "1000:1631",
+      "body_end": "1000:1731",
+      "decompiled_code": "\nuint __cdecl16near FUN_1000_1631(uint param_1,uint param_2,uint param_3)\n\n{\n  uint uVar1;\n  undefined2 unaff_DS;\n  \n  if (param_2 < 0x26) {\n    uVar1 = (param_3 + 0xde00) / 0x80;\n    param_1 = param_1 & 0xf00;\n    if (param_1 == 0x100) {\n      if ((uVar1 < *(uint *)(param_2 * 2 + 0x98)) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n    else if (param_1 == 0x200) {\n      param_1 = (uint)(param_3 < 0x3200);\n    }\n    else if (param_1 == 0x300) {\n      if ((param_3 < 0x3200) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n    else if (param_1 == 0x400) {\n      param_1 = (uint)(param_3 < 0x3c00);\n    }\n    else if (param_1 == 0x500) {\n      if ((param_3 < 0x3c00) && (*(uint *)(param_2 * 2 + 0x4c) <= uVar1)) {\n        param_1 = 1;\n      }\n      else {\n        param_1 = 0;\n      }\n    }\n  }\n  else {\n    param_1 = 0;\n  }\n  return param_1;\n}\n\n",
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1732": {
+      "name": "FUN_1000_1732",
+      "size": 313,
+      "address": "1000:1732",
+      "entry_point": "1000:1732",
+      "body_end": "1000:186a",
+      "decompiled_code": "\nundefined2 __cdecl16near\nFUN_1000_1732(undefined2 param_1,undefined2 param_2,uint param_3,uint param_4)\n\n{\n  uint uVar1;\n  uint uVar2;\n  int iVar3;\n  undefined2 uVar4;\n  int local_c;\n  uint local_a;\n  \n  uVar1 = GetRoadTileAtPosition(param_1,param_2,param_3 + 0x700);\n  uVar2 = GetRoadTileAtPosition(param_1,param_2,param_3 - 0x700);\n  if (((((uVar1 & 0xf) != 0) || ((uVar2 & 0xf) != 0)) && (param_4 < 0x2800)) &&\n     (0x2480 < param_4 + 0x600)) {\n    return 1;\n  }\n  if ((param_4 + 0x680 < 0x2801) || (((uVar2 & 0xf00) == 0 && ((uVar1 & 0xf00) == 0)))) {\nLAB_1000_1861:\n    uVar4 = 0;\n  }\n  else {\n    uVar4 = GetRoadTileAtPosition(param_1,param_2,param_3);\n    local_a = 0x17 - (param_3 / 0x80 - 0x31) % 0x2e;\n    local_c = -0x1700;\n    if ((0x7fff < local_a) || (local_a == 0)) {\n      local_a = 1 - local_a;\n      local_c = 0x1700;\n    }\n    iVar3 = FUN_1000_1631(uVar4,local_a,param_4);\n    if (iVar3 == 0) {\n      uVar4 = GetRoadTileAtPosition(param_1,param_2,param_3 + local_c,0x2f - local_a,param_4);\n      iVar3 = FUN_1000_1631(uVar4);\n      if (iVar3 == 0) goto LAB_1000_1861;\n    }\n    uVar4 = 1;\n  }\n  return uVar4;\n}\n\n",
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_1631",
+          "address": "1000:1631"
+        },
+        {
+          "name": "GetRoadTileAtPosition",
+          "address": "1000:04c0"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:186b": {
+      "name": "FUN_1000_186b",
+      "size": 734,
+      "address": "1000:186b",
+      "entry_point": "1000:186b",
+      "body_end": "1000:1b48",
+      "decompiled_code": "\n// WARNING: Removing unreachable block (ram,0x000119ba)\n\nvoid __cdecl16near FUN_1000_186b(uint param_1,int param_2,uint param_3,uint param_4)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  int iVar3;\n  int iVar4;\n  int iVar5;\n  uint uVar6;\n  undefined2 unaff_DS;\n  undefined4 uVar7;\n  ulong uVar8;\n  uint local_a;\n  int local_8;\n  \n  if ((((*(uint *)0x9618 != param_1) || (*(int *)0x961a != param_2)) || (*(uint *)0xaf1c != param_3)\n      ) || (*(uint *)0xaf2c != param_4)) {\n    for (uVar6 = 1; uVar6 < 6; uVar6 = uVar6 + 1) {\n      iVar3 = (int)((param_4 - *(int *)0xaf2c) * uVar6) / 5 + *(int *)0xaf2c;\n      iVar4 = (int)((param_3 - *(int *)0xaf1c) * uVar6) / 5 + *(int *)0xaf1c;\n      uVar7 = FUN_1000_5d4c(param_1 - *(uint *)0x9618,\n                            (param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),uVar6,0);\n      uVar7 = FUN_1000_5e5a(uVar7,5,0);\n      iVar3 = FUN_1000_1732((uint)uVar7 + *(uint *)0x9618,\n                            (int)((ulong)uVar7 >> 0x10) + *(int *)0x961a +\n                            (uint)CARRY2((uint)uVar7,*(uint *)0x9618),iVar4,iVar3);\n      if (iVar3 != 0) break;\n    }\n    uVar7 = FUN_1000_5d4c(param_1 - *(uint *)0x9618,\n                          (param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),uVar6 - 1,0\n                         );\n    uVar7 = FUN_1000_5e5a(uVar7,5,0);\n    puVar1 = (uint *)0x9618;\n    uVar2 = *puVar1;\n    *puVar1 = *puVar1 + (uint)uVar7;\n    *(int *)0x961a = *(int *)0x961a + (int)((ulong)uVar7 >> 0x10) + (uint)CARRY2(uVar2,(uint)uVar7);\n    *(int *)0xaf1c = *(int *)0xaf1c + (int)((param_3 - *(int *)0xaf1c) * (uVar6 - 1)) / 5;\n    *(int *)0xaf2c = *(int *)0xaf2c + (int)((param_4 - *(int *)0xaf2c) * (uVar6 - 1)) / 5;\n    uVar8 = 0x1000;\n    while( true ) {\n      local_8 = (int)(uVar8 >> 0x10);\n      local_a = (uint)uVar8;\n      if (uVar8 == 0) break;\n      while ((uVar8 <= CONCAT22((param_2 - *(int *)0x961a) - (uint)(param_1 < *(uint *)0x9618),\n                                param_1 - *(uint *)0x9618) &&\n             (iVar3 = FUN_1000_1732(uVar8 + CONCAT22(*(undefined2 *)0x961a,*(undefined2 *)0x9618),\n                                    *(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c), iVar3 == 0))) {\n        puVar1 = (uint *)0x9618;\n        uVar6 = *puVar1;\n        *puVar1 = *puVar1 + local_a;\n        *(int *)0x961a = *(int *)0x961a + local_8 + (uint)CARRY2(uVar6,local_a);\n      }\n      uVar8 = FUN_1000_5d8c(uVar8,0x10,0);\n    }\n    if (*(uint *)0xaf1c < param_3) {\n      iVar3 = 0x7d;\n    }\n    else {\n      iVar3 = -0x7d;\n    }\n    for (; iVar3 != 0; iVar3 = iVar3 / 5) {\n      while( true ) {\n        if ((int)(param_3 - *(int *)0xaf1c) < 1) {\n          iVar4 = -(param_3 - *(int *)0xaf1c);\n        }\n        else {\n          iVar4 = param_3 - *(int *)0xaf1c;\n        }\n        iVar5 = iVar3;\n        if (iVar3 < 1) {\n          iVar5 = -iVar3;\n        }\n        if ((iVar4 < iVar5) ||\n           (iVar4 = FUN_1000_1732(*(undefined2 *)0x9618,*(undefined2 *)0x961a,iVar3 + *(int *)0xaf1c\n                                  ,*(undefined2 *)0xaf2c), iVar4 != 0)) break;\n        *(int *)0xaf1c = *(int *)0xaf1c + iVar3;\n      }\n    }\n    if (*(uint *)0xaf2c < param_4) {\n      iVar3 = 0x7d;\n    }\n    else {\n      iVar3 = -0x7d;\n    }\n    for (; iVar3 != 0; iVar3 = iVar3 / 5) {\n      while( true ) {\n        if ((int)(param_4 - *(int *)0xaf2c) < 1) {\n          iVar4 = -(param_4 - *(int *)0xaf2c);\n        }\n        else {\n          iVar4 = param_4 - *(int *)0xaf2c;\n        }\n        iVar5 = iVar3;\n        if (iVar3 < 1) {\n          iVar5 = -iVar3;\n        }\n        if ((iVar4 < iVar5) ||\n           (iVar4 = FUN_1000_1732(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                                  iVar3 + *(int *)0xaf2c), iVar4 != 0)) break;\n        *(int *)0xaf2c = *(int *)0xaf2c + iVar3;\n      }\n    }\n  }\n  return;\n}\n\n",
+      "callee_count": 4,
+      "callees": [
+        {
+          "name": "FUN_1000_1732",
+          "address": "1000:1732"
+        },
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1b49": {
+      "name": "ApplyRoadSurfaceEffect",
+      "size": 278,
+      "address": "1000:1b49",
+      "entry_point": "1000:1b49",
+      "body_end": "1000:1c61",
+      "decompiled_code": "\n// Uses tile&0x0f. Type2 subtracts303 from32-bit accumulator DS:54ac/54ae; type10 adds303. Type9\n// resets DS:5494 andB13c to30000 if exitstate456e=0, optionally plays sound. Type12 sets\n// exitstate456e=2 and animation456a=1. Clamps accumulator to0..10922. Names of resource\n// counters/physics units remain hypotheses.\n\nvoid __cdecl16near ApplyRoadSurfaceEffect(uint param_1)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  undefined2 unaff_DS;\n  \n  param_1 = param_1 & 0xf;\n  if (param_1 == 2) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 - 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar2 < 0x12f);\n    }\n  }\n  else if (param_1 == 9) {\n    if (*(int *)0x456e == 0) {\n      if ((*(uint *)0x5494 < 27000) || (*(uint *)0xb13c < 27000)) {\n        FUN_1000_03c2(4);\n      }\n      *(undefined2 *)0x5494 = 30000;\n      *(undefined2 *)0xb13c = 30000;\n    }\n  }\n  else if (param_1 == 10) {\n    if (*(int *)0x456a == 0) {\n      puVar1 = (uint *)0x54ac;\n      uVar2 = *puVar1;\n      *puVar1 = *puVar1 + 0x12f;\n      *(int *)0x54ae = *(int *)0x54ae + (uint)(0xfed0 < uVar2);\n    }\n  }\n  else if (param_1 == 0xc) {\n    if (*(int *)0x456e == 0) {\n      *(undefined2 *)0x456e = 2;\n    }\n    if (*(int *)0x456a == 0) {\n      *(undefined2 *)0x456a = 1;\n      FUN_1000_03c2(0);\n    }\n  }\n  if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n    *(undefined2 *)0x54ac = 0;\n    *(undefined2 *)0x54ae = 0;\n  }\n  else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n    *(undefined2 *)0x54ac = 0x2aaa;\n    *(undefined2 *)0x54ae = 0;\n  }\n  return;\n}\n\n",
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_03c2",
+          "address": "1000:03c2"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0c98": {
+      "name": "FUN_1000_0c98",
+      "size": 568,
+      "address": "1000:0c98",
+      "entry_point": "1000:0c98",
+      "body_end": "1000:0ecf",
+      "decompiled_code": "\nvoid __cdecl16near FUN_1000_0c98(int param_1)\n\n{\n  int iVar1;\n  int iVar2;\n  int iVar3;\n  uint uVar4;\n  uint uVar5;\n  uint uVar6;\n  undefined2 uVar7;\n  int iVar8;\n  undefined2 unaff_DS;\n  undefined2 uVar9;\n  undefined2 uVar10;\n  \n  iVar1 = FUN_1000_0533(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                        *(undefined2 *)0xaf2c);\n  if (*(int *)0x456a == 0) {\n    if (*(int *)0x456e == 4) {\n      iVar8 = 0;\n    }\n    else {\n      iVar8 = *(int *)((int)(((ulong)*(uint *)0x1600 / 2) % 4) * 2 + 0x11a);\n    }\n    if (iVar1 == 0) {\n      iVar2 = FUN_1000_0baf(*(undefined2 *)0x9336,*(undefined2 *)0xaf2c);\n    }\n    else {\n      iVar2 = 0;\n    }\n    iVar3 = FUN_1000_0be9(*(undefined2 *)0xaf1c);\n    uVar4 = (iVar3 * 3 + iVar2) * 3 + 0xe + iVar8;\n  }\n  else {\n    uVar4 = *(uint *)0x456a / 3;\n    if (0xd < uVar4) {\n      uVar4 = 0xffff;\n    }\n  }\n  uVar5 = GetRoadSupportHeight\n                    (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(int *)0xaf1c + -0x380,iVar1);\n  uVar6 = GetRoadSupportHeight\n                    (*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(int *)0xaf1c + 0x380,iVar1);\n  if ((((*(int *)0xe1c != *(int *)0x9618) || (*(int *)0xe1e != *(int *)0x961a)) ||\n      (*(int *)0xe20 != *(int *)0xaf1c)) ||\n     (((*(int *)0xe22 != *(int *)0xaf2c || (*(uint *)0xe24 != uVar4)) ||\n      (*(int *)0xe26 != *(int *)0x9334)))) {\n    uVar9 = *(undefined2 *)0x961a;\n    *(undefined2 *)0xe1c = *(undefined2 *)0x9618;\n    *(undefined2 *)0xe1e = uVar9;\n    *(undefined2 *)0xe20 = *(undefined2 *)0xaf1c;\n    if (param_1 == 0) {\n      iVar1 = *(int *)0xaf2c;\n    }\n    else {\n      iVar1 = *(int *)0xaf2c + -0x80;\n    }\n    *(int *)0xe22 = iVar1;\n    *(uint *)0xe24 = uVar4;\n    *(undefined2 *)0xe26 = *(undefined2 *)0x9334;\n    if (*(int *)0x3c == 0) {\n      iVar1 = (uint)(*(int *)0x9334 == 0) * 0x200 + -0x6000;\n    }\n    else {\n      iVar1 = *(int *)0x5478;\n    }\n    if (*(int *)0x456a == 0) {\n      if (uVar5 < uVar6) {\n        uVar5 = uVar6;\n      }\n      uVar5 = (*(int *)0xaf2c - uVar5) / 0x80;\n    }\n    else {\n      uVar5 = 0x7fff;\n    }\n    uVar10 = 0;\n    uVar9 = *(undefined2 *)0xaf36;\n    iVar8 = *(int *)0xaf34 + uVar4 * 0x2d0;\n    if (uVar4 == 0xffff) {\n      uVar4 = 0;\n    }\n    else {\n      uVar4 = *(uint *)0xe22 / 0x80;\n    }\n    uVar7 = FUN_1000_5d8c(*(undefined2 *)0x9618,*(undefined2 *)0x961a,0x2000,0);\n    iVar1 = FUN_1000_0be9(*(undefined2 *)0xaf1c,uVar7,uVar4,iVar8,uVar9,uVar10,uVar5,iVar1);\n    FUN_1000_2d1f(*(uint *)0xaf1c / 0x80 + *(int *)(iVar1 * 2 + 0x3e));\n    *(uint *)0x9334 = *(uint *)0x9334 ^ 1;\n  }\n  return;\n}\n\n",
+      "callee_count": 6,
+      "callees": [
+        {
+          "name": "FUN_1000_0533",
+          "address": "1000:0533"
+        },
+        {
+          "name": "FUN_1000_0baf",
+          "address": "1000:0baf"
+        },
+        {
+          "name": "FUN_1000_0be9",
+          "address": "1000:0be9"
+        },
+        {
+          "name": "FUN_1000_2d1f",
+          "address": "1000:2d1f"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "GetRoadSupportHeight",
+          "address": "1000:0c26"
+        }
+      ],
+      "revision": {
+        "token": "1791571406530:4f8d24bd:24988",
+        "epoch": "4f8d24bd",
+        "modification_number": 24988,
+        "saved_time": 1791571406530,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 8,
+  "requested": 8
+}

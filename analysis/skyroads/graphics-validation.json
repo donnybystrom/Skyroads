@@ -1,0 +1,2359 @@
+{
+  "indexed_frames_match": true,
+  "frames": 287,
+  "pixels_compared": 12673920,
+  "forward_phases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "structure_kinds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "result_sha256": "e101b25c67bd9c952b23fcfdc5a5c6056eb64fbb611387344dce283ac8f09360",
+  "renderer_sha256": "86fb5b97d6fec38fe471cfe323f19d9f55fb7535b8b3a067992a8e53aed3837c",
+  "asset_manifest_sha256": "04bffbe722939017c2324ecdb5aef3689e2c7ce36c865900209025fd52264e86",
+  "runs": [
+    {
+      "run": "graphics-demo",
+      "trace_sha256": "e9522f65a0ecbef72b48474737cb31dec5e1e44064996cf8936b90ca3e460363",
+      "manifest_sha256": "5d6decff84128ce6f519db3baf65142c1f0544dc4fd0436cb58adee64b6736ad",
+      "probe_sha256": "e0276675983fa124fde4325cd991e41048d746feb47f48cf953e6076b8f960e0",
+      "emulator_sha256": "1976cb822e54b5c69ccc79fc5b1e2fd725cc76a5c6fbeae758b7aebdf1238ae4",
+      "source_files_unchanged": true,
+      "frames": [
+        {
+          "id": 1,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "e099b9e0a5b8e62ba39957e0aa9188497c61eb95cd9af82b1c0a49dac4fe7cf0"
+        },
+        {
+          "id": 2,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "4063e544287ce3c7627b609c1810cb9fca7e42c52a5e6b996c1a3abdcda01e44"
+        },
+        {
+          "id": 3,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "8583ce1ad847bfcce878d557c09ce1ba9b2780cd7ac03a9f9cc579932d88758f"
+        },
+        {
+          "id": 4,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "ec1f635611355ab0665f603f6fab6d73867423144a1570e0ab4359bbcf6e9284"
+        },
+        {
+          "id": 5,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 64,
+          "phase": 3,
+          "scene_sha256": "e2534b7e1d3435e256bca6dca82758b2289e200a47fbaacf7e6cbe2e659e5e70"
+        },
+        {
+          "id": 6,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 80,
+          "phase": 5,
+          "scene_sha256": "7412fa94d04be8546754456e49d05e2a3a380e9825f3b4d5f86bbe833b551fc6"
+        },
+        {
+          "id": 7,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 96,
+          "phase": 2,
+          "scene_sha256": "fd575f67267640f1e3660b3da507307534b45a5a351132c3c2fa9a1bb144d057"
+        },
+        {
+          "id": 8,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 112,
+          "phase": 1,
+          "scene_sha256": "c24294ee35d8f2cd805b32f27aa5787eb12f9129e309b2a9c388b74602807f93"
+        },
+        {
+          "id": 9,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 128,
+          "phase": 2,
+          "scene_sha256": "20b37ef1aef7c5c8879e3b82d86fbb9e5f27ece24e53077dd6d03792dcc2007e"
+        },
+        {
+          "id": 10,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 144,
+          "phase": 4,
+          "scene_sha256": "cad2b2341044d65ed26672eab7c86b201bdee0aabb657c4bcefac001a5a5b375"
+        },
+        {
+          "id": 11,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 160,
+          "phase": 1,
+          "scene_sha256": "f018980cb953597f3d496cd82c905f6e809968f6e51f73addc946920e0d8acf5"
+        },
+        {
+          "id": 12,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 176,
+          "phase": 7,
+          "scene_sha256": "aba92923d2c4b96dd7db283e2766fabba5b833c96ef3333661f78f222c738511"
+        },
+        {
+          "id": 13,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 192,
+          "phase": 4,
+          "scene_sha256": "3f356983f4281d158ed7a9abd8893d8320fe6542f6df663b2ce1818a2b3cb930"
+        },
+        {
+          "id": 14,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 208,
+          "phase": 1,
+          "scene_sha256": "629aac02d8068161cfd3f95a32786423c7e280f756fa40e405a2489e8d488546"
+        },
+        {
+          "id": 15,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 224,
+          "phase": 7,
+          "scene_sha256": "8f0b334145a5ff4bdd2806030de0227404bde9b4c7b512e1e898903a2f061884"
+        },
+        {
+          "id": 16,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 240,
+          "phase": 0,
+          "scene_sha256": "6c2887bb050e4a4fe65eb1e517b9ab610e446b38f81374fd8b794fc75d9df873"
+        },
+        {
+          "id": 17,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 256,
+          "phase": 0,
+          "scene_sha256": "5f791d62b443ef09253e21c31f7c3d8711d5f3f1284c73e3fdeb17f625d69ee7"
+        },
+        {
+          "id": 18,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 272,
+          "phase": 4,
+          "scene_sha256": "7a8291f32bb615d74d0a354693907d6cc2a720f74fc213bb8a5591b4f2d150d4"
+        },
+        {
+          "id": 19,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 288,
+          "phase": 3,
+          "scene_sha256": "665aba498a7ff94f307860d0e05202de2917cb969e05f82d02ce34fa11a8891b"
+        },
+        {
+          "id": 20,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 304,
+          "phase": 1,
+          "scene_sha256": "024df5e3296114ea22b16fe521fdd4d4d7fb77828b708861658127d5e4f72c22"
+        },
+        {
+          "id": 21,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 320,
+          "phase": 5,
+          "scene_sha256": "fd777a8c547c2f014d44e66f787c94cb64bc809df5152812f7bc809b90b0a70c"
+        },
+        {
+          "id": 22,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 336,
+          "phase": 1,
+          "scene_sha256": "035d46a54878fcb7539d59c8c429fe892376dbc3780822252931f90715367659"
+        },
+        {
+          "id": 23,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 352,
+          "phase": 5,
+          "scene_sha256": "95014c32c5eb99721ea02da0ec485e6fbd407e59bb2805276b89391adf377897"
+        },
+        {
+          "id": 24,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 368,
+          "phase": 1,
+          "scene_sha256": "ff224c5ec16756146d0adca9ac15f9c55810ff6df79b3799b101626cd6ab40eb"
+        },
+        {
+          "id": 25,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 384,
+          "phase": 5,
+          "scene_sha256": "ac7a4eb9328c5b4eac296bc0b3246efc20b47f02492c48822afad5727cbdac35"
+        },
+        {
+          "id": 26,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 400,
+          "phase": 2,
+          "scene_sha256": "77eb8a079b6308f6fa42025f820a54c85bbf85a369b04d3f9c0ca99126e896cd"
+        },
+        {
+          "id": 27,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 416,
+          "phase": 6,
+          "scene_sha256": "fdbf43b0215bafdfc5e9a20d5607ea7a03421a60f74d9aaad7b546b0d0091cd2"
+        },
+        {
+          "id": 28,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 432,
+          "phase": 2,
+          "scene_sha256": "56bd75afaed2ccb7a4976e396d08b7db4bbef6e7d01aeba922d9eb74e9096589"
+        },
+        {
+          "id": 29,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 448,
+          "phase": 7,
+          "scene_sha256": "d10d6b46a91fbc8afceef208796dbfbaec0cd22de23ec5482dc1dfee6bd5e9d4"
+        },
+        {
+          "id": 30,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 464,
+          "phase": 3,
+          "scene_sha256": "3d2b0c1dc368b2dcf683117f33a6c50f99b7512e8843bc5addb86612332c4cda"
+        },
+        {
+          "id": 31,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 480,
+          "phase": 7,
+          "scene_sha256": "9a3d7d44751b7843942e6c380d8330a08a248a4f4f9f2e615bf0d8059dfb9c37"
+        },
+        {
+          "id": 32,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 496,
+          "phase": 4,
+          "scene_sha256": "6aac9b75f1b1748b909692acd36619f24ba2cc214cc413fadc730493b841f5d2"
+        },
+        {
+          "id": 33,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 512,
+          "phase": 0,
+          "scene_sha256": "ddd862185ccbdaf3054eae975e262571c71bfe275030febe440670d3bd2c54a1"
+        },
+        {
+          "id": 34,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 528,
+          "phase": 4,
+          "scene_sha256": "475fe8de6f7d3d136fcc035e5d0c9e4943828b6a3f0f85001cf713a2acc301b8"
+        },
+        {
+          "id": 35,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 544,
+          "phase": 0,
+          "scene_sha256": "1fab7705bef4ecf63420ace88a88d51bad4576cf76f007f3a74c24b721806ef3"
+        },
+        {
+          "id": 36,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 560,
+          "phase": 4,
+          "scene_sha256": "e9121a85721ecf5714ae3c1b9c4dc66b0f7a2ac7068c6bc111ee33e363d8a799"
+        },
+        {
+          "id": 37,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 576,
+          "phase": 0,
+          "scene_sha256": "1d0a50f98018e4866bdd2729fbf8978a042d606ec5cd63ef9a2de0b4ed903044"
+        },
+        {
+          "id": 38,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 592,
+          "phase": 4,
+          "scene_sha256": "98445d5cac969f62fde20f7ce76a53a6987664bd17d029d1afaa72e03b28c302"
+        },
+        {
+          "id": 39,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 608,
+          "phase": 1,
+          "scene_sha256": "0093bb109c193bd25a1c0a6060aac20b283bab791474b6fa2575d4a78d085dd6"
+        },
+        {
+          "id": 40,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 624,
+          "phase": 1,
+          "scene_sha256": "e27e56c0eb6960f3e35b752d2970c31d97cabd89e2c4de276d3a4e0293e6b444"
+        },
+        {
+          "id": 41,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 640,
+          "phase": 5,
+          "scene_sha256": "013c4e2108bcf179f5b23d89fba648518c0d35ae9d7c60e3166ccbcc3b6ca57a"
+        },
+        {
+          "id": 42,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 656,
+          "phase": 2,
+          "scene_sha256": "7a37fd2f64cc2fa627dd8a6bf5bc0b7d35afdc91dd427088f424dee1a39345f1"
+        },
+        {
+          "id": 43,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 672,
+          "phase": 6,
+          "scene_sha256": "dc5f99cbd2a5ee06384da21372a738f5410eee64696b851f36eeca3cd903f66a"
+        },
+        {
+          "id": 44,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 688,
+          "phase": 2,
+          "scene_sha256": "88a4eb2feec84fd42243b47812ea01f4aa87475656073a414fc9d159b501841e"
+        },
+        {
+          "id": 45,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 704,
+          "phase": 6,
+          "scene_sha256": "c297bff9230dcf44394b3cc11487f70f2c4de453f323945b5b18834f2975c5ba"
+        },
+        {
+          "id": 46,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 720,
+          "phase": 2,
+          "scene_sha256": "aa39ebac9a85f48121a2ae0da1f2b6ee4d90aec023248b7642f4cb97a2da3026"
+        },
+        {
+          "id": 47,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 736,
+          "phase": 6,
+          "scene_sha256": "87d399c3a08e8cc6db666ed7080e292ab434c3c033181317988118fdca1450cc"
+        },
+        {
+          "id": 48,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 752,
+          "phase": 3,
+          "scene_sha256": "d2a8f9bca5383a6be586f9946d13a02633f281b03518f82a27d91b2da5f93263"
+        },
+        {
+          "id": 49,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 768,
+          "phase": 7,
+          "scene_sha256": "33b634e3c61ae1b9f031edd26fc0674790ab2c6640518c8e6f0215d92aee5932"
+        },
+        {
+          "id": 50,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 784,
+          "phase": 3,
+          "scene_sha256": "ce2acdef186f8e29509d62ecdf28c425fb8e00eea659278ad4f73e09f614594a"
+        },
+        {
+          "id": 51,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 800,
+          "phase": 7,
+          "scene_sha256": "0319073e08b7eb8374e882dd745ede409b5fe8abab956dbf1da181cea7bed9b3"
+        },
+        {
+          "id": 52,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 816,
+          "phase": 3,
+          "scene_sha256": "f543429faf53bbb937b800282d4c4d9f6adf54b0653ca17c43a847d3f1e05e15"
+        },
+        {
+          "id": 53,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 832,
+          "phase": 7,
+          "scene_sha256": "fb984e6f70ae76356965685e38c99942976846127b5e86f332af31f9105c8351"
+        },
+        {
+          "id": 54,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 848,
+          "phase": 3,
+          "scene_sha256": "7174da6c2ccc51e8746eb7b4b3d25dbbaeef2ba008951fd8d34bb6bb23a555e9"
+        },
+        {
+          "id": 55,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 864,
+          "phase": 0,
+          "scene_sha256": "494b38a67b08fb6ac12515cd113747ccb101901c6de13261fe2290a5921b5dbd"
+        },
+        {
+          "id": 56,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 880,
+          "phase": 4,
+          "scene_sha256": "dacade0836006a87b8908c5229384a08d5740af7b13c9c4579c6c212c5cf5a08"
+        },
+        {
+          "id": 57,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 896,
+          "phase": 0,
+          "scene_sha256": "af0845c161d8d27f3db7cb00ab8649cd21e36180038df7bf723f4583887e30b7"
+        },
+        {
+          "id": 58,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 912,
+          "phase": 4,
+          "scene_sha256": "d187f010c6d39010f39f560c87c5ef3993d4d734c9e1c14c51b3c402eeb29306"
+        },
+        {
+          "id": 59,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 928,
+          "phase": 0,
+          "scene_sha256": "ed4cf5251481a699f4f4b9e287ba078788d41220c82496eed9d6911b7d878204"
+        },
+        {
+          "id": 60,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 944,
+          "phase": 4,
+          "scene_sha256": "8558dcbc69cb15dd6585d4e3c2f8064fd6922eed9920d8e08457ef783fc1ee52"
+        },
+        {
+          "id": 61,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 960,
+          "phase": 1,
+          "scene_sha256": "0e34bbd5dc6a4a9d0ee61cbf8eaf2c11e66b9d12e85cd5021e0c1329b7db3775"
+        },
+        {
+          "id": 62,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 976,
+          "phase": 5,
+          "scene_sha256": "67f17ac4998ef57ba689e9af7520b605c1a161ab9f5d99be2470845070605909"
+        },
+        {
+          "id": 63,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 992,
+          "phase": 1,
+          "scene_sha256": "27d4e02327e6eee354dd92ff6d874ce809a0968b730ea2c67aa083bcbfd3b503"
+        },
+        {
+          "id": 64,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1008,
+          "phase": 5,
+          "scene_sha256": "60283433d0ebfbaf9f8b26e28157ca8aea5c67d5f558402a53187e62c24e1b5f"
+        },
+        {
+          "id": 65,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1024,
+          "phase": 1,
+          "scene_sha256": "e09f01b26be99774793841faeba498fd9ea33ee33d12c090bc2063468a7098cc"
+        },
+        {
+          "id": 66,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1040,
+          "phase": 5,
+          "scene_sha256": "5290929e356bea07d1c103d68bea990fe439642b8b950167f51a547e36cecda1"
+        },
+        {
+          "id": 67,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1056,
+          "phase": 1,
+          "scene_sha256": "0cfaebfb22187b61a8b9f5f145e6501d2373845d76d6c5c5c126b49a3b6d78ce"
+        },
+        {
+          "id": 68,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1072,
+          "phase": 6,
+          "scene_sha256": "a4a2055b9fbd8d616c47b4d8cb377ab5d36fc464ada96b75c795b6f72eee95fa"
+        },
+        {
+          "id": 69,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1088,
+          "phase": 2,
+          "scene_sha256": "e7b7007bacdddd81147575fbd82ac55851ce7b78711cf9c044625f1988dff06b"
+        },
+        {
+          "id": 70,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1104,
+          "phase": 6,
+          "scene_sha256": "52e5da7a9940ea22233187cac5abb9b9b711526beee15b90187240a0dffeea8d"
+        },
+        {
+          "id": 71,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1120,
+          "phase": 2,
+          "scene_sha256": "fc57f3c85f137aa34d083445ea983d7d5b4e3e7a80c1a03816b04a8e84c48a09"
+        },
+        {
+          "id": 72,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1136,
+          "phase": 6,
+          "scene_sha256": "5a9ccba973cf9c1b31e1494c062bc75d470f86c4ba4f8168cd25edaaaca06e9a"
+        },
+        {
+          "id": 73,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1152,
+          "phase": 1,
+          "scene_sha256": "d4d368778dd0a97ca6a0fea112b992a682c2e9f28a553898cfc25097dbe41e42"
+        },
+        {
+          "id": 74,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1168,
+          "phase": 3,
+          "scene_sha256": "bb09cbdbdd56cce73093e38ef07a5155bb7ceb443993d5bce4e5859c7aae9704"
+        },
+        {
+          "id": 75,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1184,
+          "phase": 4,
+          "scene_sha256": "9d0ac15e24a82b59056024c1920b84300daef979dd82ae03c803a680366fba0e"
+        },
+        {
+          "id": 76,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1200,
+          "phase": 6,
+          "scene_sha256": "85126a5f37f8f321e782a389e1fd8f2ee70ecef829b52802d62bfb27c01af916"
+        },
+        {
+          "id": 77,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1216,
+          "phase": 7,
+          "scene_sha256": "6eb708eb8728fdfb1fa0a9fb7c669f05866d3695451bc06e933bdf6acd583bca"
+        },
+        {
+          "id": 78,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1232,
+          "phase": 0,
+          "scene_sha256": "ae6cfd1b9c48ff1e24063b99b853a6e90b6301492010c59d0db1660d5cdf84e6"
+        },
+        {
+          "id": 79,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1248,
+          "phase": 2,
+          "scene_sha256": "7b81bb52e131d6abd698eb24fe75de50a8454f340ffe4e07e9d2f64dc5621b0c"
+        },
+        {
+          "id": 80,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1264,
+          "phase": 3,
+          "scene_sha256": "c9159f3408b629283e662aadcb0adfa9576b3d3e20a059a5bd168b141d09b16f"
+        },
+        {
+          "id": 81,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1280,
+          "phase": 4,
+          "scene_sha256": "3dae4fcf81ea1145fe16ae2ccdff6e98f14d1174bf9169d707ee8d9f77a5f7e2"
+        },
+        {
+          "id": 82,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1296,
+          "phase": 7,
+          "scene_sha256": "93f0c068d55b8146b23ca00c32a39b684bf62518d516cfc5a405b5a14652c35f"
+        },
+        {
+          "id": 83,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1312,
+          "phase": 0,
+          "scene_sha256": "648c2035a6e7de7d9a17fdd35303bae8e76413b38a311c72c46de4ec5b2d5296"
+        },
+        {
+          "id": 84,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1328,
+          "phase": 2,
+          "scene_sha256": "9f16e1232a049676e22e6c17bd5231fdda9452457ee0e7f8f7057bf5e9cb80f8"
+        },
+        {
+          "id": 85,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1344,
+          "phase": 3,
+          "scene_sha256": "7b48c9181c59c51e45d0660b24807385972b6a2fb4131c906bd4bc0d20a65300"
+        },
+        {
+          "id": 86,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1360,
+          "phase": 4,
+          "scene_sha256": "86873835cde711144cc478df25dd1a67446d474664479f4603dd7c9544da5bb6"
+        },
+        {
+          "id": 87,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1376,
+          "phase": 6,
+          "scene_sha256": "6d344eddf4f671dfc3f43158ee7407afbd751749f0f66705af59edf0c0acff45"
+        },
+        {
+          "id": 88,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1392,
+          "phase": 7,
+          "scene_sha256": "e0ddbf536401229a0f2d2140f98978cc7405b9714f2c602fa7a7881b31caf6f7"
+        },
+        {
+          "id": 89,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1408,
+          "phase": 0,
+          "scene_sha256": "70601e610915ca07429c6d3d2dcb892efa54a55f29079afa1f48edf677d4f956"
+        },
+        {
+          "id": 90,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1424,
+          "phase": 2,
+          "scene_sha256": "fce15de847d99a03f9bb13dcd3bb5474f7cba178b212486d7d7ed0357ac66816"
+        },
+        {
+          "id": 91,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1440,
+          "phase": 3,
+          "scene_sha256": "a09a4f950e9ebdbcea245ece8935bbc2ab71f41d6924bea0bb62f2893d4116d6"
+        },
+        {
+          "id": 92,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1456,
+          "phase": 5,
+          "scene_sha256": "e64b1791047e8ae7cc7cdfdbbebcf0ef4678b1f5771e6d2456ed7985aaa289cd"
+        },
+        {
+          "id": 93,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1472,
+          "phase": 6,
+          "scene_sha256": "c5c624f4cd73acf086de067db8433461e1080d2202917879cfa83bafbeeccbd5"
+        },
+        {
+          "id": 94,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1488,
+          "phase": 7,
+          "scene_sha256": "3625a52544ee7d0894fe1e8a862264e3b2bb8f12965fc82eac994037a134dc85"
+        },
+        {
+          "id": 95,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1504,
+          "phase": 1,
+          "scene_sha256": "d711eb0a0ee0cd25b84c7359fcb17734a11c83d045c3285f6711c5a4b7927c9a"
+        },
+        {
+          "id": 96,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1520,
+          "phase": 2,
+          "scene_sha256": "5bb90229bb93c1c510483e19c44016fbac062b1bb6893792d3614638682d0efe"
+        },
+        {
+          "id": 97,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1536,
+          "phase": 3,
+          "scene_sha256": "c65b42a8c4607df43a8804d92204c4d0f1f11f34eb6a042993396ee3bd1c8248"
+        },
+        {
+          "id": 98,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1552,
+          "phase": 5,
+          "scene_sha256": "dcb78c89839fbf75bf78845ff6299dea30f433367a37aec01a7beaf1acfa671f"
+        },
+        {
+          "id": 99,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1568,
+          "phase": 6,
+          "scene_sha256": "aa227f24740779e9f2cd61e712a6cc33b8c812a647a7139cad200759a973af2c"
+        },
+        {
+          "id": 100,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1584,
+          "phase": 0,
+          "scene_sha256": "30014172842164e518b66f3e6ed811be8fde48c0efcc60678fd3343598020420"
+        },
+        {
+          "id": 101,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1600,
+          "phase": 1,
+          "scene_sha256": "1400030d0dec8c044e74ed98760e114d349f338051f4c9827b8a98bb8c4c0fc0"
+        },
+        {
+          "id": 102,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1616,
+          "phase": 2,
+          "scene_sha256": "68f8970741a46934bed55e52d3313dc0e5c5f7ab4025f6379696264f38435cb5"
+        },
+        {
+          "id": 103,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1632,
+          "phase": 4,
+          "scene_sha256": "f37e6bba610bd84ede3e2c8414e19693bd2072977fcfea04668e719886b6e74e"
+        },
+        {
+          "id": 104,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1648,
+          "phase": 5,
+          "scene_sha256": "efa62e29dc91f9021c3734b0f3d945bd44ecc1f6fc2869c0de80f8fb52c138c7"
+        },
+        {
+          "id": 105,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1664,
+          "phase": 6,
+          "scene_sha256": "aa0d701bdcabe956caa87f7711df3169bbe69c9c46a83f7e51d65efa645a685e"
+        },
+        {
+          "id": 106,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1680,
+          "phase": 0,
+          "scene_sha256": "1fba080cdb4952b7faffdc8922ae3e4c6477a9f8b38a76c6430b6e2b6841815b"
+        },
+        {
+          "id": 107,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1696,
+          "phase": 1,
+          "scene_sha256": "7b33639dfdf8054812bbb94648ff17e605db6aef14ef7a03b3e89a690daf9ff2"
+        },
+        {
+          "id": 108,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1702,
+          "phase": 1,
+          "scene_sha256": "a36971d988917dea979a1ecb733b73e20bceda360d4ed4a470e7bdc2272b37b6"
+        },
+        {
+          "id": 109,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1702,
+          "phase": 2,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 110,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1702,
+          "phase": 3,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 111,
+          "attempt": 1,
+          "road_index": 0,
+          "tick": 1702,
+          "phase": 4,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        }
+      ]
+    },
+    {
+      "run": "graphics-keyboard",
+      "trace_sha256": "883fa8760e929d94074a5bdcb84fe7cb86c53ec1e9fdce982ca986fe74062b3a",
+      "manifest_sha256": "cd0d8c7ae7708292b9cde99fdd73789b5e053088c0a4facc2132f2f5db926493",
+      "probe_sha256": "5a1da72f0baf270d084484776ec038b1182a17f8c29c27159b953611b8a87485",
+      "emulator_sha256": "fdf9a355c04514055b1c0f06d03f3ec55bc42937a3c6a956fe5f5b54ba60937b",
+      "source_files_unchanged": true,
+      "frames": [
+        {
+          "id": 1,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "7dc73b968dc2cb491ef5374ab5d1bbf1846540d85be5b450d149a38c2bc0ae17"
+        },
+        {
+          "id": 2,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "6494ce423ee6c01ec87c1f1e3f48cd9975987117806e22a86dea7c219146634c"
+        },
+        {
+          "id": 3,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "bd15859ec13438ac1a137f4145e83261ee556914b94e0cddd7505af3f577caa9"
+        },
+        {
+          "id": 4,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "012e33ba7a88d1294ef7a7f58e0554493813267dfff8108f4dc7a57e422d84bc"
+        },
+        {
+          "id": 5,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 64,
+          "phase": 1,
+          "scene_sha256": "2c3d3e36324c3f2ee3989429b499817428d08eabf21b9a3970f286303a3efb72"
+        },
+        {
+          "id": 6,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 80,
+          "phase": 3,
+          "scene_sha256": "ab56c03f6a42d5af02ba0cb25b08ff45298796fe34653f5b333c8865f393cf6f"
+        },
+        {
+          "id": 7,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 96,
+          "phase": 7,
+          "scene_sha256": "6d68cc5bc7d6cc52ba62911738a45056b5d3f117b212682976d17cb697036c45"
+        },
+        {
+          "id": 8,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 112,
+          "phase": 5,
+          "scene_sha256": "1423c781475341f8753fa53c5b9d24d5d542b473835ce1e31b4cb4d228e610da"
+        },
+        {
+          "id": 9,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 128,
+          "phase": 6,
+          "scene_sha256": "ca57e55e705eadc4366e186d1164dd83727cdbac1f6a82317647544153ff3624"
+        },
+        {
+          "id": 10,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 144,
+          "phase": 1,
+          "scene_sha256": "45980ec9e1119a367a1da825894eaddccbbda901dd2cb0c8193cb174ee4732c9"
+        },
+        {
+          "id": 11,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 160,
+          "phase": 6,
+          "scene_sha256": "d7e80ad8e79394e332711cdd80ad39b378929dd109ddc201d048caabdffa86de"
+        },
+        {
+          "id": 12,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 176,
+          "phase": 4,
+          "scene_sha256": "9c2f4f2d39e5b4f641f9687a5b10edf96207355214b0b92235ca26a4b7670fc8"
+        },
+        {
+          "id": 13,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 192,
+          "phase": 1,
+          "scene_sha256": "37c7d7478a9e1e07469d403530d0a2ec575c8caeb7401bb7213188cc1d98c74e"
+        },
+        {
+          "id": 14,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 208,
+          "phase": 6,
+          "scene_sha256": "b18ed70794008c506753278fcda088ce626dae605a8097cdc4eb3c3d7d8bad56"
+        },
+        {
+          "id": 15,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 224,
+          "phase": 4,
+          "scene_sha256": "56f83341e50f4eac970b57d99619d35a5279092184659b0ad20cf5bdaf1cba5d"
+        },
+        {
+          "id": 16,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 240,
+          "phase": 1,
+          "scene_sha256": "6d4d3f6a82335cdd9285f0b793735097a779e306efdfc0a3c82c3d59248f2e69"
+        },
+        {
+          "id": 17,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 256,
+          "phase": 6,
+          "scene_sha256": "94be57c14ec3a0e954e4095e87a20770105253494d5c66b2f1984a8fd01731d6"
+        },
+        {
+          "id": 18,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 272,
+          "phase": 4,
+          "scene_sha256": "f4c39f601d60f47ecc85d11a80d474f052613ebb0b213bd7d322a3a69cb2f42b"
+        },
+        {
+          "id": 19,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "7dc73b968dc2cb491ef5374ab5d1bbf1846540d85be5b450d149a38c2bc0ae17"
+        },
+        {
+          "id": 20,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "6494ce423ee6c01ec87c1f1e3f48cd9975987117806e22a86dea7c219146634c"
+        },
+        {
+          "id": 21,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "8c586cc5e564f79a4e225fc2e06bf0204a8b625cf82d87c87676adb4d01a653a"
+        },
+        {
+          "id": 22,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "df9013fb1673c4d184aa96c54ed3a78c094d42e8b3646a5f12d4562959e25151"
+        },
+        {
+          "id": 23,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 64,
+          "phase": 3,
+          "scene_sha256": "222e518f7c79abd11a3daf6b19a0b05f0bca051ac0a9295d83e1d99219e2b5d4"
+        },
+        {
+          "id": 24,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 80,
+          "phase": 5,
+          "scene_sha256": "b22d78435d1d25145c3e9f45561b93fa61c4adb5a54d9897006d1aa57ec5ab31"
+        },
+        {
+          "id": 25,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 96,
+          "phase": 2,
+          "scene_sha256": "322502f2955fb84f6e832abf6aa4c4e4c316d8772fd50f586072fef2c0218c6b"
+        },
+        {
+          "id": 26,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 112,
+          "phase": 1,
+          "scene_sha256": "ea271421ad131eaff50beb6c39facff4e3ea356780dbd29529ebcc8eaed4c7b4"
+        },
+        {
+          "id": 27,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 128,
+          "phase": 3,
+          "scene_sha256": "c828d89df69e2297ff1b17889e6c8c8780eadd3646b1228ab547a580ca063270"
+        },
+        {
+          "id": 28,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 144,
+          "phase": 7,
+          "scene_sha256": "6b0e8b5c31668bded640435bac98dc119bfc7947514fced7ae97f5889a7f0bd0"
+        },
+        {
+          "id": 29,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 160,
+          "phase": 4,
+          "scene_sha256": "1ef4be9b4d27d64aa4e06186f3319fb3384c5d2f2b9374456838dba57c172dbd"
+        },
+        {
+          "id": 30,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 176,
+          "phase": 2,
+          "scene_sha256": "9a5241c06b82b8ff2b67b2aece8e58caf8ccbe659f4df51ce7a04799202af2ca"
+        },
+        {
+          "id": 31,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 192,
+          "phase": 7,
+          "scene_sha256": "da4a9a32cf3eb0f3e851a9aecc5859f5ebfabf43db3dfc4ee2568bfb7c81164e"
+        },
+        {
+          "id": 32,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 208,
+          "phase": 4,
+          "scene_sha256": "4625253b6811e22e7358316cad3f5b3cced245eda41617b9bdc0f8e7c4227726"
+        },
+        {
+          "id": 33,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 224,
+          "phase": 2,
+          "scene_sha256": "4332a0f099364de7f22aca82d820a0dbf9d897fa6da789dbcfa823418553bbbe"
+        },
+        {
+          "id": 34,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 240,
+          "phase": 7,
+          "scene_sha256": "4ca531ead87564c28dca42a5baabe27c0036570510b719238a18e19e4dbe5ac1"
+        },
+        {
+          "id": 35,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 256,
+          "phase": 4,
+          "scene_sha256": "8711d70400a20e7af923f3823533875905ac46eef9759037fbf35ae44b4e36a1"
+        },
+        {
+          "id": 36,
+          "attempt": 2,
+          "road_index": 1,
+          "tick": 272,
+          "phase": 2,
+          "scene_sha256": "05a7566913de4e6e1b4bf429a9b4e9e5b4a1915ea5e1a8dc13a6f53f890fda05"
+        },
+        {
+          "id": 37,
+          "attempt": 3,
+          "road_index": 1,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "7dc73b968dc2cb491ef5374ab5d1bbf1846540d85be5b450d149a38c2bc0ae17"
+        },
+        {
+          "id": 38,
+          "attempt": 3,
+          "road_index": 1,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "6494ce423ee6c01ec87c1f1e3f48cd9975987117806e22a86dea7c219146634c"
+        },
+        {
+          "id": 39,
+          "attempt": 3,
+          "road_index": 1,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "8c586cc5e564f79a4e225fc2e06bf0204a8b625cf82d87c87676adb4d01a653a"
+        },
+        {
+          "id": 40,
+          "attempt": 3,
+          "road_index": 1,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "159b11c2b9f3d6ae0b7490e83db1cc38437923f3d35f48684e2f63769ec465fe"
+        },
+        {
+          "id": 41,
+          "attempt": 3,
+          "road_index": 1,
+          "tick": 64,
+          "phase": 3,
+          "scene_sha256": "6ddb6e0158f866df444e4e8e3019881003007f712705b89f70f18deeec358bb3"
+        },
+        {
+          "id": 42,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "7dc73b968dc2cb491ef5374ab5d1bbf1846540d85be5b450d149a38c2bc0ae17"
+        },
+        {
+          "id": 43,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "6494ce423ee6c01ec87c1f1e3f48cd9975987117806e22a86dea7c219146634c"
+        },
+        {
+          "id": 44,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "8c586cc5e564f79a4e225fc2e06bf0204a8b625cf82d87c87676adb4d01a653a"
+        },
+        {
+          "id": 45,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "159b11c2b9f3d6ae0b7490e83db1cc38437923f3d35f48684e2f63769ec465fe"
+        },
+        {
+          "id": 46,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 64,
+          "phase": 3,
+          "scene_sha256": "6ddb6e0158f866df444e4e8e3019881003007f712705b89f70f18deeec358bb3"
+        },
+        {
+          "id": 47,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 80,
+          "phase": 5,
+          "scene_sha256": "71227aa88beb6ffd5b2f137c8175bab32a49997c19645b01fe9940f6c577348b"
+        },
+        {
+          "id": 48,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 96,
+          "phase": 2,
+          "scene_sha256": "8ff91a8434a2888ad9faad60f664110c5312b021fcfd35a2afe3f0afd52b1d5c"
+        },
+        {
+          "id": 49,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 112,
+          "phase": 1,
+          "scene_sha256": "c124d878945812cf82f4d6e4b4e29dc9b406072d2d39da0418274c70212ad17d"
+        },
+        {
+          "id": 50,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 128,
+          "phase": 3,
+          "scene_sha256": "27788a16130bcc0857d2b9344b3ebc60f974baac545f9917a61e2de37deffd38"
+        },
+        {
+          "id": 51,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 144,
+          "phase": 7,
+          "scene_sha256": "316387518e45d434a6482a5b38199c9fa40322f962bc92feb970a0629ce2084d"
+        },
+        {
+          "id": 52,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 160,
+          "phase": 4,
+          "scene_sha256": "0d763862eae37687c3a3bc64b28fc888718ccf97a814851ef5a43ccde04f8fe5"
+        },
+        {
+          "id": 53,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 176,
+          "phase": 2,
+          "scene_sha256": "4c3394884dcd810516f2ad85eaf536186e552cd5427591ddb81fe437aeb51524"
+        },
+        {
+          "id": 54,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 192,
+          "phase": 7,
+          "scene_sha256": "23c8804124a143d469165f5b3960248b7dea01cef1a3a3256f9eaa66ea7c0eb4"
+        },
+        {
+          "id": 55,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 208,
+          "phase": 4,
+          "scene_sha256": "158dbf7e41a4372006ddc49a19f6e10e172d5dadcc0677d5dc8fa21511abc813"
+        },
+        {
+          "id": 56,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 224,
+          "phase": 2,
+          "scene_sha256": "abea95e77f88f129c624b89b76c8cdab6885c90ee1521613c2e2c1424d7cd6a3"
+        },
+        {
+          "id": 57,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 240,
+          "phase": 7,
+          "scene_sha256": "1c26684740dfb17eef2b7af8debb73426cc4cef6601de480aabebea8fd717d2f"
+        },
+        {
+          "id": 58,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 256,
+          "phase": 4,
+          "scene_sha256": "3df99326756a61c089ad99ea2f1ba910f30e3395f372e6c28810fff8da36fe58"
+        },
+        {
+          "id": 59,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 272,
+          "phase": 2,
+          "scene_sha256": "645be70ac8cb63d3b08dfc4b4eb76b5c055f68d9d3d149c2b5f3d98122a26bbd"
+        },
+        {
+          "id": 60,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 288,
+          "phase": 7,
+          "scene_sha256": "e1c2694a928c3e1107bd234575a6ef101a8dca524af02f06ba786664549b6eeb"
+        },
+        {
+          "id": 61,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 304,
+          "phase": 4,
+          "scene_sha256": "5f1d97e3023d3241718043d2a26b711909ce57481b466d7bb53c30cef4db6177"
+        },
+        {
+          "id": 62,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 320,
+          "phase": 2,
+          "scene_sha256": "24efca6aa52c7ae4e22ba84fb8001a320fb6cc520fe4e85911cf653c445827dd"
+        },
+        {
+          "id": 63,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 336,
+          "phase": 7,
+          "scene_sha256": "b8642d6492247af4c042750ca30c991c6fe19d9da13055d68a67c50485376d95"
+        },
+        {
+          "id": 64,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 352,
+          "phase": 4,
+          "scene_sha256": "99e0f06897c47d716e4c4460c2e3d35aee6f03504ac41ba6bde452aff171f7a9"
+        },
+        {
+          "id": 65,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 368,
+          "phase": 2,
+          "scene_sha256": "35437c34bdadd3b530d1fbd6142d11c4527413cffeadfa0d720394bec451ba78"
+        },
+        {
+          "id": 66,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 382,
+          "phase": 6,
+          "scene_sha256": "78a0b528e56e0a7e52147dc826ec35305c2db5ad34760c3f9a0278a9eb283631"
+        },
+        {
+          "id": 67,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 382,
+          "phase": 3,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 68,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 382,
+          "phase": 0,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 69,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 382,
+          "phase": 6,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 70,
+          "attempt": 4,
+          "road_index": 1,
+          "tick": 382,
+          "phase": 3,
+          "scene_sha256": "898131756852b0c2a3e8278f82bdc87aad764c86260ac782c8af61185108d263"
+        },
+        {
+          "id": 71,
+          "attempt": 5,
+          "road_index": 2,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "c195edfc6c1af3c06dc95e25e835badacd4cca16bf1c064aa65f0d4a15bddaa4"
+        },
+        {
+          "id": 72,
+          "attempt": 5,
+          "road_index": 2,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "a10b3cda78d1a572d7755c90db741f518aab754244f874eb5c68fb0c2620dfff"
+        },
+        {
+          "id": 73,
+          "attempt": 5,
+          "road_index": 2,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "6394376fd8b762b1e2a5a9d9d964548a695dff594098344f2421868b574649ec"
+        },
+        {
+          "id": 74,
+          "attempt": 5,
+          "road_index": 2,
+          "tick": 48,
+          "phase": 2,
+          "scene_sha256": "48721ac9c01939ef5f77d940c9a5f4d04e733a3328ee296b0f4fcc1780506fab"
+        },
+        {
+          "id": 75,
+          "attempt": 5,
+          "road_index": 2,
+          "tick": 64,
+          "phase": 0,
+          "scene_sha256": "6eda3b22147aa77aa5d0f451d13fc83ea4bc400f11f11f6f948dcd41eb307d96"
+        },
+        {
+          "id": 76,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "497bd1e5a04ac06e46a9e41892131796cf06d30ba65bc4588a86b0ae692726be"
+        },
+        {
+          "id": 77,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 16,
+          "phase": 6,
+          "scene_sha256": "7595f179ba2ec8d593337626d1b482fc351bc70b9ba56cd293915055825dbff3"
+        },
+        {
+          "id": 78,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 32,
+          "phase": 7,
+          "scene_sha256": "fa9f2a819c3de071fa2ef7a51213169d9f75c623b9cbe0d45543d2f3df175757"
+        },
+        {
+          "id": 79,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 48,
+          "phase": 4,
+          "scene_sha256": "729400e1e06fdce91cf070baaa7b7fce1ccbd84462a3b3e833cb1dbd5d4a105b"
+        },
+        {
+          "id": 80,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 64,
+          "phase": 2,
+          "scene_sha256": "db454a9a36ee13521a7910121b1e56abb112b4c17c476c7610e288880d696930"
+        },
+        {
+          "id": 81,
+          "attempt": 6,
+          "road_index": 30,
+          "tick": 80,
+          "phase": 7,
+          "scene_sha256": "c75043ae646a2a4e927eb3855714dea545a7b9bef477453d3dc5b29567d98e8c"
+        },
+        {
+          "id": 82,
+          "attempt": 7,
+          "road_index": 30,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "497bd1e5a04ac06e46a9e41892131796cf06d30ba65bc4588a86b0ae692726be"
+        },
+        {
+          "id": 83,
+          "attempt": 7,
+          "road_index": 30,
+          "tick": 16,
+          "phase": 6,
+          "scene_sha256": "7595f179ba2ec8d593337626d1b482fc351bc70b9ba56cd293915055825dbff3"
+        },
+        {
+          "id": 84,
+          "attempt": 7,
+          "road_index": 30,
+          "tick": 32,
+          "phase": 7,
+          "scene_sha256": "fa9f2a819c3de071fa2ef7a51213169d9f75c623b9cbe0d45543d2f3df175757"
+        },
+        {
+          "id": 85,
+          "attempt": 7,
+          "road_index": 30,
+          "tick": 48,
+          "phase": 4,
+          "scene_sha256": "729400e1e06fdce91cf070baaa7b7fce1ccbd84462a3b3e833cb1dbd5d4a105b"
+        },
+        {
+          "id": 86,
+          "attempt": 7,
+          "road_index": 30,
+          "tick": 64,
+          "phase": 2,
+          "scene_sha256": "db454a9a36ee13521a7910121b1e56abb112b4c17c476c7610e288880d696930"
+        }
+      ]
+    },
+    {
+      "run": "graphics-all-roads",
+      "trace_sha256": "271509621ec6b3f0c99cf3d3d7f5bed661860b3da2c597db64b0b8cb932b2fb9",
+      "manifest_sha256": "fdd80b76ba5f095b1b9bb726c2f973e5d0bba89c8fb378cdda5e58644bec9aea",
+      "probe_sha256": "7bae5c757d53b8c30e542c7aec921d0900126d267ff5b51b558089a09001bbc1",
+      "emulator_sha256": "e2d5ddbdfb74c8995c1e51cc6ec7271e7669808ba5bf0667e374fe508fc79590",
+      "source_files_unchanged": true,
+      "frames": [
+        {
+          "id": 1,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "7dc73b968dc2cb491ef5374ab5d1bbf1846540d85be5b450d149a38c2bc0ae17"
+        },
+        {
+          "id": 2,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "6494ce423ee6c01ec87c1f1e3f48cd9975987117806e22a86dea7c219146634c"
+        },
+        {
+          "id": 3,
+          "attempt": 1,
+          "road_index": 1,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "8c586cc5e564f79a4e225fc2e06bf0204a8b625cf82d87c87676adb4d01a653a"
+        },
+        {
+          "id": 4,
+          "attempt": 2,
+          "road_index": 2,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "c195edfc6c1af3c06dc95e25e835badacd4cca16bf1c064aa65f0d4a15bddaa4"
+        },
+        {
+          "id": 5,
+          "attempt": 2,
+          "road_index": 2,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "a10b3cda78d1a572d7755c90db741f518aab754244f874eb5c68fb0c2620dfff"
+        },
+        {
+          "id": 6,
+          "attempt": 2,
+          "road_index": 2,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "6394376fd8b762b1e2a5a9d9d964548a695dff594098344f2421868b574649ec"
+        },
+        {
+          "id": 7,
+          "attempt": 3,
+          "road_index": 3,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "b7fd3b50fa5d9092b483762552c39762ea85f253b8f37e91d99942c584618410"
+        },
+        {
+          "id": 8,
+          "attempt": 3,
+          "road_index": 3,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "c696501aa623a28f76cab32cb87c92a0d87f4b6206648e6f105c269cd9413f1b"
+        },
+        {
+          "id": 9,
+          "attempt": 3,
+          "road_index": 3,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "c76e6016f1eac0a168cdf14453553be8fcdca08e00337b44e64d8b204ae516f8"
+        },
+        {
+          "id": 10,
+          "attempt": 4,
+          "road_index": 4,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "b72f9ae3405d32a8d17b8192c8d86de8441daf5ae1a45db228d88b5bc7d14f6b"
+        },
+        {
+          "id": 11,
+          "attempt": 4,
+          "road_index": 4,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "b72f9ae3405d32a8d17b8192c8d86de8441daf5ae1a45db228d88b5bc7d14f6b"
+        },
+        {
+          "id": 12,
+          "attempt": 4,
+          "road_index": 4,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "b72f9ae3405d32a8d17b8192c8d86de8441daf5ae1a45db228d88b5bc7d14f6b"
+        },
+        {
+          "id": 13,
+          "attempt": 5,
+          "road_index": 5,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "e344e7d5f8cd9b23c3a5d2ce69794414c68a3b93ce40ec5887fe742185707e2c"
+        },
+        {
+          "id": 14,
+          "attempt": 5,
+          "road_index": 5,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "07dcfcebfa253476ef85275fe436f470239c8246828e2376913c2a60e00408d4"
+        },
+        {
+          "id": 15,
+          "attempt": 5,
+          "road_index": 5,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "a180782afa2a06b94f99af8fa33636d927a1f2bc4e39555dc5cdb4811444aa4c"
+        },
+        {
+          "id": 16,
+          "attempt": 6,
+          "road_index": 6,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "dd81b8abd4664d01382c39029a3926851eda665deba265242cc52d61a223313a"
+        },
+        {
+          "id": 17,
+          "attempt": 6,
+          "road_index": 6,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "fe642377be93eadc13b47d641980a9d0c390b54d43237cc2d2521cd0f16d73af"
+        },
+        {
+          "id": 18,
+          "attempt": 6,
+          "road_index": 6,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "703fbda542e1afa32716b1872b4f4dcf7b413c5636a452c855fec7b320d3ec9e"
+        },
+        {
+          "id": 19,
+          "attempt": 7,
+          "road_index": 7,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "93cfbd17183651f77c3d2cf34a16036eb9190a7f32986f08ab16273676294527"
+        },
+        {
+          "id": 20,
+          "attempt": 7,
+          "road_index": 7,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "b6b7be293f625e1eddf6dcf0ec523183e1520a6aeb4fffd878ad93438d77fe1e"
+        },
+        {
+          "id": 21,
+          "attempt": 7,
+          "road_index": 7,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "0ec5de308020f07af22995e39374eee27cb6fa7e871eeb6c6ddbb9136c079abf"
+        },
+        {
+          "id": 22,
+          "attempt": 8,
+          "road_index": 8,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "2c472c8c38461fc4bb0252d091764e3e271fa44647cfad0d7be092f500523554"
+        },
+        {
+          "id": 23,
+          "attempt": 8,
+          "road_index": 8,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "c5ea19b1850ea70c3ee3efe25db7bafe91038d4a956656a2a62dd800a5d6b14a"
+        },
+        {
+          "id": 24,
+          "attempt": 8,
+          "road_index": 8,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "495ea215c740ef375f378b40342fa3e189a0548ba19e9c2ce893e5c239d3bc3e"
+        },
+        {
+          "id": 25,
+          "attempt": 9,
+          "road_index": 9,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "e9ce8c5e49c341b156f5fc284740e665d8d0c69a6ddb115067285df528aea8c8"
+        },
+        {
+          "id": 26,
+          "attempt": 9,
+          "road_index": 9,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "b113a2f862dda67a898c53df14232ddfe8af40680cbac331ae5f7f2016ccf1af"
+        },
+        {
+          "id": 27,
+          "attempt": 9,
+          "road_index": 9,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "d761d09730a39ef19c4390543d24b5a00ff168fd621d63cafcabf525d5504b86"
+        },
+        {
+          "id": 28,
+          "attempt": 10,
+          "road_index": 10,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "81f4b5067d9cfcb523ca839b967b282c2aee6c78eede9a5b06e3018d0334289c"
+        },
+        {
+          "id": 29,
+          "attempt": 10,
+          "road_index": 10,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "7a255083e994ecfba1fd10a621051fd72d6fb4b1b99cec1452d996d4654c1061"
+        },
+        {
+          "id": 30,
+          "attempt": 10,
+          "road_index": 10,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "5f9faed42bb70882201c6f2c2149e7fcaee7aa12a1e61b71801f161fd8048ad3"
+        },
+        {
+          "id": 31,
+          "attempt": 11,
+          "road_index": 11,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "3d50c295cffda5892b972429f031aec4659878a2b969db13446652e1ca9e01f2"
+        },
+        {
+          "id": 32,
+          "attempt": 11,
+          "road_index": 11,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "17825f9aa362b6a0796d5fe6b9ee3c507aacfc5e93c0c50d85e562073813624d"
+        },
+        {
+          "id": 33,
+          "attempt": 11,
+          "road_index": 11,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "bb6f5187454c5c0ba2baf8955d3255170aea1483a0549b802b9bbc11bcb6ab0d"
+        },
+        {
+          "id": 34,
+          "attempt": 12,
+          "road_index": 12,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "145a04bda11eb3f1ad1959f80c60354c7f9663d0309b0843646cc64af1a13ee2"
+        },
+        {
+          "id": 35,
+          "attempt": 12,
+          "road_index": 12,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "865cfcf18111d0053aaa4660628189666f103c6a226e32238da57b55944eedbd"
+        },
+        {
+          "id": 36,
+          "attempt": 12,
+          "road_index": 12,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "d6fb342449b69d984bbe12e43aa856e11837e9dde19b8c9c86a77bc02aa42e1b"
+        },
+        {
+          "id": 37,
+          "attempt": 13,
+          "road_index": 13,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "d0c7bfa4627ce3cc5eb4e9ea6133c83dd813f0b194bc2135a43041082d7fc805"
+        },
+        {
+          "id": 38,
+          "attempt": 13,
+          "road_index": 13,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "12052882e63e207ca8f7683a1311539660e2534a746dc3fd7b727b658b8dc117"
+        },
+        {
+          "id": 39,
+          "attempt": 13,
+          "road_index": 13,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "a4cb125bdecbf4c558684f2ca75c79fa32de618e3f48e36e12697c725cc74d91"
+        },
+        {
+          "id": 40,
+          "attempt": 14,
+          "road_index": 14,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "6dc54bed92d2cff7d074d07dfe407399ce01dfdaa92d363c29acd13b6490b5cb"
+        },
+        {
+          "id": 41,
+          "attempt": 14,
+          "road_index": 14,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "cca121e31496c7c064c4f8ce42aa49af5d2efb4daec4a205a67af3ca1b12d69a"
+        },
+        {
+          "id": 42,
+          "attempt": 14,
+          "road_index": 14,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "5d4653e1d9c4e830f8dbb2980c28c7be26026116461d6596b0ff0bda65a06e8f"
+        },
+        {
+          "id": 43,
+          "attempt": 15,
+          "road_index": 15,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "647c6ee9b2f762f57759e400c59359f53786a62f4498ea6619537554030f6d62"
+        },
+        {
+          "id": 44,
+          "attempt": 15,
+          "road_index": 15,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "38196efe37d425fcf371838687f4ff2bd4989766f245ca9b7ad1806613fcea49"
+        },
+        {
+          "id": 45,
+          "attempt": 15,
+          "road_index": 15,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "4cc1d9bd34b937e32b2ed666a1d59a743aa65e12755cb1d5e15e6dd72503d014"
+        },
+        {
+          "id": 46,
+          "attempt": 16,
+          "road_index": 16,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "03e4f32b47b5acdc5910266960401711592eac796161563eea92958edeff794d"
+        },
+        {
+          "id": 47,
+          "attempt": 16,
+          "road_index": 16,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "64938c259c893884ad214ca73f57014d73ec57908b8b6a7b10d8e2438aa1a064"
+        },
+        {
+          "id": 48,
+          "attempt": 16,
+          "road_index": 16,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "47c58c1d9e043987d9de71d0145a2f8d9359e357479c9fbbe577acbfbfcfac8b"
+        },
+        {
+          "id": 49,
+          "attempt": 17,
+          "road_index": 17,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "a8fbe9b6ba1e5ace1945e23ac6f6d17807ba63355b9595fac6ac9e945681472e"
+        },
+        {
+          "id": 50,
+          "attempt": 17,
+          "road_index": 17,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "9987635ead0e15fff2d650a9da8dd82095579577125cccf968c6b214233d7f8b"
+        },
+        {
+          "id": 51,
+          "attempt": 17,
+          "road_index": 17,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "d997f476fc12201f70236357381e921fe4e4e7c8c4ce4bbcc7a8d4897d0d3c0f"
+        },
+        {
+          "id": 52,
+          "attempt": 18,
+          "road_index": 18,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "e56060458d516b9eea4cd0516a08843dca0f5a1bb2b96b6692ed91795bdbbd78"
+        },
+        {
+          "id": 53,
+          "attempt": 18,
+          "road_index": 18,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "4001ebd9180016c32f025b7b57e607a59ce0498b52d0898a194234e2df460934"
+        },
+        {
+          "id": 54,
+          "attempt": 18,
+          "road_index": 18,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "6f0845087f883d04e0ea5ab8b7fa8316dce56c2d9b073b3e4c46b41444445635"
+        },
+        {
+          "id": 55,
+          "attempt": 19,
+          "road_index": 19,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "856a552a208bff87c3b1a50bcf161f2e251ad32ac381261c26fafd8aa0ed8ba4"
+        },
+        {
+          "id": 56,
+          "attempt": 19,
+          "road_index": 19,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "73c96dc6329de1e2f32c72baa42d4900ab5435d19d6e5a790423456135e4adec"
+        },
+        {
+          "id": 57,
+          "attempt": 19,
+          "road_index": 19,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "7d5765f4ff379a2bc0546038d802ad50eb1e7543ca3ba5b64240185e44170ef5"
+        },
+        {
+          "id": 58,
+          "attempt": 20,
+          "road_index": 20,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "5f0d0ec331d2053f46316dc60268d69497f78ea5814f8a068a9dca04dfca3575"
+        },
+        {
+          "id": 59,
+          "attempt": 20,
+          "road_index": 20,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "659c6cf5aedbe4aa42b8d820d25007db6a7fb1d3e1c7dcb889cfadc40633993a"
+        },
+        {
+          "id": 60,
+          "attempt": 20,
+          "road_index": 20,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "e72dddb4210c25d68fc9d2f1919c4dcbf558000593fa5f8987ee4d7d9c0320ff"
+        },
+        {
+          "id": 61,
+          "attempt": 21,
+          "road_index": 21,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "d41f4d9ded87c32178fd46951bc03f1c238469e806e140e99574bb274cecdda2"
+        },
+        {
+          "id": 62,
+          "attempt": 21,
+          "road_index": 21,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "0226a522468b1688bf26d01d608341e88c4a42aebefc67ec60240bafa2c20963"
+        },
+        {
+          "id": 63,
+          "attempt": 21,
+          "road_index": 21,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "431b75178a6377d44180899b46fea0b9e6981044832a5c365b5909082e0c2d0d"
+        },
+        {
+          "id": 64,
+          "attempt": 22,
+          "road_index": 22,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "299285ef90bd8100d3bb42a7c853f27c784c55f235525691f676fad6ffd5a4e0"
+        },
+        {
+          "id": 65,
+          "attempt": 22,
+          "road_index": 22,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "26899b46426b3d4a8aa7a0d5454d7f97fcaf4c66c933390881b8e400f3967f51"
+        },
+        {
+          "id": 66,
+          "attempt": 22,
+          "road_index": 22,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "122bd577a42bf929d91edadbee947a813beb85e85e0fce0a2fd79dabb42280eb"
+        },
+        {
+          "id": 67,
+          "attempt": 23,
+          "road_index": 23,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "48b796348531b7022f5e5c556bf8cbce62ceec882c01a72f08fe426adc6c1e9e"
+        },
+        {
+          "id": 68,
+          "attempt": 23,
+          "road_index": 23,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "9fa9c81e9b0ba02050f2475c3305c9b92a1d4cfbb805f0eb7368a4868c5eae28"
+        },
+        {
+          "id": 69,
+          "attempt": 23,
+          "road_index": 23,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "abbc274763d9674f7a2c5b43a075bab6b5f07fe3d21742db35e3c35da661accd"
+        },
+        {
+          "id": 70,
+          "attempt": 24,
+          "road_index": 24,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "435f6a65b5adb7dcd3d7710579973f6e89cc566d9c280b0dfde58ecc94b81992"
+        },
+        {
+          "id": 71,
+          "attempt": 24,
+          "road_index": 24,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "f77da90a7b85dbc6ea8f609bf48e779203a06bcf89853c5ffe45884adc95a045"
+        },
+        {
+          "id": 72,
+          "attempt": 24,
+          "road_index": 24,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "548c5e130fd6be441863bacbfbfdc6d9f27d70ccf4bace4c8175cf2b2c0b7b2d"
+        },
+        {
+          "id": 73,
+          "attempt": 25,
+          "road_index": 25,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "5b1ac6bf3a5d2bd1f74e960af84bef66afcf7547f95146e176ab17da448d64d8"
+        },
+        {
+          "id": 74,
+          "attempt": 25,
+          "road_index": 25,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "deffdcea219e3a7b9f265bb8ba95deb7c904c644299d224a65f5be23bc59cbd7"
+        },
+        {
+          "id": 75,
+          "attempt": 25,
+          "road_index": 25,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "94b21a7397c4c3e72f806f7f6bbff0471518993468cb10cd8b56d4930cf92e7b"
+        },
+        {
+          "id": 76,
+          "attempt": 26,
+          "road_index": 26,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "79932214d742b324845546f8feaa12148205381d9b05c8b1d776d9f0a2487cf3"
+        },
+        {
+          "id": 77,
+          "attempt": 26,
+          "road_index": 26,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "c1a609658126123b2e671b27c3cfccf04b6c89bc992f17d74e60f79d32227873"
+        },
+        {
+          "id": 78,
+          "attempt": 26,
+          "road_index": 26,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "4e81ad29b8489083373f5ec9980d1f115763bd7c81e21c3aa05bee7e5ea07211"
+        },
+        {
+          "id": 79,
+          "attempt": 27,
+          "road_index": 27,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "b399f57e7a02997546a7bbd254af1e600878824a615b361c308efac9e39efb6b"
+        },
+        {
+          "id": 80,
+          "attempt": 27,
+          "road_index": 27,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "0ffc7764a70c0f2e400b250187e80aa5bb07d829eba543011a849c08bb96f422"
+        },
+        {
+          "id": 81,
+          "attempt": 27,
+          "road_index": 27,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "7a8d8f8275121932670e0bd28da648b36287ed7824f74bb9dc61764ab65dc6db"
+        },
+        {
+          "id": 82,
+          "attempt": 28,
+          "road_index": 28,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "717e1bdad8462347380cd8094d24c3b98865a9c1402d783d6fd6f2926ebafafa"
+        },
+        {
+          "id": 83,
+          "attempt": 28,
+          "road_index": 28,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "723a4b80c35f6679cc5184a6884abdb131d06d11b795bc9f290ea492c0db7cba"
+        },
+        {
+          "id": 84,
+          "attempt": 28,
+          "road_index": 28,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "1f42744c55086d2eae3ba7579b9a78f18ffca2f04473a5d77612919c45bfba9e"
+        },
+        {
+          "id": 85,
+          "attempt": 29,
+          "road_index": 29,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "f5f93a8fdba15c07400488ee4fd4c28779e92fa75101d8ddafddfc672e8ac801"
+        },
+        {
+          "id": 86,
+          "attempt": 29,
+          "road_index": 29,
+          "tick": 16,
+          "phase": 1,
+          "scene_sha256": "28760835b1b30b0f414cd2b3dede3a440037435bb5d4a1802691b57548a0d7e6"
+        },
+        {
+          "id": 87,
+          "attempt": 29,
+          "road_index": 29,
+          "tick": 32,
+          "phase": 4,
+          "scene_sha256": "94a47d2eb0629ede3f4432a7a91d7397fe379021b777bf2b2cdec9fd3421217a"
+        },
+        {
+          "id": 88,
+          "attempt": 30,
+          "road_index": 30,
+          "tick": 0,
+          "phase": 0,
+          "scene_sha256": "497bd1e5a04ac06e46a9e41892131796cf06d30ba65bc4588a86b0ae692726be"
+        },
+        {
+          "id": 89,
+          "attempt": 30,
+          "road_index": 30,
+          "tick": 16,
+          "phase": 6,
+          "scene_sha256": "7595f179ba2ec8d593337626d1b482fc351bc70b9ba56cd293915055825dbff3"
+        },
+        {
+          "id": 90,
+          "attempt": 30,
+          "road_index": 30,
+          "tick": 32,
+          "phase": 7,
+          "scene_sha256": "fa9f2a819c3de071fa2ef7a51213169d9f75c623b9cbe0d45543d2f3df175757"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "44160-byte (320x138) original scene buffers; each extracted car, background and 256-color palette matches the corresponding original RAM.",
+    "Palette RGB conversion and browser display scaling require separate checks.",
+    "Host keyboard/display latency, audio and animated HUD indicators are not covered."
+  ]
+}

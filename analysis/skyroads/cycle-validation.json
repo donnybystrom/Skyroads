@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "counts": {
+    "keyboard_combinations": 2048,
+    "initializers": 52,
+    "pause_input": 15,
+    "initial_stack_seeds": 270,
+    "hazard_cycle": 42,
+    "fall_cycle": 109,
+    "resource_cycle": 109,
+    "finish_cycle": 105,
+    "catchup_wrap": 7,
+    "exit_gate_boundaries": 7,
+    "real_road_cycle": 6262
+  },
+  "total_frames": 6926,
+  "boundaries": {
+    "playing": 6826,
+    "pause_release": 2,
+    "pause_press": 2,
+    "pause_clear": 2,
+    "finishing": 102
+  },
+  "result_stream_sha256": "8093590a04d8e2910c88c1d86dd2437cef8cf0b7a4e9614b1ac7b119b91c31d3",
+  "instructions": 60512552,
+  "elapsed_seconds": 123.07,
+  "limitations": [
+    "Drawing calls virtualized; HUD arithmetic and sound timestamp writes execute.",
+    "Timer and held-key IRQ state injected at original wait boundaries; DOS/BIOS latency not emulated.",
+    "Explicit seeds for three unspecified stack words; no historical DOS stack reconstruction.",
+    "Actual roads exercise failed attempts; successful finish uses a synthetic tunnel fixture."
+  ]
+}

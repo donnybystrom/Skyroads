@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-10",
+  "url": "http://127.0.0.1:8766/physics-viewer.html",
+  "selected_roads": [
+    {
+      "road": 0,
+      "label": "Demoarkiv 00 · manuell analys",
+      "value": "0"
+    },
+    {
+      "road": 1,
+      "label": "Bana 01 · 55 rader",
+      "value": "1"
+    },
+    {
+      "road": 2,
+      "label": "Bana 02 · 115 rader",
+      "value": "2"
+    },
+    {
+      "road": 3,
+      "label": "Bana 03 · 60 rader",
+      "value": "3"
+    },
+    {
+      "road": 4,
+      "label": "Bana 04 · 94 rader",
+      "value": "4"
+    },
+    {
+      "road": 5,
+      "label": "Bana 05 · 126 rader",
+      "value": "5"
+    },
+    {
+      "road": 6,
+      "label": "Bana 06 · 48 rader",
+      "value": "6"
+    },
+    {
+      "road": 7,
+      "label": "Bana 07 · 60 rader",
+      "value": "7"
+    },
+    {
+      "road": 8,
+      "label": "Bana 08 · 106 rader",
+      "value": "8"
+    },
+    {
+      "road": 9,
+      "label": "Bana 09 · 70 rader",
+      "value": "9"
+    },
+    {
+      "road": 10,
+      "label": "Bana 10 · 81 rader",
+      "value": "10"
+    },
+    {
+      "road": 11,
+      "label": "Bana 11 · 199 rader",
+      "value": "11"
+    },
+    {
+      "road": 12,
+      "label": "Bana 12 · 164 rader",
+      "value": "12"
+    },
+    {
+      "road": 13,
+      "label": "Bana 13 · 112 rader",
+      "value": "13"
+    },
+    {
+      "road": 14,
+      "label": "Bana 14 · 237 rader",
+      "value": "14"
+    },
+    {
+      "road": 15,
+      "label": "Bana 15 · 201 rader",
+      "value": "15"
+    },
+    {
+      "road": 16,
+      "label": "Bana 16 · 137 rader",
+      "value": "16"
+    },
+    {
+      "road": 17,
+      "label": "Bana 17 · 153 rader",
+      "value": "17"
+    },
+    {
+      "road": 18,
+      "label": "Bana 18 · 163 rader",
+      "value": "18"
+    },
+    {
+      "road": 19,
+      "label": "Bana 19 · 147 rader",
+      "value": "19"
+    },
+    {
+      "road": 20,
+      "label": "Bana 20 · 186 rader",
+      "value": "20"
+    },
+    {
+      "road": 21,
+      "label": "Bana 21 · 130 rader",
+      "value": "21"
+    },
+    {
+      "road": 22,
+      "label": "Bana 22 · 160 rader",
+      "value": "22"
+    },
+    {
+      "road": 23,
+      "label": "Bana 23 · 224 rader",
+      "value": "23"
+    },
+    {
+      "road": 24,
+      "label": "Bana 24 · 83 rader",
+      "value": "24"
+    },
+    {
+      "road": 25,
+      "label": "Bana 25 · 150 rader",
+      "value": "25"
+    },
+    {
+      "road": 26,
+      "label": "Bana 26 · 191 rader",
+      "value": "26"
+    },
+    {
+      "road": 27,
+      "label": "Bana 27 · 166 rader",
+      "value": "27"
+    },
+    {
+      "road": 28,
+      "label": "Bana 28 · 234 rader",
+      "value": "28"
+    },
+    {
+      "road": 29,
+      "label": "Bana 29 · 136 rader",
+      "value": "29"
+    },
+    {
+      "road": 30,
+      "label": "Bana 30 · 200 rader",
+      "value": "30"
+    }
+  ],
+  "manual_actions": [
+    "Step with automatic throttle",
+    "Play",
+    "Space jump",
+    "Right steering",
+    "Inspection pause",
+    "Python replay verified 328 samples",
+    "Save verified 328 samples",
+    "Select all 31 archive roads"
+  ],
+  "recording": "recordings/cycle-01-20261010-082028-7f68b9fe.json",
+  "console_errors_and_warnings": [],
+  "screenshots": [
+    "screenshots/graphics-road01.png",
+    "screenshots/graphics-tunnels-road03.png",
+    "screenshots/graphics-road24.png"
+  ],
+  "limits": [
+    "Road selector selection verified through visible DOM; native indexed image comparisons are in graphics-validation.json.",
+    "No physical keyboard-to-photon latency measurement.",
+    "Dynamic dashboard gauges, audio and wrapper fades remain pending."
+  ]
+}

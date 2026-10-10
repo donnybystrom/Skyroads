@@ -1,0 +1,145 @@
+{
+  "verified": true,
+  "native_run": "response-irq-realtime-20000",
+  "native_physics_steps": 287,
+  "native_keyboard_irq_returns": 408,
+  "native_gameplay_clock_ratio": 1.0108140219687674,
+  "native_responses": [
+    {
+      "key": "KBD_up",
+      "down": true,
+      "ms_since_initial": 0.99545,
+      "controller_to_irq_ms": 0.6083,
+      "controller_to_poll_ms": 4.14515,
+      "poll_tick": 0,
+      "controller_to_step_ms": 4.8392,
+      "controller_to_scene_ms": 8.7994,
+      "host_controller_to_scene_ms": 8.326375
+    },
+    {
+      "key": "KBD_space",
+      "down": true,
+      "ms_since_initial": 699.9955,
+      "controller_to_irq_ms": 0.30845,
+      "controller_to_poll_ms": 26.2576,
+      "poll_tick": 26,
+      "controller_to_step_ms": 26.399,
+      "controller_to_scene_ms": 30.55665,
+      "host_controller_to_scene_ms": 29.138625
+    },
+    {
+      "key": "KBD_space",
+      "down": false,
+      "ms_since_initial": 729.9955,
+      "controller_to_irq_ms": 0.30845,
+      "controller_to_poll_ms": 24.0314,
+      "poll_tick": 27,
+      "controller_to_step_ms": 24.1692,
+      "controller_to_scene_ms": 28.26375,
+      "host_controller_to_scene_ms": 29.579834
+    },
+    {
+      "key": "KBD_p",
+      "down": true,
+      "ms_since_initial": 999.9955,
+      "controller_to_irq_ms": 0.3087,
+      "path": "pause busy-poll or superseded before next normal poll"
+    },
+    {
+      "key": "KBD_up",
+      "down": false,
+      "ms_since_initial": 1009.9955,
+      "controller_to_irq_ms": 0.60825,
+      "controller_to_poll_ms": 299.5208,
+      "poll_tick": 37,
+      "controller_to_step_ms": 299.65835,
+      "controller_to_scene_ms": 303.46295,
+      "host_controller_to_scene_ms": 302.130167
+    },
+    {
+      "key": "KBD_p",
+      "down": false,
+      "ms_since_initial": 1099.99545,
+      "controller_to_irq_ms": 0.30875,
+      "path": "pause busy-poll or superseded before next normal poll"
+    },
+    {
+      "key": "KBD_space",
+      "down": true,
+      "ms_since_initial": 1299.99545,
+      "controller_to_irq_ms": 0.30855,
+      "path": "pause busy-poll or superseded before next normal poll"
+    },
+    {
+      "key": "KBD_space",
+      "down": false,
+      "ms_since_initial": 1304.99545,
+      "controller_to_irq_ms": 0.3085,
+      "controller_to_poll_ms": 4.52085,
+      "poll_tick": 37,
+      "controller_to_step_ms": 4.6584,
+      "controller_to_scene_ms": 8.463,
+      "host_controller_to_scene_ms": 7.68775
+    },
+    {
+      "key": "KBD_up",
+      "down": true,
+      "ms_since_initial": 1449.9955,
+      "controller_to_irq_ms": 0.60825,
+      "controller_to_poll_ms": 26.16765,
+      "poll_tick": 43,
+      "controller_to_step_ms": 26.3051,
+      "controller_to_scene_ms": 30.08255,
+      "host_controller_to_scene_ms": 29.085333
+    }
+  ],
+  "browser_recording": "analysis/skyroads/recordings/cycle-01-20261010-145206-a95877b7.json",
+  "browser_timer_events": 10,
+  "browser_receipt_to_canvas_ms": {
+    "min": 10.3,
+    "median": 16.65,
+    "max": 22.8
+  },
+  "browser_pause_events": 3,
+  "limits": [
+    "Native controller-injection and browser key-event receipt are different starting points; these numbers are not a latency ranking.",
+    "Native endpoint: RenderShipAndRoadScene return after VGA drawing; browser endpoint: canvas draw return. Neither measures compositor, scanout or photons.",
+    "PIT phase at attempt start is free-running in the original. Browser starts a new host clock. Absolute first-step phase is not proven equivalent.",
+    "Native run uses SDL dummy video and muted audio. Browser sample is finite and includes host/tool overhead. No hardware display test.",
+    "Under host stalls the browser queues historical keys per quantum; original catch-up can reuse the newest poll for multiple ticks. That edge remains to test."
+  ],
+  "source_sha256": {
+    "ANIM.LZS": "6630fcf84f568dd505303ab0dd5f8c79e576ee2c93c585f973c62956ef667afc",
+    "SETMENU.LZS": "86fd9ad57ea787beda20f00b4dce1ed4d1ae0e4b2645cb529b65ae734f6df636",
+    "ROADS.LZS": "19551b52d5a9e87d62ebea5e98a559f3fe76a98947924f85d2787d00f8333d83",
+    "FUL_DISP.DAT": "a6f50b73abd0d2ebf97508cf12e2b9f7b29aeff29b794a2ab595ede9c93a12b5",
+    "SKYROADS.CFG": "3f695c8796b6b89e664fd0f72b8fd2f8e5c7c5b225ebd7df0469ca6b7d9d3d67",
+    "MUZAX.LZS": "917cb69a9274a9cbed7c30235a61e1f5cf9141957e65edccaf160867ffeda794",
+    "WORLD1.LZS": "c1c41f5730010aa2b4051697ce02d381fdb4f6b4d4ab9cd4d3c80c19353aee91",
+    "MAINMENU.LZS": "45b0dbb2866f8b84b0253ca002fab01fba0c53b1f8593b1fb18119e570ae3a07",
+    "SFX.SND": "7c17c601f5e58ef9c286cf9e6c19aa8fd287cfa6836be3920dbb78d904c3ea4e",
+    "WORLD0.LZS": "e120ca2f8a9fb44c5f921b0f76bfa178ad79b19ba94c9e0627bebf0672b21358",
+    "WORLD2.LZS": "bd40edbe99818554749616dd248fa15aef76f4f2da932d5193d91f5fe254426b",
+    "WORLD3.LZS": "cebeafebd64fab9e68c91aa4a8c1f68e07fe0cec0fa7070ae5c35b65f655b0bc",
+    "WORLD7.LZS": "1e66a77e5594ab114e285ce4414ed27228c7fa38a398d60cf46527a3baf75b63",
+    "SPEED.DAT": "97bff2d41fdde4953d986cb2d9011718f302ff46bb8d21abbb267343b086b7fc",
+    "WORLD6.LZS": "f96b0ea6f2ddbedc2d4deeeb3b3cd24d457d55ad42a5b5a876d6d384a8410d59",
+    "WORLD4.LZS": "fc125d221b6a713cbce24b9a4fe39bfff2cef564980080e8a981a7c93bb217c1",
+    "HELPMENU.LZS": "dea84716632272948c8c76626b51d9c0f559494dc5f4c45346eb052f16832049",
+    "LOGO.PCX": "4e9a8a13a92265ee09f1fff61a70a445ac0603e4aa6a748a8b8d6b25b11ef474",
+    "WORLD5.LZS": "d64735b3565ece174976ff36f94b2d71cea2abf91be2bde35112f6e61d72f83a",
+    "WORLD8.LZS": "696087230a90766d445c1d946bcc97980961595c837b792870e018c5ced234e2",
+    "CARS.LZS": "86b7832783bde0b67443104eba66196ed8ba31148339192db00c67eaddf9929e",
+    "OXY_DISP.DAT": "a5d00c24e3b0d6cb14792926055445fa970e2109e8da2ff4ff2b72fe81ec3d6f",
+    "WORLD9.LZS": "3ea0c840e723fe097d92f84e3747007f662a21eb3ef6e0f532624fc1f9c63178",
+    "GOMENU.LZS": "8852c378ecdb9165183924ca81b3b0ace9ed73b1cca5ac364fbfe18f6abc885f",
+    "DEMO.REC": "2bb53c6cd62f2cd2a8657cd05bf9e33054570c1e3e98dd89e18587156867016e",
+    "SKYROADS.EXE": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f",
+    "INTRO.SND": "f2eff08cf5ed7986c89232d21468b53c7cce5826f519585d44d97eec58bb510c",
+    "INTRO.LZS": "7e470a538a86323f954748fe1852858fefb1af578ed39aa57b3a002a035d7e75",
+    "DASHBRD.LZS": "c1ad75492f9d93fa9e40c17b39fbd4c21ee6d9188547fea09fbc41c9e719ea8c",
+    "TREKDAT.LZS": "513b572fc159f6e8219fd3b53f5f8e51df71ef0df7e4e6c72219b08755f3819b",
+    "skyroads.doc": "0af14fe8321368b44b6e529f198050590a58eea564a90ed941965baea164f4b5"
+  },
+  "trace_sha256": "87cbede052a7c41eaec3850e289ef2ad1b5132badbe6bb057ebb2e8256d8596f"
+}

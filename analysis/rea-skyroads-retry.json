@@ -1,0 +1,30 @@
+{
+  "error": "Analysis failed",
+  "code": "execution_failure",
+  "category": "execution_failure",
+  "message": "Analysis could not complete. Retry once; if it continues, run `rea doctor`.",
+  "retryable": false,
+  "remediation": {
+    "action": "Analysis could not complete. Retry once; if it continues, run `rea doctor`."
+  },
+  "details": {
+    "provider_id": "ghidra",
+    "operation": "list_documents",
+    "diagnostics": {
+      "target_path": "/Users/donnybystrom/code/SRE/Skyroads-binary/SkyRoads_DOS_EN_Registered-v10/SKYROADS.EXE",
+      "target_sha256": "ce1b1ec1688eb853b6fbb11614793d8c4bef563b0d31e5cbd76cd1801832ec0f",
+      "transport": "unix-socket",
+      "provider_version": "12.1.4",
+      "profile_digest": "894e458d232de9bdeb2a5d661cd2b4791ee9e10f88d297423fc0c7553a7a66d8",
+      "run_id": "e091625b-f7b1-4a3d-a1ae-e1cdd5a0fffb",
+      "runtime_root": "/var/folders/n5/gk7cs8qn6ml2dq2xyqbct96w0000gn/T/rea-ghidra-WJ9mPP",
+      "endpoint_path": "/var/folders/n5/gk7cs8qn6ml2dq2xyqbct96w0000gn/T/rea-ghidra-WJ9mPP/bridge.sock",
+      "failure_cause": {
+        "name": "GhidraLaunchError",
+        "message": "Ghidra headless launch failed"
+      },
+      "failure_kind": "start",
+      "failure_message": "Ghidra headless launch failed"
+    }
+  }
+}

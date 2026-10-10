@@ -1,0 +1,9 @@
+* text=auto eol=lf
+Skyroads-binary/** -text
+*.bin -text
+*.exe -text
+*.EXE -text
+*.flac -text
+*.wav -text
+*.png -text
+*.jpg -text

@@ -1,0 +1,15 @@
+# SRE integrations. Append these tables to the user Codex config.
+[mcp_servers.ghidra-sre]
+command = "/bin/bash"
+args = ["/Users/donnybystrom/code/SRE/scripts/ghidra-mcp.sh"]
+startup_timeout_sec = 120
+tool_timeout_sec = 300
+enabled = true
+
+[mcp_servers.rea-sre]
+command = "/bin/bash"
+args = ["/Users/donnybystrom/code/SRE/scripts/rea.sh", "mcp"]
+startup_timeout_sec = 30
+tool_timeout_sec = 300
+enabled = true
+

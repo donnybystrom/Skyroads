@@ -1,0 +1,37 @@
+[
+  {
+    "address": "1000:57c4",
+    "name": "LoadAdlibMusicScore",
+    "plate_comment": "Load one of ten MUZAX.LZS records: six-byte directory entries (file offset, instrument paragraphs, decoded length). Decode to DS54b0, start score at54b0+paragraphs*16. Main selects1..9 with hardware timer entropy, avoids immediate repeats;0 title/demo. Does not reset remaining IRQ delay byte0c83. All ten decoded assets and21552 sequencer OPL writes match full native runs; audio-validation.json."
+  },
+  {
+    "address": "1000:58cd",
+    "name": "InitializeAdlibSynthesizer",
+    "plate_comment": "Initialize AdLib OPL registers and rhythm instruments. Writes63 register/value pairs via5892, including waveform-enable20h to register01h and rhythm controlBD. Pinned DOSBox-X DBOPL OPL2 renders the extracted original score streams to lossless FLAC. Physical DAC/analog response is outside verification."
+  },
+  {
+    "address": "1000:5892",
+    "name": "WriteAdlibRegister",
+    "plate_comment": "Write AL register to port388h, wait six reads, write AH value to389h, wait35 reads. Native observer records entry AL/AH without modifying guest memory/registers.21552 ordered register/value writes and IRQ-relative timing match isolated original sequencer executions over all ten scores."
+  },
+  {
+    "address": "1000:5a7d",
+    "name": "SetAdlibScorePointers",
+    "plate_comment": "Set DS3196/3198 score cursor/loop pointer from first argument, DS3194 instrument base from second, clear31a6. IRQ0 calls sequencer5a55 at1193182/6628 Hz independently of the36.004 Hz physics counter. Original P-pause continues music; retry does not reload music. Native score changes inherit0c83 delay."
+  },
+  {
+    "address": "1000:5b76",
+    "name": "StartSoundBlasterSample",
+    "plate_comment": "Program DMA and DSP40h time constant, then14h unsigned8-bit single-cycle playback with length-1. SFX.SND begins six uint16 offsets delimiting five effects; each first byte is DSP time constant, followed by unchanged unsigned PCM. All five original driver cases/PCM bytes verified. Reference SB16 caps236 to234 for effect2 (45454Hz integer rate); native other sample calls and intro constant90 verified."
+  },
+  {
+    "address": "1000:5bc0",
+    "name": "StopSoundBlasterSample",
+    "plate_comment": "Stop preceding digital sample with DSPD0h and mask DMA channel before replacement. Original effects share one digital channel; music AdLib channel is independent. Browser mirror interrupts prior effect at each original sound event. Five original unmuted driver cases execute in isolated x86 fixture."
+  },
+  {
+    "address": "1000:03c2",
+    "name": null,
+    "plate_comment": "Request original sound effect and update last-sound timer DSaf38. Index0 crash,1 landing,2 obstruction,3 resource warning,4 refill. Muted451a branch, PC speaker0cb6=0 branch and Sound Blaster digital branch. Five unmuted digital driver/sample cases verified;55 sound requests match native full-game physics tick boundaries. Existing5370 tick/4667 continuous physics results remain unchanged. Browser audio is a presentation sink; it must not change sound_busy or gameplay timestamps."
+  }
+]

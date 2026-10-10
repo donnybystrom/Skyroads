@@ -1,0 +1,57 @@
+[
+  {
+    "address": "1000:4e52",
+    "name": "RunMainMenu",
+    "plate_comment": "Main menu Start/Controls/Help, SI selection 0..2, bounded Up/Down, Enter dispatch. Esc calls termination 0046. INTRO.LZS background/logo and MAINMENU.LZS three overlays. All seven captured main frames match reconstructed indexed pixels and used palette entries; menu-validation.json."
+  },
+  {
+    "address": "1000:4c20",
+    "name": "RunControlsMenu",
+    "plate_comment": "SETMENU.LZS base200 background/base250 ten overlays. Focus0 keyboard,1 joystick,2 mouse,3 AdLib,4 none. Enter writes DS4518 or DS451a=focus-3. Left/Right bounded; Up maps3->0,4->1; Down0->3,1/2->4. Esc saves CFG. Eight whole-program frames match, including music off/on; no joystick/mouse gameplay equivalence claim."
+  },
+  {
+    "address": "1000:4e2e",
+    "name": "RunHelpMenu",
+    "plate_comment": "Opens HELPMENU.LZS; calls ShowHelpMenuPage once, a second time unless first returns Escape. File contains three pictures; this menu consumes only first two. Two native key-wait frames match full indexed framebuffer and all used palette colors."
+  },
+  {
+    "address": "1000:4dc8",
+    "name": "ShowHelpMenuPage",
+    "plate_comment": "Reads next CMAP/PICT at base200; draws, fades in36 ticks, releases temporary allocations, waits ReadDosMenuKey, fades out36 ticks. Returns whether key != Escape. Main help menu displays at most two pages; third resource picture not assigned here."
+  },
+  {
+    "address": "1000:5180",
+    "name": "RunRoadSelectionMenu",
+    "plate_comment": "GOMENU.LZS base0 background and base240 completion star. Thirty roads in two columns of15; selected DS9332 clamps0..29. Up/Down minus/plus1; Left jumps-15 or0; Right+15 thenclamp29. Enter returns0,Esc1. Stars min(completed,7); all30 selected frames match original64000 bytes+used colors. Source CFG already has first road completed once."
+  },
+  {
+    "address": "1000:5080",
+    "name": "DrawRoadSelectionFrame",
+    "plate_comment": "Allocates48x9 border index1 VGA(12 EGA), zero interior. Offset0xf3e+(road/3%5)*0x30c0+(road%3)*0xb40+(road>=15?160:0). Active writesborder; inactive restores background under border via blitter threshold255. Full menu pixel comparison covers every selected road."
+  },
+  {
+    "address": "1000:4acb",
+    "name": "DrawControlsMenuChoice",
+    "plate_comment": "Chooses SETMENU overlay at DS44c2+choice*8, base background DSaf22, destinationA000, transparent zero. Threshold1 draws active choice;255 restores original background for its nonzero mask. Choices0..4 focus;5..9 selected device/music."
+  },
+  {
+    "address": "1000:4afe",
+    "name": "RefreshSelectedControlModes",
+    "plate_comment": "Iterates five selection overlays5..9; active iff i==DS4518 input mode or i==DS451a+3 music mode. Otherwise erase through original background. Native eight settings frames match."
+  },
+  {
+    "address": "1000:5737",
+    "name": "LoadGameProfile",
+    "plate_comment": "Reads66 bytes SKYROADS.CFG to DS4516: checksum word, input mode, music mode,30 completionwords. Missing/error/checksum failure clears66 bytes. Read checksum helper56df separately before implementing persistence."
+  },
+  {
+    "address": "1000:578c",
+    "name": "SaveGameProfile",
+    "plate_comment": "Calls checksum helper56df then writes66 bytes DS4516 to SKYROADS.CFG. Native runs write only copied drive; source preserved. Clone profile persistence remains a separate milestone."
+  },
+  {
+    "address": "1000:5feb",
+    "name": "ReadDosMenuKey",
+    "plate_comment": "DOS INT21 input helper; returns normal byte or for00/E0 prefix reads second byte and returns scan<<8. Menu key constantsEnter0d,Escape1b,arrows4800/5000/4b00/4d00. This is DOS input, not direct BIOS INT16."
+  }
+]

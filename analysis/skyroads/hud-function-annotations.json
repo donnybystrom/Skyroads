@@ -1,0 +1,52 @@
+[
+  {
+    "address": "1000:0f62",
+    "name": "DecodeHudMaskColors",
+    "plate_comment": "Map source mask byte 0 to transparent zero, 1 to first supplied color, all other nonzero bytes to second. Original embedded assist masks contain 5/6, so both map to 98 in VGA. Scratch segment DSaf2a. Original routine executes in 467 boundary/sequence pixel cases."
+  },
+  {
+    "address": "1000:0f8c",
+    "name": "DrawHudInstrumentSegment",
+    "plate_comment": "Far record: uint16 VGA destination, uint8 width,height, then row-major 0/1/2 mask. On colors 94/95, off 92/93; zero transparent. SPEED.DAT 34 segments; OXY_DISP.DAT/FUL_DISP.DAT ten each. Verified native heap bytes and VGA updates; hud-validation.json."
+  },
+  {
+    "address": "1000:1073",
+    "name": "DrawHudSymbolMask",
+    "plate_comment": "Draw opaque row-major embedded symbol at x,y,width,height. Maps 1 to97, other nonzero to98, zero to0 in VGA. Used by decimal digits and jump-assist glyph. Signature raw stack BP+4 x,+6 y,+8 width,+10 height,+12 DS mask offset."
+  },
+  {
+    "address": "1000:1114",
+    "name": "DrawHudDecimalNumber",
+    "plate_comment": "Right-to-left decimal digits, four-by-five masks at DS016c+digit*20, five-pixel horizontal stride. Draw at least the units zero; skip remaining leading positions when remaining value is zero. Road wrapper calls x96,y156,value=(gravityFactor-3)*100,places4. Native initialization and five isolated gravity cases match."
+  },
+  {
+    "address": "1000:1191",
+    "name": "ReadGameplayPixel",
+    "plate_comment": "Read VGA index A000:y*320+x when DS003c !=0, otherwise EGA helper. Used for progress fill and warning palette swaps."
+  },
+  {
+    "address": "1000:11d3",
+    "name": "WriteGameplayPixel",
+    "plate_comment": "Write VGA index to A000:y*320+x when DS003c !=0, otherwise EGA helper. Original HUD corpus executes real pixel writes."
+  },
+  {
+    "address": "1000:1218",
+    "name": "FillRoadProgressColumn",
+    "plate_comment": "Column x=progressSegment+42. Read color at y143, scan upward to first different pixel, then replace the contiguous matching run with VGA index96. Incremental progress marker only; no invented rectangular bar. Verified 92 progress boundary steps."
+  },
+  {
+    "address": "1000:1282",
+    "name": "SwapHudWarningColors",
+    "plate_comment": "Within x,y,width,height swap only supplied palette indices. VGA resource warnings swap99/100: oxygen(160,161,7,7), fuel(155,169,16,5). UpdateGameplayHud calls on timer%9 blink edge while exit5/4. Separate core retains RequestSoundEffect(3); rendering host never emits duplicate model sound writes."
+  },
+  {
+    "address": "1000:5481",
+    "name": "LoadHudInstrumentFile",
+    "plate_comment": "Read count uint16 offsets from DAT header into DS pointer table, allocate remaining file bytes as far mask bank, then copy payload unchanged. File records have destination word,width byte,height byte and row-major mask. Offsets are relative to payload after table, not file start."
+  },
+  {
+    "address": "1000:5508",
+    "name": "LoadHudAndDemoAssets",
+    "plate_comment": "Load OXY_DISP.DAT ten pointers DS95f8/far bank5474; FUL_DISP.DAT ten DS5480/bank960e; SPEED.DAT34 DS4572/bank54a4. Then load6398 bytes DEMO.REC into DS961e. Source hashes/mask payloads verified against native RAM."
+  }
+]

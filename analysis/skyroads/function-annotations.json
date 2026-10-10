@@ -1,0 +1,107 @@
+[
+  {
+    "address": "1000:61f3",
+    "name": "InitializeDosRuntime",
+    "plate_comment": "Recovered MZ external entry: relative CS:IP=0000:61f3, analysis load segment=1000. Initializes DS to 1676, establishes stack, resizes DOS allocation, parses environment/command line, clears BSS, then calls RunGameSessionLoop. The original DIET stub was independently emulated to this instruction; all 30076 initialized module bytes matched. Decompiler stack recovery remains incomplete; this is not recovered source."
+  },
+  {
+    "address": "1000:01b8",
+    "name": "RunGameSessionLoop",
+    "plate_comment": "High-confidence orchestration function: VGA/EGA detection, timer/resource initialization, menu/selection flow, road loading, repeated RunRoadSession calls and completion bookkeeping. Mode values and all global types remain provisional."
+  },
+  {
+    "address": "1000:0069",
+    "name": "AbortOnResourceError",
+    "plate_comment": "Checks DS:41aa error state. Restores text mode/handlers and prints 'Not enough memory' for code 8, otherwise 'Error loading data files'; then terminates. DS:41aa semantics inferred from DOS wrapper writes."
+  },
+  {
+    "address": "1000:00bb",
+    "name": "LoadTrekDataArchive",
+    "plate_comment": "Opens filename at DS:0cfc ('trekdat.lzs'). Initializes buffered input, reads two little-endian words per record, allocates record storage, writes size difference, and calls DecodeLzsBlock. Ends on shared input/error state; exact record semantics and EOF treatment are not yet reconstructed."
+  },
+  {
+    "address": "1000:5614",
+    "name": "LoadRoadByIndex",
+    "plate_comment": "Opens DS:0e08 ('roads.lzs'). Seeks index*4, reads uint16 file offset and uint16 decoded length, then seeks to block. Reads 3 uint16 metadata fields into DS:4562/54a2/4566; copies 216 bytes to DS:41c2, then decodes length bytes into far pointer DS:162c. Clears 7000-byte destination first; returns decoded_length/14. Metadata field meanings and tile bit layout remain unverified."
+  },
+  {
+    "address": "1000:2b3d",
+    "name": "RunRoadSession",
+    "plate_comment": "Sets up road presentation, calls RunGameplayLoop, and on result 0 displays 'Road completed' or 'The End', selected by caller argument. Restores session resources and returns gameplay result."
+  },
+  {
+    "address": "1000:1fd9",
+    "name": "RunGameplayLoop",
+    "plate_comment": "Provisional semantic name, supported by repeated tick-synchronized input/render/update loop, collision-style helper calls, movement arithmetic and exit reasons. Returns 7 on tested key flag; exact controls, physics units, and global meanings need tracing. Contains significant decompiler uncertainty."
+  },
+  {
+    "address": "1000:3acc",
+    "name": "InstallTimerHandlers",
+    "plate_comment": "Replaces real-mode interrupt vectors 08h (linear20h) and24h (linear90h), retains old08h vector, programs PIT ports43h/40h with divisor19e4h and speaker channel42h with divisor0002h. Hardware behavior not executed."
+  },
+  {
+    "address": "1000:5c77",
+    "name": "OpenFileReadOnly",
+    "plate_comment": "DOS open wrapper: loads filename argument into DX and AX=3d00h, then calls shared INT21/error wrapper. ABI/return signature not fully recovered."
+  },
+  {
+    "address": "1000:5c59",
+    "name": "CloseFileHandle",
+    "plate_comment": "DOS INT21 AH=3eh close wrapper; skips close when DS:41aa equals15h. Handle is a near-stack argument at SP+2, loaded into BX. Current decompiler signature omits that argument."
+  },
+  {
+    "address": "1000:5c82",
+    "name": "PrintConsoleString",
+    "plate_comment": "Walks NUL-terminated string and calls WriteConsoleCharacter. Uses DS-relative near pointer."
+  },
+  {
+    "address": "1000:5fd4",
+    "name": "WriteConsoleCharacter",
+    "plate_comment": "DOS INT21 AH=02h, DL=character. Emits carriage return before newline (LF) to produce CRLF."
+  },
+  {
+    "address": "1000:6027",
+    "name": "ProbeEgaSupport",
+    "plate_comment": "BIOS INT10 AH=12h BL=10h; returns true if BL was changed and is at least3. Name describes use as fallback EGA support check; hardware behavior not exercised."
+  },
+  {
+    "address": "1000:603b",
+    "name": "ProbeVgaSupport",
+    "plate_comment": "BIOS INT10 AX=1a00h; requires returned AL=1ah and BL in[7,8], the VGA display-combination codes. Hardware behavior not exercised."
+  },
+  {
+    "address": "1000:6420",
+    "name": "InitializeBufferedInput",
+    "plate_comment": "Stores input handle at DS:41ac, prepares buffer via63f0, refills via6364, resets bitreader/EOF flags. Used by archive and road loading."
+  },
+  {
+    "address": "1000:6576",
+    "name": "ReadBufferedWordLE",
+    "plate_comment": "Calls ReadBufferedByte twice and combines first byte as low8bits, second as high8bits."
+  },
+  {
+    "address": "1000:6490",
+    "name": "ReadBufferedByte",
+    "plate_comment": "Reads current buffered byte from DS:41b0 then advances/refills using6326. Current return type is broader than meaningful low8bits."
+  },
+  {
+    "address": "1000:64ab",
+    "name": "ReadBufferedBitMSB",
+    "plate_comment": "Returns highest bit of current byte, shifts left, decrements remaining count DS:41ae and loads next byte when count reaches0."
+  },
+  {
+    "address": "1000:64ff",
+    "name": "ReadBufferedBitsMSB",
+    "plate_comment": "Consumes requested number of MSB-first bits, accumulates result in AX. Current decompiler incorrectly infers void return; register semantics verified in raw instructions. Do not treat current prototype as recovered ABI."
+  },
+  {
+    "address": "1000:66e6",
+    "name": "DecodeLzsBlock",
+    "plate_comment": "Shared decoder for .LZS resources. Raw stack ABI: far destination at BP+4, uint16 output length at BP+8. Reads3 control bytes and patches instruction immediates at CS:6729,671f,674c and6751 (self-modifying decoder). Selects literal bytes or overlapping backreferences using MSB-first bit input; ends at output bound and aligns input. Label is based on resource filenames and algorithm shape; no exact external LZ variant or full decoder replay has been verified. Ghidra parameters shown in pseudocode are unreliable."
+  },
+  {
+    "address": "1000:6679",
+    "name": "AlignBufferedInputToByte",
+    "plate_comment": "If remaining bit count is not8, consumes that count through ReadBufferedBitsMSB. Used after decoded blocks."
+  }
+]

@@ -1,0 +1,889 @@
+{
+  "program": "/Unpacked/SKYROADS_UNPACKED.EXE",
+  "functions": {
+    "1000:61f3": {
+      "name": "InitializeDosRuntime",
+      "size": 284,
+      "address": "1000:61f3",
+      "entry_point": "1000:61f3",
+      "decompiled_code": "\n// WARNING: Stack frame is not setup normally: Input value of stackpointer is not used\n// WARNING: This function may have set the stack pointer\n// Recovered MZ external entry: relative CS:IP=0000:61f3, analysis load segment=1000. Initializes DS\n// to 1676, establishes stack, resizes DOS allocation, parses environment/command line, clears BSS,\n// then calls RunGameSessionLoop. The original DIET stub was independently emulated to this\n// instruction; all 30076 initialized module bytes matched. Decompiler stack recovery remains\n// incomplete; this is not recovered source.\n\nvoid __cdecl16far InitializeDosRuntime(void)\n\n{\n  char cVar1;\n  char *pcVar2;\n  char *pcVar3;\n  undefined1 *puVar4;\n  code *pcVar5;\n  undefined2 uVar6;\n  int iVar7;\n  uint uVar8;\n  int iVar9;\n  undefined1 *puVar10;\n  undefined1 *puVar11;\n  char *pcVar12;\n  char *pcVar13;\n  char *pcVar14;\n  int iVar15;\n  char *pcVar16;\n  char *pcVar17;\n  undefined1 *puVar18;\n  undefined2 unaff_ES;\n  undefined2 uVar19;\n  \n  puVar10 = (undefined1 *)0x800;\n  pcVar5 = (code *)swi(0x21);\n  DAT_1676_0cc0 = unaff_ES;\n  uVar6 = (*pcVar5)();\n  DAT_1676_0cbe = CONCAT11((byte)uVar6,(char)((uint)uVar6 >> 8));\n  if (2 < (byte)uVar6) {\n    if (DAT_1676_0cbe >> 1 != 0) {\n      puVar11 = puVar10 + -0x4ec0;\n      pcVar5 = (code *)swi(0x21);\n      (*pcVar5)();\n      uVar6 = *(undefined2 *)0x2c;\n      pcVar14 = (char *)0x0;\n      iVar7 = -0x8000;\ncode_r0x0001624e:\n      do {\n        pcVar16 = pcVar14;\n        if (iVar7 != 0) {\n          iVar7 = iVar7 + -1;\n          pcVar2 = pcVar14;\n          pcVar14 = pcVar14 + 1;\n          pcVar16 = pcVar14;\n          if (*pcVar2 != '\\0') goto code_r0x0001624e;\n        }\n        pcVar14 = pcVar16 + 1;\n      } while (*pcVar16 != '\\0');\n      pcVar16 = pcVar16 + 3;\n      iVar7 = 0x100;\n      pcVar14 = pcVar16;\n      do {\n        if (iVar7 == 0) break;\n        iVar7 = iVar7 + -1;\n        pcVar2 = pcVar14;\n        pcVar14 = pcVar14 + 1;\n      } while (*pcVar2 != '\\0');\n      iVar15 = (int)pcVar14 - (int)pcVar16;\n      iVar7 = -iVar15;\n      pcVar14 = puVar11 + iVar7;\n      *(undefined2 *)(puVar11 + iVar7 + -2) = 0x1676;\n      uVar19 = *(undefined2 *)(puVar11 + iVar7 + -2);\n      for (; iVar15 != 0; iVar15 = iVar15 + -1) {\n        pcVar3 = pcVar14;\n        pcVar14 = pcVar14 + 1;\n        pcVar2 = pcVar16;\n        pcVar16 = pcVar16 + 1;\n        *pcVar3 = *pcVar2;\n      }\n      *(undefined2 *)(puVar11 + iVar7 + -2) = 0x1676;\n      uVar6 = *(undefined2 *)0xcc0;\n      pcVar14 = (char *)0x81;\n      uVar8 = (uint)*(byte *)0x80;\n      pcVar16 = (char *)((uint)(puVar11 + (iVar7 - uVar8) + -1) & 0xfffe);\n      iVar15 = 0;\n      pcVar17 = pcVar16;\n      if (uVar8 != 0) {\n        for (; uVar8 != 0; uVar8 = uVar8 - 1) {\n          pcVar2 = pcVar14;\n          pcVar14 = pcVar14 + 1;\n          *pcVar17 = *pcVar2;\n          pcVar17 = pcVar17 + 1;\n        }\n        *pcVar17 = '\\0';\n        *(undefined2 *)(pcVar16 + -2) = 0x1676;\n        uVar6 = *(undefined2 *)(pcVar16 + -2);\n        iVar15 = 0;\n        pcVar14 = pcVar16;\n        while( true ) {\n          do {\n            do {\n              pcVar2 = pcVar14;\n              pcVar14 = pcVar14 + 1;\n              cVar1 = *pcVar2;\n            } while (cVar1 == ' ');\n          } while (cVar1 == '\\t');\n          if ((cVar1 == '\\r') || (cVar1 == '\\0')) break;\n          iVar15 = iVar15 + 1;\n          do {\n            pcVar17 = pcVar14;\n            pcVar14 = pcVar17 + 1;\n            cVar1 = *pcVar17;\n            if ((cVar1 == '\\r') || (cVar1 == '\\0')) goto LAB_1000_62c6;\n          } while ((cVar1 != ' ') && (cVar1 != '\\t'));\n          *pcVar17 = '\\0';\n        }\nLAB_1000_62c6:\n        pcVar14 = pcVar14 + -1;\n        *pcVar14 = '\\0';\n        for (iVar9 = iVar15; iVar9 != 0; iVar9 = iVar9 + -1) {\n          do {\n            do {\n              pcVar2 = pcVar14;\n              pcVar14 = pcVar14 + -1;\n              cVar1 = *pcVar2;\n            } while (cVar1 == ' ');\n          } while ((cVar1 == '\\t') || (cVar1 == '\\0'));\n          while( true ) {\n            pcVar2 = pcVar14;\n            pcVar17 = pcVar14 + 1;\n            pcVar14 = pcVar14 + -1;\n            cVar1 = *pcVar2;\n            if (cVar1 == ' ') break;\n            if ((cVar1 == '\\t') || (cVar1 == '\\0')) break;\n          }\n          pcVar12 = pcVar16 + -2;\n          pcVar16 = pcVar16 + -2;\n          *(char **)pcVar12 = pcVar17;\n        }\n      }\n      *(int *)(pcVar16 + -2) = (int)puVar11 + iVar7;\n      *(char **)(pcVar16 + -4) = pcVar16 + -2;\n      pcVar13 = pcVar16 + -6;\n      *(int *)(pcVar16 + -6) = iVar15 + 1;\n      *(undefined2 *)(pcVar16 + -8) = 0x1676;\n      uVar6 = *(undefined2 *)(pcVar16 + -8);\n      puVar18 = (undefined1 *)0xe1c;\n      for (iVar7 = -0x5cdc; iVar7 != 0; iVar7 = iVar7 + -1) {\n        puVar4 = puVar18;\n        puVar18 = puVar18 + 1;\n        *puVar4 = 0;\n      }\n      *(undefined2 *)(pcVar16 + -8) = 0x630b;\n      RunGameSessionLoop();\n      pcVar5 = (code *)swi(0x21);\n      (*pcVar5)();\n      *(undefined2 *)(pcVar13 + -2) = *(undefined2 *)(pcVar13 + 4);\n      *(undefined2 *)(pcVar13 + -4) = *(undefined2 *)(pcVar13 + 2);\n      *(undefined2 *)(pcVar13 + -6) = 7;\n      *(undefined2 *)(pcVar13 + -8) = 0x631d;\n      uVar6 = FUN_1000_5f0c();\n      *(undefined2 *)(pcVar13 + -8) = uVar6;\n      *(undefined2 *)(pcVar13 + -10) = 0x6321;\n      PrintConsoleString();\n      return;\n    }\n    pcVar5 = (code *)swi(0x21);\n    (*pcVar5)();\n  }\n  *(undefined2 *)(puVar10 + -2) = unaff_ES;\n  *(undefined2 *)(puVar10 + -4) = 0;\n  return;\n}\n\n",
+      "plate_comment": "Recovered MZ external entry: relative CS:IP=0000:61f3, analysis load segment=1000. Initializes DS to 1676, establishes stack, resizes DOS allocation, parses environment/command line, clears BSS, then calls RunGameSessionLoop. The original DIET stub was independently emulated to this instruction; all 30076 initialized module bytes matched. Decompiler stack recovery remains incomplete; this is not recovered source.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "RunGameSessionLoop",
+          "address": "1000:01b8"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:01b8": {
+      "name": "RunGameSessionLoop",
+      "size": 521,
+      "address": "1000:01b8",
+      "entry_point": "1000:01b8",
+      "decompiled_code": "\n// High-confidence orchestration function: VGA/EGA detection, timer/resource initialization,\n// menu/selection flow, road loading, repeated RunRoadSession calls and completion bookkeeping. Mode\n// values and all global types remain provisional.\n\nvoid __cdecl16near RunGameSessionLoop(void)\n\n{\n  int *piVar1;\n  bool bVar2;\n  int iVar3;\n  uint uVar4;\n  undefined2 uVar5;\n  int iVar6;\n  undefined2 unaff_DS;\n  uint local_8;\n  \n  local_8 = 0xffff;\n  iVar3 = ProbeVgaSupport();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x3c = 0;\n    iVar3 = ProbeEgaSupport();\n    if (iVar3 == 0) {\n      PrintConsoleString(0xd08);\n      return;\n    }\n  }\n  FUN_1000_5a98();\n  FUN_1000_58cd();\n  InstallTimerHandlers();\n  *(undefined2 *)0x4570 = 1;\n  FUN_1000_0000();\n  FUN_1000_5737();\n  FUN_1000_57c4(0);\n  FUN_1000_5508();\n  LoadTrekDataArchive();\n  AbortOnResourceError();\n  FUN_1000_2cce();\nLAB_1000_0219:\n  bVar2 = true;\n  iVar3 = FUN_1000_4591();\n  if (iVar3 == 0) {\n    *(undefined2 *)0x95f6 = 3;\n    goto LAB_1000_0251;\n  }\nLAB_1000_0232:\n  *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n  FUN_1000_4e52(!bVar2);\nLAB_1000_0251:\n  bVar2 = false;\n  FUN_1000_3f20();\n  FUN_1000_5567();\n  do {\n    FUN_1000_3f20();\n    if (*(int *)0x95f6 == 3) {\n      uVar5 = LoadRoadByIndex(0);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(0);\n    }\n    else {\n      iVar3 = FUN_1000_5180();\n      if (iVar3 != 0) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        goto LAB_1000_0232;\n      }\n      *(undefined2 *)0x95f6 = *(undefined2 *)0x4518;\n      uVar4 = FUN_1000_019c();\n      uVar4 = uVar4 % 9;\n      if (uVar4 == local_8) {\n        uVar4 = (uVar4 + 1) % 9;\n      }\n      FUN_1000_57c4(uVar4 + 1);\n      uVar5 = LoadRoadByIndex(*(int *)0x9332 + 1);\n      *(undefined2 *)0x41c0 = uVar5;\n      FUN_1000_5387(*(uint *)0x9332 / 3);\n      local_8 = uVar4;\n    }\n    if (*(int *)0x3c != 0) {\n      uVar5 = FUN_1000_3ef4(0xac80,0);\n      *(undefined2 *)0x5478 = uVar5;\n    }\n    AbortOnResourceError();\n    FUN_1000_0707();\n    iVar3 = 0;\n    for (uVar4 = 0; uVar4 < 0x1e; uVar4 = uVar4 + 1) {\n      if (*(int *)(uVar4 * 2 + 0x451c) != 0) {\n        iVar3 = iVar3 + 1;\n      }\n    }\n    do {\n      FUN_1000_4153();\n      if ((*(int *)(*(int *)0x9332 * 2 + 0x451c) == 0) && (iVar3 == 0x1d)) {\n        uVar5 = 1;\n      }\n      else {\n        uVar5 = 0;\n      }\n      iVar6 = RunRoadSession(uVar5);\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_3f3b();\n        FUN_1000_3f3b();\n        if (iVar6 != 7) goto LAB_1000_0219;\n        goto LAB_1000_0232;\n      }\n      if (iVar6 == 0) {\n        piVar1 = (int *)(*(int *)0x9332 * 2 + 0x451c);\n        *piVar1 = *piVar1 + 1;\n        *(int *)0x9332 = *(int *)0x9332 + 1;\n        FUN_1000_578c();\n      }\n    } while ((iVar6 != 7) && (iVar6 != 0));\n    FUN_1000_3f3b();\n  } while( true );\n}\n\n",
+      "plate_comment": "High-confidence orchestration function: VGA/EGA detection, timer/resource initialization, menu/selection flow, road loading, repeated RunRoadSession calls and completion bookkeeping. Mode values and all global types remain provisional.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 27,
+      "callees": [
+        {
+          "name": "AbortOnResourceError",
+          "address": "1000:0069"
+        },
+        {
+          "name": "FUN_1000_0000",
+          "address": "1000:0000"
+        },
+        {
+          "name": "FUN_1000_019c",
+          "address": "1000:019c"
+        },
+        {
+          "name": "FUN_1000_0707",
+          "address": "1000:0707"
+        },
+        {
+          "name": "FUN_1000_2cce",
+          "address": "1000:2cce"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f20",
+          "address": "1000:3f20"
+        },
+        {
+          "name": "FUN_1000_3f3b",
+          "address": "1000:3f3b"
+        },
+        {
+          "name": "FUN_1000_4153",
+          "address": "1000:4153"
+        },
+        {
+          "name": "FUN_1000_4591",
+          "address": "1000:4591"
+        },
+        {
+          "name": "FUN_1000_4e52",
+          "address": "1000:4e52"
+        },
+        {
+          "name": "FUN_1000_5180",
+          "address": "1000:5180"
+        },
+        {
+          "name": "FUN_1000_5387",
+          "address": "1000:5387"
+        },
+        {
+          "name": "FUN_1000_5508",
+          "address": "1000:5508"
+        },
+        {
+          "name": "FUN_1000_5567",
+          "address": "1000:5567"
+        },
+        {
+          "name": "FUN_1000_5737",
+          "address": "1000:5737"
+        },
+        {
+          "name": "FUN_1000_578c",
+          "address": "1000:578c"
+        },
+        {
+          "name": "FUN_1000_57c4",
+          "address": "1000:57c4"
+        },
+        {
+          "name": "FUN_1000_58cd",
+          "address": "1000:58cd"
+        },
+        {
+          "name": "FUN_1000_5a98",
+          "address": "1000:5a98"
+        },
+        {
+          "name": "InstallTimerHandlers",
+          "address": "1000:3acc"
+        },
+        {
+          "name": "LoadRoadByIndex",
+          "address": "1000:5614"
+        },
+        {
+          "name": "LoadTrekDataArchive",
+          "address": "1000:00bb"
+        },
+        {
+          "name": "PrintConsoleString",
+          "address": "1000:5c82"
+        },
+        {
+          "name": "ProbeEgaSupport",
+          "address": "1000:6027"
+        },
+        {
+          "name": "ProbeVgaSupport",
+          "address": "1000:603b"
+        },
+        {
+          "name": "RunRoadSession",
+          "address": "1000:2b3d"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:0069": {
+      "name": "AbortOnResourceError",
+      "size": 82,
+      "address": "1000:0069",
+      "entry_point": "1000:0069",
+      "decompiled_code": "\n// Checks DS:41aa error state. Restores text mode/handlers and prints 'Not enough memory' for code\n// 8, otherwise 'Error loading data files'; then terminates. DS:41aa semantics inferred from DOS\n// wrapper writes.\n\nvoid __cdecl16near AbortOnResourceError(void)\n\n{\n  undefined2 unaff_DS;\n  \n  if (*(int *)0x41aa != 0) {\n    FUN_1000_601d(3);\n    FUN_1000_3b6b();\n    FUN_1000_58a5();\n    if (*(int *)0x41aa == 8) {\n      PrintConsoleString(0xcc2);\n    }\n    else {\n      PrintConsoleString(0xcd4);\n      FUN_1000_630f(*(undefined2 *)0x41aa,0);\n    }\n    FUN_1000_60e9();\n  }\n  return;\n}\n\n",
+      "plate_comment": "Checks DS:41aa error state. Restores text mode/handlers and prints 'Not enough memory' for code 8, otherwise 'Error loading data files'; then terminates. DS:41aa semantics inferred from DOS wrapper writes.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 6,
+      "callees": [
+        {
+          "name": "FUN_1000_3b6b",
+          "address": "1000:3b6b"
+        },
+        {
+          "name": "FUN_1000_58a5",
+          "address": "1000:58a5"
+        },
+        {
+          "name": "FUN_1000_601d",
+          "address": "1000:601d"
+        },
+        {
+          "name": "FUN_1000_60e9",
+          "address": "1000:60e9"
+        },
+        {
+          "name": "FUN_1000_630f",
+          "address": "1000:630f"
+        },
+        {
+          "name": "PrintConsoleString",
+          "address": "1000:5c82"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:00bb": {
+      "name": "LoadTrekDataArchive",
+      "size": 225,
+      "address": "1000:00bb",
+      "entry_point": "1000:00bb",
+      "decompiled_code": "\n// Opens filename at DS:0cfc ('trekdat.lzs'). Initializes buffered input, reads two little-endian\n// words per record, allocates record storage, writes size difference, and calls DecodeLzsBlock.\n// Ends on shared input/error state; exact record semantics and EOF treatment are not yet\n// reconstructed.\n\nvoid __cdecl16near LoadTrekDataArchive(void)\n\n{\n  undefined2 uVar1;\n  int iVar2;\n  int iVar3;\n  undefined2 uVar4;\n  uint uVar5;\n  undefined2 unaff_DS;\n  undefined4 local_6;\n  \n  uVar1 = OpenFileReadOnly(0xcfc);\n  InitializeBufferedInput(uVar1,0,0x1000,0);\n  *(undefined2 *)0x54a8 = 0;\n  while (*(int *)0x41aa == 0) {\n    iVar2 = ReadBufferedWordLE();\n    iVar3 = ReadBufferedWordLE();\n    if (*(int *)0x41aa == 0) {\n      if (*(int *)0x4560 == 0) {\n        uVar4 = FUN_1000_3ef4(0x7d64,0);\n        *(undefined2 *)0x4560 = uVar4;\n        if ((*(int *)0x4560 + 0x7d7U & 0xf000) != (*(uint *)0x4560 & 0xf000)) {\n          FUN_1000_3f72();\n          *(undefined2 *)0x4560 = 0;\n        }\n      }\n      uVar5 = FUN_1000_3ef4(iVar2,0);\n      *(uint *)(*(int *)0x54a8 * 2 + 0xe76) = uVar5;\n      local_6 = (int *)((ulong)uVar5 << 0x10);\n      *local_6 = iVar2 - iVar3;\n      if (*(int *)0x41aa == 0) {\n        DecodeLzsBlock(iVar2 - iVar3,uVar5,iVar3);\n      }\n    }\n    *(int *)0x54a8 = *(int *)0x54a8 + 1;\n  }\n  FUN_1000_5c11();\n  CloseFileHandle(uVar1);\n  return;\n}\n\n",
+      "plate_comment": "Opens filename at DS:0cfc ('trekdat.lzs'). Initializes buffered input, reads two little-endian words per record, allocates record storage, writes size difference, and calls DecodeLzsBlock. Ends on shared input/error state; exact record semantics and EOF treatment are not yet reconstructed.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 8,
+      "callees": [
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        },
+        {
+          "name": "DecodeLzsBlock",
+          "address": "1000:66e6"
+        },
+        {
+          "name": "FUN_1000_3ef4",
+          "address": "1000:3ef4"
+        },
+        {
+          "name": "FUN_1000_3f72",
+          "address": "1000:3f72"
+        },
+        {
+          "name": "FUN_1000_5c11",
+          "address": "1000:5c11"
+        },
+        {
+          "name": "InitializeBufferedInput",
+          "address": "1000:6420"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        },
+        {
+          "name": "ReadBufferedWordLE",
+          "address": "1000:6576"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5614": {
+      "name": "LoadRoadByIndex",
+      "size": 203,
+      "address": "1000:5614",
+      "entry_point": "1000:5614",
+      "decompiled_code": "\n// Opens DS:0e08 ('roads.lzs'). Seeks index*4, reads uint16 file offset and uint16 decoded length,\n// then seeks to block. Reads 3 uint16 metadata fields into DS:4562/54a2/4566; copies 216 bytes to\n// DS:41c2, then decodes length bytes into far pointer DS:162c. Clears 7000-byte destination first;\n// returns decoded_length/14. Metadata field meanings and tile bit layout remain unverified.\n\nuint __cdecl16near LoadRoadByIndex(int param_1)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  undefined2 local_8;\n  uint local_6;\n  undefined2 local_4;\n  \n  FUN_1000_5d07(0x162c,0,7000);\n  local_4 = OpenFileReadOnly(0xe08);\n  FUN_1000_5ca6(local_4,param_1 << 2,0,0);\n  FUN_1000_5f7d(local_4,&local_8,2);\n  FUN_1000_5f7d(local_4,&local_6,2);\n  FUN_1000_5ca6(local_4,local_8,0,0);\n  InitializeBufferedInput(local_4,0,0x1000,0);\n  uVar1 = ReadBufferedWordLE();\n  *(undefined2 *)0x4562 = uVar1;\n  uVar1 = ReadBufferedWordLE();\n  *(undefined2 *)0x54a2 = uVar1;\n  uVar1 = ReadBufferedWordLE();\n  *(undefined2 *)0x4566 = uVar1;\n  FUN_1000_6595(0x41c2);\n  DecodeLzsBlock(0x162c);\n  CloseFileHandle(local_4);\n  return local_6 / 0xe;\n}\n\n",
+      "plate_comment": "Opens DS:0e08 ('roads.lzs'). Seeks index*4, reads uint16 file offset and uint16 decoded length, then seeks to block. Reads 3 uint16 metadata fields into DS:4562/54a2/4566; copies 216 bytes to DS:41c2, then decodes length bytes into far pointer DS:162c. Clears 7000-byte destination first; returns decoded_length/14. Metadata field meanings and tile bit layout remain unverified.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 9,
+      "callees": [
+        {
+          "name": "CloseFileHandle",
+          "address": "1000:5c59"
+        },
+        {
+          "name": "DecodeLzsBlock",
+          "address": "1000:66e6"
+        },
+        {
+          "name": "FUN_1000_5ca6",
+          "address": "1000:5ca6"
+        },
+        {
+          "name": "FUN_1000_5d07",
+          "address": "1000:5d07"
+        },
+        {
+          "name": "FUN_1000_5f7d",
+          "address": "1000:5f7d"
+        },
+        {
+          "name": "FUN_1000_6595",
+          "address": "1000:6595"
+        },
+        {
+          "name": "InitializeBufferedInput",
+          "address": "1000:6420"
+        },
+        {
+          "name": "OpenFileReadOnly",
+          "address": "1000:5c77"
+        },
+        {
+          "name": "ReadBufferedWordLE",
+          "address": "1000:6576"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:2b3d": {
+      "name": "RunRoadSession",
+      "size": 400,
+      "address": "1000:2b3d",
+      "entry_point": "1000:2b3d",
+      "decompiled_code": "\n// Sets up road presentation, calls RunGameplayLoop, and on result 0 displays 'Road completed' or\n// 'The End', selected by caller argument. Restores session resources and returns gameplay result.\n\nint __cdecl16near RunRoadSession(int param_1)\n\n{\n  int iVar1;\n  int iVar2;\n  int unaff_DS;\n  \n  *(int *)0xaf2a = unaff_DS + 0x31b;\n  FUN_1000_3b9d();\n  *(undefined2 *)0xaf1e = 0;\n  *(undefined2 *)0x455c = 0;\n  *(undefined2 *)0x960c = 0;\n  *(undefined2 *)0x456c = 0;\n  *(undefined2 *)0x41be = 0;\n  *(undefined2 *)0xaf20 = 0xffff;\n  *(undefined2 *)0x9334 = 0;\n  if (*(int *)0x3c == 0) {\n    FUN_1000_2b0f(0xa000,*(undefined2 *)0x5170);\n    FUN_1000_2b0f(0xa200,*(undefined2 *)0x5170);\n  }\n  else {\n    FUN_1000_6053(0xac80,0xa000,0xac80,*(undefined2 *)0x5170,0x4d80);\n  }\n  FUN_1000_1114(0x60,0x9c,(*(int *)0x4562 + -3) * 100,4);\n  if (*(int *)0x3c == 0) {\n    iVar1 = (uint)(*(int *)0x9334 == 0) * 0x200 + -0x6000;\n  }\n  else {\n    iVar1 = *(int *)0x5478;\n  }\n  iVar1 = FUN_1000_0baf(0,0x2800,1,0,iVar1);\n  iVar2 = FUN_1000_0be9(0x8000);\n  FUN_1000_2d1f(0x100,0x18,0x50,*(int *)0xaf34 + ((iVar2 * 3 + iVar1) * 3 + 0xe) * 0x2d0,\n                *(undefined2 *)0xaf36);\n  FUN_1000_4b8e(0x41c2,1,0x24);\n  iVar1 = RunGameplayLoop();\n  if (*(int *)0x9334 != 0) {\n    *(undefined2 *)0x9334 = 0;\n    FUN_1000_0ed0();\n  }\n  if (iVar1 == 0) {\n    FUN_1000_3c9a();\n    if (param_1 == 0) {\n      FUN_1000_4526(0x68,0x50,0xd42,99);\n    }\n    else {\n      FUN_1000_4526(0x84,0x50,0xd3a,99);\n    }\n    FUN_1000_4459(0x1b);\n  }\n  FUN_1000_4b8e(0x41c2,0,0x24);\n  FUN_1000_3c03();\n  return iVar1;\n}\n\n",
+      "plate_comment": "Sets up road presentation, calls RunGameplayLoop, and on result 0 displays 'Road completed' or 'The End', selected by caller argument. Restores session resources and returns gameplay result.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 14,
+      "callees": [
+        {
+          "name": "FUN_1000_0baf",
+          "address": "1000:0baf"
+        },
+        {
+          "name": "FUN_1000_0be9",
+          "address": "1000:0be9"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_1114",
+          "address": "1000:1114"
+        },
+        {
+          "name": "FUN_1000_2b0f",
+          "address": "1000:2b0f"
+        },
+        {
+          "name": "FUN_1000_2d1f",
+          "address": "1000:2d1f"
+        },
+        {
+          "name": "FUN_1000_3b9d",
+          "address": "1000:3b9d"
+        },
+        {
+          "name": "FUN_1000_3c03",
+          "address": "1000:3c03"
+        },
+        {
+          "name": "FUN_1000_3c9a",
+          "address": "1000:3c9a"
+        },
+        {
+          "name": "FUN_1000_4459",
+          "address": "1000:4459"
+        },
+        {
+          "name": "FUN_1000_4526",
+          "address": "1000:4526"
+        },
+        {
+          "name": "FUN_1000_4b8e",
+          "address": "1000:4b8e"
+        },
+        {
+          "name": "FUN_1000_6053",
+          "address": "1000:6053"
+        },
+        {
+          "name": "RunGameplayLoop",
+          "address": "1000:1fd9"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:1fd9": {
+      "name": "RunGameplayLoop",
+      "size": 2870,
+      "address": "1000:1fd9",
+      "entry_point": "1000:1fd9",
+      "decompiled_code": "\n// Provisional semantic name, supported by repeated tick-synchronized input/render/update loop,\n// collision-style helper calls, movement arithmetic and exit reasons. Returns 7 on tested key flag;\n// exact controls, physics units, and global meanings need tracing. Contains significant decompiler\n// uncertainty.\n\nundefined2 __cdecl16near RunGameplayLoop(void)\n\n{\n  uint *puVar1;\n  uint uVar2;\n  bool bVar3;\n  bool bVar4;\n  bool bVar5;\n  int iVar6;\n  undefined2 uVar7;\n  int iVar8;\n  uint uVar9;\n  undefined2 unaff_DS;\n  bool bVar10;\n  bool bVar11;\n  bool bVar12;\n  undefined4 uVar13;\n  long lVar14;\n  int local_24;\n  uint local_22;\n  int local_20;\n  int local_1e;\n  uint local_1c;\n  uint local_1a;\n  uint local_18;\n  uint local_16;\n  int local_c;\n  uint local_4;\n  \n  if (*(int *)0x95f6 == 2) {\n    FUN_1000_06a4(0xa0,100);\n  }\n  *(undefined2 *)0x516e = 0;\n  uVar13 = FUN_1000_5d4c(*(undefined2 *)0x4562,0,0x1680,0);\n  iVar6 = FUN_1000_5d8c(uVar13,400,0);\n  *(int *)0x54aa = -iVar6;\n  *(undefined2 *)0x9618 = 0;\n  *(undefined2 *)0x961a = 3;\n  *(undefined2 *)0xaf1c = 0x8000;\n  *(undefined2 *)0xaf2c = 0x2800;\n  *(undefined2 *)0x5496 = 0;\n  *(undefined2 *)0x4568 = 0;\n  *(undefined2 *)0x9336 = 0;\n  *(undefined2 *)0x54ac = 0;\n  *(undefined2 *)0x54ae = 0;\n  *(undefined2 *)0x5494 = 30000;\n  *(undefined2 *)0xb13c = 30000;\n  *(undefined2 *)0x456e = 0;\n  *(undefined2 *)0x4558 = 0;\n  *(undefined2 *)0x456a = 0;\n  bVar3 = true;\n  bVar12 = false;\n  bVar11 = false;\n  *(undefined2 *)0x455a = 0;\n  bVar5 = false;\n  bVar4 = false;\n  *(undefined2 *)0xaf2e = 0;\n  *(undefined2 *)0xaf30 = 0;\n  *(undefined2 *)0x1600 = 0;\n  local_4 = 0;\n  *(undefined2 *)0xaf38 = 0;\n  do {\n    if (*(uint *)0x1600 < local_4) {\n      *(undefined2 *)0x1600 = 0;\n      local_4 = 0;\n    }\n    iVar6 = *(int *)0x1600;\n    if ((*(byte *)0xbdc & 0x80) != 0) {\n      do {\n      } while ((*(byte *)0xbdc & 0x80) != 0);\n      while ((((((*(byte *)0xbd2 & 0x80) == 0 && ((*(byte *)0xbd3 & 0x80) == 0)) &&\n               ((*(byte *)0xbd4 & 0x80) == 0)) &&\n              (((*(byte *)0xbd5 & 0x80) == 0 && ((*(byte *)0xbd6 & 0x80) == 0)))) &&\n             ((((*(byte *)0xbd7 & 0x80) == 0 &&\n               (((*(byte *)0xbd8 & 0x80) == 0 && ((*(byte *)0xbd9 & 0x80) == 0)))) &&\n              ((*(byte *)0xbda & 0x80) == 0))))) {\n        if (((*(byte *)0xbdb & 0x80) != 0) || ((*(byte *)0xbdc & 0x80) != 0)) break;\n      }\n      if ((*(byte *)0xbda & 0x80) != 0) {\n        return 7;\n      }\n      do {\n        do {\n        } while ((*(byte *)0xbd2 & 0x80) != 0);\n      } while (((((((*(byte *)0xbd3 & 0x80) != 0) || ((*(byte *)0xbd4 & 0x80) != 0)) ||\n                 ((*(byte *)0xbd5 & 0x80) != 0)) ||\n                ((((*(byte *)0xbd6 & 0x80) != 0 || ((*(byte *)0xbd7 & 0x80) != 0)) ||\n                 (((*(byte *)0xbd8 & 0x80) != 0 ||\n                  (((*(byte *)0xbd9 & 0x80) != 0 || ((*(byte *)0xbda & 0x80) != 0)))))))) ||\n               ((*(byte *)0xbdb & 0x80) != 0)) || ((*(byte *)0xbdc & 0x80) != 0));\n      *(int *)0x1600 = iVar6;\n    }\n    if ((*(byte *)0xbda & 0x80) != 0) {\n      return 7;\n    }\n    if (((*(int *)0x456a == 0) || (0x2a < *(uint *)0x456a)) &&\n       (((*(int *)0x456e == 1 || (*(int *)0x456e == 2)) ||\n        (((*(int *)0x456e == 3 && (*(int *)0x456a != 0)) || (0x6b < *(uint *)0x4558)))))) {\n      return *(undefined2 *)0x456e;\n    }\n    FUN_1000_0c98(bVar12);\n    FUN_1000_12f8();\n    do {\n    } while (*(int *)0x1600 == iVar6);\n    FUN_1000_0ed0();\n    if (*(int *)0x95f6 != 3) {\n      FUN_1000_074c();\n    }\n    for (; local_4 < *(uint *)0x1600; local_4 = local_4 + 1) {\n      if (*(int *)0x95f6 == 3) {\n        FUN_1000_074c();\n      }\n      local_16 = FUN_1000_04c0(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c);\n      bVar10 = local_16 != 0;\n      if (bVar3) {\n        if (0x2800 < *(uint *)0xaf2c) {\n          if (*(int *)0xaf2c == *(int *)((local_16 >> 8) * 2 + 0xe4)) {\n            local_16 = local_16 >> 4;\n          }\n          else {\n            local_16 = 0;\n          }\n        }\n        FUN_1000_1b49(local_16);\n        bVar11 = (local_16 & 0xf) == 8;\n        bVar12 = (local_16 & 0xf) == 2;\n      }\n      else {\n        bVar12 = false;\n      }\n      lVar14 = FUN_1000_5d80();\n      uVar9 = (uint)((ulong)(lVar14 + -0x8000) >> 0x10);\n      if (((uVar9 <= *(uint *)0x961a) &&\n          ((uVar9 < *(uint *)0x961a || ((uint)(lVar14 + -0x8000) <= *(uint *)0x9618)))) &&\n         ((iVar6 = FUN_1000_0533(*(undefined2 *)0x9618,*(undefined2 *)0x961a,*(undefined2 *)0xaf1c,\n                                 *(undefined2 *)0xaf2c), iVar6 != 0 && (*(int *)0x456e == 0)))) {\n        uVar7 = FUN_1000_0f05();\n        return uVar7;\n      }\n      if (*(int *)0xaf2c != local_1e) {\n        if ((*(int *)0x5496 == 0) || (1 < local_1a)) {\n          if (*(int *)0x9336 < 1) {\n            uVar9 = -*(int *)0x9336;\n          }\n          else {\n            uVar9 = *(uint *)0x9336;\n          }\n          if (((uint)(((long)*(int *)0x4562 * 0x104 & 0xffffU) / 8) <= uVar9) &&\n             (*(int *)0x456a == 0)) {\n            if ((*(int *)0x456e == 0) &&\n               ((*(int *)0x9336 < 0 && (iVar6 = FUN_1000_0476(), iVar6 == 0)))) {\n              FUN_1000_03c2(1);\n            }\n            *(int *)0x9336 = (*(int *)0x9336 * -5) / 10;\n            goto LAB_1000_24ba;\n          }\n        }\n        *(undefined2 *)0x9336 = 0;\n      }\nLAB_1000_24ba:\n      if (*(int *)0x456e == 0) {\n        uVar13 = FUN_1000_5d4c(*(int *)0x9330,*(int *)0x9330 >> 0xf,0x4b,0);\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 + (uint)uVar13;\n        *(int *)0x54ae =\n             *(int *)0x54ae + (int)((ulong)uVar13 >> 0x10) + (uint)CARRY2(uVar9,(uint)uVar13);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        if ((!bVar11) &&\n           (((!bVar4 && (bVar10)) ||\n            ((*(int *)0x4568 == 0 &&\n             ((0 < *(int *)0x9336 && ((uint)(*(int *)0xaf2c - local_c) < 0xf00)))))))) {\n          *(int *)0x4568 = *(int *)0x95f4 * 0x1d;\n        }\n        if ((((!bVar4) && (bVar10)) && (*(int *)0x547a != 0)) && (*(uint *)0x4562 < 0x14)) {\n          *(undefined2 *)0x9336 = 0x480;\n          *(undefined2 *)0x5494 = *(undefined2 *)0x5494;\n          bVar4 = true;\n          local_c = *(int *)0xaf2c;\n        }\n      }\n      if (((*(int *)0x4570 != 0) && (bVar4)) && ((!bVar5 && (0x36ff < *(uint *)0xaf2c)))) {\n        FUN_1000_1dfa();\n        bVar5 = true;\n      }\n      if (*(int *)0x456a == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          if (-0x6a < *(int *)0x9336) {\n            *(undefined2 *)0x9336 = 0xff96;\n          }\n        }\n        else {\n          *(int *)0x9336 = *(int *)0x9336 + *(int *)0x54aa;\n        }\n      }\n      else {\n        if (*(int *)0x9336 < 0) {\n          *(undefined2 *)0x9336 = 0;\n        }\n        if (*(int *)0x9336 < 0x47) {\n          *(int *)0x9336 = *(int *)0x9336 + 0x27;\n        }\n        else {\n          *(undefined2 *)0x9336 = 0x47;\n        }\n      }\n      local_22 = *(uint *)0x54ac + *(uint *)0x9618;\n      local_20 = *(int *)0x54ae + *(int *)0x961a + (uint)CARRY2(*(uint *)0x54ac,*(uint *)0x9618);\n      iVar6 = *(int *)0x5496;\n      if (bVar12 == false) {\n        uVar9 = 0x618;\n      }\n      else {\n        uVar9 = 0;\n      }\n      uVar13 = FUN_1000_5d4c(uVar9 + *(uint *)0x54ac,\n                             *(int *)0x54ae + (uint)CARRY2(uVar9,*(uint *)0x54ac),*(int *)0x4568,\n                             *(int *)0x4568 >> 0xf);\n      iVar8 = FUN_1000_5e5a(uVar13,0x200,0);\n      local_1c = iVar8 + *(int *)0xaf1c + iVar6;\n      local_1e = *(int *)0x9336 + *(int *)0xaf2c;\n      if (((*(uint *)0xaf1c < 0x2f80) && (0xd080 < local_1c)) ||\n         ((local_1c < 0x2f80 && (0xd080 < *(uint *)0xaf1c)))) {\n        local_1c = *(uint *)0xaf1c;\n      }\n      FUN_1000_186b(local_22,local_20,local_1c,local_1e);\n      if ((((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) &&\n          (*(uint *)0xaf1c == local_1c)) &&\n         (iVar6 = FUN_1000_1732(local_22,local_20,*(undefined2 *)0xaf1c,*(undefined2 *)0xaf2c),\n         iVar6 != 0)) {\n        iVar6 = FUN_1000_1732(local_22,local_20,*(int *)0xaf1c + -0x3a0,*(undefined2 *)0xaf2c);\n        if (iVar6 == 0) {\n          *(int *)0xaf1c = *(int *)0xaf1c + -0x3a0;\n          local_22 = *(uint *)0x9618;\n          local_20 = *(int *)0x961a;\n          FUN_1000_03c2(2);\n        }\n        else {\n          iVar6 = FUN_1000_1732(local_22,local_20,*(int *)0xaf1c + 0x3a0,*(undefined2 *)0xaf2c);\n          if (iVar6 == 0) {\n            *(int *)0xaf1c = *(int *)0xaf1c + 0x3a0;\n            local_22 = *(uint *)0x9618;\n            local_20 = *(int *)0x961a;\n            FUN_1000_03c2(2);\n          }\n        }\n      }\n      if ((*(uint *)0x9618 != local_22) || (*(int *)0x961a != local_20)) {\n        if (((*(int *)0x54ae < 0) || ((*(int *)0x54ae < 1 && (*(uint *)0x54ac < 0xe38)))) ||\n           (*(int *)0x456a != 0)) {\n          uVar9 = (local_20 - *(int *)0x54ae) - (uint)(local_22 < *(uint *)0x54ac);\n          if ((uVar9 <= *(uint *)0x961a) &&\n             ((uVar9 < *(uint *)0x961a || (local_22 - *(uint *)0x54ac < *(uint *)0x9618)))) {\n            FUN_1000_03c2(2);\n          }\n        }\n        else {\n          *(undefined2 *)0x456a = 1;\n          FUN_1000_03c2(0);\n          if (*(int *)0x456e == 0) {\n            *(undefined2 *)0x456e = 1;\n          }\n        }\n        *(undefined2 *)0x54ac = 0;\n        *(undefined2 *)0x54ae = 0;\n      }\n      if (*(uint *)0xaf1c != local_1c) {\n        *(undefined2 *)0x4568 = 0;\n        if (((0 < *(int *)0x5496) && (*(uint *)0xaf1c < local_1c)) ||\n           ((*(int *)0x5496 < 0 && (local_1c < *(uint *)0xaf1c)))) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - 0x97;\n        *(int *)0x54ae = *(int *)0x54ae - (uint)(uVar9 < 0x97);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n      }\n      bVar3 = false;\n      if ((*(int *)0xaf2c != local_1e) && (*(int *)0x9336 < 0)) {\n        *(undefined2 *)0x455a = 0;\n        bVar5 = false;\n        bVar4 = false;\n        bVar3 = true;\n        uVar2 = *(uint *)0xaf2e;\n        iVar6 = *(int *)0xaf30;\n        puVar1 = (uint *)0x54ac;\n        uVar9 = *puVar1;\n        *puVar1 = *puVar1 - uVar2;\n        *(int *)0x54ae = (*(int *)0x54ae - iVar6) - (uint)(uVar9 < uVar2);\n        if ((*(int *)0x54ae < 1) && (*(int *)0x54ae < 0)) {\n          *(undefined2 *)0x54ac = 0;\n          *(undefined2 *)0x54ae = 0;\n        }\n        else if ((-1 < *(int *)0x54ae) && ((0 < *(int *)0x54ae || (0x2aaa < *(uint *)0x54ac)))) {\n          *(undefined2 *)0x54ac = 0x2aaa;\n          *(undefined2 *)0x54ae = 0;\n        }\n        *(undefined2 *)0xaf2e = 0;\n        *(undefined2 *)0xaf30 = 0;\n        local_24 = 0;\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = FUN_1000_1732(*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                                local_18 * 0x80 + *(int *)0xaf1c,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = 1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        for (local_18 = 1; local_18 < 0xf; local_18 = local_18 + 1) {\n          iVar6 = FUN_1000_1732(*(undefined2 *)0x9618,*(undefined2 *)0x961a,\n                                *(int *)0xaf1c + local_18 * -0x80,*(int *)0xaf2c + -1);\n          if (iVar6 == 0) {\n            local_24 = local_24 + -1;\n            local_1a = local_18;\n            break;\n          }\n        }\n        if (local_24 == 0) {\n          *(undefined2 *)0x5496 = 0;\n        }\n        else {\n          *(int *)0x5496 = *(int *)0x5496 + local_24 * 0x11;\n        }\n      }\n      if (0x7fff < *(uint *)0xaf2c) {\n        *(undefined2 *)0xaf2c = 0;\n      }\n      if (*(int *)0x456e == 0) {\n        *(int *)0xb13c = *(int *)0xb13c - (int)(30000 / ((long)*(int *)0x4566 * 0x24 & 0xffffU));\n        if (30000 < *(uint *)0xb13c) {\n          *(undefined2 *)0xb13c = 0;\n        }\n        uVar13 = FUN_1000_5d4c((int)(30000 / (ulong)*(uint *)0x54a2),0,*(undefined2 *)0x54ac,\n                               *(undefined2 *)0x54ae);\n        iVar6 = FUN_1000_5e5a(uVar13,0,1);\n        *(int *)0x5494 = *(int *)0x5494 - iVar6;\n        if (30000 < *(uint *)0x5494) {\n          *(undefined2 *)0x5494 = 0;\n        }\n      }\n      if (*(int *)0x456e == 0) {\n        if (*(uint *)0xaf2c < 0x2800) {\n          *(undefined2 *)0x456e = 3;\n        }\n        if (*(int *)0x5494 == 0) {\n          *(undefined2 *)0x456e = 4;\n        }\n        if (*(int *)0xb13c == 0) {\n          *(undefined2 *)0x456e = 5;\n        }\n      }\n      else {\n        *(int *)0x4558 = *(int *)0x4558 + 1;\n      }\n      if (*(int *)0x456a != 0) {\n        *(int *)0x456a = *(int *)0x456a + 1;\n      }\n    }\n  } while( true );\n}\n\n",
+      "plate_comment": "Provisional semantic name, supported by repeated tick-synchronized input/render/update loop, collision-style helper calls, movement arithmetic and exit reasons. Returns 7 on tested key flag; exact controls, physics units, and global meanings need tracing. Contains significant decompiler uncertainty.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 18,
+      "callees": [
+        {
+          "name": "FUN_1000_03c2",
+          "address": "1000:03c2"
+        },
+        {
+          "name": "FUN_1000_0476",
+          "address": "1000:0476"
+        },
+        {
+          "name": "FUN_1000_04c0",
+          "address": "1000:04c0"
+        },
+        {
+          "name": "FUN_1000_0533",
+          "address": "1000:0533"
+        },
+        {
+          "name": "FUN_1000_06a4",
+          "address": "1000:06a4"
+        },
+        {
+          "name": "FUN_1000_074c",
+          "address": "1000:074c"
+        },
+        {
+          "name": "FUN_1000_0c98",
+          "address": "1000:0c98"
+        },
+        {
+          "name": "FUN_1000_0ed0",
+          "address": "1000:0ed0"
+        },
+        {
+          "name": "FUN_1000_0f05",
+          "address": "1000:0f05"
+        },
+        {
+          "name": "FUN_1000_12f8",
+          "address": "1000:12f8"
+        },
+        {
+          "name": "FUN_1000_1732",
+          "address": "1000:1732"
+        },
+        {
+          "name": "FUN_1000_186b",
+          "address": "1000:186b"
+        },
+        {
+          "name": "FUN_1000_1b49",
+          "address": "1000:1b49"
+        },
+        {
+          "name": "FUN_1000_1dfa",
+          "address": "1000:1dfa"
+        },
+        {
+          "name": "FUN_1000_5d4c",
+          "address": "1000:5d4c"
+        },
+        {
+          "name": "FUN_1000_5d80",
+          "address": "1000:5d80"
+        },
+        {
+          "name": "FUN_1000_5d8c",
+          "address": "1000:5d8c"
+        },
+        {
+          "name": "FUN_1000_5e5a",
+          "address": "1000:5e5a"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:3acc": {
+      "name": "InstallTimerHandlers",
+      "size": 72,
+      "address": "1000:3acc",
+      "entry_point": "1000:3acc",
+      "decompiled_code": "\n// Replaces real-mode interrupt vectors 08h (linear20h) and24h (linear90h), retains old08h vector,\n// programs PIT ports43h/40h with divisor19e4h and speaker channel42h with divisor0002h. Hardware\n// behavior not executed.\n\nuint __cdecl16near InstallTimerHandlers(void)\n\n{\n  uint uVar1;\n  \n  uVar1 = uRam00000020;\n  DAT_1000_3b67 = uRam00000020;\n  DAT_1000_3b69 = uRam00000022;\n  uRam00000020 = 0x3b17;\n  uRam00000022 = 0x1000;\n  uRam00000090 = 0x3b14;\n  uRam00000092 = 0x1000;\n  out(0x43,0x36);\n  out(0x40,0xe4);\n  out(0x40,0x19);\n  out(0x43,0xb6);\n  out(0x42,2);\n  out(0x42,0);\n  return uVar1 & 0xff00;\n}\n\n",
+      "plate_comment": "Replaces real-mode interrupt vectors 08h (linear20h) and24h (linear90h), retains old08h vector, programs PIT ports43h/40h with divisor19e4h and speaker channel42h with divisor0002h. Hardware behavior not executed.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5c77": {
+      "name": "OpenFileReadOnly",
+      "size": 11,
+      "address": "1000:5c77",
+      "entry_point": "1000:5c77",
+      "decompiled_code": "\n// DOS open wrapper: loads filename argument into DX and AX=3d00h, then calls shared INT21/error\n// wrapper. ABI/return signature not fully recovered.\n\nvoid OpenFileReadOnly(void)\n\n{\n  FUN_1000_5bf8();\n  return;\n}\n\n",
+      "plate_comment": "DOS open wrapper: loads filename argument into DX and AX=3d00h, then calls shared INT21/error wrapper. ABI/return signature not fully recovered.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_5bf8",
+          "address": "1000:5bf8"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5c59": {
+      "name": "CloseFileHandle",
+      "size": 17,
+      "address": "1000:5c59",
+      "entry_point": "1000:5c59",
+      "decompiled_code": "\n// DOS INT21 AH=3eh close wrapper; consults shared DS:41aa error state. Register-based handle\n// parameter is not reflected reliably by the current decompiler signature.\n\nvoid __cdecl16near CloseFileHandle(void)\n\n{\n  code *pcVar1;\n  undefined2 unaff_DS;\n  \n  if (*(int *)0x41aa != 0x15) {\n    pcVar1 = (code *)swi(0x21);\n    (*pcVar1)();\n  }\n  return;\n}\n\n",
+      "plate_comment": "DOS INT21 AH=3eh close wrapper; skips close when DS:41aa equals15h. Handle is a near-stack argument at SP+2, loaded into BX. Current decompiler signature omits that argument.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5c82": {
+      "name": "PrintConsoleString",
+      "size": 20,
+      "address": "1000:5c82",
+      "entry_point": "1000:5c82",
+      "decompiled_code": "\n// Walks NUL-terminated string and calls WriteConsoleCharacter. Uses DS-relative near pointer.\n\nvoid __cdecl16near PrintConsoleString(char *param_1)\n\n{\n  char *pcVar1;\n  undefined2 unaff_DS;\n  \n  while( true ) {\n    pcVar1 = param_1;\n    param_1 = param_1 + 1;\n    if (*pcVar1 == '\\0') break;\n    WriteConsoleCharacter(*pcVar1);\n  }\n  return;\n}\n\n",
+      "plate_comment": "Walks NUL-terminated string and calls WriteConsoleCharacter. Uses DS-relative near pointer.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "WriteConsoleCharacter",
+          "address": "1000:5fd4"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:5fd4": {
+      "name": "WriteConsoleCharacter",
+      "size": 23,
+      "address": "1000:5fd4",
+      "entry_point": "1000:5fd4",
+      "decompiled_code": "\n// DOS INT21 AH=02h, DL=character. Emits carriage return before newline (LF) to produce CRLF.\n\nvoid __cdecl16near WriteConsoleCharacter(char param_1)\n\n{\n  code *pcVar1;\n  \n  if (param_1 == '\\n') {\n    pcVar1 = (code *)swi(0x21);\n    (*pcVar1)();\n  }\n  pcVar1 = (code *)swi(0x21);\n  (*pcVar1)();\n  return;\n}\n\n",
+      "plate_comment": "DOS INT21 AH=02h, DL=character. Emits carriage return before newline (LF) to produce CRLF.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:6027": {
+      "name": "ProbeEgaSupport",
+      "size": 20,
+      "address": "1000:6027",
+      "entry_point": "1000:6027",
+      "decompiled_code": "\n// BIOS INT10 AH=12h BL=10h; returns true if BL was changed and is at least3. Name describes use as\n// fallback EGA support check; hardware behavior not exercised.\n\nundefined2 __cdecl16near ProbeEgaSupport(void)\n\n{\n  code *pcVar1;\n  undefined2 uVar2;\n  byte bVar3;\n  \n  bVar3 = 0x10;\n  pcVar1 = (code *)swi(0x10);\n  (*pcVar1)();\n  uVar2 = 0;\n  if ((bVar3 != 0x10) && (2 < bVar3)) {\n    uVar2 = 1;\n  }\n  return uVar2;\n}\n\n",
+      "plate_comment": "BIOS INT10 AH=12h BL=10h; returns true if BL was changed and is at least3. Name describes use as fallback EGA support check; hardware behavior not exercised.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:603b": {
+      "name": "ProbeVgaSupport",
+      "size": 24,
+      "address": "1000:603b",
+      "entry_point": "1000:603b",
+      "decompiled_code": "\n// BIOS INT10 AX=1a00h; requires returned AL=1ah and BL in[7,8], the VGA display-combination codes.\n// Hardware behavior not exercised.\n\nundefined2 __cdecl16near ProbeVgaSupport(void)\n\n{\n  code *pcVar1;\n  char cVar2;\n  undefined2 uVar3;\n  byte in_BL;\n  \n  pcVar1 = (code *)swi(0x10);\n  cVar2 = (*pcVar1)();\n  uVar3 = 0;\n  if (((cVar2 == '\\x1a') && (6 < in_BL)) && (in_BL < 9)) {\n    uVar3 = 1;\n  }\n  return uVar3;\n}\n\n",
+      "plate_comment": "BIOS INT10 AX=1a00h; requires returned AL=1ah and BL in[7,8], the VGA display-combination codes. Hardware behavior not exercised.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 0,
+      "callees": [],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:6420": {
+      "name": "InitializeBufferedInput",
+      "size": 42,
+      "address": "1000:6420",
+      "entry_point": "1000:6420",
+      "decompiled_code": "\n// Stores input handle at DS:41ac, prepares buffer via63f0, refills via6364, resets bitreader/EOF\n// flags. Used by archive and road loading.\n\nvoid __cdecl16near\nInitializeBufferedInput(undefined2 param_1,undefined2 param_2,undefined2 param_3,undefined1 param_4)\n\n{\n  undefined2 unaff_DS;\n  \n  *(undefined2 *)0x41ac = param_1;\n  *(undefined1 *)0x41bc = param_4;\n  *(undefined1 *)0x41bb = 0;\n  FUN_1000_63f0(param_2,param_3);\n  FUN_1000_6364();\n  *(undefined1 *)0x41ba = 0;\n  return;\n}\n\n",
+      "plate_comment": "Stores input handle at DS:41ac, prepares buffer via63f0, refills via6364, resets bitreader/EOF flags. Used by archive and road loading.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 2,
+      "callees": [
+        {
+          "name": "FUN_1000_6364",
+          "address": "1000:6364"
+        },
+        {
+          "name": "FUN_1000_63f0",
+          "address": "1000:63f0"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:6576": {
+      "name": "ReadBufferedWordLE",
+      "size": 13,
+      "address": "1000:6576",
+      "entry_point": "1000:6576",
+      "decompiled_code": "\n// Calls ReadBufferedByte twice and combines first byte as low8bits, second as high8bits.\n\nundefined2 __cdecl16near ReadBufferedWordLE(void)\n\n{\n  undefined1 uVar1;\n  undefined1 uVar2;\n  \n  uVar1 = ReadBufferedByte();\n  uVar2 = ReadBufferedByte();\n  return CONCAT11(uVar2,uVar1);\n}\n\n",
+      "plate_comment": "Calls ReadBufferedByte twice and combines first byte as low8bits, second as high8bits.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "ReadBufferedByte",
+          "address": "1000:6490"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:6490": {
+      "name": "ReadBufferedByte",
+      "size": 9,
+      "address": "1000:6490",
+      "entry_point": "1000:6490",
+      "decompiled_code": "\n// Reads current buffered byte from DS:41b0 then advances/refills using6326. Current return type is\n// broader than meaningful low8bits.\n\nundefined2 __cdecl16near ReadBufferedByte(void)\n\n{\n  undefined2 uVar1;\n  undefined2 unaff_DS;\n  \n  uVar1 = *(undefined2 *)0x41b0;\n  FUN_1000_6326();\n  return uVar1;\n}\n\n",
+      "plate_comment": "Reads current buffered byte from DS:41b0 then advances/refills using6326. Current return type is broader than meaningful low8bits.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_6326",
+          "address": "1000:6326"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:64ab": {
+      "name": "ReadBufferedBitMSB",
+      "size": 54,
+      "address": "1000:64ab",
+      "entry_point": "1000:64ab",
+      "decompiled_code": "\n// Returns highest bit of current byte, shifts left, decrements remaining count DS:41ae and loads\n// next byte when count reaches0.\n\nbool __cdecl16near ReadBufferedBitMSB(void)\n\n{\n  int *piVar1;\n  undefined1 *puVar2;\n  uint uVar3;\n  undefined2 unaff_DS;\n  \n  uVar3 = (uint)*(byte *)0x41b0 << 1;\n  *(byte *)0x41b0 = (byte)uVar3;\n  piVar1 = (int *)0x41ae;\n  *piVar1 = *piVar1 + -1;\n  if (*piVar1 == 0) {\n    *(undefined2 *)0x41ae = 8;\n    puVar2 = (undefined1 *)*(undefined2 *)0x41b6;\n    *(int *)0x41b6 = *(int *)0x41b6 + 1;\n    if ((undefined1 *)*(undefined2 *)0x41b4 == puVar2) {\n      FUN_1000_6350();\n    }\n    else {\n      *(undefined1 *)0x41b0 = *puVar2;\n    }\n  }\n  return (uVar3 & 0x100) != 0;\n}\n\n",
+      "plate_comment": "Returns highest bit of current byte, shifts left, decrements remaining count DS:41ae and loads next byte when count reaches0.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_6350",
+          "address": "1000:6350"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:64ff": {
+      "name": "ReadBufferedBitsMSB",
+      "size": 68,
+      "address": "1000:64ff",
+      "entry_point": "1000:64ff",
+      "decompiled_code": "\n// Consumes requested number of MSB-first bits, accumulates result in AX. Current decompiler\n// incorrectly infers void return; register semantics verified in raw instructions. Do not treat\n// current prototype as recovered ABI.\n\nvoid __cdecl16near ReadBufferedBitsMSB(int param_1)\n\n{\n  int *piVar1;\n  undefined1 *puVar2;\n  uint uVar3;\n  uint uVar4;\n  undefined2 unaff_DS;\n  \n  uVar3 = 0;\n  while (param_1 = param_1 + -1, -1 < param_1) {\n    uVar4 = (uint)*(byte *)0x41b0 << 1;\n    *(byte *)0x41b0 = (byte)uVar4;\n    uVar4 = (uint)((uVar4 & 0x100) != 0);\n    piVar1 = (int *)0x41ae;\n    *piVar1 = *piVar1 + -1;\n    if (*piVar1 == 0) {\n      *(undefined2 *)0x41ae = 8;\n      puVar2 = (undefined1 *)*(undefined2 *)0x41b6;\n      *(int *)0x41b6 = *(int *)0x41b6 + 1;\n      if ((undefined1 *)*(undefined2 *)0x41b4 == puVar2) {\n        FUN_1000_6350(param_1,uVar4,uVar3);\n      }\n      else {\n        *(undefined1 *)0x41b0 = *puVar2;\n      }\n    }\n    uVar3 = uVar3 | uVar4 << ((byte)param_1 & 0x1f);\n  }\n  return;\n}\n\n",
+      "plate_comment": "Consumes requested number of MSB-first bits, accumulates result in AX. Current decompiler incorrectly infers void return; register semantics verified in raw instructions. Do not treat current prototype as recovered ABI.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "FUN_1000_6350",
+          "address": "1000:6350"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:66e6": {
+      "name": "DecodeLzsBlock",
+      "size": 129,
+      "address": "1000:66e6",
+      "entry_point": "1000:66e6",
+      "decompiled_code": "\n// Shared decoder for .LZS resources. Raw stack ABI: far destination at BP+4, uint16 output length\n// at BP+8. Reads3 control bytes and patches instruction immediates at CS:6729,671f,674c and6751\n// (self-modifying decoder). Selects literal bytes or overlapping backreferences using MSB-first bit\n// input; ends at output bound and aligns input. Label is based on resource filenames and algorithm\n// shape; no exact external LZ variant or full decoder replay has been verified. Ghidra parameters\n// shown in pseudocode are unreliable.\n\nvoid __cdecl16near DecodeLzsBlock(undefined1 *param_1,int param_2)\n\n{\n  undefined1 *puVar1;\n  undefined1 *puVar2;\n  undefined1 uVar3;\n  int iVar4;\n  uint uVar5;\n  undefined1 *puVar6;\n  undefined1 *puVar7;\n  undefined1 *puVar8;\n  undefined2 uVar9;\n  \n  uVar9 = (undefined2)((ulong)param_1 >> 0x10);\n  puVar7 = (undefined1 *)param_1;\n  puVar1 = puVar7 + param_2;\n  uRam00016729 = ReadBufferedByte();\n                    // WARNING: Read-only address (ram,0x00016729) is written\n  bRam0001671f = ReadBufferedByte();\n                    // WARNING: Read-only address (ram,0x0001671f) is written\n  iRam00016751 = 1 << (bRam0001671f & 0x1f);\n                    // WARNING: Read-only address (ram,0x00016751) is written\n  uRam0001674c = ReadBufferedByte();\n                    // WARNING: Read-only address (ram,0x0001674c) is written\n  while (puVar7 < puVar1) {\n    iVar4 = ReadBufferedBitMSB();\n    if (iVar4 == 0) {\n      iVar4 = ReadBufferedBitsMSB(0);\nLAB_1000_6723:\n      puVar6 = puVar7 + (-2 - iVar4);\n      iVar4 = ReadBufferedBitsMSB(0);\n      uVar5 = iVar4 + 1;\n      if ((uint)((int)puVar1 - (int)puVar7) <= uVar5) break;\n      do {\n        puVar8 = puVar7;\n        puVar2 = puVar6;\n        puVar6 = puVar6 + 1;\n        *puVar8 = *puVar2;\n        uVar5 = uVar5 - 1;\n        puVar7 = puVar8 + 1;\n      } while (uVar5 != 0);\n      puVar7 = puVar8 + 2;\n      puVar8[1] = *puVar6;\n    }\n    else {\n      iVar4 = ReadBufferedBitMSB();\n      if (iVar4 == 0) {\n        iVar4 = ReadBufferedBitsMSB(0);\n        iVar4 = iVar4 + -0xf10;\n        goto LAB_1000_6723;\n      }\n      uVar3 = ReadBufferedBitsMSB(8);\n      puVar2 = puVar7;\n      puVar7 = puVar7 + 1;\n      *puVar2 = uVar3;\n    }\n  }\n  AlignBufferedInputToByte();\n  return;\n}\n\n",
+      "plate_comment": "Shared decoder for .LZS resources. Raw stack ABI: far destination at BP+4, uint16 output length at BP+8. Reads3 control bytes and patches instruction immediates at CS:6729,671f,674c and6751 (self-modifying decoder). Selects literal bytes or overlapping backreferences using MSB-first bit input; ends at output bound and aligns input. Label is based on resource filenames and algorithm shape; no exact external LZ variant or full decoder replay has been verified. Ghidra parameters shown in pseudocode are unreliable.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 4,
+      "callees": [
+        {
+          "name": "AlignBufferedInputToByte",
+          "address": "1000:6679"
+        },
+        {
+          "name": "ReadBufferedBitMSB",
+          "address": "1000:64ab"
+        },
+        {
+          "name": "ReadBufferedBitsMSB",
+          "address": "1000:64ff"
+        },
+        {
+          "name": "ReadBufferedByte",
+          "address": "1000:6490"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    },
+    "1000:6679": {
+      "name": "AlignBufferedInputToByte",
+      "size": 16,
+      "address": "1000:6679",
+      "entry_point": "1000:6679",
+      "decompiled_code": "\n// If remaining bit count is not8, consumes that count through ReadBufferedBitsMSB. Used after\n// decoded blocks.\n\nvoid __cdecl16near AlignBufferedInputToByte(void)\n\n{\n  undefined2 unaff_DS;\n  \n  if (*(int *)0x41ae != 8) {\n    ReadBufferedBitsMSB(*(undefined2 *)0x41ae);\n  }\n  return;\n}\n\n",
+      "plate_comment": "If remaining bit count is not8, consumes that count through ReadBufferedBitsMSB. Used after decoded blocks.",
+      "plate_comment_issues": [
+        "Plate comment missing Algorithm section",
+        "Plate comment missing Parameters section",
+        "Plate comment missing Returns section"
+      ],
+      "callee_count": 1,
+      "callees": [
+        {
+          "name": "ReadBufferedBitsMSB",
+          "address": "1000:64ff"
+        }
+      ],
+      "revision": {
+        "token": "1791562721181:4f8d24bd:24978",
+        "epoch": "4f8d24bd",
+        "modification_number": 24978,
+        "saved_time": 1791562721181,
+        "unsaved_changes": false,
+        "decompiled": true
+      }
+    }
+  },
+  "count": 21
+}

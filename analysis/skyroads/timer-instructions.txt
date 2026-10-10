@@ -1,0 +1,74 @@
+3acc 6a00             push    0
+3ace 07               pop     es
+3acf 26a12000         mov     ax, word ptr es:[0x20]
+3ad3 268b162200       mov     dx, word ptr es:[0x22]
+3ad8 2ea3673b         mov     word ptr cs:[0x3b67], ax
+3adc 2e8916693b       mov     word ptr cs:[0x3b69], dx
+3ae1 fa               cli     
+3ae2 26c7062000173b   mov     word ptr es:[0x20], 0x3b17
+3ae9 268c0e2200       mov     word ptr es:[0x22], cs
+3aee 26c7069000143b   mov     word ptr es:[0x90], 0x3b14
+3af5 268c0e9200       mov     word ptr es:[0x92], cs
+3afa b036             mov     al, 0x36
+3afc e643             out     0x43, al
+3afe b0e4             mov     al, 0xe4
+3b00 e640             out     0x40, al
+3b02 b019             mov     al, 0x19
+3b04 e640             out     0x40, al
+3b06 b0b6             mov     al, 0xb6
+3b08 e643             out     0x43, al
+3b0a b002             mov     al, 2
+3b0c e642             out     0x42, al
+3b0e b000             mov     al, 0
+3b10 e642             out     0x42, al
+3b12 fb               sti     
+3b13 c3               ret     
+3b14 b003             mov     al, 3
+3b16 cf               iret    
+3b17 fc               cld     
+3b18 60               pushaw  
+3b19 1e               push    ds
+3b1a 2e8e1eca3a       mov     ds, word ptr cs:[0x3aca]
+3b1f e8331f           call    0x5a55
+3b22 803e923100       cmp     byte ptr [0x3192], 0
+3b27 7407             je      0x3b30
+3b29 803e923105       cmp     byte ptr [0x3192], 5
+3b2e 7522             jne     0x3b52
+3b30 ff060016         inc     word ptr [0x1600]
+3b34 8b1ed00b         mov     bx, word ptr [0xbd0]
+3b38 8b0f             mov     cx, word ptr [bx]
+3b3a 0bc9             or      cx, cx
+3b3c 7405             je      0x3b43
+3b3e 8306d00b02       add     word ptr [0xbd0], 2
+3b43 83c102           add     cx, 2
+3b46 b0b6             mov     al, 0xb6
+3b48 e643             out     0x43, al
+3b4a 8ac1             mov     al, cl
+3b4c e642             out     0x42, al
+3b4e 8ac5             mov     al, ch
+3b50 e642             out     0x42, al
+3b52 fe0e9231         dec     byte ptr [0x3192]
+3b56 7807             js      0x3b5f
+3b58 b020             mov     al, 0x20
+3b5a e620             out     0x20, al
+3b5c 1f               pop     ds
+3b5d 61               popaw   
+3b5e cf               iret    
+3b5f c606923109       mov     byte ptr [0x3192], 9
+3b64 1f               pop     ds
+3b65 61               popaw   
+3b66 ea00000000       ljmp    0:0
+5a55 ba8803           mov     dx, 0x388
+5a58 803e830c00       cmp     byte ptr [0xc83], 0
+5a5d 7405             je      0x5a64
+5a5f fe0e830c         dec     byte ptr [0xc83]
+5a63 c3               ret     
+5a64 8b369631         mov     si, word ptr [0x3196]
+5a68 ad               lodsw   ax, word ptr [si]
+5a69 89369631         mov     word ptr [0x3196], si
+5a6d 8bd8             mov     bx, ax
+5a6f 83e307           and     bx, 7
+5a72 d1e3             shl     bx, 1
+5a74 c0e804           shr     al, 4
+5a77 ff975b0c         call    word ptr [bx + 0xc5b]
+5a7b ebdb             jmp     0x5a58

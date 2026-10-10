@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "cases": 15808,
+  "roads": 31,
+  "geometry_js_sha256": "2e1ce6f3c242945f606ddbc0aa656e4a9122a398a4130fcdebc310601ed860bd",
+  "basis": "JavaScript viewer model vs Python predicates already checked against original x86"
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "address": "1000:2d1f",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:2d1f from 'FUN_1000_2d1f' to 'RenderRoadSceneSpans'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:2d1f\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0c98",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:0c98 from 'FUN_1000_0c98' to 'RenderShipAndRoadScene'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:0c98\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0baf",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:0baf from 'FUN_1000_0baf' to 'SelectShipVerticalPose'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:0baf\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:0be9",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:0be9 from 'FUN_1000_0be9' to 'SelectShipLaneView'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:0be9\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:3f91",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:3f91 from 'FUN_1000_3f91' to 'ReadPictureColorPalette'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:3f91\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:4084",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:4084 from 'FUN_1000_4084' to 'DecodeResourcePictureBlock'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:4084\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5387",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5387 from 'FUN_1000_5387' to 'LoadWorldBackgroundImage'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5387\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "address": "1000:5567",
+    "rename": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Success: Renamed function at 1000:5567 from 'FUN_1000_5567' to 'LoadShipAndDashboardImages'\"}"
+        }
+      ],
+      "isError": false
+    },
+    "comment": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"program\":\"SKYROADS_UNPACKED.EXE\",\"status\":\"success\",\"message\":\"Set plate comment at 1000:5567\",\"warnings\":[\"Plate comment missing Algorithm section\",\"Plate comment missing Parameters section\",\"Plate comment missing Returns section\"]}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]
